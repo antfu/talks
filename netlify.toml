@@ -8,7 +8,7 @@
   command = "npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run build"
 
 [[redirects]]
-  from = "/2021/composable-vue*"
+  from = "/2021/composable-vue/*"
   to = "/2021/compsoable-vue/index.html"
   status = 200
 
