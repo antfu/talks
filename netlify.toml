@@ -9,7 +9,7 @@
 
 [[redirects]]
   from = "/2021/composable-vue/*"
-  to = "/2021/compsoable-vue/index.html"
+  to = "/2021/composable-vue/index.html"
   status = 200
 
 [[redirects]]
