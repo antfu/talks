@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "slidev",
-    "build": "slidev build --out ../../dist/2021/composable-vue",
+    "build": "slidev build --base /2021/composable-vue/ --out ../../dist/2021/composable-vue",
     "export": "slidev export"
   },
   "dependencies": {
