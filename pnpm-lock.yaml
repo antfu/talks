@@ -12,11 +12,11 @@ importers:
 
   2021-04-29/src:
     specifiers:
-      '@slidev/cli': ^0.0.0-alpha.30
-      '@slidev/theme-default': ^0.0.0-alpha.30
+      '@slidev/cli': ^0.0.0-alpha.31
+      '@slidev/theme-default': ^0.0.0-alpha.31
     dependencies:
-      '@slidev/cli': 0.0.0-alpha.30
-      '@slidev/theme-default': 0.0.0-alpha.30
+      '@slidev/cli': 0.0.0-alpha.31
+      '@slidev/theme-default': 0.0.0-alpha.31
 
 packages:
 
@@ -86,8 +86,8 @@ packages:
     resolution: {integrity: sha512-6RglhutqrGFMO1MNUXp95RBuYIuc8wTnMAV5MUhLmjTOy78ncwOw7RgeQ/HeymkKXRhZd0s2DNrM1rL7unk3MQ==}
     dev: false
 
-  /@slidev/cli/0.0.0-alpha.30:
-    resolution: {integrity: sha512-N1YRJdx6nnRtkZPbMR3EQiW1sVcsKevcfxO6KVEIgHbU2sPduv4y+WRowut3ymQ0Eh0SvQGtWTG6vuJggxlc5A==}
+  /@slidev/cli/0.0.0-alpha.31:
+    resolution: {integrity: sha512-t3yd6pBpwxm3J2WcXt+U8dQG/FDkCquk5lAUbVYMa5GDJCEwpn0ZnTt/XSvZtpJwkPuCUceIEpW0LfF4TrMoHw==}
     hasBin: true
     peerDependencies:
       playwright-chromium: ^1.10.0
@@ -97,8 +97,8 @@ packages:
     dependencies:
       '@antfu/utils': 0.1.1
       '@iconify/json': 1.1.335
-      '@slidev/client': 0.0.0-alpha.30
-      '@slidev/types': 0.0.0-alpha.30
+      '@slidev/client': 0.0.0-alpha.31
+      '@slidev/types': 0.0.0-alpha.31
       '@vitejs/plugin-vue': 1.2.2_@vue+compiler-sfc@3.0.11
       '@vue/compiler-sfc': 3.0.11_vue@3.0.11
       cli-progress: 3.9.0
@@ -131,11 +131,11 @@ packages:
       - vue-template-compiler
     dev: false
 
-  /@slidev/client/0.0.0-alpha.30:
-    resolution: {integrity: sha512-58YwnbPvdyXWf7PNd8ZMtkpGIni4atQPr/rnZCXfUF3gCSnFWeh8+e1rODguHCdmy2vCcyfvWoIOpf++7myx0A==}
+  /@slidev/client/0.0.0-alpha.31:
+    resolution: {integrity: sha512-6YmbTsfHXvoYE//w/hTXWGhUndnczT+u6qASY2OI+vI8uyBMQHhCaGM3ob/NxAS4HtqZKRRcXWXTz7drlh9rBg==}
     dependencies:
       '@antfu/utils': 0.1.1
-      '@slidev/types': 0.0.0-alpha.30
+      '@slidev/types': 0.0.0-alpha.31
       '@vueuse/core': 4.9.1_vue@3.0.11
       '@vueuse/head': 0.5.1_vue@3.0.11
       codemirror: 5.61.0
@@ -153,8 +153,8 @@ packages:
       - '@vue/composition-api'
     dev: false
 
-  /@slidev/theme-default/0.0.0-alpha.30:
-    resolution: {integrity: sha512-RpU3B0PE7hszx+ON/31S8WUzVYSI0ueTdZBD0mshw+bbR9bUWDO9VS+6XrHtX0c5PnIMKJHSHsVnBQq53l3kaQ==}
+  /@slidev/theme-default/0.0.0-alpha.31:
+    resolution: {integrity: sha512-9zZojQWxMQyM1RuiTMqs0SInyg14vbPYp//kiiv+N6Kdg2ovd1SgVVAq+kHrqk3AjccFzup49MHyuXFdJyysrQ==}
     peerDependencies:
       '@slidev/client': ^0.0.0-alpha.0
       vite-plugin-windicss: ^0.16.0-beta.1
@@ -163,8 +163,8 @@ packages:
       prism-theme-vars: 0.2.2
     dev: false
 
-  /@slidev/types/0.0.0-alpha.30:
-    resolution: {integrity: sha512-40+OdNbry6sazxKxa/Xtv3UAYPX42XdIWk7eWnKvyrfh4kEHLvVcF1bRFTQpdB6XIemvdpz0+WOeon9vHdpQlg==}
+  /@slidev/types/0.0.0-alpha.31:
+    resolution: {integrity: sha512-+OwXk/ivZ3fvzaHsNNUFZiq5BxYjOGCyoNa/0j2ZbIlbPI3DKhvbsajqbszwPgvRqDDKI9EqAYHPNiCjydSeWg==}
     dev: false
 
   /@vitejs/plugin-vue/1.2.2_@vue+compiler-sfc@3.0.11:
