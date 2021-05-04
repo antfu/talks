@@ -1,6 +1,7 @@
 ---
 layout: cover
-download: https://antfu.me/talks/2021-04-29
+download: 'https://antfu.me/talks/2021-04-29'
+highlighter: shiki
 ---
 
 # Composable Vue
@@ -21,7 +22,7 @@ Anthony Fu
 
 
 ---
-layout: intro
+layout: 'intro'
 ---
 
 # Anthony Fu
@@ -32,7 +33,7 @@ Creator of VueUse, i18n Ally and Type Challenges.<br>
 A fanatical full-time open sourceror.<br>
 </div>
 
-<div class="my-10 grid grid-cols-[40px,1fr] w-min gap-y-4" children="block my-auto">
+<div class="my-10 grid grid-cols-[40px,1fr] w-min gap-y-4">
   <ri-github-line class="opacity-50"/>
   <div><a href="https://github.com/antfu" target="_blank">antfu</a></div>
   <ri-twitter-line class="opacity-50"/>
@@ -45,6 +46,7 @@ A fanatical full-time open sourceror.<br>
 
 
 ---
+name: Sponsors
 layout: center
 ---
 
@@ -93,6 +95,7 @@ layout: center
 
   </div>
 </div>
+
 
 ---
 layout: center
@@ -562,6 +565,7 @@ Extremely useful in composable functions that take uncertain argument types.
 
 </v-clicks>
 
+
 ---
 
 # `ref` / `unref` <MarkerTips />
@@ -584,6 +588,7 @@ function useBala<T>(arg: MaybeRef<T>) {
 ```
 
 </div>
+
 
 ---
 
@@ -656,6 +661,7 @@ Establish the "Connections" first, then wait data to be filled up. The idea is s
 
 </div>
 
+
 ---
 
 # `useFetch` <Marker class="text-blue-400">Case</Marker>
@@ -716,7 +722,6 @@ export function useEventListener(target: EventTarget, name: string, fn: any) {
 <!--
 Lower the mental burden
 -->
-
 
 ---
 
@@ -873,6 +878,7 @@ export default {
 
 </v-clicks>
 </div>
+
 
 ---
 
@@ -1072,6 +1078,7 @@ export function usePassiveVModel(props, name) {
 
 </v-click>
 
+
 ---
 layout: center
 ---
@@ -1129,7 +1136,7 @@ import { ref, reactive, defineComponent } from 'vue-demi'
 # Recap
 
 - Think as "Connections"
-- One thing as a time
+- One thing at a time
 - Accepting ref as arguments
 - Returns an object of refs
 - Make functions flexible

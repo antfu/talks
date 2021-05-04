@@ -4,10 +4,13 @@
   "scripts": {
     "dev": "slidev",
     "build": "slidev build --base /2021/composable-vue/ --out ../../dist/2021/composable-vue",
-    "export": "slidev export"
+    "export": "slidev export --output ../2021-04-29-vueday-en.pdf"
   },
   "dependencies": {
-    "@slidev/cli": "^0.0.0-alpha.38",
-    "@slidev/theme-default": "^0.0.0-alpha.38"
+    "@slidev/cli": "^0.0.0-alpha.52",
+    "@slidev/theme-default": "^0.0.0-alpha.52"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.10.0"
   }
 }

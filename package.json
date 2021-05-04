@@ -4,7 +4,7 @@
     "build": "rimraf dist && pnpm -r run build"
   },
   "devDependencies": {
-    "pnpm": "^6.2.3",
+    "pnpm": "^6.2.5",
     "rimraf": "^3.0.2"
   }
 }
