@@ -7,8 +7,8 @@
     "export": "slidev export --output ../2021-04-29-vueday-en.pdf"
   },
   "dependencies": {
-    "@slidev/cli": "^0.0.0-alpha.52",
-    "@slidev/theme-default": "^0.0.0-alpha.52"
+    "@slidev/cli": "^0.4.0",
+    "@slidev/theme-default": "^0.4.0"
   },
   "devDependencies": {
     "playwright-chromium": "^1.10.0"

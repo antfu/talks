@@ -2,6 +2,16 @@
 layout: cover
 download: 'https://antfu.me/talks/2021-04-29'
 highlighter: shiki
+info: |
+  ## Composable Vue
+
+  Pattens and tips for writing good composable logic in Vue
+
+  [Anthony Fu](https://antfu.me/) at [VueDay 2021](https://2021.vueday.it/)
+
+  - [Recording](https://www.youtube.com/watch?v=IMJjP6edHd0)
+  - [Transcript](https://antfu.me/posts/composable-vue-vueday-2021)
+  - [Source code](https://github.com/antfu/talks/tree/master/2021-04-29)
 ---
 
 # Composable Vue
@@ -113,7 +123,7 @@ a brief go-through
 
 # Ref
 
-```ts{monaco}
+```ts {monaco}
 import { ref } from 'vue'
 
 let foo = 0
@@ -140,7 +150,7 @@ bar = 1 // ts-error
 
 # Reactive
 
-```ts{monaco}
+```ts {monaco}
 import { reactive } from 'vue'
 
 const foo = { prop: 0 }
@@ -200,7 +210,7 @@ watch(counter, count => {
 
 <div>
 
-```ts{monaco}
+```ts {monaco}
 import { ref, reactive } from 'vue'
 const foo = ref('bar')
 const data = reactive({ foo, id: 10 })
@@ -237,7 +247,7 @@ function unref<T>(r: Ref<T> | T): T {
 
 ### Usage
 
-```ts{monaco}
+```ts {monaco}
 import { unref, ref } from 'vue'
 
 const foo = ref('foo')
@@ -428,7 +438,7 @@ export function useTimeAgo(
 }
 ```
 
-```ts{monaco}
+```ts {monaco}
 import { computed, unref, Ref } from 'vue'
 
 type MaybeRef<T> = Ref<T> | T
@@ -455,7 +465,7 @@ Make your functions like LEGO, can be used with different components in differen
 
 ### Create a "Special" Ref
 
-```ts{monaco}
+```ts {monaco}
 import { useTitle } from '@vueuse/core'
 
 const title = useTitle()
@@ -468,7 +478,7 @@ title.value = 'Hello World'
 
 ### Binding an Existing Ref
 
-```ts{monaco}
+```ts {monaco}
 import { ref, computed } from 'vue'
 import { useTitle } from '@vueuse/core'
 
@@ -498,7 +508,7 @@ Take a look at `useTitle`'s implementation
 <div class="grid grid-cols-2 gap-4">
 <v-clicks>
 
-```ts{monaco}
+```ts {monaco}
 import { ref, watch } from 'vue'
 import { MaybeRef } from '@vueuse/core'
 
@@ -600,7 +610,7 @@ Getting benefits from both `ref` and `reactive` for authoring composable functio
 <div class="grid grid-cols-2 gap-x-4">
 <v-clicks>
 
-```ts{monaco}
+```ts {monaco}
 import { ref, reactive } from 'vue'
 
 function useMouse() {
@@ -657,7 +667,7 @@ const user_url = computed(() => data.value?.user_url)
 </div>
 <div v-click> 
 
-Establish the "Connections" first, then wait data to be filled up. The idea is similar to SWR (stale-while-revalidate)
+Establish the "Connections" first, then wait for data to be filled up. The idea is similar to SWR (stale-while-revalidate)
 
 </div>
 
@@ -701,7 +711,7 @@ We'd recommend following the same pattern for your custom composable functions.
 
 <div v-click>
 
-```ts{monaco}
+```ts {monaco}
 import { onUnmounted } from 'vue'
 
 export function useEventListener(target: EventTarget, name: string, fn: any) {
@@ -756,7 +766,7 @@ To get DOM element, you can pass a ref to it, and it will be available after com
 
 <div v-click>
 
-```ts{monaco}
+```ts {monaco}
 import { defineComponent, ref, onMounted } from 'vue'
 export default defineComponent({
   setup() {
@@ -771,7 +781,7 @@ export default defineComponent({
 })
 ```
 
-```html{monaco}
+```html {monaco}
 <template>
   <div ref="element"><!-- ... --></div>
 </template>
@@ -791,7 +801,7 @@ Use `watch` instead of `onMounted` to unify the handling for template ref change
 <div>
 <v-click>
 
-```ts{monaco}
+```ts {monaco}
 import { defineComponent, ref, watch } from 'vue'
 export default defineComponent({
   setup() {
@@ -821,7 +831,7 @@ Use the `InjectionKey<T>` helper from Vue to share types across context.
 
 <div v-click>
 
-```ts{monaco}
+```ts {monaco}
 // context.ts
 import { InjectionKey } from 'vue'
 
@@ -845,7 +855,7 @@ Import the key from the same module for `provide` and `inject`.
 <div class="grid grid-cols-2 gap-4">
 <v-clicks>
 
-```ts{monaco}
+```ts {monaco}
 // parent.vue
 import { provide } from 'vue' 
 import { injectKeyUser } from './context'
@@ -860,7 +870,7 @@ export default {
 }
 ```
 
-```ts{monaco}
+```ts {monaco}
 // child.vue
 import { inject } from 'vue' 
 import { injectKeyUser } from './context'
