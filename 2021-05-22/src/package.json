@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build --base /2021/vueconf-china/ --out ../../dist/2021/vueconf-china",
+    "export": "slidev export --dark --output ../2021-05-22-vueconf-china.pdf"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.13.1",
+    "@slidev/theme-default": "^0.7.4"
+  },
+  "devDependencies": {
+    "@slidev/types": "^0.13.1",
+    "playwright-chromium": "^1.11.1"
+  }
+}

@@ -13,6 +13,11 @@
   status = 200
 
 [[redirects]]
+  from = "/2021/vueconf-china/*"
+  to = "/2021/vueconf-china/index.html"
+  status = 200
+
+[[redirects]]
   from = "/"
   to = "https://antfu.me/posts"
   status = 302
