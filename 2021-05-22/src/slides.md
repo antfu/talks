@@ -53,6 +53,8 @@ VueUse, Slidev, Type Challenges 等项目创作者<br>
   <div><a href="https://www.zhihu.com/people/Anthony117" target="_blank">Anthony Fu</a></div>
   <ri-user-3-line class="opacity-50"/>
   <div><a href="https://antfu.me" target="_blank">antfu.me</a></div>
+  <ri-download-line class="opacity-50"/>
+  <div><a href="https://talks.antfu.me/2021/vueconf-china" target="_blank">talks.antfu.me/2021/vueconf-china</a></div>
 </div>
 
 <img src="https://antfu.me/avatar.png" class="rounded-full w-40 abs-tr mt-16 mr-12"/>
