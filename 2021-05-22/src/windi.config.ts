@@ -7,7 +7,7 @@ export default mergeWindicssConfig(
     theme: {
       extend: {
         fontFamily: {
-          mono: '"Input Mono"',
+          mono: '"Input Mono", monospace',
         },
       },
     },
