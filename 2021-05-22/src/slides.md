@@ -1,6 +1,8 @@
 ---
 download: 'https://antfu.me/talks/2021-05-22'
 highlighter: shiki
+fonts:
+  mono: Input Mono
 info: |
   ## 可组合的 Vue
 

@@ -6,11 +6,11 @@
     "export": "slidev export --dark --output ../2021-05-22-vueconf-china.pdf"
   },
   "dependencies": {
-    "@slidev/cli": "^0.13.1",
-    "@slidev/theme-default": "^0.7.4"
+    "@slidev/cli": "^0.22.1",
+    "@slidev/theme-default": "^0.19.1"
   },
   "devDependencies": {
-    "@slidev/types": "^0.13.1",
-    "playwright-chromium": "^1.11.1"
+    "@slidev/types": "^0.22.1",
+    "playwright-chromium": "^1.12.3"
   }
 }
