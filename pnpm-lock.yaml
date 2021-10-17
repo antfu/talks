@@ -5,17 +5,17 @@ importers:
   .:
     specifiers:
       '@iconify/json': ^1.1.415
-      '@slidev/cli': ^0.27.7
+      '@slidev/cli': ^0.27.8
       '@slidev/theme-default': ^0.21.0
       playwright-chromium: ^1.15.2
-      pnpm: ^6.16.1
+      pnpm: ^6.17.2
       rimraf: ^3.0.2
     devDependencies:
       '@iconify/json': 1.1.415
-      '@slidev/cli': 0.27.7_playwright-chromium@1.15.2
+      '@slidev/cli': 0.27.8_playwright-chromium@1.15.2
       '@slidev/theme-default': 0.21.0
       playwright-chromium: 1.15.2
-      pnpm: 6.16.1
+      pnpm: 6.17.2
       rimraf: 3.0.2
 
   2021-04-29/src:
@@ -132,8 +132,8 @@ packages:
       picomatch: 2.2.3
     dev: true
 
-  /@slidev/cli/0.27.7_playwright-chromium@1.15.2:
-    resolution: {integrity: sha512-lg4XhmECnDoO16wKmTOwBScg33YSAFbEEhvUvxUKWWzSru0vyglXzrkRBJtuTYoEMk06hZ+IgvyITgzyJjFO2g==}
+  /@slidev/cli/0.27.8_playwright-chromium@1.15.2:
+    resolution: {integrity: sha512-Vi3f2cNA6X299zjQ0PGx+SC+vu5Q7maWg7VZNfE1BJfZDIpYM9xSj2RNn8SrHpGl9t4DQJI3w7Zm3xYkX8hBrA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     peerDependencies:
@@ -145,9 +145,9 @@ packages:
       '@antfu/utils': 0.3.0
       '@iconify-json/carbon': 1.0.3
       '@iconify-json/ph': 1.0.1
-      '@slidev/client': 0.27.7_vite@2.6.2
-      '@slidev/parser': 0.27.7
-      '@slidev/types': 0.27.7
+      '@slidev/client': 0.27.8_vite@2.6.2
+      '@slidev/parser': 0.27.8
+      '@slidev/types': 0.27.8
       '@vitejs/plugin-vue': 1.9.2_vite@2.6.2
       '@vue/compiler-sfc': 3.2.19
       cli-progress: 3.9.1
@@ -201,13 +201,13 @@ packages:
       - webpack
     dev: true
 
-  /@slidev/client/0.27.7_vite@2.6.2:
-    resolution: {integrity: sha512-Ygwkkf8n7Wb4jwbTBxLafaEFO8tbBXW7UDrhSoJZUpO03xwvCFtEVV0WjEwg9W5qPGRMmHnQbhXePU97JZAAcQ==}
+  /@slidev/client/0.27.8_vite@2.6.2:
+    resolution: {integrity: sha512-IlVL8QbHtP3EnpCEw2N1kXwRcnDhaHHjY/ahKP189PLbyRMSRStNQiK++Vxz9TuSMOleYEEzKPSr3dNI1pIfVw==}
     engines: {node: '>=14.0.0'}
     dependencies:
       '@antfu/utils': 0.3.0
-      '@slidev/parser': 0.27.7
-      '@slidev/types': 0.27.7
+      '@slidev/parser': 0.27.8
+      '@slidev/types': 0.27.8
       '@vueuse/core': 6.5.3_vue@3.2.19
       '@vueuse/head': 0.6.0_vue@3.2.19
       '@vueuse/motion': 2.0.0-beta.4_vue@3.2.19
@@ -235,11 +235,11 @@ packages:
       - vite
     dev: true
 
-  /@slidev/parser/0.27.7:
-    resolution: {integrity: sha512-k/4kvStz86nS9KVq4966vnR8fstSM3s9A9jJ2IH0cwkU3lum/SDG0ULRvCcTcV2nqkKI9NHY5EvgLatdX1UOrQ==}
+  /@slidev/parser/0.27.8:
+    resolution: {integrity: sha512-lSJjcn0JQqnQ9jbm1yCpq6PKEsf9D/w/GXYj5blridg4iixfL6NWbrTkda2ag5Zsg8IOIqD0Iso9kP1jAxUY6A==}
     engines: {node: '>=14.0.0'}
     dependencies:
-      '@slidev/types': 0.27.7
+      '@slidev/types': 0.27.8
       js-yaml: 4.1.0
     dev: true
 
@@ -258,8 +258,8 @@ packages:
     engines: {node: '>=14.0.0'}
     dev: true
 
-  /@slidev/types/0.27.7:
-    resolution: {integrity: sha512-IXd1pr/t9mxvK6GpZ/d+A3S8l/btmK08oNMShDQwmL3EgtlkYOBEDcT2WCQmJmgkn3FADRFEhwkvZzfgSuQMlg==}
+  /@slidev/types/0.27.8:
+    resolution: {integrity: sha512-FZEGVmtt9CWf9U3P7x+KKmM64FUdTQWlGJC3VsRL6VR4dIPh4abUwMNKlb5kkrj3tz8Iw9flbTTQB/67OxXU6Q==}
     engines: {node: '>=14.0.0'}
     dev: true
 
@@ -2210,8 +2210,8 @@ packages:
     engines: {node: '>=10.13.0'}
     dev: true
 
-  /pnpm/6.16.1:
-    resolution: {integrity: sha512-oTZtaWJvvQ1V4KzpPya/BYYF90c6ICKmFYof8DAzMi0g2PEGseSVRdw/A2ov6mQJxBjHyRyYp/j42j8QOqRuKw==}
+  /pnpm/6.17.2:
+    resolution: {integrity: sha512-hEoGmkr9Gwc2QG9zeRSaRraXCcnDY+7/xr+7B2tg9EXfKBnQZblx8KCa/PZ5iVp9o9aNFC7Qg8pGcaAlsgQGrQ==}
     engines: {node: '>=12.17'}
     hasBin: true
     dev: true
