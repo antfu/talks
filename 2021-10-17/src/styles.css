@@ -1,0 +1,20 @@
+.mermaid {
+  line-height: 1.5em;
+}
+
+.dark .mermaid {
+  filter: invert(1);
+}
+
+h6 + ul {
+  @apply my-4;
+}
+
+.slidev-page-31 ul {
+  @apply pl-6 mt-2 mb-6 text-sm;
+}
+
+.slidev-page-31 .group {
+  @apply flex flex-col gap-2 p-4 my-auto;
+  @apply border-l-1 border-r-1 border-gray-400/50;
+}

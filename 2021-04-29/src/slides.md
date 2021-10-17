@@ -135,12 +135,12 @@ bar = 1 // ts-error
 
 <div v-click>
 
-### Pros
+###### Pros
 
 - More explicit, with type checking
 - Less caveats
 
-### Cons
+###### Cons
 
 - `.value`
 
@@ -162,11 +162,11 @@ bar.prop = 1
 
 <div v-click>
 
-### Pros
+###### Pros
 
 - Auto unwrapping (a.k.a `.value` free)
 
-### Cons
+###### Cons
 
 - Same as plain objects on types
 - Destructure loses reactivity
@@ -235,7 +235,7 @@ data.foo // 'bar'
 
 <div v-click>
 
-### Implementation
+###### Implementation
 
 ```ts
 function unref<T>(r: Ref<T> | T): T {
@@ -245,7 +245,7 @@ function unref<T>(r: Ref<T> | T): T {
 
 </div><div v-click>
 
-### Usage
+###### Usage
 
 ```ts {monaco}
 import { unref, ref } from 'vue'
@@ -347,9 +347,9 @@ Just the same as authoring JavaScript functions.
 
 <div />
 
-### Implementation
+###### Implementation
 
-### Usage
+###### Usage
 
 <v-clicks :every='3'>
 
@@ -463,7 +463,7 @@ Make your functions like LEGO, can be used with different components in differen
 
 <div v-click>
 
-### Create a "Special" Ref
+###### Create a "Special" Ref
 
 ```ts {monaco}
 import { useTitle } from '@vueuse/core'
@@ -476,7 +476,7 @@ title.value = 'Hello World'
 
 </div><div v-click>
 
-### Binding an Existing Ref
+###### Binding an Existing Ref
 
 ```ts {monaco}
 import { ref, computed } from 'vue'
@@ -645,7 +645,7 @@ With Composition API, we can actually turn async data into "sync"
 
 <div v-click>
 
-### Async
+###### Async
 
 ```ts
 const data = await fetch('https://api.github.com/').then(r => r.json())
@@ -656,7 +656,7 @@ const data = await fetch('https://api.github.com/').then(r => r.json())
 </div>
 <div v-click>
 
-### Composition API
+###### Composition API
 
 ```ts
 const { data } = useFetch('https://api.github.com/').json()

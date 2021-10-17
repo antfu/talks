@@ -146,9 +146,9 @@ clicks: 6
 
 <div class="grid grid-cols-2 gap-x-4 gap-y-4">
 
-### 对象式 API 存在的问题
+###### 对象式 API 存在的问题
 
-### 组合式 API 提供的能力
+###### 组合式 API 提供的能力
 
 <v-clicks at="1">
 
@@ -308,12 +308,12 @@ bar = 1 // ts-error
 
 <div class="mt-4" v-click>
 
-### Pros
+###### Pros
 
 - 显式调用，类型检查
 - 相比 Reactive 局限更少
 
-### Cons
+###### Cons
 
 - `.value`
 
@@ -335,11 +335,11 @@ bar.prop = 1
 
 <div class="mt-4" v-click>
 
-### Pros
+###### Pros
 
 - 自动 Unwrap (即不需要 `.value`)
 
-### Cons
+###### Cons
 
 - 在类型上和一般对象没有区别
 - 使用 ES6 解构会使响应性丢失
@@ -408,7 +408,7 @@ data.foo // 'bar'
 
 <div v-click>
 
-### 实现
+###### 实现
 
 ```ts
 function unref<T>(r: Ref<T> | T): T {
@@ -418,7 +418,7 @@ function unref<T>(r: Ref<T> | T): T {
 
 </div><div v-click>
 
-### 使用
+###### 使用
 
 ```ts {monaco}
 import { unref, ref } from 'vue'
@@ -440,9 +440,9 @@ unref(bar) // 'bar'
 
 <div />
 
-### 实现
+###### 实现
 
-### 用例
+###### 用例
 
 <v-clicks :every='3'>
 
@@ -553,7 +553,7 @@ export function useTimeAgo(
 
 <div v-click>
 
-### 构造一个 "特殊的" Ref
+###### 构造一个 "特殊的" Ref
 
 ```ts
 import { useTitle } from '@vueuse/core'
@@ -566,7 +566,7 @@ title.value = 'Hello World'
 
 </div><div v-click>
 
-### 绑定上一个现有的 Ref
+###### 绑定上一个现有的 Ref
 
 ```ts
 import { ref, computed } from 'vue'
@@ -735,7 +735,7 @@ mouse.x === x.value // true
 
 <div v-click>
 
-### 异步
+###### 异步
 
 ```ts
 const data = await fetch('https://api.github.com/').then(r => r.json())
@@ -746,7 +746,7 @@ const data = await fetch('https://api.github.com/').then(r => r.json())
 </div>
 <div v-click>
 
-### 组合式 API
+###### 组合式 API
 
 ```ts
 const { data } = useFetch('https://api.github.com/').json()

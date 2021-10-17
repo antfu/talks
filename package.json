@@ -4,7 +4,17 @@
     "build": "rimraf dist && pnpm -r run build"
   },
   "devDependencies": {
-    "pnpm": "^6.9.1",
+    "@iconify-json/ant-design": "^1.0.1",
+    "@iconify-json/logos": "^1.0.1",
+    "@iconify-json/ri": "^1.0.1",
+    "@iconify-json/twemoji": "^1.0.1",
+    "@iconify-json/uim": "^1.0.1",
+    "@iconify-json/bx": "^1.0.1",
+    "@iconify-json/mdi": "^1.0.1",
+    "@slidev/cli": "^0.27.7",
+    "@slidev/theme-default": "^0.21.0",
+    "playwright-chromium": "^1.15.2",
+    "pnpm": "^6.16.1",
     "rimraf": "^3.0.2"
   }
 }
