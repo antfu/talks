@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build --base /2021/vue-london/ --out ../../dist/2021/laravel-vue-london",
+    "export": "slidev export --dark --output ../2021-10-20-vue-london.pdf"
+  }
+}

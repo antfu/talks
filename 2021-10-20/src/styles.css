@@ -1,0 +1,11 @@
+.mermaid {
+  line-height: 1.5em;
+}
+
+.dark .mermaid {
+  filter: invert(1);
+}
+
+h6 + ul {
+  @apply my-4;
+}
