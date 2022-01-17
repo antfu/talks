@@ -1,0 +1,56 @@
+:root {
+  --bg-gradient: 255,255,255;
+}
+
+.slidev-layout.default {
+  background: #141414 !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-gradient: 20,20,20 !important;
+  }
+}
+
+a {
+  color: #fdd888;
+}
+
+.contributors a {
+  border: none !important;
+}
+
+ul .slidev-vclick-prior {
+  opacity: 0.6;
+}
+
+.mermaid {
+  line-height: 1.5em;
+}
+
+.dark .mermaid {
+  filter: invert(1);
+}
+
+.slidev-page-1 {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.slidev-page-1::before {
+  content: '';
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+  background-image: url("/bg.png");
+  background-repeat: repeat;
+  background-size: 60%;
+}
+
+.slidev-page-1 {
+  background:
+    radial-gradient(ellipse, rgba(var(--bg-gradient),0.9) 40%, rgba(var(--bg-gradient),0.4) 120%),
+    radial-gradient(ellipse at top, rgba(var(--bg-gradient),0.8) 20%, rgba(var(--bg-gradient),0) 100%),
+    radial-gradient(ellipse at left, rgba(var(--bg-gradient),0.5) 20%, rgba(var(--bg-gradient),0) 100%),
+    radial-gradient(ellipse at right, rgba(var(--bg-gradient),0.6) 20%, rgba(var(--bg-gradient),0) 100%);
+}

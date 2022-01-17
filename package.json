@@ -4,11 +4,11 @@
     "build": "rimraf dist && pnpm -r run build"
   },
   "devDependencies": {
-    "@iconify/json": "^1.1.415",
-    "@slidev/cli": "^0.27.8",
-    "@slidev/theme-default": "^0.21.0",
+    "@iconify/json": "^2.0.25",
+    "@slidev/cli": "^0.28.1",
+    "@slidev/theme-default": "^0.21.1",
     "playwright-chromium": "^1.15.2",
-    "pnpm": "^6.17.2",
+    "pnpm": "^6.26.1",
     "rimraf": "^3.0.2"
   }
 }
