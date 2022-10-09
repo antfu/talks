@@ -1,0 +1,9 @@
+{
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build --base /2022/vite-on-demand-dx/ --out ../../dist/2022/vite-on-demand-dx",
+    "export": "slidev export --output ../2022-10-11-vite-on-demand-dx.pdf"
+  }
+}

@@ -1,15 +1,15 @@
 {
   "private": true,
-  "packageManager": "pnpm@7.5.1",
+  "packageManager": "pnpm@7.11.0",
   "scripts": {
     "build": "rimraf dist && pnpm -r run build"
   },
   "devDependencies": {
-    "@iconify/json": "^2.1.77",
-    "@slidev/cli": "^0.34.3",
+    "@iconify/json": "^2.1.119",
+    "@slidev/cli": "^0.36.6",
     "@slidev/theme-default": "^0.21.2",
-    "playwright-chromium": "^1.23.2",
-    "pnpm": "^7.5.1",
+    "playwright-chromium": "^1.25.2",
+    "pnpm": "^7.13.3",
     "rimraf": "^3.0.2"
   }
 }
