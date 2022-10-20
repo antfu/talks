@@ -276,7 +276,7 @@ Which means:
 const foo = 123
 const bar = ref(foo)
 
-unref(foo) === unref(bar) // true
+foo === 123 // true
 ```
 
 </v-click>
