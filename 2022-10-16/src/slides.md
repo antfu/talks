@@ -273,10 +273,9 @@ function unref(input) {
 Which means:
 
 ```ts
-const foo = 123
-const bar = ref(foo)
+const foo = ref(123)
 
-foo === 123 // true
+unref(foo) === 123 // true
 ```
 
 </v-click>
