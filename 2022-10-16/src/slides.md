@@ -275,7 +275,7 @@ Which means:
 ```ts
 const foo = unref(123)
 
-unref === 123 // true
+foo === 123 // true
 ```
 
 </v-click>
