@@ -705,7 +705,7 @@ export function useEventListener(name, handler) {
 }
 ```
 
-This allows the the clean up to be called on scope dispose.
+This allows the clean up to be called on scope dispose.
 
 </v-click>
 
