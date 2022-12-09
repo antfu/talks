@@ -1,0 +1,10 @@
+/* .slidev-code {
+  font-size: 1em !important;
+  line-height: 1.4em !important;
+} */
+
+h6 {
+  text-transform: initial !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+}

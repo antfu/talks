@@ -1,0 +1,9 @@
+{
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build --base /2022/vueuse-best-practice/ --out ../../dist/2022/vueuse-best-practice",
+    "export": "slidev export --output ../2022-12-10-vueconf-china.pdf --dark"
+  }
+}
