@@ -15,6 +15,8 @@ Working at NuxtLabs.<br>
   <div><a href="https://github.com/antfu" target="_blank">antfu</a></div>
   <div i-ri-twitter-line op50 ma text-xl/>
   <div><a href="https://twitter.com/antfu7" target="_blank">antfu7</a></div>
+  <div i-ri-mastodon-line op50 ma text-xl/>
+  <div><a href="https://m.webtoo.ls/@antfu" target="_blank">antfu@webtoo.ls</a></div>
   <div i-ri-user-3-line op50 ma text-xl/>
   <div><a href="https://antfu.me" target="_blank">antfu.me</a></div>
 </div>

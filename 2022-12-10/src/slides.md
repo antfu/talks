@@ -26,12 +26,6 @@ src: '../../reuse/intro.zh.md'
 ---
 
 ---
-layout: intro
----
-
-# VueUse 是什么？
-
----
 name: VueUse
 layout: center
 ---
@@ -54,9 +48,9 @@ layout: center
   <div class="border-l border-gray-400 border-opacity-25 !all:leading-12 !all:list-none my-auto">
 
   - 同时支持 Vue 2 和 3
-  - Tree-shakeable ESM
+  - Tree-shake
+  - TypeScript
   - 支持 CDN
-  - TypeScript 支持
   - 丰富的生态系统
 
   </div>

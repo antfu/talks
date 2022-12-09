@@ -6,7 +6,7 @@ layout: 'intro'
 
 <div class="leading-8 opacity-80">
 Vue, Vite, Nuxt 核心团队成员<br>
-VueUse, Vitest, UnoCSS, Slidev 和 Type Challenges 项目作者<br>
+VueUse, Vitest, UnoCSS, Slidev 等开源项目作者<br>
 任职于 NuxtLabs<br>
 </div>
 
@@ -15,6 +15,8 @@ VueUse, Vitest, UnoCSS, Slidev 和 Type Challenges 项目作者<br>
   <div><a href="https://github.com/antfu" target="_blank">antfu</a></div>
   <div i-ri-twitter-line op50 ma text-xl/>
   <div><a href="https://twitter.com/antfu7" target="_blank">antfu7</a></div>
+  <div i-ri-mastodon-line op50 ma text-xl/>
+  <div><a href="https://m.webtoo.ls/@antfu" target="_blank">antfu@webtoo.ls</a></div>
   <div i-ri-user-3-line op50 ma text-xl/>
   <div><a href="https://antfu.me" target="_blank">antfu.me</a></div>
 </div>
