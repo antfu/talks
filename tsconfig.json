@@ -1,5 +1,10 @@
 {
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution": "node"
+  },
   "exclude": [
     "**/*.md"
-  ],
+  ]
 }

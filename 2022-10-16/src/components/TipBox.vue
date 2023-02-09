@@ -1,10 +1,12 @@
 <template>
   <div bg="emerald/5" p4 pb3 text-green rounded class="tip-box" flex="~ col gap3">
     <div text-emerald flex items-center gap-1 op80>
-      <div i-carbon-idea></div>
-      <div leading-1>Tips</div>
+      <div i-carbon-idea />
+      <div leading-1>
+        Tips
+      </div>
     </div>
-    <slot/>
+    <slot />
   </div>
 </template>
 
