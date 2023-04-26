@@ -1,20 +1,20 @@
 {
   "private": true,
-  "packageManager": "pnpm@7.26.3",
+  "packageManager": "pnpm@8.3.1",
   "scripts": {
     "build": "rimraf dist && pnpm -r run build",
     "lint": "eslint ."
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.35.1",
-    "@iconify/json": "^2.2.16",
-    "@slidev/cli": "^0.40.2",
+    "@antfu/eslint-config": "^0.38.5",
+    "@iconify/json": "^2.2.56",
+    "@slidev/cli": "^0.40.14",
     "@slidev/theme-default": "^0.21.2",
-    "eslint": "^8.33.0",
-    "playwright-chromium": "^1.30.0",
-    "pnpm": "^7.26.3",
-    "rimraf": "^4.1.2",
-    "typescript": "^4.9.5"
+    "eslint": "^8.39.0",
+    "playwright-chromium": "^1.32.3",
+    "pnpm": "^8.3.1",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.0.4"
   },
   "eslintConfig": {
     "extends": "@antfu"
