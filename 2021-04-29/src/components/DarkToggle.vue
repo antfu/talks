@@ -1,11 +1,12 @@
 <script setup lang="ts">
-import { isDark, toggleDark } from '@slidev/client/logic/dark'
+// @ts-expect-error missing types
+import { isDark, toggleDark } from '@slidev/client/logic/dark.ts'
 </script>
 
 <template>
   <button
     class="bg-primary rounded border-b-2 border-green-900 text-white text-sm px-2 pt-1.5 pb-1 inline-block !outline-none hover:bg-opacity-85"
-    @click="toggleDark"
+    @click="toggleDark()"
   >
     <div class="flex">
       <carbon:moon v-if="isDark" />
