@@ -131,7 +131,6 @@ growY: 0
 - Keep maintenance work in control
 - Don't accumulate work
 - Know what to focus on
-- Reading repetitively also cost time
 
 </v-clicks>
 
