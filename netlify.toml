@@ -1,11 +1,10 @@
 [build.environment]
-  NPM_FLAGS = "--prefix=/dev/null"
-  NODE_VERSION = "14"
+  NODE_VERSION = "20"
   PLAYWRIGHT_BROWSERS_PATH = "0"
 
 [build]
   publish = "dist"
-  command = "npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run build"
+  command = "pnpm run build"
 
 [[redirects]]
   from = "/2021/composable-vue/*"
@@ -19,5 +18,5 @@
 
 [[redirects]]
   from = "/"
-  to = "https://antfu.me/posts"
+  to = "https://antfu.me/talks"
   status = 302
