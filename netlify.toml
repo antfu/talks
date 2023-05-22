@@ -1,3 +1,4 @@
+
 [build.environment]
   NODE_VERSION = "20"
   PLAYWRIGHT_BROWSERS_PATH = "0"
@@ -5,6 +6,7 @@
 [build]
   publish = "dist"
   command = "pnpm run build"
+
 
 [[redirects]]
   from = "/2021/composable-vue/*"
@@ -14,6 +16,46 @@
 [[redirects]]
   from = "/2021/vueconf-china/*"
   to = "/2021/vueconf-china/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/2021/laravel-vue-taiwan/*"
+  to = "/2021/laravel-vue-taiwan/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/2021/vue-london/*"
+  to = "/2021/vue-london/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/2022/vue-nation/*"
+  to = "/2022/vue-nation/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/2022/vite-on-demand-dx/*"
+  to = "/2022/vite-on-demand-dx/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/2022/patterns-vueuse/*"
+  to = "/2022/patterns-vueuse/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/2022/vueuse-best-practice/*"
+  to = "/2022/vueuse-best-practice/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/2023/nuxt-devtools/*"
+  to = "/2023/nuxt-devtools/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/2023/github-notifications/*"
+  to = "/2023/github-notifications/index.html"
   status = 200
 
 [[redirects]]
