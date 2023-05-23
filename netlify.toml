@@ -59,6 +59,11 @@
   status = 200
 
 [[redirects]]
+  from = "/2023/nuxt-devtools-strasbourg/*"
+  to = "/2023/nuxt-devtools-strasbourg/index.html"
+  status = 200
+
+[[redirects]]
   from = "/"
   to = "https://antfu.me/talks"
   status = 302
