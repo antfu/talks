@@ -4,6 +4,7 @@ Slides &amp; code for my talks
 
 ###### 2023
 
+- `en` [How I Manage GitHub Notifications](./2023-05-17) - GitHub Maintainer Summit
 - `en` [Developer Experience with Nuxt](./2023-02-09) - Vue Amsterdam
 
 ###### 2022
