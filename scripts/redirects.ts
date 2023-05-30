@@ -38,6 +38,11 @@ const redirects = bases
 [[redirects]]
   from = "${base}pdf"
   to = "https://github.com/antfu/talks/blob/main/${dir}/${pdfFile}?raw=true"
+  status = 302
+
+[[redirects]]
+  from = "/${dir}/pdf"
+  to = "https://github.com/antfu/talks/blob/main/${dir}/${pdfFile}?raw=true"
   status = 302`)
     }
 
@@ -48,6 +53,11 @@ parts.push(`
   status = 302`)
 
     parts.push(`
+[[redirects]]
+  from = "${dir}"
+  to = "https://talks.antfu.me${base}"
+  status = 301
+
 [[redirects]]
   from = "${base}*"
   to = "${base}index.html"

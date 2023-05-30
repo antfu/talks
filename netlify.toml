@@ -14,9 +14,19 @@
   status = 302
 
 [[redirects]]
+  from = "/2021-04-29/pdf"
+  to = "https://github.com/antfu/talks/blob/main/2021-04-29/2021-04-29-vueday-en.pdf?raw=true"
+  status = 302
+
+[[redirects]]
   from = "/2021/composable-vue/src"
   to = "https://github.com/antfu/talks/tree/main/2021-04-29"
   status = 302
+
+[[redirects]]
+  from = "2021-04-29"
+  to = "https://talks.antfu.me/2021/composable-vue/"
+  status = 301
 
 [[redirects]]
   from = "/2021/composable-vue/*"
@@ -29,9 +39,19 @@
   status = 302
 
 [[redirects]]
+  from = "/2021-05-22/pdf"
+  to = "https://github.com/antfu/talks/blob/main/2021-05-22/2021-05-22-vueconf-china.pdf?raw=true"
+  status = 302
+
+[[redirects]]
   from = "/2021/vueconf-china/src"
   to = "https://github.com/antfu/talks/tree/main/2021-05-22"
   status = 302
+
+[[redirects]]
+  from = "2021-05-22"
+  to = "https://talks.antfu.me/2021/vueconf-china/"
+  status = 301
 
 [[redirects]]
   from = "/2021/vueconf-china/*"
@@ -44,9 +64,19 @@
   status = 302
 
 [[redirects]]
+  from = "/2021-10-17/pdf"
+  to = "https://github.com/antfu/talks/blob/main/2021-10-17/2021-10-17-laravel-vue-taiwan.pdf?raw=true"
+  status = 302
+
+[[redirects]]
   from = "/2021/laravel-vue-taiwan/src"
   to = "https://github.com/antfu/talks/tree/main/2021-10-17"
   status = 302
+
+[[redirects]]
+  from = "2021-10-17"
+  to = "https://talks.antfu.me/2021/laravel-vue-taiwan/"
+  status = 301
 
 [[redirects]]
   from = "/2021/laravel-vue-taiwan/*"
@@ -59,9 +89,19 @@
   status = 302
 
 [[redirects]]
+  from = "/2021-10-20/pdf"
+  to = "https://github.com/antfu/talks/blob/main/2021-10-20/2021-10-20-vue-london.pdf?raw=true"
+  status = 302
+
+[[redirects]]
   from = "/2021/vue-london/src"
   to = "https://github.com/antfu/talks/tree/main/2021-10-20"
   status = 302
+
+[[redirects]]
+  from = "2021-10-20"
+  to = "https://talks.antfu.me/2021/vue-london/"
+  status = 301
 
 [[redirects]]
   from = "/2021/vue-london/*"
@@ -74,9 +114,19 @@
   status = 302
 
 [[redirects]]
+  from = "/2022-01-26/pdf"
+  to = "https://github.com/antfu/talks/blob/main/2022-01-26/2022-01-26-vue-nation.pdf?raw=true"
+  status = 302
+
+[[redirects]]
   from = "/2022/vue-nation/src"
   to = "https://github.com/antfu/talks/tree/main/2022-01-26"
   status = 302
+
+[[redirects]]
+  from = "2022-01-26"
+  to = "https://talks.antfu.me/2022/vue-nation/"
+  status = 301
 
 [[redirects]]
   from = "/2022/vue-nation/*"
@@ -89,9 +139,19 @@
   status = 302
 
 [[redirects]]
+  from = "/2022-10-11/pdf"
+  to = "https://github.com/antfu/talks/blob/main/2022-10-11/2022-10-11-vite-on-demand-dx.pdf?raw=true"
+  status = 302
+
+[[redirects]]
   from = "/2022/vite-on-demand-dx/src"
   to = "https://github.com/antfu/talks/tree/main/2022-10-11"
   status = 302
+
+[[redirects]]
+  from = "2022-10-11"
+  to = "https://talks.antfu.me/2022/vite-on-demand-dx/"
+  status = 301
 
 [[redirects]]
   from = "/2022/vite-on-demand-dx/*"
@@ -104,9 +164,19 @@
   status = 302
 
 [[redirects]]
+  from = "/2022-10-16/pdf"
+  to = "https://github.com/antfu/talks/blob/main/2022-10-16/2022-10-16-vue-fes-japan-en.pdf?raw=true"
+  status = 302
+
+[[redirects]]
   from = "/2022/patterns-vueuse/src"
   to = "https://github.com/antfu/talks/tree/main/2022-10-16"
   status = 302
+
+[[redirects]]
+  from = "2022-10-16"
+  to = "https://talks.antfu.me/2022/patterns-vueuse/"
+  status = 301
 
 [[redirects]]
   from = "/2022/patterns-vueuse/*"
@@ -119,9 +189,19 @@
   status = 302
 
 [[redirects]]
+  from = "/2022-12-10/pdf"
+  to = "https://github.com/antfu/talks/blob/main/2022-12-10/2022-12-10-vueconf-china.pdf?raw=true"
+  status = 302
+
+[[redirects]]
   from = "/2022/vueuse-best-practice/src"
   to = "https://github.com/antfu/talks/tree/main/2022-12-10"
   status = 302
+
+[[redirects]]
+  from = "2022-12-10"
+  to = "https://talks.antfu.me/2022/vueuse-best-practice/"
+  status = 301
 
 [[redirects]]
   from = "/2022/vueuse-best-practice/*"
@@ -134,9 +214,19 @@
   status = 302
 
 [[redirects]]
+  from = "/2023-02-09/pdf"
+  to = "https://github.com/antfu/talks/blob/main/2023-02-09/2023-02-09-nuxt-devtools-en.pdf?raw=true"
+  status = 302
+
+[[redirects]]
   from = "/2023/nuxt-devtools/src"
   to = "https://github.com/antfu/talks/tree/main/2023-02-09"
   status = 302
+
+[[redirects]]
+  from = "2023-02-09"
+  to = "https://talks.antfu.me/2023/nuxt-devtools/"
+  status = 301
 
 [[redirects]]
   from = "/2023/nuxt-devtools/*"
@@ -149,9 +239,19 @@
   status = 302
 
 [[redirects]]
+  from = "/2023-05-17/pdf"
+  to = "https://github.com/antfu/talks/blob/main/2023-05-17/2023-05-17-github-notifications-en.pdf?raw=true"
+  status = 302
+
+[[redirects]]
   from = "/2023/github-notifications/src"
   to = "https://github.com/antfu/talks/tree/main/2023-05-17"
   status = 302
+
+[[redirects]]
+  from = "2023-05-17"
+  to = "https://talks.antfu.me/2023/github-notifications/"
+  status = 301
 
 [[redirects]]
   from = "/2023/github-notifications/*"
@@ -164,9 +264,19 @@
   status = 302
 
 [[redirects]]
+  from = "/2023-05-25/pdf"
+  to = "https://github.com/antfu/talks/blob/main/2023-05-25/2023-05-25-nuxt-devtools-strasbourg-en.pdf?raw=true"
+  status = 302
+
+[[redirects]]
   from = "/2023/nuxt-devtools-strasbourg/src"
   to = "https://github.com/antfu/talks/tree/main/2023-05-25"
   status = 302
+
+[[redirects]]
+  from = "2023-05-25"
+  to = "https://talks.antfu.me/2023/nuxt-devtools-strasbourg/"
+  status = 301
 
 [[redirects]]
   from = "/2023/nuxt-devtools-strasbourg/*"
