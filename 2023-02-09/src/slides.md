@@ -272,7 +272,7 @@ growX: 50
 growY: 10
 ---
 
-<div v-click transition-all duration-500 :class="$slidev.nav.clicks === 0 ? 'op0' : $slidev.nav.clicks > 1 ? 'op50 text-2xl' : 'translate-y-10 text-4xl'">Introducing</div>
+<div v-click transition-all duration-500 :class="$clicks === 0 ? 'op0' : $clicks > 1 ? 'op50 text-2xl' : 'translate-y-10 text-4xl'">Introducing</div>
 
 <div class="nuxt-devtools-logo" v-click>
   <NuxtDevTools h-20/>

@@ -155,7 +155,7 @@ export default {
 }
 ```
 
-<div v-show="$slidev.nav.clicks >= 1">
+<div v-show="$clicks >= 1">
 
 ```js {*|*|3|3,11} {at:0}
 import { ref, onUnmounted } from 'vue'
@@ -190,7 +190,7 @@ clicks: 2
 <div grid="~ cols-2 gap-x-2">
 
 <div>
-<div v-show="$slidev.nav.clicks < 2">
+<div v-show="$clicks < 2">
 
 ```js
 import { ref, onUnmounted } from 'vue'
@@ -214,7 +214,7 @@ export default {
 ```
 
 </div>
-<div v-show="$slidev.nav.clicks >= 2">
+<div v-show="$clicks >= 2">
 
 ```js
 import { useDark } from './useDark'
@@ -231,7 +231,7 @@ export default {
 </div>
 </div>
 
-<div v-show="$slidev.nav.clicks >= 1">
+<div v-show="$clicks >= 1">
 
 ```ts
 import { ref, onUnmounted } from 'vue'
@@ -289,7 +289,7 @@ export default {
 </script>
 ```
 
-<div v-show="$slidev.nav.clicks > 1">
+<div v-show="$clicks > 1">
 
 ```html
 <script setup>
@@ -352,7 +352,7 @@ button {
 </style>
 ```
 
-<div v-show="$slidev.nav.clicks >= 1">
+<div v-show="$clicks >= 1">
 
 ```html {*|*|6,12} {at: 0}
 <template>
@@ -627,7 +627,7 @@ export default {
 
 <div>
 
-<div v-if="$slidev.nav.clicks >= 1">
+<div v-if="$clicks >= 1">
 
 ###### To Use a Component
 
@@ -639,7 +639,7 @@ export default {
 
 </v-clicks>
 </div>
-<div v-if="$slidev.nav.clicks >= 4">
+<div v-if="$clicks >= 4">
 
 ###### The Problem
 
@@ -1016,7 +1016,7 @@ disabled: true
 
 </div>
 
-<div v-if="$slidev.nav.clicks == 0">
+<div v-if="$clicks == 0">
 
 ```html
 <script setup>

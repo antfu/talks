@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises'
 import { dirname, resolve } from 'node:path'
+import process from 'node:process'
 import fg from 'fast-glob'
 
 const packageFiles = (await fg('*/src/package.json', {
@@ -11,7 +12,7 @@ const bases = (await Promise.all(
     const talkRoot = dirname(dirname(file))
     const json = JSON.parse(await fs.readFile(file, 'utf-8'))
     const pdfFile = (await fg('*.pdf', {
-      cwd: resolve(process.cwd(),talkRoot),
+      cwd: resolve(process.cwd(), talkRoot),
       onlyFiles: true,
     }))[0]
     const command = json.scripts?.build
@@ -46,7 +47,7 @@ const redirects = bases
   status = 302`)
     }
 
-parts.push(`
+    parts.push(`
 [[redirects]]
   from = "${base}src"
   to = "https://github.com/antfu/talks/tree/main/${dir}"

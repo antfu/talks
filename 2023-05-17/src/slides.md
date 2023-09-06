@@ -90,7 +90,7 @@ growSize: 1.5
 clicks: 4
 ---
 
-<h1 class="text-5xl!" v-click="1" w-200>I <span transition-all duration-300 :class="$slidev.nav.clicks === 4 ? 'line-through op50' : ''">do</span> <span v-click="4">try to</span></h1>
+<h1 class="text-5xl!" v-click="1" w-200>I <span transition-all duration-300 :class="$clicks === 4 ? 'line-through op50' : ''">do</span> <span v-click="4">try to</span></h1>
 <h1 class="text-5xl! font-bold" v-click="2">Inbox-Zero</h1>
 <h1 class="text-5xl!" v-click="3">Everyday</h1>
 
@@ -161,9 +161,9 @@ growSize: 1.5
 clicks: 1
 ---
 
-<h1 :class="$slidev.nav.clicks === 1 ? 'line-through op50!' : ''"><span text-transparent text-8xl bg-clip-text bg-gradient-to-r from-rose-400 to-pink-600>TURN OFF</span> Notifications</h1>
+<h1 :class="$clicks === 1 ? 'line-through op50!' : ''"><span text-transparent text-8xl bg-clip-text bg-gradient-to-r from-rose-400 to-pink-600>TURN OFF</span> Notifications</h1>
 
-<p :class="$slidev.nav.clicks === 1 ? 'line-through op20!' : ''">and call it a day</p>
+<p :class="$clicks === 1 ? 'line-through op20!' : ''">and call it a day</p>
 
 ---
 layout: fact
@@ -213,7 +213,7 @@ clicks: 2
 ---
 
 <img absolute left-10 top-10 v-click="0" src="/notifications-raw.png" w-150 mix-blend-plus-lighter />
-<Arrow x1="600" y1="200" x2="550" y2="75" text-lime shadow v-if="$slidev.nav.clicks === 1" />
+<Arrow x1="600" y1="200" x2="550" y2="75" text-lime shadow v-if="$clicks === 1" />
 <img absolute left-10 top-10 v-click="2" src="/notifications-grouped.png" w-150 />
 
 

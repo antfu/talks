@@ -71,7 +71,7 @@ clicks: 1
 layout: center
 ---
 
-<img src="/windows-download.jpg" transition-all :class="$slidev.nav.clicks ? 'blur-5 filter-brightness-40' : ''" />
+<img src="/windows-download.jpg" transition-all :class="$clicks ? 'blur-5 filter-brightness-40' : ''" />
 <img src="/streaming-services.svg" absolute top-50 left-60 v-click="1" />
 
 ---
