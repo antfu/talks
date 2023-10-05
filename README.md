@@ -4,6 +4,7 @@ Slides &amp; code for my talks, using [Slidev](https://sli.dev).
 
 ###### 2023
 
+- `en` [Anthony's Roads to Open Source - The Set Theory](./2023-10-05) - ViteConf
 - `en` [Developer Experience with Nuxt DevTools](./2023-05-25) - StrasbourgJS
 - `en` [How I Manage GitHub Notifications](./2023-05-17) - GitHub Maintainer Summit
 - `en` [Developer Experience with Nuxt](./2023-02-09) - Vue Amsterdam
