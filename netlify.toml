@@ -284,6 +284,31 @@
   status = 200
 
 [[redirects]]
+  from = "/2023/viteconf/pdf"
+  to = "https://github.com/antfu/talks/blob/main/2023-10-05/2023-10-05-viteconf-en.pdf?raw=true"
+  status = 302
+
+[[redirects]]
+  from = "/2023-10-05/pdf"
+  to = "https://github.com/antfu/talks/blob/main/2023-10-05/2023-10-05-viteconf-en.pdf?raw=true"
+  status = 302
+
+[[redirects]]
+  from = "/2023/viteconf/src"
+  to = "https://github.com/antfu/talks/tree/main/2023-10-05"
+  status = 302
+
+[[redirects]]
+  from = "2023-10-05"
+  to = "https://talks.antfu.me/2023/viteconf/"
+  status = 301
+
+[[redirects]]
+  from = "/2023/viteconf/*"
+  to = "/2023/viteconf/index.html"
+  status = 200
+
+[[redirects]]
   from = "/"
   to = "https://antfu.me/talks"
   status = 302
