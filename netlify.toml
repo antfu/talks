@@ -309,6 +309,31 @@
   status = 200
 
 [[redirects]]
+  from = "/2023/nuxt-devtools-next/pdf"
+  to = "https://github.com/antfu/talks/blob/main/2023-10-18/2023-10-18-nuxt-devtools-next-en.pdf?raw=true"
+  status = 302
+
+[[redirects]]
+  from = "/2023-10-18/pdf"
+  to = "https://github.com/antfu/talks/blob/main/2023-10-18/2023-10-18-nuxt-devtools-next-en.pdf?raw=true"
+  status = 302
+
+[[redirects]]
+  from = "/2023/nuxt-devtools-next/src"
+  to = "https://github.com/antfu/talks/tree/main/2023-10-18"
+  status = 302
+
+[[redirects]]
+  from = "2023-10-18"
+  to = "https://talks.antfu.me/2023/nuxt-devtools-next/"
+  status = 301
+
+[[redirects]]
+  from = "/2023/nuxt-devtools-next/*"
+  to = "/2023/nuxt-devtools-next/index.html"
+  status = 200
+
+[[redirects]]
   from = "/"
   to = "https://antfu.me/talks"
   status = 302

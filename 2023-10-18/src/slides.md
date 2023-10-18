@@ -390,7 +390,7 @@ growY: 0
 preload: false
 ---
 
-# Split View
+# Split Screens
 
 <VideoDemo src="/devtools/0-split-view.mp4" mt--2 />
 
@@ -402,6 +402,10 @@ growY: 100
 
 <FeatureList />
 
+<!--
+That's only a part of features we provide. We are happy to hear if any of them have ever make your more productive, or make your work more enjoyable. We are also eager to hear if you have any feedbacks or suggestions to help us even further.
+-->
+
 ---
 growX: 100
 growY: 50
@@ -412,6 +416,10 @@ growY: 50
 Have Integrated Nuxt DevTools already
 
 <ModulesIcons/>
+
+<!--
+We are excited to see that there are already many modules have integrated Nuxt DevTools already, even though it's still in beta. We are super grateful for having such a supportive community.
+-->
 
 ---
 
@@ -518,7 +526,7 @@ class: ml-30 mt-5
 </div>
 
 <!--
-Nuxt DevTools 1.0 serves as a milestone. There are no many new features in 1.0, but it's more like a statement indicates that Nuxt DevTools' approach is mature enough. We are marking the Modules API as stable, so that module authors could provide the integrations more confidently. We also did some UI improvements since the previous versions. And most importantly, Nuxt DevTools will be ship with Nuxt 3.8 and general available to all Nuxt users. By doing that, we want to make sure the onboarding experience as seamless as possible. Meaning that by default, you won't see any visual different in you app. The DevTools is hidden to minimize the distraction. Instead, we will print an instrution in your terminal telling you that you can press a shortcut to enable it as you want. Making the opt-in as easy as possible.
+Nuxt DevTools 1.0 serves as a milestone. There are no many new features in 1.0, but it's more like a statement indicates that Nuxt DevTools' approach is mature enough. We are marking the Modules API as stable, so that module authors could provide the integrations more confidently. We also did some UI improvements since the previous versions. And most importantly, Nuxt DevTools will be ship with Nuxt 3.8 and general available to all Nuxt users. By doing that, we want to make sure the onboarding experience as seamless as possible. Meaning that by default, you won't see any visual different in you app. The DevTools will be hidden to minimize the distraction. Instead, we will print an instrution in your terminal telling you that you can press a shortcut to enable it as you want. Making the opt-in as easy as possible.
 -->
  
 ---
@@ -530,13 +538,13 @@ growY: 0
 <h1 flex="~ gap-2">
   <NuxtDevTools h-8/>
   <span font-bold>1.0</span>
-  <span v-click>released Today</span>
+  <span v-click>released NOW</span>
 </h1>
 
 <div v-click op60 text-2xl mt--3>And will be shipped by default in Nuxt 3.8 soon</div>
 
 <!--
-So that said, Nuxt DevTools will be released later today, and it will be shipped by default in Nuxt 3.8 very soon.
+So that said, Nuxt DevTools 1.0 will be released now, and it will be shipped by default in Nuxt 3.8 very soon.
 -->
 
 ---
@@ -566,7 +574,7 @@ The first is that we are working on a Nuxt Accessibility module, provide accessi
 
 And the next is the Pinia playground, something that has been requested for a long time. We will provide a playground for you to inspect and play with the states in your Pinia store.
 
-We are also working on Vue team to experiment the reactivity tracking in Vue. Including features like Render Tree and Props Editor. Our plan is to unify Nuxt DevTools and Vue DevTools to have all the things in one place.
+We are also working with Vue team to experiment the reactivity tracking in Vue. Including features like Render Tree and Props Editor. Our plan is to unify Nuxt DevTools and Vue DevTools to have all the things in one place.
 
 And lastly, we came up an idea called DevTools Kit, a shared infrastructures and conventions for building devtools. Let me explain a bit more about it.
 -->
@@ -580,7 +588,9 @@ clicks: 20
 <DevToolsKit />
 
 <!--
-DevTools Kit is currently just an idea and we are still brainstroming it. But here that me share what we imagine it could be. We see that each feature provide by Nuxt DevTools have each own scope, some are Nuxt specific, some are Vue specific, some are more like general Web Developement. We think in the best world, each feature could be modular, composable and collabrative.
+DevTools Kit is currently just an idea and we are still brainstroming. But here that me share what we imagine it could be.
+
+We see that each feature provided by Nuxt DevTools have each own scope, some are Nuxt specific, some are Vue specific, some are more about general Web Developement. We think in the best world, each feature could be modular, composable and collabrative.
 
 For example, we could have general features for Web, such as SEO tools, editor integrations, accessibility, etc.
 And then, we could have Vite specific features, such as Bundle Analyzer, Transform Inspector, etc.
@@ -591,12 +601,13 @@ Imagine we might able to integrate React's DevTools, state management. Or routes
 
 Other than frameworks and bundlers, we could have other integrations like Vitest, UnoCSS, Storybook, Histories and many many more.
 
-With the whole picture, we could found the Nuxt DevTools, is actually the composition of different features here.
-With a bit limited scope, excluding Nuxt specific features, we will have Vue DevTools. Similarly, one day we might see a React DevTools sharing the majority of the features here, a Svelte DevTools, a Solid DevTools, a Qwik DevTools, or even Morden.js DevTools that aren't built on top of Vite.
+With the whole picture, we could found the Nuxt DevTools, is actually the composition of different features here. Nuxt is a Vue meta framework, so we could have all Vue features adding Nuxt specific features.
+
+With a bit limited scope, excluding Nuxt features, we will have Vue DevTools. Similarly, one day we might see a React DevTools coming, sharing the majority of the common features here, and maybe a Svelte DevTools, a Solid DevTools, a Qwik DevTools, or even Morden.js DevTools that aren't built on top of Vite.
 
 In that regards, maybe you can pick what you need a compose your own DevTools?
 
-So, that's our vision, and indeed there are quite some challenges to make it happen, we will see how far we could go. Stay tuned!
+So, that's our vision, each feature could share and collabrate across different frameworks and benefit to all frameworks. Indeed there are quite some challenges to make it happen, we will see how far we could go. Stay tuned!
 -->
 
 ---
