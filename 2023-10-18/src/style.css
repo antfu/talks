@@ -1,0 +1,45 @@
+/* .slidev-code {
+  font-size: 1em !important;
+  line-height: 1.4em !important;
+} */
+
+h6 {
+  text-transform: initial !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+}
+
+.dark #slide-content {
+  background-color: #020420 !important;
+}
+
+/* Transitions */
+.slidev-vclick-target {
+  transition: opacity 400ms ease;
+}
+
+.slidev-vclick-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* DevTools Logo Animation */
+.springing.slidev-vclick-target {
+  transition: all 600ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition-delay: 200ms;
+}
+.springing.slidev-vclick-hidden {
+  transform: scale(0.2);
+}
+
+iframe {
+  background: black;
+}
+
+html.dark {
+  --prism-background: #282b4890;
+}
+
+.slidev-layout a:has(> code) {
+  border: 0;
+}

@@ -5,5 +5,5 @@ import '@slidev/cli'
 export default defineConfig({
   plugins: [
     Inspect(),
-  ]
+  ],
 })
