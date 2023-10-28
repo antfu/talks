@@ -11,7 +11,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^1.0.0-beta.29",
     "@iconify/json": "^2.2.134",
-    "@slidev/cli": "^0.43.11",
+    "@slidev/cli": "^0.43.12",
     "@slidev/theme-default": "^0.21.2",
     "@types/node": "^20.8.9",
     "@types/prompts": "^2.4.7",

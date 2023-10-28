@@ -13,7 +13,15 @@ growSize: 1.5
 ![](/af-logo-animated.svg){.w-30.mt--10.mb-5}
 
 <!--
-日本の皆さんこんにちは。ここに いられて とても うれしい です。主催者と皆さんにありがとうございます。私の日本語はあまり上手ではありません。So I'd like to switch to English, please bear with me. And thanks to the translators working hard doing the translation for me.
+日本の皆さんこんにちは。ここに いられて とても うれしい です。
+
+主催者と皆さんにありがとうございます。
+
+私の日本語はあまり上手ではありません。
+
+So I'd like to switch to English, please bear with me. And thanks to the translators working hard doing the translation for me.
+ 
+お疲れ様です。
 -->
 
 ---
@@ -32,7 +40,11 @@ layout: cover
 </div>
 
 <!--
-So, it's my pleasure to be here. And today my topic is the The Set Theory. 日本語で言うと 集合論だと 思います。I know it's a bit confusion, I'll explain more later.
+So, it's my pleasure to be here. And today my topic is the The Set Theory. 
+
+日本語で言うと 集合論だと 思います。
+
+I know this title sounds a bit confusion, I'll explain more later.
 -->
 
 ---
@@ -152,7 +164,7 @@ growY: 50
 <!--
 The first example I am going to show you is actually my first open source project back in 2019.
 
-The repo name is call `vscode-vue-i18n-ally`. It's a VS Code extension for helping Vue developers to work with i18n, or so call internationallization, like preview the translations in code, or manage keys for each language, etc.
+The repo name is call `vscode-vue-i18n-ally`. It's a VS Code extension for helping Vue developers to work with i18n, or so call internationalization, like preview the translations in code, or manage keys for each language, etc.
 -->
 
 ---
@@ -178,6 +190,10 @@ class: text-center
 
 <!--
 And just a fun fact, that Kazupon san was actually the one who gave the first star to this project.
+
+このスターは、私がオープンソースの旅 を続けることを 大いに <ruby>励<rt>はげ</rt></ruby> まして くれました。
+
+どうもありがとうございます。
 -->
 
 ---
