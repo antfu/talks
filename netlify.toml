@@ -334,6 +334,31 @@
   status = 200
 
 [[redirects]]
+  from = "/2023/vuefesjapan/pdf"
+  to = "https://github.com/antfu/talks/blob/main/2023-10-28/2023-10-28-vue-fes-japan-en.pdf?raw=true"
+  status = 302
+
+[[redirects]]
+  from = "/2023-10-28/pdf"
+  to = "https://github.com/antfu/talks/blob/main/2023-10-28/2023-10-28-vue-fes-japan-en.pdf?raw=true"
+  status = 302
+
+[[redirects]]
+  from = "/2023/vuefesjapan/src"
+  to = "https://github.com/antfu/talks/tree/main/2023-10-28"
+  status = 302
+
+[[redirects]]
+  from = "2023-10-28"
+  to = "https://talks.antfu.me/2023/vuefesjapan/"
+  status = 301
+
+[[redirects]]
+  from = "/2023/vuefesjapan/*"
+  to = "/2023/vuefesjapan/index.html"
+  status = 200
+
+[[redirects]]
   from = "/"
   to = "https://antfu.me/talks"
   status = 302
