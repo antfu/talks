@@ -39,6 +39,8 @@ onActivated(() => {
       }"
     >
       <img v-for="url in line" :key="url" :src="url" h-18 max-w-25 object-contain>
+      <img v-for="url in line" :key="url + 1" :src="url" h-18 max-w-25 object-contain>
+      <img v-for="url in line" :key="url + 2" :src="url" h-18 max-w-25 object-contain>
     </div>
   </div>
 </template>

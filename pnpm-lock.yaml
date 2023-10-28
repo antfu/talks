@@ -15,8 +15,8 @@ importers:
         specifier: ^2.2.134
         version: 2.2.134
       '@slidev/cli':
-        specifier: ^0.43.10
-        version: 0.43.10(@types/markdown-it@13.0.1)(@types/node@20.8.9)(playwright-chromium@1.39.0)(postcss@8.4.31)(typescript@5.2.2)
+        specifier: ^0.43.11
+        version: 0.43.11(@types/markdown-it@13.0.1)(@types/node@20.8.9)(playwright-chromium@1.39.0)(postcss@8.4.31)(typescript@5.2.2)
       '@slidev/theme-default':
         specifier: ^0.21.2
         version: 0.21.2
@@ -42,8 +42,8 @@ importers:
         specifier: ^1.39.0
         version: 1.39.0
       pnpm:
-        specifier: ^8.9.2
-        version: 8.9.2
+        specifier: ^8.10.0
+        version: 8.10.0
       prompts:
         specifier: ^2.4.2
         version: 2.4.2
@@ -995,8 +995,8 @@ packages:
     engines: {node: '>=14.16'}
     dev: true
 
-  /@slidev/cli@0.43.10(@types/markdown-it@13.0.1)(@types/node@20.8.9)(playwright-chromium@1.39.0)(postcss@8.4.31)(typescript@5.2.2):
-    resolution: {integrity: sha512-yZCjtX0dNGVrihQGAUUUhVGeDqnylVPoBrtDpKI1d5zXXscwdDe9nmKNV7FuDnH3aGBTV54Qqy+y5wjQL8wKLg==}
+  /@slidev/cli@0.43.11(@types/markdown-it@13.0.1)(@types/node@20.8.9)(playwright-chromium@1.39.0)(postcss@8.4.31)(typescript@5.2.2):
+    resolution: {integrity: sha512-VKU/DM0HWTvta6Kq40pHRK3qwlxnfxP/xfN61sA2ItGzrQ2Q/UNbCnMBuNqznfUJBFr5DyNX2PhzZqgixlzFNg==}
     engines: {node: '>=18.0.0'}
     hasBin: true
     peerDependencies:
@@ -1011,9 +1011,9 @@ packages:
       '@iconify-json/ph': 1.1.6
       '@lillallol/outline-pdf': 4.0.0
       '@mrdrogdrog/optional': 1.2.1
-      '@slidev/client': 0.43.10(postcss@8.4.31)(typescript@5.2.2)(vite@4.5.0)
-      '@slidev/parser': 0.43.10
-      '@slidev/types': 0.43.10
+      '@slidev/client': 0.43.11(postcss@8.4.31)(typescript@5.2.2)(vite@4.5.0)
+      '@slidev/parser': 0.43.11
+      '@slidev/types': 0.43.11
       '@unocss/extractor-mdc': 0.57.1
       '@unocss/reset': 0.57.1
       '@vitejs/plugin-vue': 4.4.0(vite@4.5.0)(vue@3.3.7)
@@ -1092,13 +1092,13 @@ packages:
       - vue-template-es2015-compiler
     dev: true
 
-  /@slidev/client@0.43.10(postcss@8.4.31)(typescript@5.2.2)(vite@4.5.0):
-    resolution: {integrity: sha512-cFCJ6Hgb2Ee9oPOB4tIWSQ7iPjSNYBJZLeFLGiNmpfnBAakQgdcwXegA8CShoh2Lf3hPjz2Ygta9gq2OHtFrDQ==}
+  /@slidev/client@0.43.11(postcss@8.4.31)(typescript@5.2.2)(vite@4.5.0):
+    resolution: {integrity: sha512-shoW1x+fPZjDf6ftsaKl6Ou6E3HgUghzPKAJKdnrnIAwl34ACmimz3tjPPa1GrzT+ill1PEvC9V5a4++UJ3Jnw==}
     engines: {node: '>=18.0.0'}
     dependencies:
       '@antfu/utils': 0.7.6
-      '@slidev/parser': 0.43.10
-      '@slidev/types': 0.43.10
+      '@slidev/parser': 0.43.11
+      '@slidev/types': 0.43.11
       '@unocss/reset': 0.57.1
       '@vueuse/core': 10.5.0(vue@3.3.7)
       '@vueuse/head': 2.0.0(vue@3.3.7)
@@ -1134,11 +1134,11 @@ packages:
       - vite
     dev: true
 
-  /@slidev/parser@0.43.10:
-    resolution: {integrity: sha512-mrNWwMz3fYiYGzkc46vj2WoQ7nd38vzxlIg19/Yv72EZM6Mg+juDe0AQDRU0TB1zfr1boCmUakSfBFCJgpBUWA==}
+  /@slidev/parser@0.43.11:
+    resolution: {integrity: sha512-7WdQa2Jiv7j7AevhmzdKK6j484z/rAS+BBZ1mt/bHiO+dC8DfDjoq3CCtFpXJRt0FVCrNgmjFctyCQmELRx/CQ==}
     engines: {node: '>=18.0.0'}
     dependencies:
-      '@slidev/types': 0.43.10
+      '@slidev/types': 0.43.11
       js-yaml: 4.1.0
     dev: true
 
@@ -1157,8 +1157,8 @@ packages:
     engines: {node: '>=14.0.0'}
     dev: true
 
-  /@slidev/types@0.43.10:
-    resolution: {integrity: sha512-shxmzyd9wjUuE21gbpoMBIMAt5WCpUlM/g4KDNmrV7HF/oZIllu+trzJe0eerLvwSukkWvLdP/LVbUXzG7q6jA==}
+  /@slidev/types@0.43.11:
+    resolution: {integrity: sha512-CYaQZZf1jD6J0cGfhw5GcLViGXI3g23Hw2GmWXar9/j8O1+I0vV+HiHyFOw370K4WKwAwBnZkN/92imOTAEVNw==}
     engines: {node: '>=18.0.0'}
     dev: true
 
@@ -5833,8 +5833,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /pnpm@8.9.2:
-    resolution: {integrity: sha512-udNf6RsqWFTa3EMDSj57LmdfpLVuIOjgnvB4+lU8GPiu1EBR57Nui43UNfl+sMRMT/O0T8fG+n0h4frBe75mHg==}
+  /pnpm@8.10.0:
+    resolution: {integrity: sha512-nCy4Pyts9qJdjFgwC/mRl8fvO+hM8+dm8pBUtAuDtC+Kq6b8wxSp7PJ8APfOgKdXu0xgiADnrb4tKdxccFb1vg==}
     engines: {node: '>=16.14'}
     hasBin: true
     dev: true

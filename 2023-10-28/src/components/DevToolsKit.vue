@@ -15,7 +15,7 @@ const isSvelte = computed(() => $clicks.value === PRESENT_START + 3)
 const isSolid = computed(() => $clicks.value === PRESENT_START + 4)
 const isQwik = computed(() => $clicks.value === PRESENT_START + 5)
 const isModernJS = computed(() => $clicks.value === PRESENT_START + 6)
-const isYours = computed(() => $clicks.value === PRESENT_START + 7)
+const isYours = computed(() => $clicks.value >= PRESENT_START + 7)
 
 const isFaded = computed(() => PRESENT_START <= $clicks.value && $clicks.value <= PRESENT_START + 6)
 </script>
@@ -192,7 +192,7 @@ const isFaded = computed(() => PRESENT_START <= $clicks.value && $clicks.value <
     <DevToolsModule
       v-after icon="i-logos-storybook-icon" name="Storybook" theme="pink"
     />
-    <DevToolsModule v-after name="Historie" theme="green">
+    <DevToolsModule v-after name="Histoire" theme="green">
       <img src="/histoire.svg" h-1.7em>
     </DevToolsModule>
     <DevToolsModule

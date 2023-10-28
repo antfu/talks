@@ -12,6 +12,10 @@ growSize: 1.5
 
 ![](/af-logo-animated.svg){.w-30.mt--10.mb-5}
 
+<!--
+日本の皆さんこんにちは。ここに いられて とても うれしい です。主催者と皆さんにありがとうございます。私の日本語はあまり上手ではありません。So I'd like to switch to English, please bear with me. And thanks to the translators working hard doing the translation for me.
+-->
+
 ---
 layout: cover
 ---
@@ -26,6 +30,10 @@ layout: cover
   <img src="/vue-fes-japan.svg" h-7 alt="Vue Fes Japan">
   <div text-xs opacity-75 mt--4>Oct. 28th 2023</div>
 </div>
+
+<!--
+So, it's my pleasure to be here. And today my topic is the The Set Theory. 日本語で言うと 集合論だと 思います。I know it's a bit confusion, I'll explain more later.
+-->
 
 ---
 layout: intro
@@ -68,7 +76,7 @@ Anthony's{.op50.text-2xl}
 <h2 important-text-5xl important-mt-0>Roads to Open Source<sup op50 v-click>1/n</sup></h2>
 
 <!--
-As someone who have been working on open source for a while and made a living, I have to say that open Source is so much fun and rewarding. I believe many of you wanted to contribute to open source, or already doing so. However, there are so many factors that affects that if a open source project would become popular, or "successful" -- depends on how you define it. For example, the quality of the code, the documentation, the community, the marketing, and so on. All of them are important and related to each other. There isn't really a golden rule to make a open source project successful.
+As someone who have been working on open source for a while and made a living, I have to say that open Source is so much fun and rewarding. I believe many of you also wanted to contribute to open source, or already doing so. However, there are so many factors that affects that if a open source project would become popular, or "successful" -- depends on how you define it. For example, the quality of the code, the documentation, the community, the marketing, and so on. All of them are important and related to each other. There isn't really a golden rule to make a open source project successful.
 
 So for today's topic, I'd like to share some of my experience and ideas on creating and maintaining open source projects, combining with some observations that I have learned from the community. Hopefully it can help you start your own open source journey, or find some new ideas to improve your existing projects. This is going to a series of talks, and today we will start the very first one of them.
 -->
@@ -81,11 +89,10 @@ Anthony's{.op50.text-2xl}
 
 <h2 important-text-5xl important-mt-0>Set Theory</h2>
 
-
-<!-- 
+<!--
 Today's topic is a quite abstract one, I'd call it the Set Theory. A way of thinking on planning the directions and roadmaps of your projects.
 
-So let's say we already have an Open Source project, or planning to create one. To be a little bit practical, we might want to gain certain amount of adoption, or just that we want people to enjoy our hard work. One of the things to consider is how we picturing our target users. For example, like "Is my tool for end users or developers?", "Or for Vue users or React users?", etc.
+So let's say we already have an Open Source project, or planning to create one. To be a little bit practical, we might want to gain certain amount of adoption, or just that we want people to enjoy our hard work.
 -->
 
 ---
@@ -115,13 +122,12 @@ growY: 0
   </div>
 </div>
 
-
 <!--
+One of the things to consider is how we picturing our target users. For example, like "Is my tool for end users or developers?", "Or for Vue users or React users?", etc.
 
-We know the fact that among all of the target users, only a portion of them will become our actual users. In order to gain more users to our project, we can try to convert more potential users to the actual users. Maybe by doing more marketing or polishing. In that case, the amount of the target users you have, actually becomes the upper limit of how many actual users you could possibly have. On the other hand, we can also try to find a way to expand our target users to include more people.
+We know the fact that among all of the target users, only a portion of them will become our actual users. In order to gain more users to our project, we can try to convert more potential users to the actual users. Maybe by doing more marketing or polishing. In that case, the amount of the target users you have, actually becomes the upper limit of how many actual users you could possibly have. On the other hand, we can also try to find a way to expand our target users to include more people. And naturally, you will also have more actual users from it.
 
 Under this idea, let's take a look at some examples of how we can do that.
-
 -->
 
 ---
@@ -144,11 +150,9 @@ growY: 50
 </v-clicks>
 
 <!--
-
 The first example I am going to show you is actually my first open source project back in 2019.
 
-The repo name is call `vscode-vue-i18n-ally`. It's a VS Code extension for helping Vue developers to work with i18n, like preview the translations in code, or manage keys for each language, etc.
-
+The repo name is call `vscode-vue-i18n-ally`. It's a VS Code extension for helping Vue developers to work with i18n, or so call internationallization, like preview the translations in code, or manage keys for each language, etc.
 -->
 
 ---
@@ -158,16 +162,23 @@ layout: center
 ![](/i18n-ally-hover.png){.h-100.contrast-110}
 
 <!--
-
-This is a screenshot of the extension that shows its basic features. Well, the extension itself isn't our main topic today. 
-
+This is a screenshot of the extension that shows its basic features. Well, the extension itself isn't our main topic today. But hopefully this can give you a basic idea of what it is.
 -->
 
 ---
 layout: center
+class: text-center
 ---
 
-![](/kazupon-star.png){.h-50.rounded}
+![](/kazupon-star.png){.h-50.rounded.ma}
+
+<span v-click>
+このスターは、私がオープンソースの旅を続けることを 大いに<ruby>励<rt>はげ</rt></ruby>まして くれました。 <br>どうもありがとうございます。
+</span>
+
+<!--
+And just a fun fact, that Kazupon san was actually the one who gave the first star to this project.
+-->
 
 ---
 growX: 0
@@ -259,9 +270,10 @@ Then we find out that our target users are limited inside the intersection of th
 
 Before we dive into the solutions, let's have a look of this graph. What would the other intersections means? We will soon realize that the intersection between VS Code and Vue is actually Volar, or Vetur at that time, the VS Code IDE support for Vue. As the result, we knew that Vetur and Volar have a huge user base, because both the Vue and VS Code have huge communities, making there intersection large enough. Simliar, we see that the interection between Vue and i18n are projects like `vue-i18n` which is also super popular.
 
-And then when it comes to the intersection between VS Code and i18n, we see that there seems to be no such projects at that time. A straightforward thinking -- let's be that one. In practice, we could try to make the extension decoupled from Vue, so that it could be used with other frameworks as well. In short, let's make it universal by breaking the set cirles and expand the intersection.
--->
+And then when it comes to the intersection between VS Code and i18n, we see that there seems to be no such projects at that time. A straightforward thinking -- let's be that one. In practice, we could try to make the extension decoupled from Vue, so that it could be used with other frameworks as well.
 
+In short, let's make it universal by breaking the set cirles and expand the intersection.
+-->
 
 ---
 layout: center
@@ -364,7 +376,11 @@ I'd say, Vite's success turns out to be far beyond my initial imagination. It's 
 
 
 <!--
-The take away in this section is that we could seek for the possibility of breaking the intersection and make our project universal. Here are some of the benefits I can think of. By making our project more universal, meaning we could reach out to a large user base and naturally we might then have more contributors to join the force and work together, instead of everyone work on their own solution that aren't compatible with each other. Trying to refactor things to become universal would also help us to revise the design and abstraction, and often we could end up with a more maintainable and extensible architecture. And finally, if your project started to gain more usages from various needs, making improvements in our project could end up benefit everyone in the ecosystem.
+By making our project more universal, meaning we could reach out to a large user base and naturally we might then have more contributors to join the force and work together.
+
+Trying to refactor things to become universal would also help us to revise the design and abstraction, and often we could end up with a more maintainable and extensible architecture. 
+
+And finally, if your project started to gain more usages from various needs, making improvements in our project could end up benefit everyone in the ecosystem.
 -->
 
 ---
@@ -427,7 +443,9 @@ growY: 50
 </v-click>
 
 <!--
-One of the great examples I can thinking of is Nuxt. Nuxt is a meta-framework that is specific to Vue. Out of many benefits of choosing Nuxt, one thing I'd like to highlight is the Developer Experience. In Nuxt, we provide quite a lot of features to help you build apps faster in an organized way. We have server-side-rendering for better user land performance and SEO, and file-base routing for better organization. We also have a powerful modules ecosystem for integrations and also Nuxt DevTools, etc. Many of these are built with the assumption that we use Vue and have a bundling pipeline. Nuxt also use Vite as the default dev server and bundler, meaning we are inherit the the great plugins ecosystem as well as the fast HMR from Vite. For Nuxt to be a bit specific than Vite, allowing us to bring many cool features and integrations that would be hard to achieve in a universal way. I think that's also why we have many meta-frameworks like SvelteKit, Astro, SoildStart for different needs.
+One of the great examples I can thinking of is Nuxt. Nuxt is a meta-framework that is specific to Vue. Out of many benefits of choosing Nuxt, one thing I'd like to highlight is the Developer Experience. In Nuxt, we provide quite a lot of features to help you build apps faster in an organized way. We have server-side-rendering for better user land performance and SEO, and file-base routing for better organization. We also have a powerful modules ecosystem for integrations and also Nuxt DevTools, etc.
+
+Many of these are built with the assumption that we use Vue and have a bundling pipeline. Nuxt also use Vite as the default dev server and bundler, meaning we are inherit the the great plugins ecosystem as well as the fast HMR from Vite. For Nuxt to be a bit specific than Vite, allowing us to bring many cool features and integrations that would be hard to achieve in a universal way. I think that's also why we have many meta-frameworks like SvelteKit, Astro, SoildStart for different needs.
 
 And here, let's look into a couple of features Nuxt provides.
 -->
@@ -443,10 +461,9 @@ clicks: 10
 
 <div flex="~ col gap-3 items-center justify-center" h="95%">
   <div flex="~ gap-5">
-    <div w-3.5em />
-    <div flex="~ col items-center gap-1" text-xs v-click="8">
-      <img src="/stacks.svg" h-1em w-1em text-4xl />
-      Stacks
+    <div flex="~ col items-center gap-1" text-xs v-click="9" >
+      <div text-4xl i-logos-nodejs-icon op50 scale-90 />
+      Node.js
     </div>
     <div flex="~ col items-center gap-1" text-xs v-click="7">
       <img src="/ecosystem/analog.svg" h-1em w-1em text-4xl />
@@ -456,18 +473,15 @@ clicks: 10
       <div i-logos-nuxt-icon text-4xl />
       Nuxt
     </div>
-    <div flex="~ col items-center gap-1" text-xs v-click="9" >
-      <div text-4xl i-logos-nodejs-icon op50 scale-90 />
-      Node.js
-    </div>
-    <div flex="~ col items-center gap-1" text-xs v-click="10" >
-      <div text-4xl i-ri-question-line op50 scale-90 />
-      <span op50>(upcoming)</span>
+    <div flex="~ col items-center gap-1" text-xs v-click="8">
+      <img src="/stacks.svg" h-1em w-1em text-4xl />
+      Stacks
     </div>
     <div flex="~ col items-center gap-1" text-xs v-click="10" >
       <div text-4xl i-ri-more-line op50 scale-90 />
       <span op50>more</span>
     </div>
+    <div ml--1.5 />
   </div>
   <div w-1px h-8 border="l gray" transition-all duration-1000
     :class="$clicks >= 6 ? '' : 'op0 mt--15'"
@@ -503,7 +517,11 @@ clicks: 10
 <!--
 When we talk about Server-side Rendering and Server APIs, we know that in those cases, we need a server in some form to work together with our frontend. Other than a self-hosted Node.js server, there are also many hosting services out there, for example like Cloudflare, Netlify, Vercel, etc. To leverage the full potential for each provider, we might want to utilize the edge rendering and serverless functions based on what they have offered. One thing to note is that each provide has their own format, some might also comes with specific tooling. In Nuxt, we don't want to our users to be stuck on a single platform, and we want to support as many platforms as possible builtin. So we build them and even supported auto detection, so the app can be written isomorphically and deployed to various of platforms without changing any configuration.
 
-And then we realize that is a problem that probably every meta-framework has to deal with, and it doesn't have to be Nuxt specific. So we extract that into a standalone tool called Nitro. It's a universal server builder, and it's pretty much like a Vite but for servers. With Nitro taking care of the details of dealing servers, it actually allows Nuxt to have a more clear architecture to handling SSR and APIs etc. And since Nitro is a general propose server tools, we see more and more meta-frameworks started to use it, or new frameworks to build on top of it. We have Analog, a popular Angular meta-framework has migrated Nitro. Stacks, a framework-agnostic full-stack framework for artisans. Even without a framework, I also find Nitro to be very handy to build pure API server, etc. We also heard that there are some frameworks is in the process of migrating to Nitro, I'll keep it a secret here and wait for their announcement.
+And then we realize that is a problem that probably every meta-framework has to deal with, and it doesn't have to be Nuxt specific. So we extract that into a standalone tool called Nitro.
+
+It's a universal server builder, and it's pretty much like a Vite but for servers. With Nitro taking care of the details of dealing servers, it actually allows Nuxt to have a more clear architecture to handling SSR and APIs etc. And since Nitro is a general propose server tools, we see more and more meta-frameworks started to use it, or new frameworks to build on top of it.
+
+We have Analog, a popular Angular meta-framework has migrated Nitro. Stacks, a framework-agnostic full-stack framework. Even without a framework, I also find Nitro to be very handy to build pure API server, etc.
 -->
 
 ---
@@ -550,14 +568,14 @@ That's the initial motivation for us to create `unplugin`, an unified plugin int
 ---
 class: h-full
 growX: 0
-clicks: 8
+clicks: 9
 ---
 
-<h1 text-lime>The "Set Union" <div class="inline-block i-gis-union translate-y-1/10" /></h1>
+<h1 text-lime v-click="6">The "Set Union" <div class="inline-block i-gis-union translate-y-1/10" /></h1>
 
 <div mt-10 />
 
-<v-clicks :at="5">
+<v-clicks :at="6">
 
 - Extract the universal parts
 
@@ -620,12 +638,13 @@ clicks: 8
 </div>
 
 <!--
-
-Those just two examples. We also have the UnJS community the provide many high quality tools throughout the entire JavaScript ecosystem. And actually `Nitro` and `unplugin` are parts of the UnJS community. We also have `vite-node`, made from our server-side code executor, later becomes the core engine of Vitest and made it possible.
+Those just two examples. We also have the UnJS community that provide many high quality tools throughout the entire JavaScript ecosystem. And actually `Nitro` and `unplugin` are parts of the UnJS community. We also have `vite-node`, made from our server-side code executor, later becomes the core engine of Vitest and made it possible.
 
 These tools are created from Nuxt's needs, but as later we extract them and make them universal, they have formed their own communities and ecosystems that can benefit much wider range of users and scenarios. Nuxt can be the framework that is a bit specific for providing better experiences, while the underlying tools can be shared and collaborated with other frameworks and communities. That is where make Open Source amazing, isn't it?
 
-So different from the "Set Intersaction" we were talking about, I'd call it the set union. We extract the universal parts, expand the scope and grow the communities, which also eventually benefit back to ourselves.
+So different from the "Set Intersaction" we were talking about, I'd call it the set union. 
+
+We extract the universal parts, expand the scope and grow the communities, which also eventually benefit back to ourselves.
 -->
 
 ---
@@ -634,7 +653,7 @@ clicks: 10
 
 <div 
   class="left-50% top-50% absolute relative w-0 h-0"
-  :class="$clicks < 4 ? '' : 'scale-80'"
+  :class="$clicks < 6 ? '' : 'scale-80'"
   transition-all duration-600
 >
   <div
@@ -661,7 +680,7 @@ clicks: 10
       of-hidden transition-all duration-800>
       <div
         flex="~ col gap-2 items-center" 
-        transition-all duration-600 delay-600
+        transition-all duration-600 delay-1000
         :style="{
           transform: $clicks < 3 ? '' : 'translateY(-1.1em)'
         }"
@@ -742,7 +761,7 @@ Using the Set Theory we are talking about, we can consider Nuxt DevTools as a ci
 
 To get out of the intersection, we could try to extend the scope of Nuxt DevTools. So, we came up with the idea of DevTools Kit. So dreamming big, let's imagine that it could be the shared infrastructure of any frameworks. We could have Vue DevTools, that we could share some logics between Vue and Nuxt. Then maybe also Svelte, React, Solid, Qwik or more.
 
-In the end, it could be a much larger scope with the "Set Union".
+In the end, it could be much larger scopes with a larger community.
 -->
 
 ---
@@ -752,7 +771,7 @@ clicks: 20
 <DevToolsKit />
 
 <!--
-DevTools Kit is currently just an idea and we are still brainstroming. But here that me share what we imagine it could be.
+DevTools Kit is currently just an idea and we are still brainstroming. But here let me share what we imagine it could be.
 
 We see that each feature provided by Nuxt DevTools have each own scope, some are Nuxt specific, some are Vue specific, some are more about general Web Developement. We think in the best world, each feature could be modular, composable and collabrative.
 
@@ -818,8 +837,9 @@ In the intersection we learnt that we shouldn't limit our projects to only be in
 
 And in the union, we learnt even somethings we have to be specific in order to achieve something great, we could still seek for the potential union we could make to expand the communities and benefit the whole ecosystem.
 
-It's all about collaboration and communities. I have a strong believe that open source is the way for us to build the better world. And I am looking forward to see more and more open source built in similiar mindsets.
+It's all about collaboration and communities. I have a strong believe that open source is the way for us to build the better world. And I am looking forward to see more and more open source built in similiar mindsets and found better ways to collabrate.
 
+That's all for my talk. Thank you!
 -->
 
 ---
@@ -829,6 +849,6 @@ growX: 50
 growY: 120
 ---
 
-# Thank You!
+# ありがとうございます。{.font-jp}
 
 Slides on [antfu.me](https://antfu.me)
