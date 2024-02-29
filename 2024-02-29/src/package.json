@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build --base /2024/vue-amsterdam/ --out ../../dist/2024/vue-amsterdam",
+    "export": "slidev export --per-slide --output ../2024-02-29-vue-amsterdam-en.pdf"
+  }
+}

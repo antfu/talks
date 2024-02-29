@@ -6,7 +6,6 @@
  * - growY: number - percent
  * - growFollow: boolean - follow mouse, false to completely disable
  */
-// @ts-expect-error missing types
 import { currentRoute } from '@slidev/client/logic/nav.ts'
 import { useMouse } from '@vueuse/core'
 import { computed, onMounted, ref, watchEffect } from 'vue'
