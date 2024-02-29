@@ -4,6 +4,10 @@ Slides &amp; code for my talks, using [Slidev](https://sli.dev).
 
 [Upcoming Talks](https://antfu.me/talks)
 
+###### 2024
+
+- `en` [Anthony's Roads to Open Source - The Progressive Path](./2024-02-29) - Vue Amsterdam
+
 ###### 2023
 
 - `en` [Anthony's Roads to Open Source - The Set Theory 集合論](./2023-10-28) - Vue Fes Japan 
