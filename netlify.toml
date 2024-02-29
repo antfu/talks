@@ -359,6 +359,31 @@
   status = 200
 
 [[redirects]]
+  from = "/2024/vue-amsterdam/pdf"
+  to = "https://github.com/antfu/talks/blob/main/2024-02-29/2024-02-29-vue-amsterdam-en.pdf?raw=true"
+  status = 302
+
+[[redirects]]
+  from = "/2024-02-29/pdf"
+  to = "https://github.com/antfu/talks/blob/main/2024-02-29/2024-02-29-vue-amsterdam-en.pdf?raw=true"
+  status = 302
+
+[[redirects]]
+  from = "/2024/vue-amsterdam/src"
+  to = "https://github.com/antfu/talks/tree/main/2024-02-29"
+  status = 302
+
+[[redirects]]
+  from = "2024-02-29"
+  to = "https://talks.antfu.me/2024/vue-amsterdam/"
+  status = 301
+
+[[redirects]]
+  from = "/2024/vue-amsterdam/*"
+  to = "/2024/vue-amsterdam/index.html"
+  status = 200
+
+[[redirects]]
   from = "/"
   to = "https://antfu.me/talks"
   status = 302
