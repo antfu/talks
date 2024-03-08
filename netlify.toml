@@ -1,389 +1,387 @@
+[build]
+publish = "dist"
+command = "pnpm run build"
 
 [build.environment]
-  NODE_VERSION = "20"
-  PLAYWRIGHT_BROWSERS_PATH = "0"
+NODE_VERSION = "20"
+PLAYWRIGHT_BROWSERS_PATH = "0"
 
-[build]
-  publish = "dist"
-  command = "pnpm run build"
-
-
 [[redirects]]
-  from = "/2021/composable-vue/pdf"
-  to = "https://github.com/antfu/talks/blob/main/2021-04-29/2021-04-29-vueday-en.pdf?raw=true"
-  status = 302
+from = "/2021/composable-vue/pdf"
+to = "https://github.com/antfu/talks/blob/main/2021-04-29/2021-04-29-vueday-en.pdf?raw=true"
+status = 302
 
 [[redirects]]
-  from = "/2021-04-29/pdf"
-  to = "https://github.com/antfu/talks/blob/main/2021-04-29/2021-04-29-vueday-en.pdf?raw=true"
-  status = 302
+from = "/2021-04-29/pdf"
+to = "https://github.com/antfu/talks/blob/main/2021-04-29/2021-04-29-vueday-en.pdf?raw=true"
+status = 302
 
 [[redirects]]
-  from = "/2021/composable-vue/src"
-  to = "https://github.com/antfu/talks/tree/main/2021-04-29"
-  status = 302
+from = "/2021/composable-vue/src"
+to = "https://github.com/antfu/talks/tree/main/2021-04-29"
+status = 302
 
 [[redirects]]
-  from = "2021-04-29"
-  to = "https://talks.antfu.me/2021/composable-vue/"
-  status = 301
+from = "2021-04-29"
+to = "https://talks.antfu.me/2021/composable-vue/"
+status = 301
 
 [[redirects]]
-  from = "/2021/composable-vue/*"
-  to = "/2021/composable-vue/index.html"
-  status = 200
+from = "/2021/composable-vue/*"
+to = "/2021/composable-vue/index.html"
+status = 200
 
 [[redirects]]
-  from = "/2021/vueconf-china/pdf"
-  to = "https://github.com/antfu/talks/blob/main/2021-05-22/2021-05-22-vueconf-china.pdf?raw=true"
-  status = 302
+from = "/2021/vueconf-china/pdf"
+to = "https://github.com/antfu/talks/blob/main/2021-05-22/2021-05-22-vueconf-china.pdf?raw=true"
+status = 302
 
 [[redirects]]
-  from = "/2021-05-22/pdf"
-  to = "https://github.com/antfu/talks/blob/main/2021-05-22/2021-05-22-vueconf-china.pdf?raw=true"
-  status = 302
+from = "/2021-05-22/pdf"
+to = "https://github.com/antfu/talks/blob/main/2021-05-22/2021-05-22-vueconf-china.pdf?raw=true"
+status = 302
 
 [[redirects]]
-  from = "/2021/vueconf-china/src"
-  to = "https://github.com/antfu/talks/tree/main/2021-05-22"
-  status = 302
+from = "/2021/vueconf-china/src"
+to = "https://github.com/antfu/talks/tree/main/2021-05-22"
+status = 302
 
 [[redirects]]
-  from = "2021-05-22"
-  to = "https://talks.antfu.me/2021/vueconf-china/"
-  status = 301
+from = "2021-05-22"
+to = "https://talks.antfu.me/2021/vueconf-china/"
+status = 301
 
 [[redirects]]
-  from = "/2021/vueconf-china/*"
-  to = "/2021/vueconf-china/index.html"
-  status = 200
+from = "/2021/vueconf-china/*"
+to = "/2021/vueconf-china/index.html"
+status = 200
 
 [[redirects]]
-  from = "/2021/laravel-vue-taiwan/pdf"
-  to = "https://github.com/antfu/talks/blob/main/2021-10-17/2021-10-17-laravel-vue-taiwan.pdf?raw=true"
-  status = 302
+from = "/2021/laravel-vue-taiwan/pdf"
+to = "https://github.com/antfu/talks/blob/main/2021-10-17/2021-10-17-laravel-vue-taiwan.pdf?raw=true"
+status = 302
 
 [[redirects]]
-  from = "/2021-10-17/pdf"
-  to = "https://github.com/antfu/talks/blob/main/2021-10-17/2021-10-17-laravel-vue-taiwan.pdf?raw=true"
-  status = 302
+from = "/2021-10-17/pdf"
+to = "https://github.com/antfu/talks/blob/main/2021-10-17/2021-10-17-laravel-vue-taiwan.pdf?raw=true"
+status = 302
 
 [[redirects]]
-  from = "/2021/laravel-vue-taiwan/src"
-  to = "https://github.com/antfu/talks/tree/main/2021-10-17"
-  status = 302
+from = "/2021/laravel-vue-taiwan/src"
+to = "https://github.com/antfu/talks/tree/main/2021-10-17"
+status = 302
 
 [[redirects]]
-  from = "2021-10-17"
-  to = "https://talks.antfu.me/2021/laravel-vue-taiwan/"
-  status = 301
+from = "2021-10-17"
+to = "https://talks.antfu.me/2021/laravel-vue-taiwan/"
+status = 301
 
 [[redirects]]
-  from = "/2021/laravel-vue-taiwan/*"
-  to = "/2021/laravel-vue-taiwan/index.html"
-  status = 200
+from = "/2021/laravel-vue-taiwan/*"
+to = "/2021/laravel-vue-taiwan/index.html"
+status = 200
 
 [[redirects]]
-  from = "/2021/vue-london/pdf"
-  to = "https://github.com/antfu/talks/blob/main/2021-10-20/2021-10-20-vue-london.pdf?raw=true"
-  status = 302
+from = "/2021/vue-london/pdf"
+to = "https://github.com/antfu/talks/blob/main/2021-10-20/2021-10-20-vue-london.pdf?raw=true"
+status = 302
 
 [[redirects]]
-  from = "/2021-10-20/pdf"
-  to = "https://github.com/antfu/talks/blob/main/2021-10-20/2021-10-20-vue-london.pdf?raw=true"
-  status = 302
+from = "/2021-10-20/pdf"
+to = "https://github.com/antfu/talks/blob/main/2021-10-20/2021-10-20-vue-london.pdf?raw=true"
+status = 302
 
 [[redirects]]
-  from = "/2021/vue-london/src"
-  to = "https://github.com/antfu/talks/tree/main/2021-10-20"
-  status = 302
+from = "/2021/vue-london/src"
+to = "https://github.com/antfu/talks/tree/main/2021-10-20"
+status = 302
 
 [[redirects]]
-  from = "2021-10-20"
-  to = "https://talks.antfu.me/2021/vue-london/"
-  status = 301
+from = "2021-10-20"
+to = "https://talks.antfu.me/2021/vue-london/"
+status = 301
 
 [[redirects]]
-  from = "/2021/vue-london/*"
-  to = "/2021/vue-london/index.html"
-  status = 200
+from = "/2021/vue-london/*"
+to = "/2021/vue-london/index.html"
+status = 200
 
 [[redirects]]
-  from = "/2022/vue-nation/pdf"
-  to = "https://github.com/antfu/talks/blob/main/2022-01-26/2022-01-26-vue-nation.pdf?raw=true"
-  status = 302
+from = "/2022/vue-nation/pdf"
+to = "https://github.com/antfu/talks/blob/main/2022-01-26/2022-01-26-vue-nation.pdf?raw=true"
+status = 302
 
 [[redirects]]
-  from = "/2022-01-26/pdf"
-  to = "https://github.com/antfu/talks/blob/main/2022-01-26/2022-01-26-vue-nation.pdf?raw=true"
-  status = 302
+from = "/2022-01-26/pdf"
+to = "https://github.com/antfu/talks/blob/main/2022-01-26/2022-01-26-vue-nation.pdf?raw=true"
+status = 302
 
 [[redirects]]
-  from = "/2022/vue-nation/src"
-  to = "https://github.com/antfu/talks/tree/main/2022-01-26"
-  status = 302
+from = "/2022/vue-nation/src"
+to = "https://github.com/antfu/talks/tree/main/2022-01-26"
+status = 302
 
 [[redirects]]
-  from = "2022-01-26"
-  to = "https://talks.antfu.me/2022/vue-nation/"
-  status = 301
+from = "2022-01-26"
+to = "https://talks.antfu.me/2022/vue-nation/"
+status = 301
 
 [[redirects]]
-  from = "/2022/vue-nation/*"
-  to = "/2022/vue-nation/index.html"
-  status = 200
+from = "/2022/vue-nation/*"
+to = "/2022/vue-nation/index.html"
+status = 200
 
 [[redirects]]
-  from = "/2022/vite-on-demand-dx/pdf"
-  to = "https://github.com/antfu/talks/blob/main/2022-10-11/2022-10-11-vite-on-demand-dx.pdf?raw=true"
-  status = 302
+from = "/2022/vite-on-demand-dx/pdf"
+to = "https://github.com/antfu/talks/blob/main/2022-10-11/2022-10-11-vite-on-demand-dx.pdf?raw=true"
+status = 302
 
 [[redirects]]
-  from = "/2022-10-11/pdf"
-  to = "https://github.com/antfu/talks/blob/main/2022-10-11/2022-10-11-vite-on-demand-dx.pdf?raw=true"
-  status = 302
+from = "/2022-10-11/pdf"
+to = "https://github.com/antfu/talks/blob/main/2022-10-11/2022-10-11-vite-on-demand-dx.pdf?raw=true"
+status = 302
 
 [[redirects]]
-  from = "/2022/vite-on-demand-dx/src"
-  to = "https://github.com/antfu/talks/tree/main/2022-10-11"
-  status = 302
+from = "/2022/vite-on-demand-dx/src"
+to = "https://github.com/antfu/talks/tree/main/2022-10-11"
+status = 302
 
 [[redirects]]
-  from = "2022-10-11"
-  to = "https://talks.antfu.me/2022/vite-on-demand-dx/"
-  status = 301
+from = "2022-10-11"
+to = "https://talks.antfu.me/2022/vite-on-demand-dx/"
+status = 301
 
 [[redirects]]
-  from = "/2022/vite-on-demand-dx/*"
-  to = "/2022/vite-on-demand-dx/index.html"
-  status = 200
+from = "/2022/vite-on-demand-dx/*"
+to = "/2022/vite-on-demand-dx/index.html"
+status = 200
 
 [[redirects]]
-  from = "/2022/patterns-vueuse/pdf"
-  to = "https://github.com/antfu/talks/blob/main/2022-10-16/2022-10-16-vue-fes-japan-en.pdf?raw=true"
-  status = 302
+from = "/2022/patterns-vueuse/pdf"
+to = "https://github.com/antfu/talks/blob/main/2022-10-16/2022-10-16-vue-fes-japan-en.pdf?raw=true"
+status = 302
 
 [[redirects]]
-  from = "/2022-10-16/pdf"
-  to = "https://github.com/antfu/talks/blob/main/2022-10-16/2022-10-16-vue-fes-japan-en.pdf?raw=true"
-  status = 302
+from = "/2022-10-16/pdf"
+to = "https://github.com/antfu/talks/blob/main/2022-10-16/2022-10-16-vue-fes-japan-en.pdf?raw=true"
+status = 302
 
 [[redirects]]
-  from = "/2022/patterns-vueuse/src"
-  to = "https://github.com/antfu/talks/tree/main/2022-10-16"
-  status = 302
+from = "/2022/patterns-vueuse/src"
+to = "https://github.com/antfu/talks/tree/main/2022-10-16"
+status = 302
 
 [[redirects]]
-  from = "2022-10-16"
-  to = "https://talks.antfu.me/2022/patterns-vueuse/"
-  status = 301
+from = "2022-10-16"
+to = "https://talks.antfu.me/2022/patterns-vueuse/"
+status = 301
 
 [[redirects]]
-  from = "/2022/patterns-vueuse/*"
-  to = "/2022/patterns-vueuse/index.html"
-  status = 200
+from = "/2022/patterns-vueuse/*"
+to = "/2022/patterns-vueuse/index.html"
+status = 200
 
 [[redirects]]
-  from = "/2022/vueuse-best-practice/pdf"
-  to = "https://github.com/antfu/talks/blob/main/2022-12-10/2022-12-10-vueconf-china.pdf?raw=true"
-  status = 302
+from = "/2022/vueuse-best-practice/pdf"
+to = "https://github.com/antfu/talks/blob/main/2022-12-10/2022-12-10-vueconf-china.pdf?raw=true"
+status = 302
 
 [[redirects]]
-  from = "/2022-12-10/pdf"
-  to = "https://github.com/antfu/talks/blob/main/2022-12-10/2022-12-10-vueconf-china.pdf?raw=true"
-  status = 302
+from = "/2022-12-10/pdf"
+to = "https://github.com/antfu/talks/blob/main/2022-12-10/2022-12-10-vueconf-china.pdf?raw=true"
+status = 302
 
 [[redirects]]
-  from = "/2022/vueuse-best-practice/src"
-  to = "https://github.com/antfu/talks/tree/main/2022-12-10"
-  status = 302
+from = "/2022/vueuse-best-practice/src"
+to = "https://github.com/antfu/talks/tree/main/2022-12-10"
+status = 302
 
 [[redirects]]
-  from = "2022-12-10"
-  to = "https://talks.antfu.me/2022/vueuse-best-practice/"
-  status = 301
+from = "2022-12-10"
+to = "https://talks.antfu.me/2022/vueuse-best-practice/"
+status = 301
 
 [[redirects]]
-  from = "/2022/vueuse-best-practice/*"
-  to = "/2022/vueuse-best-practice/index.html"
-  status = 200
+from = "/2022/vueuse-best-practice/*"
+to = "/2022/vueuse-best-practice/index.html"
+status = 200
 
 [[redirects]]
-  from = "/2023/nuxt-devtools/pdf"
-  to = "https://github.com/antfu/talks/blob/main/2023-02-09/2023-02-09-nuxt-devtools-en.pdf?raw=true"
-  status = 302
+from = "/2023/nuxt-devtools/pdf"
+to = "https://github.com/antfu/talks/blob/main/2023-02-09/2023-02-09-nuxt-devtools-en.pdf?raw=true"
+status = 302
 
 [[redirects]]
-  from = "/2023-02-09/pdf"
-  to = "https://github.com/antfu/talks/blob/main/2023-02-09/2023-02-09-nuxt-devtools-en.pdf?raw=true"
-  status = 302
+from = "/2023-02-09/pdf"
+to = "https://github.com/antfu/talks/blob/main/2023-02-09/2023-02-09-nuxt-devtools-en.pdf?raw=true"
+status = 302
 
 [[redirects]]
-  from = "/2023/nuxt-devtools/src"
-  to = "https://github.com/antfu/talks/tree/main/2023-02-09"
-  status = 302
+from = "/2023/nuxt-devtools/src"
+to = "https://github.com/antfu/talks/tree/main/2023-02-09"
+status = 302
 
 [[redirects]]
-  from = "2023-02-09"
-  to = "https://talks.antfu.me/2023/nuxt-devtools/"
-  status = 301
+from = "2023-02-09"
+to = "https://talks.antfu.me/2023/nuxt-devtools/"
+status = 301
 
 [[redirects]]
-  from = "/2023/nuxt-devtools/*"
-  to = "/2023/nuxt-devtools/index.html"
-  status = 200
+from = "/2023/nuxt-devtools/*"
+to = "/2023/nuxt-devtools/index.html"
+status = 200
 
 [[redirects]]
-  from = "/2023/github-notifications/pdf"
-  to = "https://github.com/antfu/talks/blob/main/2023-05-17/2023-05-17-github-notifications-en.pdf?raw=true"
-  status = 302
+from = "/2023/github-notifications/pdf"
+to = "https://github.com/antfu/talks/blob/main/2023-05-17/2023-05-17-github-notifications-en.pdf?raw=true"
+status = 302
 
 [[redirects]]
-  from = "/2023-05-17/pdf"
-  to = "https://github.com/antfu/talks/blob/main/2023-05-17/2023-05-17-github-notifications-en.pdf?raw=true"
-  status = 302
+from = "/2023-05-17/pdf"
+to = "https://github.com/antfu/talks/blob/main/2023-05-17/2023-05-17-github-notifications-en.pdf?raw=true"
+status = 302
 
 [[redirects]]
-  from = "/2023/github-notifications/src"
-  to = "https://github.com/antfu/talks/tree/main/2023-05-17"
-  status = 302
+from = "/2023/github-notifications/src"
+to = "https://github.com/antfu/talks/tree/main/2023-05-17"
+status = 302
 
 [[redirects]]
-  from = "2023-05-17"
-  to = "https://talks.antfu.me/2023/github-notifications/"
-  status = 301
+from = "2023-05-17"
+to = "https://talks.antfu.me/2023/github-notifications/"
+status = 301
 
 [[redirects]]
-  from = "/2023/github-notifications/*"
-  to = "/2023/github-notifications/index.html"
-  status = 200
+from = "/2023/github-notifications/*"
+to = "/2023/github-notifications/index.html"
+status = 200
 
 [[redirects]]
-  from = "/2023/nuxt-devtools-strasbourg/pdf"
-  to = "https://github.com/antfu/talks/blob/main/2023-05-25/2023-05-25-nuxt-devtools-strasbourg-en.pdf?raw=true"
-  status = 302
+from = "/2023/nuxt-devtools-strasbourg/pdf"
+to = "https://github.com/antfu/talks/blob/main/2023-05-25/2023-05-25-nuxt-devtools-strasbourg-en.pdf?raw=true"
+status = 302
 
 [[redirects]]
-  from = "/2023-05-25/pdf"
-  to = "https://github.com/antfu/talks/blob/main/2023-05-25/2023-05-25-nuxt-devtools-strasbourg-en.pdf?raw=true"
-  status = 302
+from = "/2023-05-25/pdf"
+to = "https://github.com/antfu/talks/blob/main/2023-05-25/2023-05-25-nuxt-devtools-strasbourg-en.pdf?raw=true"
+status = 302
 
 [[redirects]]
-  from = "/2023/nuxt-devtools-strasbourg/src"
-  to = "https://github.com/antfu/talks/tree/main/2023-05-25"
-  status = 302
+from = "/2023/nuxt-devtools-strasbourg/src"
+to = "https://github.com/antfu/talks/tree/main/2023-05-25"
+status = 302
 
 [[redirects]]
-  from = "2023-05-25"
-  to = "https://talks.antfu.me/2023/nuxt-devtools-strasbourg/"
-  status = 301
+from = "2023-05-25"
+to = "https://talks.antfu.me/2023/nuxt-devtools-strasbourg/"
+status = 301
 
 [[redirects]]
-  from = "/2023/nuxt-devtools-strasbourg/*"
-  to = "/2023/nuxt-devtools-strasbourg/index.html"
-  status = 200
+from = "/2023/nuxt-devtools-strasbourg/*"
+to = "/2023/nuxt-devtools-strasbourg/index.html"
+status = 200
 
 [[redirects]]
-  from = "/2023/viteconf/pdf"
-  to = "https://github.com/antfu/talks/blob/main/2023-10-05/2023-10-05-viteconf-en.pdf?raw=true"
-  status = 302
+from = "/2023/viteconf/pdf"
+to = "https://github.com/antfu/talks/blob/main/2023-10-05/2023-10-05-viteconf-en.pdf?raw=true"
+status = 302
 
 [[redirects]]
-  from = "/2023-10-05/pdf"
-  to = "https://github.com/antfu/talks/blob/main/2023-10-05/2023-10-05-viteconf-en.pdf?raw=true"
-  status = 302
+from = "/2023-10-05/pdf"
+to = "https://github.com/antfu/talks/blob/main/2023-10-05/2023-10-05-viteconf-en.pdf?raw=true"
+status = 302
 
 [[redirects]]
-  from = "/2023/viteconf/src"
-  to = "https://github.com/antfu/talks/tree/main/2023-10-05"
-  status = 302
+from = "/2023/viteconf/src"
+to = "https://github.com/antfu/talks/tree/main/2023-10-05"
+status = 302
 
 [[redirects]]
-  from = "2023-10-05"
-  to = "https://talks.antfu.me/2023/viteconf/"
-  status = 301
+from = "2023-10-05"
+to = "https://talks.antfu.me/2023/viteconf/"
+status = 301
 
 [[redirects]]
-  from = "/2023/viteconf/*"
-  to = "/2023/viteconf/index.html"
-  status = 200
+from = "/2023/viteconf/*"
+to = "/2023/viteconf/index.html"
+status = 200
 
 [[redirects]]
-  from = "/2023/nuxt-devtools-next/pdf"
-  to = "https://github.com/antfu/talks/blob/main/2023-10-18/2023-10-18-nuxt-devtools-next-en.pdf?raw=true"
-  status = 302
+from = "/2023/nuxt-devtools-next/pdf"
+to = "https://github.com/antfu/talks/blob/main/2023-10-18/2023-10-18-nuxt-devtools-next-en.pdf?raw=true"
+status = 302
 
 [[redirects]]
-  from = "/2023-10-18/pdf"
-  to = "https://github.com/antfu/talks/blob/main/2023-10-18/2023-10-18-nuxt-devtools-next-en.pdf?raw=true"
-  status = 302
+from = "/2023-10-18/pdf"
+to = "https://github.com/antfu/talks/blob/main/2023-10-18/2023-10-18-nuxt-devtools-next-en.pdf?raw=true"
+status = 302
 
 [[redirects]]
-  from = "/2023/nuxt-devtools-next/src"
-  to = "https://github.com/antfu/talks/tree/main/2023-10-18"
-  status = 302
+from = "/2023/nuxt-devtools-next/src"
+to = "https://github.com/antfu/talks/tree/main/2023-10-18"
+status = 302
 
 [[redirects]]
-  from = "2023-10-18"
-  to = "https://talks.antfu.me/2023/nuxt-devtools-next/"
-  status = 301
+from = "2023-10-18"
+to = "https://talks.antfu.me/2023/nuxt-devtools-next/"
+status = 301
 
 [[redirects]]
-  from = "/2023/nuxt-devtools-next/*"
-  to = "/2023/nuxt-devtools-next/index.html"
-  status = 200
+from = "/2023/nuxt-devtools-next/*"
+to = "/2023/nuxt-devtools-next/index.html"
+status = 200
 
 [[redirects]]
-  from = "/2023/vuefesjapan/pdf"
-  to = "https://github.com/antfu/talks/blob/main/2023-10-28/2023-10-28-vue-fes-japan-en.pdf?raw=true"
-  status = 302
+from = "/2023/vuefesjapan/pdf"
+to = "https://github.com/antfu/talks/blob/main/2023-10-28/2023-10-28-vue-fes-japan-en.pdf?raw=true"
+status = 302
 
 [[redirects]]
-  from = "/2023-10-28/pdf"
-  to = "https://github.com/antfu/talks/blob/main/2023-10-28/2023-10-28-vue-fes-japan-en.pdf?raw=true"
-  status = 302
+from = "/2023-10-28/pdf"
+to = "https://github.com/antfu/talks/blob/main/2023-10-28/2023-10-28-vue-fes-japan-en.pdf?raw=true"
+status = 302
 
 [[redirects]]
-  from = "/2023/vuefesjapan/src"
-  to = "https://github.com/antfu/talks/tree/main/2023-10-28"
-  status = 302
+from = "/2023/vuefesjapan/src"
+to = "https://github.com/antfu/talks/tree/main/2023-10-28"
+status = 302
 
 [[redirects]]
-  from = "2023-10-28"
-  to = "https://talks.antfu.me/2023/vuefesjapan/"
-  status = 301
+from = "2023-10-28"
+to = "https://talks.antfu.me/2023/vuefesjapan/"
+status = 301
 
 [[redirects]]
-  from = "/2023/vuefesjapan/*"
-  to = "/2023/vuefesjapan/index.html"
-  status = 200
+from = "/2023/vuefesjapan/*"
+to = "/2023/vuefesjapan/index.html"
+status = 200
 
 [[redirects]]
-  from = "/2024/vue-amsterdam/pdf"
-  to = "https://github.com/antfu/talks/blob/main/2024-02-29/2024-02-29-vue-amsterdam-en.pdf?raw=true"
-  status = 302
+from = "/2024/vue-amsterdam/pdf"
+to = "https://github.com/antfu/talks/blob/main/2024-02-29/2024-02-29-vue-amsterdam-en.pdf?raw=true"
+status = 302
 
 [[redirects]]
-  from = "/2024-02-29/pdf"
-  to = "https://github.com/antfu/talks/blob/main/2024-02-29/2024-02-29-vue-amsterdam-en.pdf?raw=true"
-  status = 302
+from = "/2024-02-29/pdf"
+to = "https://github.com/antfu/talks/blob/main/2024-02-29/2024-02-29-vue-amsterdam-en.pdf?raw=true"
+status = 302
 
 [[redirects]]
-  from = "/2024/vue-amsterdam/src"
-  to = "https://github.com/antfu/talks/tree/main/2024-02-29"
-  status = 302
+from = "/2024/vue-amsterdam/src"
+to = "https://github.com/antfu/talks/tree/main/2024-02-29"
+status = 302
 
 [[redirects]]
-  from = "2024-02-29"
-  to = "https://talks.antfu.me/2024/vue-amsterdam/"
-  status = 301
+from = "2024-02-29"
+to = "https://talks.antfu.me/2024/vue-amsterdam/"
+status = 301
 
 [[redirects]]
-  from = "/2024/vue-amsterdam/*"
-  to = "/2024/vue-amsterdam/index.html"
-  status = 200
+from = "/2024/vue-amsterdam/*"
+to = "/2024/vue-amsterdam/index.html"
+status = 200
 
 [[redirects]]
-  from = "/"
-  to = "https://antfu.me/talks"
-  status = 302
+from = "/"
+to = "https://antfu.me/talks"
+status = 302

@@ -37,52 +37,52 @@ const redirects = bases
     if (pdfFile) {
       parts.push(`
 [[redirects]]
-  from = "${base}pdf"
-  to = "https://github.com/antfu/talks/blob/main/${dir}/${pdfFile}?raw=true"
-  status = 302
+from = "${base}pdf"
+to = "https://github.com/antfu/talks/blob/main/${dir}/${pdfFile}?raw=true"
+status = 302
 
 [[redirects]]
-  from = "/${dir}/pdf"
-  to = "https://github.com/antfu/talks/blob/main/${dir}/${pdfFile}?raw=true"
-  status = 302`)
+from = "/${dir}/pdf"
+to = "https://github.com/antfu/talks/blob/main/${dir}/${pdfFile}?raw=true"
+status = 302`)
     }
 
     parts.push(`
 [[redirects]]
-  from = "${base}src"
-  to = "https://github.com/antfu/talks/tree/main/${dir}"
-  status = 302`)
+from = "${base}src"
+to = "https://github.com/antfu/talks/tree/main/${dir}"
+status = 302`)
 
     parts.push(`
 [[redirects]]
-  from = "${dir}"
-  to = "https://talks.antfu.me${base}"
-  status = 301
+from = "${dir}"
+to = "https://talks.antfu.me${base}"
+status = 301
 
 [[redirects]]
-  from = "${base}*"
-  to = "${base}index.html"
-  status = 200`)
+from = "${base}*"
+to = "${base}index.html"
+status = 200`)
 
     return parts
   })
   .join('\n')
 
 const content = `
-[build.environment]
-  NODE_VERSION = "20"
-  PLAYWRIGHT_BROWSERS_PATH = "0"
-
 [build]
-  publish = "dist"
-  command = "pnpm run build"
+publish = "dist"
+command = "pnpm run build"
+
+[build.environment]
+NODE_VERSION = "20"
+PLAYWRIGHT_BROWSERS_PATH = "0"
 
 ${redirects}
 
 [[redirects]]
-  from = "/"
-  to = "https://antfu.me/talks"
-  status = 302
+from = "/"
+to = "https://antfu.me/talks"
+status = 302
 `
 
 await fs.writeFile('netlify.toml', content, 'utf-8')

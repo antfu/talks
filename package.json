@@ -9,23 +9,23 @@
     "update": "esno scripts/redirects.ts"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.6.4",
-    "@iconify/json": "^2.2.187",
-    "@slidev/cli": "^0.48.0-beta.19",
+    "@antfu/eslint-config": "^2.8.0",
+    "@iconify/json": "^2.2.190",
+    "@slidev/cli": "^0.48.0-beta.24",
     "@slidev/theme-default": "^0.25.0",
-    "@types/node": "^20.11.21",
+    "@types/node": "^20.11.25",
     "@types/prompts": "^2.4.9",
     "@types/seedrandom": "^3.0.8",
     "eslint": "^8.57.0",
-    "esno": "^4.0.0",
+    "esno": "^4.7.0",
     "execa": "^8.0.1",
     "fast-glob": "^3.3.2",
-    "playwright-chromium": "^1.41.2",
+    "playwright-chromium": "^1.42.1",
     "pnpm": "^8.15.4",
     "prompts": "^2.4.2",
     "rimraf": "^5.0.5",
     "seedrandom": "^3.0.5",
-    "typescript": "^5.3.3",
+    "typescript": "^5.4.2",
     "unocss": "^0.58.5"
   }
 }
