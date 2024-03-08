@@ -94,7 +94,6 @@ clicks: 4
 <h1 class="text-5xl! font-bold" v-click="2">Inbox-Zero</h1>
 <h1 class="text-5xl!" v-click="3">Everyday</h1>
 
-
 ---
 layout: fact
 growX: 0
@@ -152,7 +151,6 @@ contribution guide, issue form/templates, etc
 
 <img src="/dot-github-repo.png" w-100 rounded-md border="~ main" />
 
-
 ---
 layout: fact
 growX: 50
@@ -193,7 +191,6 @@ layout: center
 
 </v-clicks>
 
-
 ---
 layout: fact
 growX: 0
@@ -216,7 +213,6 @@ clicks: 2
 <Arrow x1="600" y1="200" x2="550" y2="75" text-lime shadow v-if="$clicks === 1" />
 <img absolute left-10 top-10 v-click="2" src="/notifications-grouped.png" w-150 />
 
-
 ---
 layout: fact
 growX: 90
@@ -228,7 +224,6 @@ growSize: 1.5
 filter out the noise, prioritize
 
 <div class="number-bg">3</div>
-
 
 ---
 layout: center
@@ -276,7 +271,6 @@ growY: 110
 
 </v-clicks>
 </div>
-
 
 ---
 layout: center

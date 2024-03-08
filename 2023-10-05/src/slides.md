@@ -84,8 +84,7 @@ Anthony's{.op50.text-2xl}
 
 <h2 important-text-5xl important-mt-0>Set Theory</h2>
 
-
-<!-- 
+<!--
 Today's topic is a quite abstract one, I'd call it the Set Theory. A way of thinking on planning the directions and roadmaps of your projects.
 
 So let's say we already have an Open Source project, or planning to create one. To be a little bit practical, we might want to gain certain amount of adoption, or just that we want people to enjoy our hard work. One of the things to consider is how we picturing our target users. For example, like "Is my tool for end users or developers?", "Or for Vue users or React users?", etc.
@@ -101,13 +100,13 @@ growY: 0
 
 <div
   v-click="1"
-  absolute w-200 h-200 left-20 border="~ gray/50 rounded-full" bg-gray:20 text-5xl 
+  absolute w-200 h-200 left-20 border="~ gray/50 rounded-full" bg-gray:20 text-5xl
   flex="~ items-center justify-center"
   transition-all duration-500
   :class="$clicks === 4 ? 'scale-100' : 'scale-80'"
 >
   Target Users
-  <div 
+  <div
     v-click="2"
     absolute w-70 h-70 left-65 top-10 border="~ green rounded-full"
     bg-green:20 text-4xl text-green flex="~ items-center justify-center"
@@ -118,13 +117,10 @@ growY: 0
   </div>
 </div>
 
-
 <!--
-
 We know the fact that among all of the target users, only a portion of them will become our actual users. In order to gain more users to our project, we can try to convert more potential users to the actual users. Maybe by doing more marketing or polishing. In that case, the amount of the target users you have, actually becomes the upper limit of how many actual users you could possibly have. On the other hand, we can also try to find a way to expand our target users to include more people.
 
 Under this idea, let's take a look at some examples of how we can do that.
-
 -->
 
 ---
@@ -138,7 +134,7 @@ growY: 50
 
 <v-clicks>
 
-## <span w-10 inline-block /> My First Open Source Project <sup op40>2019</sup> 
+## <span w-10 inline-block /> My First Open Source Project <sup op40>2019</sup>
 
 <code text-xl>antfu/vscode-vue-i18n-ally</code>
 
@@ -147,11 +143,9 @@ growY: 50
 </v-clicks>
 
 <!--
-
 The first example I am going to show you is actually my first open source project back in 2019.
 
 The repo name is call `vscode-vue-i18n-ally`. It's a VS Code extension for helping Vue developers to work with i18n, like preview the translations in code, or manage keys for each language, etc.
-
 -->
 
 ---
@@ -161,9 +155,7 @@ layout: center
 ![](/i18n-ally-hover.png){.h-100.contrast-110}
 
 <!--
-
-This is a screenshot of the extension that shows its basic features. Well, the extension itself isn't our main topic today. 
-
+This is a screenshot of the extension that shows its basic features. Well, the extension itself isn't our main topic today.
 -->
 
 ---
@@ -213,7 +205,7 @@ class: h-full
   >
     Vue
   </div>
-  <div 
+  <div
     v-click="3"
     absolute w-100 h-100 left-45 top-25 border="~ amber rounded-full"
     bg-amber:20 text-3xl text-amber flex="~ items-center justify-center"
@@ -222,7 +214,7 @@ class: h-full
   </div>
   <Arrow
     v-click="4"
-    x1="60" y1="360" x2="280" y2="160" text-purple 
+    x1="60" y1="360" x2="280" y2="160" text-purple
     transition-all duration-500
     :class="$clicks >= 9 ? 'scale-y-50 scale-x-50 top-19 left--10' : ''"
   />
@@ -239,7 +231,7 @@ class: h-full
     v-click="[7, 9]"
     text-lime left-82 top-32 absolute text-2xl border="~ lime rounded-xl" ws-nowrap px2 bg-lime:20
   >vue-i18n</div>
-  <div 
+  <div
     v-click="[8, 9]"
     text-red left-55 top-55 absolute text-2xl border="~ red rounded-xl" ws-nowrap px2 bg-red:20
   >???</div>
@@ -256,7 +248,6 @@ Before we dive into the solutions, let's have a look of this graph. What would t
 
 And then when it comes to the intersection between VS Code and i18n, we see that there seems to be no such projects at that time. A straightforward thinking -- let's be that one. In practice, we could try to make the extension decoupled from Vue, so that it could be used with other frameworks as well. In short, let's make it universal by breaking the set cirles and expand the intersection.
 -->
-
 
 ---
 layout: center
@@ -357,7 +348,6 @@ I'd say, Vite's success turns out to be far beyond my initial imagination. It's 
 </v-clicks>
 </div>
 
-
 <!--
 The take away in this section is that we could seek for the possibility of breaking the intersection and make our project universal. Here are some of the benefits I can think of. By making our project more universal, meaning we could reach out to a large user base and naturally we might then have more contributors to join the force and work together, instead of everyone work on their own solution that aren't compatible with each other. Trying to refactor things to become universal would also help us to revise the design and abstraction, and often we could end up with a more maintainable and extensible architecture. And finally, if your project started to gain more usages from various needs, making improvements in our project could end up benefit everyone in the ecosystem.
 -->
@@ -373,7 +363,6 @@ layout: intro
 <!--
 So, we know that being universal has a lot great benefits. But actually, being specific is also not a bad thing.
 -->
-
 
 ---
 layout: center
@@ -475,7 +464,7 @@ clicks: 10
     <img src="/ecosystem/nitro.svg" w-1em text-5xl />
     Nitro
   </div>
-  <img 
+  <img
     src="/lines-nitro.svg"
     h-16 max-w-inherit mb3
     v-click="5"
@@ -485,7 +474,7 @@ clicks: 10
     <div i-logos-aws v-click="4" />
     <div i-logos-digital-ocean v-click="4" />
     <div i-logos-firebase v-click="4" />
-    <div i-logos-netlify-icon v-click="2" /> 
+    <div i-logos-netlify-icon v-click="2" />
     <div i-logos-cloudflare v-click="1" />
     <div i-logos-vercel-icon invert v-click="3" />
     <div i-logos-github-icon invert v-click="4" />
@@ -529,7 +518,7 @@ class: h-full
   <div flex="~ gap-4" text-5xl>
     <div i-logos-esbuild v-click="4" />
     <div i-logos-rollupjs v-click="4" />
-    <div i-logos-webpack v-click="1" /> 
+    <div i-logos-webpack v-click="1" />
     <div i-logos-vitejs v-click="1" />
     <img src="/rspack.png" w-1em v-click="4" />
     <div op50 v-click="4">⋯</div>
@@ -615,7 +604,6 @@ clicks: 8
 </div>
 
 <!--
-
 Those just two examples. We also have the UnJS community the provide many high quality tools throughout the entire JavaScript ecosystem. And actually `Nitro` and `unplugin` are parts of the UnJS community. We also have `vite-node`, made from our server-side code executor, later becomes the core engine of Vitest and made it possible.
 
 These tools are created from Nuxt's needs, but as later we extract them and make them universal, they have formed their own communities and ecosystems that can benefit much wider range of users and scenarios. Nuxt can be the framework that is a bit specific for providing better experiences, while the underlying tools can be shared and collaborated with other frameworks and communities. That is where make Open Source amazing, isn't it?
@@ -631,7 +619,7 @@ So different from the "Set Intersaction" we were talking about, I'd call it the 
 
 <v-click>
 
-#### [Expand the]{.op50} ["Set Intersection"]{.text-purple} []{.inline-block.i-gis-intersection.translate-y-1/10.text-purple} 
+#### [Expand the]{.op50} ["Set Intersection"]{.text-purple} []{.inline-block.i-gis-intersection.translate-y-1/10.text-purple}
 
 </v-click>
 <v-clicks>
@@ -659,9 +647,8 @@ So different from the "Set Intersaction" we were talking about, I'd call it the 
 
 </v-clicks>
 
-<!-- 
-
-So to wrap up with today's topic, we brought up an idea that I call it "The Set Theory". It composed with two sections, the "Set Intersection" and the "Set Union". 
+<!--
+So to wrap up with today's topic, we brought up an idea that I call it "The Set Theory". It composed with two sections, the "Set Intersection" and the "Set Union".
 
 In the intersection we learnt that we shouldn't limit our projects to only be in a niche spot, we should proactively seek for the possibility to make our projects universal by breaking the cirles and enlarge our scope.
 
@@ -670,7 +657,6 @@ And in the union, we learnt even somethings we have to be specific in order to a
 It's all about collaboration and communities. I have a strong believe that open source is the way for us to build the better world. And I am looking forward to see more and more open source built in similiar mindsets.
 
 That's all for my talk. Thank you!
-
 -->
 
 ---

@@ -162,10 +162,8 @@ growY: 10
 
 - Personalized documentations
 
-
 </v-clicks>
 </div>
-
 
 ---
 layout: center
@@ -195,7 +193,6 @@ growY: 90
 
 <Repo name="nuxt/devtools" />
 
-
 ---
 layout: center
 class: text-center
@@ -204,7 +201,6 @@ growY: -20
 ---
 
 # Q&A
-
 
 ---
 layout: intro

@@ -69,7 +69,6 @@ layout: center
   </div>
 </div>
 
-
 ---
 layout: iframe
 url: https://vueuse.org/functions.html
@@ -129,7 +128,6 @@ layout: center
 - In `template`, we build connectons between state and UI
 - In `setup()` function, we build connections between data and logics
 
-
 </v-clicks>
 
 ---
@@ -159,10 +157,10 @@ function add(a: number, b: number) {
 ```
 
 ```ts
-let a = 1
-let b = 2
+const a = 1
+const b = 2
 
-let c = add(a, b) // 3
+const c = add(a, b) // 3
 ```
 
 <div class="my-auto leading-6 text-base opacity-75">
@@ -446,7 +444,7 @@ console.log(count)
 <div i-carbon-arrow-right ma></div>
 
 ```ts
-let count = ref(0)
+const count = ref(0)
 count.value = 1
 console.log(count.value)
 ```
@@ -577,7 +575,7 @@ Use `onUnmounted()` hook to register side-effect clean up.
 ```ts {all|2-4|6|2,7|8|all}
 const count = ref(0)
 const stop = watch(count, () => {
-  console.log('Count: ' + count.value)
+  console.log(`Count: ${count.value}`)
 })
 
 count.value += 1 // Count: 1
@@ -621,7 +619,6 @@ stop() // unregister events
 ```
 
 </v-click>
-
 
 ---
 

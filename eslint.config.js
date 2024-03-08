@@ -1,5 +1,14 @@
 import antfu from '@antfu/eslint-config'
 
 export default antfu({
-  ignores: ['**/*.md'],
+  vue: true,
+  formatters: {
+    css: true,
+    markdown: true,
+    slidev: {
+      files: [
+        '*/src/slides.md',
+      ],
+    },
+  },
 })

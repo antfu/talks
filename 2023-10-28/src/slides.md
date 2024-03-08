@@ -20,7 +20,7 @@ growSize: 1.5
 私の日本語はあまり上手ではありません。
 
 So I'd like to switch to English, please bear with me. And thanks to the translators working hard doing the translation for me.
- 
+
 お疲れ様です。
 -->
 
@@ -40,7 +40,7 @@ layout: cover
 </div>
 
 <!--
-So, it's my pleasure to be here. And today my topic is the The Set Theory. 
+So, it's my pleasure to be here. And today my topic is the The Set Theory.
 
 日本語で言うと 集合論だと 思います。
 
@@ -117,13 +117,13 @@ growY: 0
 
 <div
   v-click="1"
-  absolute w-200 h-200 left-20 border="~ gray/50 rounded-full" bg-gray:20 text-5xl 
+  absolute w-200 h-200 left-20 border="~ gray/50 rounded-full" bg-gray:20 text-5xl
   flex="~ items-center justify-center"
   transition-all duration-500
   :class="$clicks === 4 ? 'scale-100' : 'scale-80'"
 >
   Target Users
-  <div 
+  <div
     v-click="2"
     absolute w-70 h-70 left-65 top-10 border="~ green rounded-full"
     bg-green:20 text-4xl text-green flex="~ items-center justify-center"
@@ -153,7 +153,7 @@ growY: 50
 
 <v-clicks>
 
-## <span w-10 inline-block /> My First Open Source Project <sup op40>2019</sup> 
+## <span w-10 inline-block /> My First Open Source Project <sup op40>2019</sup>
 
 <code text-xl>antfu/vscode-vue-i18n-ally</code>
 
@@ -245,7 +245,7 @@ The "Set Intersection" <div inline-bloc i-gis-intersection class="translate-y-1/
   >
     Vue
   </div>
-  <div 
+  <div
     v-click="3"
     absolute w-100 h-100 left-45 top-25 border="~ amber rounded-full"
     bg-amber:20 text-3xl text-amber flex="~ items-center justify-center"
@@ -254,7 +254,7 @@ The "Set Intersection" <div inline-bloc i-gis-intersection class="translate-y-1/
   </div>
   <Arrow
     v-click="4"
-    x1="60" y1="360" x2="280" y2="160" text-purple 
+    x1="60" y1="360" x2="280" y2="160" text-purple
     transition-all duration-500
     :class="$clicks >= 9 ? 'scale-y-50 scale-x-50 top-19 left--10' : ''"
   />
@@ -271,7 +271,7 @@ The "Set Intersection" <div inline-bloc i-gis-intersection class="translate-y-1/
     v-click="[7, 9]"
     text-lime left-82 top-32 absolute text-2xl border="~ lime rounded-xl" ws-nowrap px2 bg-lime:20
   >vue-i18n</div>
-  <div 
+  <div
     v-click="[8, 9]"
     text-red left-55 top-55 absolute text-2xl border="~ red rounded-xl" ws-nowrap px2 bg-red:20
   >???</div>
@@ -390,11 +390,10 @@ I'd say, Vite's success turns out to be far beyond my initial imagination. It's 
 </v-clicks>
 </div>
 
-
 <!--
 By making our project more universal, meaning we could reach out to a large user base and naturally we might then have more contributors to join the force and work together.
 
-Trying to refactor things to become universal would also help us to revise the design and abstraction, and often we could end up with a more maintainable and extensible architecture. 
+Trying to refactor things to become universal would also help us to revise the design and abstraction, and often we could end up with a more maintainable and extensible architecture.
 
 And finally, if your project started to gain more usages from various needs, making improvements in our project could end up benefit everyone in the ecosystem.
 -->
@@ -410,7 +409,6 @@ layout: intro
 <!--
 So, we know that being universal has a lot great benefits. But actually, being specific is also not a bad thing.
 -->
-
 
 ---
 layout: center
@@ -510,7 +508,7 @@ clicks: 10
     <img src="/ecosystem/nitro.svg" w-1em text-5xl />
     Nitro
   </div>
-  <img 
+  <img
     src="/lines-nitro.svg"
     h-16 max-w-inherit mb3
     v-click="5"
@@ -520,7 +518,7 @@ clicks: 10
     <div i-logos-aws v-click="4" />
     <div i-logos-digital-ocean v-click="4" />
     <div i-logos-firebase v-click="4" />
-    <div i-logos-netlify-icon v-click="2" /> 
+    <div i-logos-netlify-icon v-click="2" />
     <div i-logos-cloudflare-icon v-click="1" />
     <div i-logos-vercel-icon invert v-click="3" />
     <div i-logos-github-icon invert v-click="4" />
@@ -568,7 +566,7 @@ class: h-full
   <div flex="~ gap-4" text-5xl>
     <div i-logos-esbuild v-click="4" />
     <div i-logos-rollupjs v-click="4" />
-    <div i-logos-webpack v-click="1" /> 
+    <div i-logos-webpack v-click="1" />
     <div i-logos-vitejs v-click="1" />
     <img src="/rspack.png" w-1em v-click="4" />
     <div op50 v-click="4">⋯</div>
@@ -658,7 +656,7 @@ Those just two examples. We also have the UnJS community that provide many high 
 
 These tools are created from Nuxt's needs, but as later we extract them and make them universal, they have formed their own communities and ecosystems that can benefit much wider range of users and scenarios. Nuxt can be the framework that is a bit specific for providing better experiences, while the underlying tools can be shared and collaborated with other frameworks and communities. That is where make Open Source amazing, isn't it?
 
-So different from the "Set Intersaction" we were talking about, I'd call it the set union. 
+So different from the "Set Intersaction" we were talking about, I'd call it the set union.
 
 We extract the universal parts, expand the scope and grow the communities, which also eventually benefit back to ourselves.
 -->
@@ -667,7 +665,7 @@ We extract the universal parts, expand the scope and grow the communities, which
 clicks: 10
 ---
 
-<div 
+<div
   class="left-50% top-50% absolute relative w-0 h-0"
   :class="$clicks < 6 ? '' : 'scale-80'"
   transition-all duration-600
@@ -677,7 +675,7 @@ clicks: 10
     absolute border="~ green rounded-full"
     translate="x--50% y--50%"
     :class="$clicks < 3 ? 'ml--40 w-150 h-150' : 'ml--70 w-60 h-60'"
-    transition-all duration-800 
+    transition-all duration-800
     bg-green:20 text-3xl text-green flex="~ items-center justify-center"
   >
     <div i-logos-nuxt-icon text-6xl />
@@ -690,12 +688,12 @@ clicks: 10
     transition-all duration-800
     text-3xl text-white flex="~ items-center justify-center"
   >
-    <div 
+    <div
       h-1em
-      :class="$clicks < 1 ? 'scale-200' : $clicks < 3 ? 'scale-90' : 'scale-140'" 
+      :class="$clicks < 1 ? 'scale-200' : $clicks < 3 ? 'scale-90' : 'scale-140'"
       of-hidden transition-all duration-800>
       <div
-        flex="~ col gap-2 items-center" 
+        flex="~ col gap-2 items-center"
         transition-all duration-600 delay-1000
         :style="{
           transform: $clicks < 3 ? '' : 'translateY(-1.1em)'
@@ -711,7 +709,7 @@ clicks: 10
     absolute border="~ green rounded-full"
     translate="x--50% y--50%"
     ml--50 mt--42 w-60 h-60
-    transition-all duration-800 
+    transition-all duration-800
     bg-green:20 text-3xl text-green flex="~ items-center justify-center"
   >
     <div i-logos-vue text-6xl />
@@ -721,7 +719,7 @@ clicks: 10
     absolute border="~ red rounded-full"
     translate="x--50% y--50%"
     mt--65 ml-8 w-60 h-60
-    transition-all duration-800 
+    transition-all duration-800
     bg-red:20 text-3xl text-red flex="~ items-center justify-center"
   >
     <div i-logos-svelte-icon text-6xl />
@@ -731,7 +729,7 @@ clicks: 10
     absolute border="~ blue rounded-full"
     translate="x--50% y--50%"
     mt--30 ml-60 w-60 h-60
-    transition-all duration-800 
+    transition-all duration-800
     bg-blue:20 text-3xl text-blue flex="~ items-center justify-center"
   >
     <div i-logos-react text-6xl />
@@ -741,7 +739,7 @@ clicks: 10
     absolute border="~ purple rounded-full"
     translate="x--50% y--50%"
     mt-32 ml-60 w-60 h-60
-    transition-all duration-800 
+    transition-all duration-800
     bg-purple:20 text-3xl text-purple flex="~ items-center justify-center"
   >
     <div i-logos-qwik-icon text-6xl />
@@ -751,7 +749,7 @@ clicks: 10
     absolute border="~ blue rounded-full"
     translate="x--50% y--50%"
     mt-55 ml3 w-60 h-60
-    transition-all duration-800 
+    transition-all duration-800
     bg-blue:20 text-3xl text-blue flex="~ items-center justify-center"
   >
     <div i-logos-solidjs-icon text-6xl />
@@ -761,7 +759,7 @@ clicks: 10
     absolute border="~ gray rounded-full"
     translate="x--50% y--50%"
     mt-45 ml--47 w-40 h-40
-    transition-all duration-800 
+    transition-all duration-800
     bg-gray:20 text-3xl text-gray flex="~ items-center justify-center"
   >
     <div i-ri-more-line text-6xl />
@@ -817,7 +815,7 @@ So, that's our vision, each feature could share and collabrate across different 
 
 <v-click>
 
-#### [Expand the]{.op50} ["Set Intersection"]{.text-purple} []{.inline-block.i-gis-intersection.translate-y-1/10.text-purple} 
+#### [Expand the]{.op50} ["Set Intersection"]{.text-purple} []{.inline-block.i-gis-intersection.translate-y-1/10.text-purple}
 
 </v-click>
 <v-clicks>
@@ -845,9 +843,8 @@ So, that's our vision, each feature could share and collabrate across different 
 
 </v-clicks>
 
-<!-- 
-
-So to wrap up with today's topic, we brought up an idea that I call it "The Set Theory". It composed with two sections, the "Set Intersection" and the "Set Union". 
+<!--
+So to wrap up with today's topic, we brought up an idea that I call it "The Set Theory". It composed with two sections, the "Set Intersection" and the "Set Union".
 
 In the intersection we learnt that we shouldn't limit our projects to only be in a niche spot, we should proactively seek for the possibility to make our projects universal by breaking the cirles and enlarge our scope.
 

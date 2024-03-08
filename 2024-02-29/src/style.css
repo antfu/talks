@@ -7,7 +7,6 @@
   --slidev-code-background: #16161690 !important;
 }
 
-
 h6 {
   text-transform: initial !important;
   font-weight: 400 !important;
@@ -35,21 +34,39 @@ iframe {
 /* ---- */
 
 @keyframes balance-shake {
-  0% { transform: rotate(13deg); }
-  50% { transform: rotate(20deg); }
-  100% { transform: rotate(13deg); }
+  0% {
+    transform: rotate(13deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(13deg);
+  }
 }
 
 @keyframes balance-move-left {
-  0% { transform: translate(0, -27px); }
-  50% { transform: translate(3px, -40px); }
-  100% { transform: translate(0, -27px); }
+  0% {
+    transform: translate(0, -27px);
+  }
+  50% {
+    transform: translate(3px, -40px);
+  }
+  100% {
+    transform: translate(0, -27px);
+  }
 }
 
 @keyframes balance-move-right {
-  0% { transform: translate(-7px, 25px); }
-  50% { transform: translate(-12px, 38px); }
-  100% { transform: translate(-7px, 25px); }
+  0% {
+    transform: translate(-7px, 25px);
+  }
+  50% {
+    transform: translate(-12px, 38px);
+  }
+  100% {
+    transform: translate(-7px, 25px);
+  }
 }
 
 .animate-balance-shake {
@@ -78,6 +95,6 @@ iframe {
   border: 1px solid #eee1;
 }
 
-.rough-annotation > path[stroke-width="2"] {
+.rough-annotation > path[stroke-width='2'] {
   stroke-width: calc(2px * var(--slidev-slide-scale));
 }

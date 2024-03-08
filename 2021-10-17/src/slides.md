@@ -157,7 +157,7 @@ export default {
 <div v-show="$clicks >= 1">
 
 ```js {*|*|3|3,11} {at:0}
-import { ref, onUnmounted } from 'vue'
+import { onUnmounted, ref } from 'vue'
 export default {
   setup() {
     const media = matchMedia('(prefers-color-scheme: dark)')
@@ -165,7 +165,7 @@ export default {
 
     const update = () => dark.value = media.matches
     const toggleDark = () => dark.value = !dark.value
-    
+
     media.addEventListener('change', update)
     onUnmounted(() => {
       media.removeEventListener('change', update)
@@ -203,7 +203,7 @@ export default {
 
     const update = () => dark.value = media.matches
     const toggleDark = () => dark.value = !dark.value
-    
+
     media.addEventListener('change', update)
     onUnmounted(() => {
       media.removeEventListener('change', update)
@@ -240,7 +240,7 @@ export default {
 
 ```ts
 // useDark.js
-import { ref, onUnmounted } from 'vue'
+import { onUnmounted, ref } from 'vue'
 
 export function useDark() {
   const media = matchMedia('(prefers-color-scheme: dark)')
@@ -248,7 +248,7 @@ export function useDark() {
 
   const update = () => dark.value = media.matches
   const toggleDark = () => dark.value = !dark.value
-  
+
   media.addEventListener('change', update)
   onUnmounted(() => {
     media.removeEventListener('change', update)
@@ -392,7 +392,7 @@ disabled: true
 ###### 開啟
 
 ```js
-import { ref, computed } from 'vue'
+import { computed, ref } from 'vue'
 
 const count = ref(0)
 const double = computed(() => count.value * 2)
@@ -404,7 +404,7 @@ function inc() {
 
 ```js
 let count = $ref(0)
-let double = $computed(() => count * 2)
+const double = $computed(() => count * 2)
 
 function inc() {
   count++
@@ -418,7 +418,6 @@ function inc() {
 - 使用 `$()` 宣告響應式的變數 (`引用 -> 變數`)
 - 使用 `$$()` 獲得響應式變數對應的 Ref (`變數 -> 引用`)
 - 提供了常用 API 的簡寫 (`$ref`, `$computed` 和 `$shallowRef` 等)
-
 
 <div pt="6"></div>
 
@@ -493,7 +492,7 @@ flowchart LR
 disabled: true
 ---
 
-# 打包器 Bundlers 
+# 打包器 Bundlers
 
 <div flex="~" position="absolute top-10 right-10" gap="4" text="center">
 <div flex="~ col">
@@ -521,10 +520,9 @@ Rollup
 
 </v-click>
 
-
 ---
 
-# 打包器 Bundlers 
+# 打包器 Bundlers
 
 <div flex="~" position="absolute top-10 right-10" gap="4" text="center">
 <div flex="~ col">
@@ -729,7 +727,6 @@ import MyInput from '../components/MyInput.vue'
 
 </div>
 
-
 <div>
 <div v-click>
 
@@ -751,7 +748,6 @@ import MyInput from '../components/MyInput.vue'
 </div>
 </div>
 
-
 ---
 
 # 編譯期解析
@@ -770,17 +766,18 @@ import MyInput from '../components/MyInput.vue'
 將會被 `@vue/sfc-compiler` 編譯成 (可以通過 https://sfc.vuejs.org 查看)
 
 ```ts {all|3-5}
-import { resolveComponent as _resolveComponent } from "vue"
+import { resolveComponent as _resolveComponent } from 'vue'
 function render(_ctx, _cache) {
-  const _component_my_button = _resolveComponent("my-button")
-  const _component_my_input = _resolveComponent("my-input")
-  const _component_my_container = _resolveComponent("my-container")
+  const _component_my_button = _resolveComponent('my-button')
+  const _component_my_input = _resolveComponent('my-input')
+  const _component_my_container = _resolveComponent('my-container')
 
   return (_openBlock(), _createBlock(_component_my_container, null, {
     default: _withCtx(() => [
       _createVNode(_component_my_button),
       _createVNode(_component_my_input)
-    ]), _: 1 /* STABLE */
+    ]),
+    _: 1 /* STABLE */
   }))
 }
 ```
@@ -806,13 +803,14 @@ export default {
         return
 
       return code.replace(
-        /_resolveComponent\("(.+?)"/g, 
+        /_resolveComponent\("(.+?)"/g,
         (_, name) => {
           const component = findComponent(name)
           // 注入導入程式碼 (略)
           return component.path
-        })
-    } 
+        }
+      )
+    }
   }]
 }
 ```
@@ -843,27 +841,27 @@ export default {
 # 最終結果
 
 ```ts {4-6}
-import { resolveComponent as _resolveComponent } from "vue"
+import { resolveComponent as _resolveComponent } from 'vue'
 
 function render(_ctx, _cache) {
-  const _component_my_button = _resolveComponent("my-button")
-  const _component_my_input = _resolveComponent("my-input")
-  const _component_my_container = _resolveComponent("my-container")
+  const _component_my_button = _resolveComponent('my-button')
+  const _component_my_input = _resolveComponent('my-input')
+  const _component_my_container = _resolveComponent('my-container')
 
-  return () => /* ... */
+  return () => { /* ... */ }
 }
 ```
 
 替換後產物
 
 ```ts {2-4}
-import { resolveComponent as _resolveComponent } from "vue"
-import _component_my_button from "../components/MyButton.vue"
-import _component_my_input from "../components/MyInput.vue"
-import _component_my_container from "../components/MyContainer.vue"
+import { resolveComponent as _resolveComponent } from 'vue'
+import _component_my_button from '../components/MyButton.vue'
+import _component_my_input from '../components/MyInput.vue'
+import _component_my_container from '../components/MyContainer.vue'
 
 function render(_ctx, _cache) {
-  return () => /* ... */
+  return () => { /* ... */ }
 }
 ```
 
@@ -915,7 +913,6 @@ debouncedWatch(counter, () => {
 ```
 
 </div>
-
 
 ---
 
@@ -1055,7 +1052,6 @@ class: flex flex-col
 
 <v-clicks>
 
-
 <Repo name="antfu/vite-plugin-components" hide-owner/> - 組件自動引入
 
 <Repo name="antfu/vite-plugin-auto-import" hide-owner/> - API 自動引入
@@ -1145,14 +1141,12 @@ title: Introducing unplugin
 ###### Unplugin
 
 ```ts
-
-
-export const VitePlugin = () => {
+export function VitePlugin() {
   return {
     name: 'my-first-unplugin',
-    transform (code) {
+    transform(code) {
       return code.replace(
-        /<template>/, 
+        /<template>/,
         `<template><div>Injected</div>`
       )
     },
@@ -1166,9 +1160,9 @@ import { createUnplugin } from 'unplugin'
 export const unplugin = createUnplugin(() => {
   return {
     name: 'my-first-unplugin',
-    transform (code) {
+    transform(code) {
       return code.replace(
-        /<template>/, 
+        /<template>/,
         `<template><div>Injected</div>`
       )
     },

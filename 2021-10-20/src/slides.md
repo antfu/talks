@@ -158,7 +158,7 @@ export default {
 <div v-show="$clicks >= 1">
 
 ```js {*|*|3|3,11} {at:0}
-import { ref, onUnmounted } from 'vue'
+import { onUnmounted, ref } from 'vue'
 export default {
   setup() {
     const media = matchMedia('(prefers-color-scheme: dark)')
@@ -166,7 +166,7 @@ export default {
 
     const update = () => dark.value = media.matches
     const toggleDark = () => dark.value = !dark.value
-    
+
     media.addEventListener('change', update)
     onUnmounted(() => {
       media.removeEventListener('change', update)
@@ -193,7 +193,7 @@ clicks: 2
 <div v-show="$clicks < 2">
 
 ```js
-import { ref, onUnmounted } from 'vue'
+import { onUnmounted, ref } from 'vue'
 
 export default {
   setup() {
@@ -202,7 +202,7 @@ export default {
 
     const update = () => dark.value = media.matches
     const toggleDark = () => dark.value = !dark.value
-    
+
     media.addEventListener('change', update)
     onUnmounted(() => {
       media.removeEventListener('change', update)
@@ -234,7 +234,7 @@ export default {
 <div v-show="$clicks >= 1">
 
 ```ts
-import { ref, onUnmounted } from 'vue'
+import { onUnmounted, ref } from 'vue'
 
 export function useDark() {
   const media = matchMedia('(prefers-color-scheme: dark)')
@@ -242,7 +242,7 @@ export function useDark() {
 
   const update = () => dark.value = media.matches
   const toggleDark = () => dark.value = !dark.value
-  
+
   media.addEventListener('change', update)
   onUnmounted(() => {
     media.removeEventListener('change', update)
@@ -387,7 +387,7 @@ disabled: true
 ###### with Ref Sugar
 
 ```js
-import { ref, computed } from 'vue'
+import { computed, ref } from 'vue'
 
 const count = ref(0)
 const double = computed(() => count.value * 2)
@@ -399,7 +399,7 @@ function inc() {
 
 ```js
 let count = $ref(0)
-let double = $computed(() => count * 2)
+const double = $computed(() => count * 2)
 
 function inc() {
   count++
@@ -413,7 +413,6 @@ function inc() {
 - Declare reactive variables from refs using `$()` (`refs -> vars`)
 - Get the underlying refs from reactive variables with `$$()` (`vars -> refs`)
 - Most commonly used APIs have convenience shorthands (`$ref`, `$computed` & `$shallowRef`)
-
 
 <div pt="6"></div>
 
@@ -485,7 +484,7 @@ Grunt
 
 ###### Build
 
-Commonly designed to be used with a single command 
+Commonly designed to be used with a single command
 
 ```mermaid {theme: 'neutral'}
 flowchart LR
@@ -510,7 +509,7 @@ flowchart LR
 
 ---
 
-# Bundlers 
+# Bundlers
 
 <div flex="~" position="absolute top-10 right-10" gap="4" text="center">
 <div flex="~ col">
@@ -555,7 +554,6 @@ Snowpack
 Vite
 </div>
 </div>
-
 
 <div m="t-8"/>
 <div class="grid grid-cols-[300px,1fr]">
@@ -653,7 +651,6 @@ export default {
 <!--
 So let's take a look at how we used to use components in Vue: TODO:.....
 
-
 One that worth mentioning is that while are you actually register the components globally, the drawback of global registration is that you will lose the ability to code splitting and TypeScript support.
 -->
 
@@ -730,7 +727,6 @@ Using <Repo name="antfu/vite-plugin-components" ml="1" hide-owner/>
 
 </div>
 
-
 <div>
 <div v-click>
 
@@ -752,7 +748,6 @@ Using <Repo name="antfu/vite-plugin-components" ml="1" hide-owner/>
 </div>
 </div>
 
-
 ---
 
 # How the compilation work
@@ -771,17 +766,18 @@ Using <Repo name="antfu/vite-plugin-components" ml="1" hide-owner/>
 Will be compiled by `@vue/sfc-compiler` to (Could inspect via https://sfc.vuejs.org)
 
 ```ts {all|3-5}
-import { resolveComponent as _resolveComponent } from "vue"
+import { resolveComponent as _resolveComponent } from 'vue'
 function render(_ctx, _cache) {
-  const _component_my_button = _resolveComponent("my-button")
-  const _component_my_input = _resolveComponent("my-input")
-  const _component_my_container = _resolveComponent("my-container")
+  const _component_my_button = _resolveComponent('my-button')
+  const _component_my_input = _resolveComponent('my-input')
+  const _component_my_container = _resolveComponent('my-container')
 
   return (_openBlock(), _createBlock(_component_my_container, null, {
     default: _withCtx(() => [
       _createVNode(_component_my_button),
       _createVNode(_component_my_input)
-    ]), _: 1 /* STABLE */
+    ]),
+    _: 1 /* STABLE */
   }))
 }
 ```
@@ -807,13 +803,14 @@ export default {
         return
 
       return code.replace(
-        /_resolveComponent\("(.+?)"/g, 
+        /_resolveComponent\("(.+?)"/g,
         (_, name) => {
           const component = findComponent(name)
           // inject import for component
-          return component.path      
-        })
-    } 
+          return component.path
+        }
+      )
+    }
   }]
 }
 ```
@@ -839,33 +836,32 @@ Read <a href="https://vitejs.dev/guide/api-plugin.html" target="_blank">Vite Plu
 
 </div>
 
-
 ---
 
 # The Result
 
 ```ts {4-6}
-import { resolveComponent as _resolveComponent } from "vue"
+import { resolveComponent as _resolveComponent } from 'vue'
 
 function render(_ctx, _cache) {
-  const _component_my_button = _resolveComponent("my-button")
-  const _component_my_input = _resolveComponent("my-input")
-  const _component_my_container = _resolveComponent("my-container")
+  const _component_my_button = _resolveComponent('my-button')
+  const _component_my_input = _resolveComponent('my-input')
+  const _component_my_container = _resolveComponent('my-container')
 
-  return () => /* ... */
+  return () => { /* ... */ }
 }
 ```
 
 After:
 
 ```ts {2-4}
-import { resolveComponent as _resolveComponent } from "vue"
-import _component_my_button from "../components/MyButton.vue"
-import _component_my_input from "../components/MyInput.vue"
-import _component_my_container from "../components/MyContainer.vue"
+import { resolveComponent as _resolveComponent } from 'vue'
+import _component_my_button from '../components/MyButton.vue'
+import _component_my_input from '../components/MyInput.vue'
+import _component_my_container from '../components/MyContainer.vue'
 
 function render(_ctx, _cache) {
-  return () => /* ... */
+  return () => { /* ... */ }
 }
 ```
 
@@ -884,7 +880,6 @@ Intermediate state of each transformation
 ---
 
 # API Auto Importing
-
 
 <RepoFixed name="antfu/unplugin-auto-import" />
 
@@ -1045,7 +1040,6 @@ import TearsOfJoy from '~icons/twemoji/face-with-tears-of-joy'
 
 </div>
 
-
 ---
 class: flex flex-col
 ---
@@ -1139,14 +1133,12 @@ class: text-center
 ###### Unplugin
 
 ```ts
-
-
-export const VitePlugin = () => {
+export function VitePlugin() {
   return {
     name: 'my-first-unplugin',
-    transform (code) {
+    transform(code) {
       return code.replace(
-        /<template>/, 
+        /<template>/,
         `<template><div>Injected</div>`
       )
     },
@@ -1160,9 +1152,9 @@ import { createUnplugin } from 'unplugin'
 export const unplugin = createUnplugin(() => {
   return {
     name: 'my-first-unplugin',
-    transform (code) {
+    transform(code) {
       return code.replace(
-        /<template>/, 
+        /<template>/,
         `<template><div>Injected</div>`
       )
     },
@@ -1175,7 +1167,6 @@ export const WebpackPlugin = unplugin.webpack
 ```
 
 </div>
-
 
 ---
 

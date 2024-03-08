@@ -56,7 +56,6 @@ layout: center
   </div>
 </div>
 
-
 ---
 layout: iframe
 url: https://vueuse.org/functions.html
@@ -116,7 +115,6 @@ layout: center
 - 通过 `<template>` 模版，我们建立了**状态**和 **UI** 的链接
 - 通过 `setup()` 函数，我们建立了**状态**和**逻辑**的链接
 
-
 </v-clicks>
 
 ---
@@ -146,10 +144,10 @@ function add(a: number, b: number) {
 ```
 
 ```ts
-let a = 1
-let b = 2
+const a = 1
+const b = 2
 
-let c = add(a, b) // 3
+const c = add(a, b) // 3
 ```
 
 <div class="my-auto leading-6 text-base opacity-75">
@@ -490,7 +488,7 @@ console.log(count)
 <div i-carbon-arrow-right ma></div>
 
 ```ts
-let count = ref(0)
+const count = ref(0)
 count.value = 1
 console.log(count.value)
 ```
@@ -506,18 +504,17 @@ console.log(count.value)
 watch(
   count, // !! 这会导致响应式丢失
   () => {}
-) 
+)
 ```
 
 ```ts
 watch(
   () => count, // 应该使用一个 Getter 函数
   () => {}
-) 
+)
 ```
 
 </v-clicks>
-
 
 ---
 
@@ -526,7 +523,7 @@ watch(
 在 VueUse 中，结合 Reactive Getter，我们可以：
 
 ```ts {all|3|5}
-let count = $ref(0)
+const count = $ref(0)
 
 useTitle(() => `Count: ${count}`)
 
@@ -634,7 +631,7 @@ export function useEventListener(name, handler) {
 ```ts {all|2-4|6|2,7|8|all}
 const count = ref(0)
 const stop = watch(count, () => {
-  console.log('Count: ' + count.value)
+  console.log(`Count: ${count.value}`)
 })
 
 count.value += 1 // Count: 1
@@ -678,7 +675,6 @@ stop() // 移除事件监听
 ```
 
 </v-click>
-
 
 ---
 

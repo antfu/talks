@@ -33,7 +33,6 @@ p {
 }
 </style>
 
-
 ---
 layout: intro
 ---
@@ -60,7 +59,6 @@ VueUse, Slidev, Type Challenges 等项目创作者<br>
 </div>
 
 <img src="https://antfu.me/avatar.png" class="rounded-full w-40 abs-tr mt-16 mr-12"/>
-
 
 ---
 name: Sponsors
@@ -183,8 +181,8 @@ clicks: 6
 
 ```ts {all|2,3|5-15|all}
 export function useDark(options: UseDarkOptions = {}) {
-  const preferredDark = usePreferredDark()              // <--
-  const store = useLocalStorage('vueuse-dark', 'auto')  // <--
+  const preferredDark = usePreferredDark() // <--
+  const store = useLocalStorage('vueuse-dark', 'auto') // <--
 
   return computed<boolean>({
     get() {
@@ -193,8 +191,9 @@ export function useDark(options: UseDarkOptions = {}) {
         : store.value === 'dark'
     },
     set(v) {
-      store.value = v === preferredDark.value 
-        ? 'auto' : v ? 'dark' : 'light'
+      store.value = v === preferredDark.value
+        ? 'auto'
+        : v ? 'dark' : 'light'
     },
   })
 }
@@ -289,7 +288,6 @@ layout: center
   </div>
 </div>
 
-
 ---
 
 <div class="grid grid-cols-2 gap-x-4"><div>
@@ -363,7 +361,7 @@ bar.prop = 1
 ```ts
 const counter = ref(0)
 
-watch(counter, count => {
+watch(counter, (count) => {
   console.log(count) // same as `counter.value`
 })
 ```
@@ -383,7 +381,7 @@ watch(counter, count => {
 <div>
 
 ```ts
-import { ref, reactive } from 'vue'
+import { reactive, ref } from 'vue'
 const foo = ref('bar')
 const data = reactive({ foo, id: 10 })
 data.foo // 'bar'
@@ -395,9 +393,7 @@ data.foo // 'bar'
 
 </div>
 
-
 ---
-
 
 # `unref` - Ref 的反操作 <MarkerCore />
 
@@ -421,7 +417,7 @@ function unref<T>(r: Ref<T> | T): T {
 ###### 使用
 
 ```ts {monaco}
-import { unref, ref } from 'vue'
+import { ref, unref } from 'vue'
 
 const foo = ref('foo')
 unref(foo) // 'foo'
@@ -450,7 +446,6 @@ unref(bar) // 'bar'
 纯函数
 </div>
 
-
 ```ts
 function add(a: number, b: number) {
   return a + b
@@ -458,10 +453,10 @@ function add(a: number, b: number) {
 ```
 
 ```ts
-let a = 1
-let b = 2
+const a = 1
+const b = 2
 
-let c = add(a, b) // 3
+const c = add(a, b) // 3
 ```
 
 <div class="my-auto leading-6 text-base opacity-75">
@@ -507,7 +502,6 @@ c.value // 6
 
 </div>
 
-
 ---
 
 # MaybeRef 类型工具 <MarkerTips/>
@@ -529,7 +523,7 @@ export function useTimeAgo(
 ```
 
 ```ts
-import { computed, unref, Ref } from 'vue'
+import { Ref, computed, unref } from 'vue'
 
 type MaybeRef<T> = Ref<T> | T
 
@@ -541,7 +535,6 @@ export function useTimeAgo(
 ```
 
 </v-clicks>
-
 
 ---
 
@@ -569,7 +562,7 @@ title.value = 'Hello World'
 ###### 绑定上一个现有的 Ref
 
 ```ts
-import { ref, computed } from 'vue'
+import { computed, ref } from 'vue'
 import { useTitle } from '@vueuse/core'
 
 const name = ref('Hello')
@@ -587,7 +580,6 @@ name.value = 'Hi' // Hi - World
 <div v-click class="abs-b mx-14 my-12">
 <VueUse name="useTitle"/>
 </div>
-
 
 ---
 
@@ -616,12 +608,7 @@ export function useTitle(
 }
 ```
 
-```html 
-
-
-
-
-
+```html
 
 <-- 1. 重复使用用户提供的 Ref, 或者建立一个新的
 
@@ -632,7 +619,6 @@ export function useTitle(
 </v-clicks>
 </div>
 
-
 ---
 
 # 重复使用已有 Ref <MarkerCore />
@@ -642,12 +628,11 @@ export function useTitle(
 如果将一个 `ref` 传递给 `ref()` 构造函数，它将会原样将其返回。
 
 ```ts
-const foo = ref(1)   // Ref<1>
+const foo = ref(1) // Ref<1>
 const bar = ref(foo) // Ref<1>
 
 foo === bar // true
 ```
-
 
 ```ts
 function useFoo(foo: Ref<string> | string) {
@@ -664,7 +649,6 @@ function useFoo(foo: Ref<string> | string) {
 这个技巧在编写不确定参数类型的函数时十分有用。
 
 </v-clicks>
-
 
 ---
 
@@ -683,12 +667,11 @@ type MaybeRef<T> = Ref<T> | T
 
 function useBala<T>(arg: MaybeRef<T>) {
   const reference = ref(arg) // 得到 ref
-  const value = unref(arg)   // 得到值
+  const value = unref(arg) // 得到值
 }
 ```
 
 </div>
-
 
 ---
 
@@ -701,10 +684,10 @@ function useBala<T>(arg: MaybeRef<T>) {
 <v-clicks>
 
 ```ts {monaco}
-import { ref, reactive } from 'vue'
+import { reactive, ref } from 'vue'
 
 function useMouse() {
-  return { 
+  return {
     x: ref(0),
     y: ref(0)
   }
@@ -725,7 +708,6 @@ mouse.x === x.value // true
 
 </v-clicks>
 </div>
-
 
 ---
 
@@ -755,12 +737,11 @@ const user_url = computed(() => data.value?.user_url)
 ```
 
 </div>
-<div v-click> 
+<div v-click>
 
 先建立数据间的“连结”，然后再等待异步请求返回将数据填充。概念和 React 中的 SWR (stale-while-revalidate) 类似。
 
 </div>
-
 
 ---
 
@@ -790,7 +771,6 @@ export function useFetch<R>(url: MaybeRef<string>) {
 <div v-click class="abs-b mx-14 my-12">
 <VueUse name="useFetch"/>
 </div>
-
 
 ---
 
@@ -853,7 +833,7 @@ To get DOM element, you can pass a ref to it, and it will be available after com
 <div v-click>
 
 ```ts {monaco}
-import { defineComponent, ref, onMounted } from 'vue'
+import { defineComponent, onMounted, ref } from 'vue'
 export default defineComponent({
   setup() {
     const element = ref<HTMLElement | undefined>()
@@ -874,7 +854,6 @@ export default defineComponent({
 ```
 
 </div>
-
 
 ---
 disabled: true
@@ -908,7 +887,6 @@ export default defineComponent({
 </v-click>
 </div>
 
-
 ---
 
 # 类型安全的 Provide / Inject <MarkerCore/>
@@ -926,11 +904,10 @@ export interface UserInfo {
   name: string
 }
 
-export const injectKeyUser: InjectionKey<UserInfo> = Symbol()
+export const injectKeyUser: InjectionKey<UserInfo> = Symbol('user')
 ```
 
 </div>
-
 
 ---
 
@@ -943,7 +920,7 @@ export const injectKeyUser: InjectionKey<UserInfo> = Symbol()
 
 ```ts {monaco}
 // parent.vue
-import { provide } from 'vue' 
+import { provide } from 'vue'
 import { injectKeyUser } from './context'
 
 export default {
@@ -958,12 +935,12 @@ export default {
 
 ```ts {monaco}
 // child.vue
-import { inject } from 'vue' 
+import { inject } from 'vue'
 import { injectKeyUser } from './context'
 
 export default {
   setup() {
-    const user = inject(injectKeyUser) 
+    const user = inject(injectKeyUser)
     // UserInfo | undefined
 
     if (user)
@@ -974,7 +951,6 @@ export default {
 
 </v-clicks>
 </div>
-
 
 ---
 
@@ -1021,7 +997,6 @@ console.log(state.foo) // 2
 
 <h3 v-click class="opacity-100">⚠️ 此方案不兼容 SSR!</h3>
 
-
 ---
 
 # 兼容 SSR 的状态共享 <MarkerPattern />
@@ -1033,7 +1008,7 @@ console.log(state.foo) // 2
 <v-click>
 
 ```ts
-export const myStateKey: InjectionKey<MyState> = Symbol()
+export const myStateKey: InjectionKey<MyState> = Symbol('myState')
 
 export function createMyState() {
   const state = {
@@ -1074,8 +1049,8 @@ const state = useMyState()
 <div class="my-3">
 
 - [Vue Router v4](https://github.com/vuejs/vue-router-next) 也使用的类似的方式
-	- `createRouter()`
-	- `useRouter()`
+  - `createRouter()`
+  - `useRouter()`
 
 </div>
 
@@ -1083,7 +1058,6 @@ const state = useMyState()
 </div>
 
 </div>
-
 
 ---
 
@@ -1144,31 +1118,30 @@ export default defineComponent({
 <VueUse name="useVModel"/>
 </div>
 
-
 ---
 disabled: true
 ---
 
 # useVModel (Passive) <MarkerTips />
 
-Make the model able to be updated **independently** from the parent logic 
+Make the model able to be updated **independently** from the parent logic
 
 <v-click>
 
 ```ts
 export function usePassiveVModel(props, name) {
   const emit = getCurrentInstance().emit
-  const data = ref(props[name])                     // store the value in a ref
+  const data = ref(props[name]) // store the value in a ref
 
-  watch(() => props.value, (v) => data.value = v)   // sync the ref whenever the prop changes
+  watch(() => props.value, v => data.value = v) // sync the ref whenever the prop changes
 
   return computed({
     get() {
       return data.value
     },
     set(v) {
-      data.value = v                                 // when setting value, update the ref directly
-      emit(`update:${name}`, v)                      // then emit out the changes
+      data.value = v // when setting value, update the ref directly
+      emit(`update:${name}`, v) // then emit out the changes
     }
   })
 }
@@ -1176,13 +1149,11 @@ export function usePassiveVModel(props, name) {
 
 </v-click>
 
-
 ---
 layout: center
 ---
 
 # 以上所述，均可使用于 Vue 2 和 3
-
 
 ---
 
@@ -1198,9 +1169,8 @@ Vue.use(VueCompositionAPI)
 ```
 
 ```ts
-import { ref, reactive } from '@vue/composition-api'
+import { reactive, ref } from '@vue/composition-api'
 ```
-
 
 ---
 
@@ -1214,7 +1184,6 @@ import { ref, reactive } from '@vue/composition-api'
 - Vue 2 将继续支持 IE11
 - LTS
 
-
 ---
 
 # Vue Demi <Marker class="text-teal-400">库</Marker>
@@ -1223,11 +1192,10 @@ import { ref, reactive } from '@vue/composition-api'
 
 ```ts
 // same syntax for both Vue 2 and 3
-import { ref, reactive, defineComponent } from 'vue-demi'
+import { defineComponent, reactive, ref } from 'vue-demi'
 ```
 
 <img class="h-50 mx-auto" src="https://raw.githubusercontent.com/vueuse/vue-demi/master/assets/banner.png" />
-
 
 ---
 
@@ -1242,7 +1210,6 @@ import { ref, reactive, defineComponent } from 'vue-demi'
 - 类型安全的 Provide / Inject
 - 状态共享
 - `useVModel`
-
 
 ---
 layout: center

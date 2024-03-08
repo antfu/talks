@@ -30,7 +30,6 @@ Anthony Fu
   </div>
 </div>
 
-
 ---
 layout: 'intro'
 ---
@@ -54,7 +53,6 @@ A fanatical full-time open sourceror.<br>
 
 <img src="https://antfu.me/avatar.png" class="rounded-full w-40 abs-tr mt-16 mr-12"/>
 
-
 ---
 name: Sponsors
 layout: center
@@ -67,13 +65,11 @@ layout: center
   </a>
 </div>
 
-
 ---
 layout: center
 ---
 
 # Composable Vue
-
 
 ---
 name: VueUse
@@ -106,7 +102,6 @@ layout: center
   </div>
 </div>
 
-
 ---
 layout: center
 class: text-center
@@ -115,7 +110,6 @@ class: text-center
 # Composition API
 
 a brief go-through
-
 
 ---
 
@@ -175,7 +169,6 @@ bar.prop = 1
 </div>
 </div></div>
 
-
 ---
 
 # Ref Auto Unwrapping <MarkerCore />
@@ -191,7 +184,7 @@ Get rid of `.value` for most of the time.
 ```ts
 const counter = ref(0)
 
-watch(counter, count => {
+watch(counter, (count) => {
   console.log(count) // same as `counter.value`
 })
 ```
@@ -211,7 +204,7 @@ watch(counter, count => {
 <div>
 
 ```ts {monaco}
-import { ref, reactive } from 'vue'
+import { reactive, ref } from 'vue'
 const foo = ref('bar')
 const data = reactive({ foo, id: 10 })
 data.foo // 'bar'
@@ -222,7 +215,6 @@ data.foo // 'bar'
 </v-clicks>
 
 </div>
-
 
 ---
 
@@ -248,7 +240,7 @@ function unref<T>(r: Ref<T> | T): T {
 ###### Usage
 
 ```ts {monaco}
-import { unref, ref } from 'vue'
+import { ref, unref } from 'vue'
 
 const foo = ref('foo')
 unref(foo) // 'foo'
@@ -259,7 +251,6 @@ unref(bar) // 'bar'
 
 </div></div>
 
-
 ---
 layout: center
 class: text-center
@@ -268,7 +259,6 @@ class: text-center
 # Patterns & Tips
 
 of writing composable functions
-
 
 ---
 
@@ -280,8 +270,8 @@ Sets of reusable logic, separation of concerns.
 
 ```ts
 export function useDark(options: UseDarkOptions = {}) {
-  const preferredDark = usePreferredDark()         // <--
-  const store = useStorage('vueuse-dark', 'auto')  // <--
+  const preferredDark = usePreferredDark() // <--
+  const store = useStorage('vueuse-dark', 'auto') // <--
 
   return computed<boolean>({
     get() {
@@ -290,8 +280,9 @@ export function useDark(options: UseDarkOptions = {}) {
         : store.value === 'dark'
     },
     set(v) {
-      store.value = v === preferredDark.value 
-        ? 'auto' : v ? 'dark' : 'light'
+      store.value = v === preferredDark.value
+        ? 'auto'
+        : v ? 'dark' : 'light'
     },
   })
 }
@@ -306,7 +297,6 @@ export function useDark(options: UseDarkOptions = {}) {
 <div v-click class="abs-b mx-14 my-12">
 <VueUse name="useDark"/>
 </div>
-
 
 ---
 
@@ -325,7 +315,6 @@ The `setup()` only runs **once** on component initialization, to construct the r
   </div>
 </div>
 
-
 ---
 
 # One Thing at a Time
@@ -337,7 +326,6 @@ Just the same as authoring JavaScript functions.
 - Consistent naming conversions - `useXX` `createXX` `onXX`
 - Keep function small and simple
 - "Do one thing, and do it well"
-
 
 ---
 
@@ -357,7 +345,6 @@ Just the same as authoring JavaScript functions.
 Plain function
 </div>
 
-
 ```ts
 function add(a: number, b: number) {
   return a + b
@@ -365,10 +352,10 @@ function add(a: number, b: number) {
 ```
 
 ```ts
-let a = 1
-let b = 2
+const a = 1
+const b = 2
 
-let c = add(a, b) // 3
+const c = add(a, b) // 3
 ```
 
 <div class="my-auto leading-6 text-base opacity-75">
@@ -414,7 +401,6 @@ c.value // 6
 
 </div>
 
-
 ---
 
 # MaybeRef <MarkerTips/>
@@ -429,7 +415,6 @@ type MaybeRef<T> = Ref<T> | T
 
 In VueUse, we use this helper heavily to support optional reactive arguments
 
-
 ```ts
 export function useTimeAgo(
   time: Date | number | string | Ref<Date | number | string>,
@@ -439,7 +424,7 @@ export function useTimeAgo(
 ```
 
 ```ts {monaco}
-import { computed, unref, Ref } from 'vue'
+import { Ref, computed, unref } from 'vue'
 
 type MaybeRef<T> = Ref<T> | T
 
@@ -451,7 +436,6 @@ export function useTimeAgo(
 ```
 
 </v-click>
-
 
 ---
 
@@ -479,7 +463,7 @@ title.value = 'Hello World'
 ###### Binding an Existing Ref
 
 ```ts {monaco}
-import { ref, computed } from 'vue'
+import { computed, ref } from 'vue'
 import { useTitle } from '@vueuse/core'
 
 const name = ref('Hello')
@@ -497,7 +481,6 @@ name.value = 'Hi' // Hi - World
 <div v-click class="abs-b mx-14 my-12">
 <VueUse name="useTitle"/>
 </div>
-
 
 ---
 
@@ -526,12 +509,7 @@ export function useTitle(
 }
 ```
 
-```html 
-
-
-
-
-
+```html
 
 <-- 1. use the user provided ref or create a new one
 
@@ -542,7 +520,6 @@ export function useTitle(
 </v-clicks>
 </div>
 
-
 ---
 
 # "Reuse" Ref <MarkerCore />
@@ -552,12 +529,11 @@ export function useTitle(
 If you pass a `ref` into `ref()`, it will return the original ref as-is.
 
 ```ts
-const foo = ref(1)   // Ref<1>
+const foo = ref(1) // Ref<1>
 const bar = ref(foo) // Ref<1>
 
 foo === bar // true
 ```
-
 
 ```ts
 function useFoo(foo: Ref<string> | string) {
@@ -574,7 +550,6 @@ function useFoo(foo: Ref<string> | string) {
 Extremely useful in composable functions that take uncertain argument types.
 
 </v-clicks>
-
 
 ---
 
@@ -593,12 +568,11 @@ type MaybeRef<T> = Ref<T> | T
 
 function useBala<T>(arg: MaybeRef<T>) {
   const reference = ref(arg) // get the ref
-  const value = unref(arg)   // get the value
+  const value = unref(arg) // get the value
 }
 ```
 
 </div>
-
 
 ---
 
@@ -611,10 +585,10 @@ Getting benefits from both `ref` and `reactive` for authoring composable functio
 <v-clicks>
 
 ```ts {monaco}
-import { ref, reactive } from 'vue'
+import { reactive, ref } from 'vue'
 
 function useMouse() {
-  return { 
+  return {
     x: ref(0),
     y: ref(0)
   }
@@ -635,7 +609,6 @@ mouse.x === x.value // true
 
 </v-clicks>
 </div>
-
 
 ---
 
@@ -665,12 +638,11 @@ const user_url = computed(() => data.value?.user_url)
 ```
 
 </div>
-<div v-click> 
+<div v-click>
 
 Establish the "Connections" first, then wait for data to be filled up. The idea is similar to SWR (stale-while-revalidate)
 
 </div>
-
 
 ---
 
@@ -700,7 +672,6 @@ export function useFetch<R>(url: MaybeRef<string>) {
 <div v-click class="abs-b mx-14 my-12">
 <VueUse name="useFetch"/>
 </div>
-
 
 ---
 
@@ -755,7 +726,6 @@ const scope = effectScope(() => {
 stop(scope)
 ```
 
-
 ---
 disabled: true
 ---
@@ -767,7 +737,7 @@ To get DOM element, you can pass a ref to it, and it will be available after com
 <div v-click>
 
 ```ts {monaco}
-import { defineComponent, ref, onMounted } from 'vue'
+import { defineComponent, onMounted, ref } from 'vue'
 export default defineComponent({
   setup() {
     const element = ref<HTMLElement | undefined>()
@@ -788,7 +758,6 @@ export default defineComponent({
 ```
 
 </div>
-
 
 ---
 disabled: true
@@ -822,7 +791,6 @@ export default defineComponent({
 </v-click>
 </div>
 
-
 ---
 
 # Typed Provide / Inject <MarkerCore/>
@@ -840,11 +808,10 @@ export interface UserInfo {
   name: string
 }
 
-export const injectKeyUser: InjectionKey<UserInfo> = Symbol()
+export const injectKeyUser: InjectionKey<UserInfo> = Symbol('user')
 ```
 
 </div>
-
 
 ---
 
@@ -857,7 +824,7 @@ Import the key from the same module for `provide` and `inject`.
 
 ```ts {monaco}
 // parent.vue
-import { provide } from 'vue' 
+import { provide } from 'vue'
 import { injectKeyUser } from './context'
 
 export default {
@@ -872,12 +839,12 @@ export default {
 
 ```ts {monaco}
 // child.vue
-import { inject } from 'vue' 
+import { inject } from 'vue'
 import { injectKeyUser } from './context'
 
 export default {
   setup() {
-    const user = inject(injectKeyUser) 
+    const user = inject(injectKeyUser)
     // UserInfo | undefined
 
     if (user)
@@ -888,7 +855,6 @@ export default {
 
 </v-clicks>
 </div>
-
 
 ---
 
@@ -935,7 +901,6 @@ console.log(state.foo) // 2
 
 <h3 v-click class="opacity-100">⚠️ But it's not SSR compatible!</h3>
 
-
 ---
 
 # Shared State (SSR friendly) <MarkerPattern />
@@ -947,7 +912,7 @@ Use `provide` and `inject` to share the app-level state
 <v-click>
 
 ```ts
-export const myStateKey: InjectionKey<MyState> = Symbol()
+export const myStateKey: InjectionKey<MyState> = Symbol('myState')
 
 export function createMyState() {
   const state = {
@@ -995,7 +960,6 @@ const state = useMyState()
 </div>
 
 </div>
-
 
 ---
 
@@ -1056,31 +1020,30 @@ export default defineComponent({
 <VueUse name="useVModel"/>
 </div>
 
-
 ---
 disabled: true
 ---
 
 # useVModel (Passive) <MarkerTips />
 
-Make the model able to be updated **independently** from the parent logic 
+Make the model able to be updated **independently** from the parent logic
 
 <v-click>
 
 ```ts
 export function usePassiveVModel(props, name) {
   const emit = getCurrentInstance().emit
-  const data = ref(props[name])                     // store the value in a ref
+  const data = ref(props[name]) // store the value in a ref
 
-  watch(() => props.value, (v) => data.value = v)   // sync the ref whenever the prop changes
+  watch(() => props.value, v => data.value = v) // sync the ref whenever the prop changes
 
   return computed({
     get() {
       return data.value
     },
     set(v) {
-      data.value = v                                 // when setting value, update the ref directly
-      emit(`update:${name}`, v)                      // then emit out the changes
+      data.value = v // when setting value, update the ref directly
+      emit(`update:${name}`, v) // then emit out the changes
     }
   })
 }
@@ -1088,13 +1051,11 @@ export function usePassiveVModel(props, name) {
 
 </v-click>
 
-
 ---
 layout: center
 ---
 
 # All of them work for both Vue 2 and 3
-
 
 ---
 
@@ -1110,9 +1071,8 @@ Vue.use(VueCompositionAPI)
 ```
 
 ```ts
-import { ref, reactive } from '@vue/composition-api'
+import { reactive, ref } from '@vue/composition-api'
 ```
-
 
 ---
 
@@ -1126,7 +1086,6 @@ import { ref, reactive } from '@vue/composition-api'
 - IE11 support.
 - LTS.
 
-
 ---
 
 # Vue Demi <Marker class="text-teal-400">Lib</Marker>
@@ -1135,11 +1094,10 @@ Creates Universal Library for Vue 2 & 3<br><carbon-logo-github class="inline-blo
 
 ```ts
 // same syntax for both Vue 2 and 3
-import { ref, reactive, defineComponent } from 'vue-demi'
+import { defineComponent, reactive, ref } from 'vue-demi'
 ```
 
 <img class="h-50 mx-auto" src="https://raw.githubusercontent.com/vueuse/vue-demi/master/assets/banner.png" />
-
 
 ---
 
@@ -1153,7 +1111,6 @@ import { ref, reactive, defineComponent } from 'vue-demi'
 - Async to "sync"
 - Side-effect self clean up
 - Shared state
-
 
 ---
 layout: center

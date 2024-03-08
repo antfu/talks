@@ -142,7 +142,6 @@ class: 'grid grid-cols-2'
 Documentation
 </Card>
 
-
 <Card url="github.com/vitest-dev/vitest">
 <template #icon>
 <CarbonLogoGithub/>

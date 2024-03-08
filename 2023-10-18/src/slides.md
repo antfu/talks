@@ -120,7 +120,7 @@ class: flex
 </div>
 </div>
 
-<!-- 
+<!--
 We introduced many conventions to reduce the need of having boilerplates, or code duplications.
 
 We also make quite some abstractions in order to shift the complexities from user app to the framework. So that's when you building an app with Nuxt, you can focusing more on the your own logic instead of worrying about the technical details of how bundler works, etc.
@@ -144,7 +144,7 @@ class: ml-30 mt-5
 <v-clicks>
 
 <div flex="~ gap-3 items-center">
-  <div i-tabler-3d-cube-sphere text-3xl /> 
+  <div i-tabler-3d-cube-sphere text-3xl />
   <span op80>Improve Transparency</span>
 </div>
 
@@ -213,7 +213,6 @@ class: ml-20 mt-5
     <div text-right text-4xl font-bold color="[#3E55BD]">20+</div><div text-left text-lg op80>Nuxt Modules integrates Nuxt DevTools</div>
   </v-clicks>
 </div>
-
 
 ---
 class: text-center
@@ -358,7 +357,6 @@ preload: false
 
 <VideoDemo src="/devtools/12-server-api.mp4" mt--2 />
 
-
 ---
 class: text-center
 growX: 90
@@ -370,7 +368,6 @@ preload: false
 
 <VideoDemo src="/devtools/13-vscode.mp4" mt--2 />
 
-
 ---
 class: text-center
 growX: 90
@@ -381,7 +378,6 @@ preload: false
 # Components Inspector
 
 <VideoDemo src="/devtools/0-inspector.mp4" mt--2 />
-
 
 ---
 class: text-center
@@ -440,7 +436,6 @@ We are excited to see that there are already many modules have integrated Nuxt D
 </v-clicks>
 
 <!--
-
 And we are honored to hear that there are a few projects are inspired by Nuxt DevTools
 
 We have vite-plugin-vue-devtools, a Vite plugin that ported some features from Nuxt DevTools, covering the Vue users that are not on Nuxt yet. We are working closely together to explore the possibilities of better experience for Vue and share the common parts.
@@ -450,7 +445,6 @@ We also have vite-plugin-devtools, an experiment to have a universal Vite DevToo
 Then we have heard that Modern.js and Qwik is building their own DevTools, with the similiar approach of Nuxt DevTools to provide in-app DevTools for their users.
 
 We are super excited to see more and more projects are exploring the possibilities of DevTools and Developer Experience. That we could learn from each other and explore together to make it even better.
-
 -->
 
 ---
@@ -473,7 +467,7 @@ growY: 50
 <NuxtDevTools h-15 v-click/>
 
 <div class="springing" v-click relative>
-  <div 
+  <div
     text-25em font-900 font-number
     op20 z--1 pos="absolute left-1/2 top-3/10" translate="x--1/2 y--8.5/15"
   ><span>1.0</span></div>
@@ -481,7 +475,9 @@ growY: 50
 
 </div>
 
-<!-- Announcing Nuxt DevTools 1.0 -->
+<!--
+Announcing Nuxt DevTools 1.0
+-->
 
 ---
 class: ml-30 mt-5
@@ -493,12 +489,12 @@ class: ml-30 mt-5
 <v-clicks>
 
 <div flex="~ gap-3 items-center">
-  <div i-carbon-3d-mpr-toggle text-3xl /> 
+  <div i-carbon-3d-mpr-toggle text-3xl />
   <span op80>Modules API Stability</span>
 </div>
 
 <div flex="~ gap-3 items-center">
-  <div i-carbon-tools-alt text-3xl /> 
+  <div i-carbon-tools-alt text-3xl />
   <span op80>UI Improvements</span>
 </div>
 
@@ -513,12 +509,12 @@ class: ml-30 mt-5
 </div>
 
 <div flex="~ gap-3 items-center" ml10>
-  <div i-ri-keyboard-box-line text-3xl /> 
+  <div i-ri-keyboard-box-line text-3xl />
   <span op80>One shortcut away</span>
 </div>
 
 <div flex="~ gap-3 items-center" ml10>
-  <div i-carbon-storage-pool text-3xl /> 
+  <div i-carbon-storage-pool text-3xl />
   <span op80>Seamlessly opt-in</span>
 </div>
 
@@ -528,7 +524,7 @@ class: ml-30 mt-5
 <!--
 Nuxt DevTools 1.0 serves as a milestone. There are no many new features in 1.0, but it's more like a statement indicates that Nuxt DevTools' approach is mature enough. We are marking the Modules API as stable, so that module authors could provide the integrations more confidently. We also did some UI improvements since the previous versions. And most importantly, Nuxt DevTools will be ship with Nuxt 3.8 and general available to all Nuxt users. By doing that, we want to make sure the onboarding experience as seamless as possible. Meaning that by default, you won't see any visual different in you app. The DevTools will be hidden to minimize the distraction. Instead, we will print an instrution in your terminal telling you that you can press a shortcut to enable it as you want. Making the opt-in as easy as possible.
 -->
- 
+
 ---
 layout: center
 growX: 0
@@ -558,7 +554,7 @@ So that said, Nuxt DevTools 1.0 will be released now, and it will be shipped by 
 - Pinia Playground
 - Vue DevTools Integration
   - Reactivity Inspector
-  
+
   - Render Tree
   - Props Editor
 - "DevTools Kit"
@@ -620,7 +616,9 @@ growY: -10
 <div text-6xl font-extrabold>Developer Experience</div>
 <div text-5xl mt3 v-click text-transparent bg-clip-text bg-gradient-to-r from-yellow via-green to-blue>Key to Great Softwares</div>
 
-<!-- So in the end, I'd say, that Developer Experience is the key to great softwares as well as better User Experience. I am so glad to see that more and more tools entering the field of developer experience. Together, let's make it even better! That's all for my talk, thank you! -->
+<!--
+So in the end, I'd say, that Developer Experience is the key to great softwares as well as better User Experience. I am so glad to see that more and more tools entering the field of developer experience. Together, let's make it even better! That's all for my talk, thank you!
+-->
 
 ---
 layout: intro

@@ -52,10 +52,6 @@ Working at NuxtLabs.<br>
 
 </div>
 
-<!--
-
--->
-
 ---
 layout: center
 growX: 50
@@ -129,15 +125,15 @@ Combining all these tools, we are able to make your app reactive for any changes
 </v-clicks>
 
 <!--
-As a framework, Nuxt offers common practices built-in. 
+As a framework, Nuxt offers common practices built-in.
 
 TypeScript and ESM are supported out-of-box, thanks to Vite.
 
 Nuxt also makes it simple to build single-page application, server-side rendering, static site generation, or hybrid them per routes - using the same codebase isomorphically without any explicit setup.
 
-Then we provided the layout system, plugins, route middlewares, etc., to make the app creation easier and your codebase better organized. 
+Then we provided the layout system, plugins, route middlewares, etc., to make the app creation easier and your codebase better organized.
 
-On top of that, we also provided a few composable utilities like `useState` and `useAsyncData`, and SEO utilities like `useHead` and `useSeoMeta` to make states accessible across the server and client sides. 
+On top of that, we also provided a few composable utilities like `useState` and `useAsyncData`, and SEO utilities like `useHead` and `useSeoMeta` to make states accessible across the server and client sides.
 
 Not to mention we also have one of the best backend integrations. With Nitro, you can deploy your Nuxt app to any hosting service like Vercel, Netlify, Cloudflare, etc., with zero-config!
 
@@ -168,13 +164,13 @@ growY: 80
 </v-clicks>
 
 <!--
-And then to the cool part, we also introduced some conventions. 
+And then to the cool part, we also introduced some conventions.
 
-The first one is file-based routing, which allows you to have a multi-page app by simply creating the Vue component with the same structure in the filesystem. 
+The first one is file-based routing, which allows you to have a multi-page app by simply creating the Vue component with the same structure in the filesystem.
 
-Similarly, with the power of Nitro, we also have file-based server APIs, where you can create your serverless APIs in the same way as routing. 
+Similarly, with the power of Nitro, we also have file-based server APIs, where you can create your serverless APIs in the same way as routing.
 
-Then we add components auto-imports, components under the components folder will be directly available in any Vue file with the same name as their file name. And also, they will are code-splitted well. 
+Then we add components auto-imports, components under the components folder will be directly available in any Vue file with the same name as their file name. And also, they will are code-splitted well.
 
 And in Nuxt 3, we introduced compostables auto-import. It means you no longer need to type `import { ref } from 'vue'` in every component. APIs from Vue are directly available to you. 3rd party modules could also provide their custom composables to be auto-imported, and the same works for your local composables.
 
@@ -192,12 +188,11 @@ growY: 90
 
 # Ecosystem
 
-<iframe v-click src="https://nuxt.com/modules?sortBy=downloads&version=3.x" 
-  onload="this.style.visibility = 'visible';" 
-  scale-50 origin-top-right absolute right-0 top-0 bottom-0 w="140%" h="200%" 
+<iframe v-click src="https://nuxt.com/modules?sortBy=downloads&version=3.x"
+  onload="this.style.visibility = 'visible';"
+  scale-50 origin-top-right absolute right-0 top-0 bottom-0 w="140%" h="200%"
   style="mix-blend-mode: lighten;filter:contrast(1.15);visibility:hidden;"
 />
-
 
 <v-clicks>
 
@@ -296,7 +291,6 @@ growY: 10
 
 - Personalized documentations
 
-
 </v-clicks>
 </div>
 
@@ -326,8 +320,6 @@ url: http://localhost:5314/
 scale: 0.5
 growFollow: false
 ---
-
-
 
 <!--
 So, here is a dev server of Elk, a Mastodon client built with Nuxt. Daniel already gave a great explanation in his talk. With Nuxt DevTools enabled, here we have a small Nuxt icon on the bottom to open up the DevTools. Click it we see it pop up on a panel right inside our app. Just be aware that this is a very early preview, we have quite a lot of features are not yet been implemented and many things might be changed.
@@ -397,8 +389,6 @@ scale: 0.5
 growFollow: false
 ---
 
-
-
 <!--
 Nuxt DevTools is also designed to be flexible and extensible. That means modules can actually contribute to DevTools to present interactive information for their integrations. Here let me show you a few modules that support Nuxt DevTools right now.
 
@@ -427,7 +417,6 @@ growY: 90
 <!--
 And so, the preview of Nuxt DevTools is open-sourced, right now! You can give it a star at github.com/nuxt/devtools and find the instructions there for trying it in your Nuxt apps.
 -->
-
 
 ---
 layout: center

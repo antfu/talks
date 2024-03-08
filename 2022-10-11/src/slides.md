@@ -57,7 +57,6 @@ Working at NuxtLabs.<br>
 
 <img src="https://antfu.me/avatar.png" rounded-full w-40 abs-tr mt-22 mr-22/>
 
-
 ---
 
 <SectionTitle
@@ -84,7 +83,6 @@ Provide what you need upon the request.
 
 </v-click>
 
-
 <div scale-110 origin-left-top>
 
 <div v-click>
@@ -107,7 +105,6 @@ Compare to the transitional "all at once" approach:
 
 </v-clicks>
 </div>
-
 
 ---
 
@@ -170,7 +167,6 @@ Vite only transpile the modules you need for the requested page. No bunding.
 keep them <b text-amber>consistent</b> with <i>the same config and plugins</i>
 </div>
 
-
 ---
 clicks: 4
 ---
@@ -190,7 +186,7 @@ clicks: 4
 <v-clicks :at="3">
 
 - Serve pre-module
-- Inject code for Hot Module Replacement 
+- Inject code for Hot Module Replacement
 
 </v-clicks>
 </div>
@@ -211,7 +207,6 @@ clicks: 4
 </div>
 </div>
 
-
 ---
 
 # Bonus of On-demand - <span text-orange>Customizability</span>
@@ -225,7 +220,6 @@ Dev server, client-server communication, etc.
 <iframe src="/__inspect/" border-t border-gray:40 scale-75 origin-bottom-left absolute left-0 bottom-0 w="133%" h="92%" />
 
 </div>
-
 
 ---
 

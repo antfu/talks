@@ -154,11 +154,11 @@ title: What Makes a Good Tool?
 
 <div left-70 top-15 relative transition duration-400 forward:delay-600 v-click="2">
   <img src="/balance-body.png" w-80 absolute left-0 top-0 />
-  <img 
+  <img
     src="/balance-arm.png"
     w-80 absolute left-0 top-0 transition duration-1000
     class="origin-[50%_27%]"
-    :class="$clicks >= 5 ? 'animate-balance-shake' : ''" 
+    :class="$clicks >= 5 ? 'animate-balance-shake' : ''"
   />
   <div transition duration-1000 :class="$clicks >= 5 ? 'animate-balance-move-left' : ''" >
     <img src="/cost-of-learn.png" w-30 absolute left--35 top-20 duration-800 v-click="4" />
@@ -189,7 +189,7 @@ So let's revise our goal. Let's say we want to build a tool that can be benefici
 
 [click] So here we have a balance. If I gonna to put two most important factors on the balance, I'd pick "Cost of learning and using the tools" verse the "Cost of doing something oneself".
 
-[click] In order to make users willing to use our tool, I'd say that the "Cost of learning" should be much less than the "Cost of doing" 
+[click] In order to make users willing to use our tool, I'd say that the "Cost of learning" should be much less than the "Cost of doing"
 [click] This has been my little go-to formula to pre-evaluate if idea I have is worthwhile.
 
 For example, let's say if we want to get a summary of 10 numbers. Would you look for a library to do that? Probably no, because we could do it with a single loop in 2 line of code - the cost of doing ourself is too low that we don't even consider getting a tool.
@@ -285,7 +285,7 @@ The <span v-mark.box.teal.delay400="5" text-teal mx1>"Stairs"</span> to make thi
 </div>
 
 <div absolute w-230 right-0 top-5>
-  <img 
+  <img
     src="/progressive-floors.png" duration-400
     v-click
     :class="$clicks >= 4 ? 'duration-700 forward:delay-200 op10' : ''"
@@ -356,9 +356,9 @@ Vue offers multiple ways to use, for different level of integrations:
 <!--
 Vue is progressive on integrations. Vue provides multiple builds and offers many ways to use in different scenarios.
 
-[click] Like you can use Vue with a single line of CDN import, and enhance your web apps even in a static HTML file without any build tools. 
+[click] Like you can use Vue with a single line of CDN import, and enhance your web apps even in a static HTML file without any build tools.
 
-[click] You can also use Vue components as Web components so that's it can coexist with the other frameworks. Vice versa you can also import web components within Vue applications. 
+[click] You can also use Vue components as Web components so that's it can coexist with the other frameworks. Vice versa you can also import web components within Vue applications.
 
 [click] When we have build tools set up, we can build Vue applications with Vue single file components that colocate necessary context inside a single file. To build interactive single page application with ease.
 
@@ -382,7 +382,7 @@ title: Levels of Integrations
 <h3 v-click text-white:50>Cover different scenarios, coexist with other techs, <span text-1.4em font-hand text-blue v-mark.highlight.delay400="{at:1,color:'#60a5fa20'}">easy to adopt</span></h3>
 
 <!--
-Vue's approach provides the progressive on the levels of integrations. 
+Vue's approach provides the progressive on the levels of integrations.
 
 Allows it to cover the needs for different scenarios, or even coexist with other technologies. [click] This means even you have a large codebase using other stacks but want to use Vue, you can still adopt some parts of you app to use Vue first, and gradually migrate each part slowly. As far as I know, for example, [Wikimedia also picked Vue](https://lists.wikimedia.org/hyperkitty/list/wikitech-l@lists.wikimedia.org/thread/SOZREBYR36PUNFZXMIUBVAIOQI4N7PDU/) and started enhancing with Vue.
 
@@ -440,7 +440,7 @@ This is <b text-white:75>all you need</b> to start with Nuxt:
 {
   "scripts": {
     "dev": "nuxt dev",
-    "build": "nuxt build",
+    "build": "nuxt build"
   },
   "devDependencies": {
     "nuxt": "^3.10.0"
@@ -486,7 +486,7 @@ And that's it, that's all you need to get start with Nuxt. Even to someone who n
 Starts <b text-white:75 font-bold>minimal</b> and <b text-white:75 font-bold>grows</b> with users:
 </div>
 
-<!-- 
+<!--
 <div v-click mt-20 mb-4 op75>
 By the minimal starting interface, Nuxt allows you to start with a minimal setup and grow with the features you need.
 </div>
@@ -515,7 +515,7 @@ By the minimal starting interface, Nuxt allows you to start with a minimal setup
   </div>
 
 </v-clicks>
-</div> 
+</div>
 -->
 
 <div flex="~ col gap-6">
@@ -583,7 +583,7 @@ Then let's talk about one other aspect that Nuxt is good at - Progressive on fea
 
 So we know that Nuxt works with a bare minimal starter, be also we know a real-world application won't be that simple. We need a lot capability to accomplish various needs, and also a way for us to organize the codebase in an managable way.
 
-[click] Nuxt is the framework that can grows with your need! 
+[click] Nuxt is the framework that can grows with your need!
 
 [click] To say, if you want to some components to separate and reuse your logic, [click] in Nuxt you can just create components files under the components directory, and they will be auto-discoverabale across your project.
 
@@ -637,7 +637,7 @@ grow: right
 <!--
 On top of the documentation site Nuxt has, in the past months we started to build an interactive tutorial playground. Some of you here probably have watched my live streaming on building it, thank you for working together with me btw.
 
-So Nuxt Tutorial allows beginners to have a more linear, step-by-step learning experience. So they can start playing with Nuxt more easier without the need to install or setup. 
+So Nuxt Tutorial allows beginners to have a more linear, step-by-step learning experience. So they can start playing with Nuxt more easier without the need to install or setup.
 
 [click] This is another case that we are trying to get the progressive onboard experience even smoother.
 -->
@@ -699,7 +699,7 @@ Vite is on major version 5 right now. And during the past 4 years, we basically 
 
 Some of you probably have been through that periods where we do major releases. The last one with Vite 5 and was released on November last year.
 
-It's not a secret that Vite's major releases have very smooth migration paths. We received many comments mentions about their successful migrations cases. 
+It's not a secret that Vite's major releases have very smooth migration paths. We received many comments mentions about their successful migrations cases.
 
 [click] Project monorepo mention that they upgraded Vite 2 to Vite 3 with only bumpping version, everything keeps working as-is.
 
@@ -727,7 +727,7 @@ class: flex flex-col items-start justify-center
   // ...
   "peerDependencies": {
     "vite": "^2.9.0 || ^3.0.0 || ^4.0.0 || ^5.0.0"
-  },
+  }
 }
 ```
 
@@ -814,9 +814,9 @@ I guess probably no one likes breaking changes. But somehow breaking changes are
 
 [click] In practice, often we will introduce flags such as `experimental` or `future` for users [click] to explicitly opt-in those changes if they want to try the new stuff, while the mainstream of the users can still be on the current version without breakages.
 
-[click] In Vue, we have the example of `@vue/composition-api` plugin back in Vue 2, which provide the capability of using Vue 3's composition API for Vue 2 apps before they can migrate to Vue 3. 
+[click] In Vue, we have the example of `@vue/composition-api` plugin back in Vue 2, which provide the capability of using Vue 3's composition API for Vue 2 apps before they can migrate to Vue 3.
 
-And later we have Vue v2.7, 2 years after Vue 3.0 has released, to have composition API support bake in, and align more with Vue 3's behaviour and feature sets. 
+And later we have Vue v2.7, 2 years after Vue 3.0 has released, to have composition API support bake in, and align more with Vue 3's behaviour and feature sets.
 
 For Nuxt, we introduced Nuxt Bridge, to briging the changes betwen Nuxt 2 and 3.
 
@@ -839,7 +839,7 @@ growY: 0
 <h3 v-click text-white:50>Provide <span text-orange v-mark.underline.orange.delay400.op75="1">"middle stages"</span> for migration, coexist of legacy & new</h3>
 
 <!--
-From my understand, I think the progressive of breaking changes is fundamentally allowing the co-existence. 
+From my understand, I think the progressive of breaking changes is fundamentally allowing the co-existence.
 
 [click] When we make changes, we should provide the "middle stages" for ppl to take a rest on migration, allowing the coexistence of both legacy and new. So the work can be done progressively, and reduce the chance of breakages.
 -->
@@ -848,12 +848,11 @@ From my understand, I think the progressive of breaking changes is fundamentally
 grow: right
 ---
 
-<!-- 
+<!--
 
 # Extensible Plugins System
 
 - Allows community to progressively enhance the tool and enrich the ecosystem -->
-
 
 # Recap
 
@@ -890,7 +889,7 @@ Progressive on <span flex="inline gap-1 items-center" text-yellow translate-y-0.
 </div>
 
 <div text-xl text-white:50 v-click>
-Progressive on <span flex="inline gap-1 items-center" text-rose translate-y-0.6><div i-ph-warning-octagon-duotone />Breaking Changes</span> 
+Progressive on <span flex="inline gap-1 items-center" text-rose translate-y-0.6><div i-ph-warning-octagon-duotone />Breaking Changes</span>
 </div>
 <div flex="~ gap-2 items-center" mb3 ml37 v-click>
   <div i-ph-arrow-bend-down-right-duotone op50 />
@@ -900,7 +899,7 @@ Progressive on <span flex="inline gap-1 items-center" text-rose translate-y-0.6>
 </div>
 
 <!-- <div text-xl text-white:50 v-click>
-Extensible <span flex="inline gap-1 items-center" text-blue translate-y-0.6><div i-ph-plugs-duotone />Plugin System</span> 
+Extensible <span flex="inline gap-1 items-center" text-blue translate-y-0.6><div i-ph-plugs-duotone />Plugin System</span>
 </div>
 <div flex="~ gap-2 items-center" mb3 ml37 v-click>
   <div i-ph-arrow-bend-down-right-duotone op50 />
