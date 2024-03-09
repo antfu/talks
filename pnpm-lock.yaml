@@ -15,8 +15,8 @@ importers:
         specifier: ^2.2.190
         version: 2.2.190
       '@slidev/cli':
-        specifier: ^0.48.0-beta.24
-        version: 0.48.0-beta.24(@types/markdown-it@13.0.7)(@types/node@20.11.25)(@vue/compiler-sfc@3.4.21)(playwright-chromium@1.42.1)(postcss@8.4.35)
+        specifier: ^0.48.0-beta.26
+        version: 0.48.0-beta.26(@types/markdown-it@13.0.7)(@types/node@20.11.25)(@vue/compiler-sfc@3.4.21)(playwright-chromium@1.42.1)(postcss@8.4.35)
       '@slidev/theme-default':
         specifier: ^0.25.0
         version: 0.25.0
@@ -1271,8 +1271,8 @@ packages:
     engines: {node: '>=14.16'}
     dev: true
 
-  /@slidev/cli@0.48.0-beta.24(@types/markdown-it@13.0.7)(@types/node@20.11.25)(@vue/compiler-sfc@3.4.21)(playwright-chromium@1.42.1)(postcss@8.4.35):
-    resolution: {integrity: sha512-eBWbG3qXRQGMOVOFMOGvrf8sDke7wUOotxp9KiExuMpUFuSmLgUevGF19En0ve+sXkLvdXZJLgtC96WS7a4g5A==}
+  /@slidev/cli@0.48.0-beta.26(@types/markdown-it@13.0.7)(@types/node@20.11.25)(@vue/compiler-sfc@3.4.21)(playwright-chromium@1.42.1)(postcss@8.4.35):
+    resolution: {integrity: sha512-GQ2Ikngjs9l0Yaawhpu6otJq6mfsQ8M2PigVQhyKd4h8rD31Xfi0TVscPVRUJ47gJIWewmMWS/itq8NlNZ/cdA==}
     engines: {node: '>=18.0.0'}
     hasBin: true
     peerDependencies:
@@ -1290,9 +1290,9 @@ packages:
       '@shikijs/markdown-it': 1.1.7
       '@shikijs/twoslash': 1.1.7(typescript@5.4.2)
       '@shikijs/vitepress-twoslash': 1.1.7(typescript@5.4.2)
-      '@slidev/client': 0.48.0-beta.24(postcss@8.4.35)(vite@5.1.5)
-      '@slidev/parser': 0.48.0-beta.24
-      '@slidev/types': 0.48.0-beta.24
+      '@slidev/client': 0.48.0-beta.26(@vue/compiler-sfc@3.4.21)(postcss@8.4.35)(vite@5.1.5)
+      '@slidev/parser': 0.48.0-beta.26(@vue/compiler-sfc@3.4.21)(postcss@8.4.35)(typescript@5.4.2)(vite@5.1.5)
+      '@slidev/types': 0.48.0-beta.26(@vue/compiler-sfc@3.4.21)(postcss@8.4.35)(typescript@5.4.2)(vite@5.1.5)
       '@unocss/extractor-mdc': 0.58.5
       '@unocss/reset': 0.58.5
       '@vitejs/plugin-vue': 5.0.4(vite@5.1.5)(vue@3.4.21)
@@ -1373,8 +1373,8 @@ packages:
       - vue-template-es2015-compiler
     dev: true
 
-  /@slidev/client@0.48.0-beta.24(postcss@8.4.35)(vite@5.1.5):
-    resolution: {integrity: sha512-UP2XdzatbCuUuBl/yTUMjGmxH++ZPmmzWUK9PAy/Tf+6c6LTzIQvHwj13RSJo11/QftfMt+6RrGjKcM0cLXvfg==}
+  /@slidev/client@0.48.0-beta.26(@vue/compiler-sfc@3.4.21)(postcss@8.4.35)(vite@5.1.5):
+    resolution: {integrity: sha512-S3DicZhWTvbySDjcvj3Ili9kGbuQfAQBukyIMm2dLYaNO0Wt0/OPg2u8Le4bfdToJ81/nZww3MBDhFiYQUZliQ==}
     engines: {node: '>=18.0.0'}
     dependencies:
       '@antfu/utils': 0.7.7
@@ -1383,9 +1383,9 @@ packages:
       '@iconify-json/svg-spinners': 1.1.2
       '@shikijs/monaco': 1.1.7
       '@shikijs/vitepress-twoslash': 1.1.7(typescript@5.4.2)
-      '@slidev/parser': 0.48.0-beta.24
+      '@slidev/parser': 0.48.0-beta.26(@vue/compiler-sfc@3.4.21)(postcss@8.4.35)(typescript@5.4.2)(vite@5.1.5)
       '@slidev/rough-notation': 0.1.0
-      '@slidev/types': 0.48.0-beta.24
+      '@slidev/types': 0.48.0-beta.26(@vue/compiler-sfc@3.4.21)(postcss@8.4.35)(typescript@5.4.2)(vite@5.1.5)
       '@typescript/ata': 0.9.4(typescript@5.4.2)
       '@unhead/vue': 1.8.11(vue@3.4.21)
       '@unocss/reset': 0.58.5
@@ -1413,13 +1413,18 @@ packages:
       vue-router: 4.3.0(vue@3.4.21)
     transitivePeerDependencies:
       - '@nuxt/kit'
+      - '@svgr/core'
+      - '@svgx/core'
       - '@unocss/webpack'
+      - '@vue/compiler-sfc'
       - '@vue/composition-api'
       - postcss
       - react
       - rollup
       - supports-color
       - vite
+      - vue-template-compiler
+      - vue-template-es2015-compiler
     dev: true
 
   /@slidev/parser@0.47.5:
@@ -1430,12 +1435,24 @@ packages:
       js-yaml: 4.1.0
     dev: true
 
-  /@slidev/parser@0.48.0-beta.24:
-    resolution: {integrity: sha512-5pAXeMn+V8/wL1Wc1hJyM2J8KPmDnhysReSXB8GtoaIrPfjXz6ydcro6577TwHmjtVJsnjCJAi5w9/yCpXZrUQ==}
+  /@slidev/parser@0.48.0-beta.26(@vue/compiler-sfc@3.4.21)(postcss@8.4.35)(typescript@5.4.2)(vite@5.1.5):
+    resolution: {integrity: sha512-ExThtQoUXfFi8Pbn2pqnkxA6hYEuUzE2BkybMiQSUvNKI3t1Szz/LoGNTPsVJbq9XAAgP65wEUm0jm5Puh3HoQ==}
     engines: {node: '>=18.0.0'}
     dependencies:
-      '@slidev/types': 0.48.0-beta.24
+      '@slidev/types': 0.48.0-beta.26(@vue/compiler-sfc@3.4.21)(postcss@8.4.35)(typescript@5.4.2)(vite@5.1.5)
       js-yaml: 4.1.0
+    transitivePeerDependencies:
+      - '@svgr/core'
+      - '@svgx/core'
+      - '@unocss/webpack'
+      - '@vue/compiler-sfc'
+      - postcss
+      - rollup
+      - supports-color
+      - typescript
+      - vite
+      - vue-template-compiler
+      - vue-template-es2015-compiler
     dev: true
 
   /@slidev/rough-notation@0.1.0:
@@ -1463,9 +1480,36 @@ packages:
     engines: {node: '>=18.0.0'}
     dev: true
 
-  /@slidev/types@0.48.0-beta.24:
-    resolution: {integrity: sha512-Zs5kqgE95YLIms71idYLjVfP4wMztoP03sNKwQKhOil2xKel1lkpVCgtU2HZkN0EIvEaqBIB/bES8g6R3pL9ew==}
+  /@slidev/types@0.48.0-beta.26(@vue/compiler-sfc@3.4.21)(postcss@8.4.35)(typescript@5.4.2)(vite@5.1.5):
+    resolution: {integrity: sha512-031/ExzlxT4ZsDp0fayS4MDhl2aj8Funs6qi8k1kTpETO0fM1AFNql/+CIPaMJM732+vehhm0WrvekmKgylGHg==}
     engines: {node: '>=18.0.0'}
+    dependencies:
+      '@antfu/utils': 0.7.7
+      '@vitejs/plugin-vue': 5.0.4(vite@5.1.5)(vue@3.4.21)
+      '@vitejs/plugin-vue-jsx': 3.1.0(vite@5.1.5)(vue@3.4.21)
+      katex: 0.16.9
+      mermaid: 10.9.0
+      monaco-editor: 0.46.0
+      shiki: 1.1.7
+      unocss: 0.58.5(postcss@8.4.35)(vite@5.1.5)
+      unplugin-icons: 0.18.5(@vue/compiler-sfc@3.4.21)
+      unplugin-vue-markdown: 0.26.0(vite@5.1.5)
+      vite-plugin-remote-assets: 0.4.1(vite@5.1.5)
+      vite-plugin-vue-server-ref: 0.4.2(vite@5.1.5)(vue@3.4.21)
+      vue: 3.4.21(typescript@5.4.2)
+      vue-router: 4.3.0(vue@3.4.21)
+    transitivePeerDependencies:
+      - '@svgr/core'
+      - '@svgx/core'
+      - '@unocss/webpack'
+      - '@vue/compiler-sfc'
+      - postcss
+      - rollup
+      - supports-color
+      - typescript
+      - vite
+      - vue-template-compiler
+      - vue-template-es2015-compiler
     dev: true
 
   /@stylistic/eslint-plugin-js@1.6.3(eslint@8.57.0):
@@ -6115,15 +6159,7 @@ packages:
       postcss: ^8.2.14
     dependencies:
       postcss: 8.4.35
-      postcss-selector-parser: 6.0.13
-    dev: true
-
-  /postcss-selector-parser@6.0.13:
-    resolution: {integrity: sha512-EaV1Gl4mUEV4ddhDnv/xtj7sxwrwxdetHdWUGnT4VJQf+4d05v6lHYZr8N573k5Z0BViss7BDhfWtKS3+sfAqQ==}
-    engines: {node: '>=4'}
-    dependencies:
-      cssesc: 3.0.0
-      util-deprecate: 1.0.2
+      postcss-selector-parser: 6.0.15
     dev: true
 
   /postcss-selector-parser@6.0.15:

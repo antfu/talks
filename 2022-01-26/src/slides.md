@@ -42,7 +42,7 @@ Creator of Slidev, VueUse, Vitesse, Type Challenges, etc.<br>
 Fanatical open sourceror. Working at <a href="https://nuxtlabs.com" target="_blank">NuxtLabs</a>.<br>
 </div>
 
-<div class="my-10 grid grid-cols-[40px,1fr] w-min gap-y-4">
+<div class="my-10 grid grid-cols-[40px_1fr] w-min gap-y-4">
   <ri-github-line class="opacity-50"/>
   <div><a href="https://github.com/antfu" target="_blank">antfu</a></div>
   <ri-twitter-line class="opacity-50"/>

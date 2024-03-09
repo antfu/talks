@@ -45,7 +45,7 @@ VueUse, Slidev, Type Challenges 等项目创作者<br>
 全职开源<br>
 </div>
 
-<div class="my-10 grid grid-cols-[40px,1fr] w-max gap-y-4">
+<div class="my-10 grid grid-cols-[40px_1fr] w-max gap-y-4">
   <ri-github-line class="opacity-50"/>
   <div><a href="https://github.com/antfu" target="_blank">antfu</a></div>
   <ri-twitter-line class="opacity-50"/>
@@ -177,7 +177,7 @@ clicks: 6
 
 可复用逻辑的集合，专注点分离
 
-<div class="grid grid-cols-[1fr,130px]">
+<div class="grid grid-cols-[1fr_130px]">
 
 ```ts {all|2,3|5-15|all}
 export function useDark(options: UseDarkOptions = {}) {
@@ -239,7 +239,7 @@ graph LR;
 - 建立 输入 → 输出 的连结
 - 输出会自动根据输入的改变而改变
 
-<div class="grid grid-cols-[auto,1fr] gap-4">
+<div class="grid grid-cols-[auto_1fr] gap-4">
   <Connections v-click class="mt-4"/>
   <div v-click class="p-4">
     <h3 class="pb-2">Excel 中的公式</h3>
@@ -261,7 +261,7 @@ name: VueUse
 layout: center
 ---
 
-<div class="grid grid-cols-[3fr,2fr] gap-4">
+<div class="grid grid-cols-[3fr_2fr] gap-4">
   <div class="text-center pb-4">
     <img class="h-50 inline-block" src="https://d33wubrfki0l68.cloudfront.net/a5780e53fee68ddd1cd73a00484151d2d052cb4d/b7469/logo-vertical.png">
     <div class="opacity-50 mb-2 text-sm">
@@ -352,7 +352,7 @@ bar.prop = 1
 
 在众多情况下，我们可以减少 `.value` 的使用
 
-<div class="grid grid-cols-[320px,1fr] gap-x-4 gap-y-2 pt-4">
+<div class="grid grid-cols-[320px_1fr] gap-x-4 gap-y-2 pt-4">
 
 <v-clicks :every='2'>
 
@@ -432,7 +432,7 @@ unref(bar) // 'bar'
 
 # 接受 Ref 作为函数参数 <MarkerPattern />
 
-<div class="grid grid-cols-[160px,1fr,220px] gap-x-4">
+<div class="grid grid-cols-[160px,1fr_220px] gap-x-4">
 
 <div />
 
@@ -587,7 +587,7 @@ name.value = 'Hi' // Hi - World
 
 `useTitle` 的实现
 
-<div class="grid grid-cols-[450px,1fr] gap-4">
+<div class="grid grid-cols-[450px_1fr] gap-4">
 <v-clicks>
 
 ```ts {monaco}
@@ -1003,7 +1003,7 @@ console.log(state.foo) // 2
 
 使用 `provide` 和 `inject` 来共享应用层面的状态。
 
-<div class="grid grid-cols-[max-content,1fr] gap-4">
+<div class="grid grid-cols-[max-content_1fr] gap-4">
 
 <v-click>
 

@@ -34,7 +34,7 @@ Creator of Slidev, VueUse, Vitesse, Type Challenges, etc.<br>
 Fanatical open sourceror. Working at <a href="https://nuxtlabs.com" target="_blank">NuxtLabs</a>.<br>
 </div>
 
-<div class="my-10 grid grid-cols-[40px,1fr] w-min gap-y-4">
+<div class="my-10 grid grid-cols-[40px_1fr] w-min gap-y-4">
   <ri-github-line class="opacity-50"/>
   <div><a href="https://github.com/antfu" target="_blank">antfu</a></div>
   <ri-twitter-line class="opacity-50"/>
@@ -524,7 +524,7 @@ Rollup
 
 <div m="t-8"/>
 
-<div class="grid grid-cols-[310px,1fr] gap-4">
+<div class="grid grid-cols-[310px_1fr] gap-4">
 <div v-click>
 
 ###### Build First
@@ -556,7 +556,7 @@ Vite
 </div>
 
 <div m="t-8"/>
-<div class="grid grid-cols-[300px,1fr]">
+<div class="grid grid-cols-[300px_1fr]">
 <div v-click>
 
 ###### Dev First
@@ -706,7 +706,7 @@ As we mentioned before, the new `<script setup>` syntax allows you to
 
 <RepoFixed name="antfu/vite-plugin-components"/>
 
-<div grid="~ gap-x-8" class="grid-cols-[300px,1fr]">
+<div grid="~ gap-x-8" class="grid-cols-[300px_1fr]">
 
 <div>
 
@@ -922,7 +922,7 @@ disabled: true
 
 <RepoFixed name="antfu/vite-plugin-icons" v-click="6"/>
 
-<div class="grid grid-cols-[1fr,1.2fr]">
+<div class="grid grid-cols-[1fr_1.2fr]">
 <div>
 
 ###### Ways to use icons
@@ -1044,7 +1044,7 @@ import TearsOfJoy from '~icons/twemoji/face-with-tears-of-joy'
 class: flex flex-col
 ---
 
-<div grid="~ gap-10" h="full" class="grid-cols-[1.8fr,1fr]">
+<div grid="~ gap-10" h="full" class="grid-cols-[1.8fr_1fr]">
 <div>
 
 # Vite Ecosystem
@@ -1187,7 +1187,7 @@ export const WebpackPlugin = unplugin.webpack
 <div>
 <code opacity="50">vite-plugin-icons</code> <carbon-arrow-right /> <code text="green-400">unplugin-icons</code>
 
-<ul class="grid grid-cols-[1fr,40px,1fr,40px,1fr] w-min whitespace-nowrap">
+<ul class="grid grid-cols-[1fr,40px_1fr_40px_1fr] w-min whitespace-nowrap">
 
 <div class="group">
   <div><logos-vue/> Vue</div>
@@ -1284,7 +1284,7 @@ class: text-center
 
 This is what you could get in Vue 2, Nuxt 2, Vue CLI, Vue 3, Vite:
 
-<div class="grid grid-cols-[1fr,30px,1fr] gap-2">
+<div class="grid grid-cols-[1fr,30px_1fr] gap-2">
 
 ```html
 <template>
@@ -1353,7 +1353,7 @@ const dark = useDark()
 
 Project templates that have plugins mentioned previously
 
-<div grid="~ gap-6" class="pt-6 grid-cols-[200px,1fr]">
+<div grid="~ gap-6" class="pt-6 grid-cols-[200px_1fr]">
 
 <Repo name="antfu/vitesse" m="y-auto"/>
 <div m="y-auto">Opinionated Vue 3 + Vite Starter template</div>

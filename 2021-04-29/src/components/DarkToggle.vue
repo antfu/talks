@@ -1,6 +1,7 @@
 <script setup lang="ts">
-// @ts-expect-error missing types
-import { isDark, toggleDark } from '@slidev/client/logic/dark.ts'
+import { useDarkMode } from '@slidev/client'
+
+const { isDark, toggleDark } = useDarkMode()
 </script>
 
 <template>

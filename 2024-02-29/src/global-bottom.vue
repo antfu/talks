@@ -11,8 +11,10 @@
  * - growSeed: string | false - Seed for the stable random distribution (default: 'default')
  */
 import { computed, ref, watch } from 'vue'
-import { currentRoute } from '@slidev/client/logic/nav.ts'
+import { useNav } from '@slidev/client'
 import seedrandom from 'seedrandom'
+
+const { currentSlideRoute } = useNav()
 
 export type Range = [number, number]
 
@@ -28,7 +30,7 @@ export type Distribution =
   | 'bottom-right'
   | 'center'
 
-const formatter = computed(() => (currentRoute.value.meta?.slide as any)?.frontmatter || {})
+const formatter = computed(() => (currentSlideRoute.value.meta?.slide as any)?.frontmatter || {})
 const distribution = computed(() => (formatter.value.grow || 'full') as Distribution)
 const opacity = computed<number>(() => +(formatter.value.growOpacity || 0.4))
 const hue = computed<number>(() => +(formatter.value.growHue || 0))
@@ -95,7 +97,7 @@ function distance2([x1, y1]: Range, [x2, y2]: Range) {
 function usePloy(number = 16) {
   function getPoints(): Range[] {
     const limits = distributionToLimits(distribution.value)
-    const rng = seedrandom(`${seed.value}-${currentRoute.value.path}`)
+    const rng = seedrandom(`${seed.value}-${currentSlideRoute.value.path}`)
     function randomBetween([a, b]: Range) {
       return rng() * (b - a) + a
     }
@@ -131,7 +133,7 @@ function usePloy(number = 16) {
     })
   }
 
-  watch(currentRoute, () => {
+  watch(currentSlideRoute, () => {
     jumpPoints()
   })
 

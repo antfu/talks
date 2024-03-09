@@ -31,7 +31,7 @@ Slidev, VueUse, Vitesse, Type Challenges 等項目作者<br>
 狂熱的開源愛好者，目前任職於 <a href="https://nuxtlabs.com" target="_blank">NuxtLabs</a>。<br>
 </div>
 
-<div class="my-10 grid grid-cols-[40px,1fr] w-min gap-y-4">
+<div class="my-10 grid grid-cols-[40px_1fr] w-min gap-y-4">
   <ri-github-line class="opacity-50"/>
   <div><a href="https://github.com/antfu" target="_blank">antfu</a></div>
   <ri-twitter-line class="opacity-50"/>
@@ -537,7 +537,7 @@ Rollup
 
 <div m="t-8"/>
 
-<div class="grid grid-cols-[300px,1fr] gap-4">
+<div class="grid grid-cols-[300px_1fr] gap-4">
 <div v-click>
 
 ###### 構建優先 Build First
@@ -569,7 +569,7 @@ Vite
 </div>
 
 <div m="t-8"/>
-<div class="grid grid-cols-[300px,1fr]">
+<div class="grid grid-cols-[300px_1fr]">
 <div v-click>
 
 ###### 開發優先 Dev First
@@ -706,7 +706,7 @@ import MyInput from '../components/MyInput.vue'
 
 <RepoFixed name="antfu/vite-plugin-components"/>
 
-<div grid="~ gap-x-8" class="grid-cols-[300px,1fr]">
+<div grid="~ gap-x-8" class="grid-cols-[300px_1fr]">
 
 <div>
 
@@ -920,7 +920,7 @@ debouncedWatch(counter, () => {
 
 <RepoFixed name="antfu/vite-plugin-icons" v-click="6"/>
 
-<div class="grid grid-cols-[1fr,2fr]">
+<div class="grid grid-cols-[1fr_2fr]">
 <div>
 
 ###### 以往的方式
@@ -1043,7 +1043,7 @@ import TearsOfJoy from '~icons/twemoji/face-with-tears-of-joy'
 class: flex flex-col
 ---
 
-<div grid="~ gap-10" h="full" class="grid-cols-[1.8fr,1fr]">
+<div grid="~ gap-10" h="full" class="grid-cols-[1.8fr_1fr]">
 <div>
 
 # Vite 生態系統
@@ -1195,7 +1195,7 @@ export const WebpackPlugin = unplugin.webpack
 <div>
 <code opacity="50">vite-plugin-icons</code> <carbon-arrow-right /> <code text="green-400">unplugin-icons</code>
 
-<ul class="grid grid-cols-[1fr,40px,1fr,40px,1fr] w-min whitespace-nowrap">
+<ul class="grid grid-cols-[1fr,40px_1fr_40px_1fr] w-min whitespace-nowrap">
 
 <div class="group">
   <div><logos-vue/> Vue</div>
@@ -1282,7 +1282,7 @@ class: text-center
 
 今天就能獲得的開發體驗，不管你是用 Vue 2, Vue 3, Vite, Nuxt, 還是 Vue CLI 都可以！
 
-<div class="grid grid-cols-[1fr,30px,1fr] gap-2">
+<div class="grid grid-cols-[1fr,30px_1fr] gap-2">
 
 ```html
 <template>
@@ -1351,7 +1351,7 @@ const dark = useDark()
 
 預置了上面提到的所有插件和配置
 
-<div grid="~ gap-6" class="pt-6 grid-cols-[200px,1fr]">
+<div grid="~ gap-6" class="pt-6 grid-cols-[200px_1fr]">
 
 <Repo name="antfu/vitesse" m="y-auto"/>
 <div m="y-auto">Vue 3 + Vite 專案模板</div>
