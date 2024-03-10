@@ -314,7 +314,7 @@ class: flex flex-col items-center justify-center
 title: Vue
 ---
 
-<div text-center absolute left-1 right-1 transition-all duration-400 op75 ease-in-out :class="$clicks === 0 ? 'scale-250 bottom-50%' : 'bottom-5'">
+<div text-center absolute left-1 right-1 transition-all duration-400 op75 ease-in-out :class="$clicks <= 0 ? 'scale-250 bottom-50%' : 'bottom-5'">
 <span op50>https://</span>vuejs.org
 </div>
 
@@ -689,7 +689,7 @@ class: flex items-center justify-center
 ---
 
 <div relative>
-  <Tweet id="1547266714466861056" ml--45 mt--4 flex justify-center items-center transition class="important:[&_iframe]:w-230 important:[&_iframe]:rounded-13px" :class="$clicks > 0 ? 'op50 duration-600' : ''" v-click />
+  <Tweet id="1547266714466861056" ml--45 mt--4 flex justify-center items-center transition class="important:[&_iframe]:w-230 important:[&_iframe]:rounded-13px" :class="$clicks > 1 ? 'op50 duration-600' : ''" v-click />
 
   <Tweet id="1725177397949944126" absolute top-15 left-5 class="important:[&_iframe]:w-200 important:[&_iframe]:rounded-13px important:[&_iframe]:shadow-xl" v-click />
 </div>
