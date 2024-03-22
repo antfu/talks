@@ -6,6 +6,7 @@ Slides &amp; code for my talks, using [Slidev](https://sli.dev).
 
 ###### 2024
 
+- `en` [Anthony's Roads to Open Source - The Set Theory](./2024-03-22) - React Paris
 - `en` [Anthony's Roads to Open Source - The Progressive Path](./2024-02-29) - Vue Amsterdam
 
 ###### 2023

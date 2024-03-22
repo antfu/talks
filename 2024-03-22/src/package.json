@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build --base /2024/reactparis/ --out ../../dist/2023/reactparis",
+    "export": "slidev export --per-slide --output ../2024-03-22-react-paris-en.pdf"
+  }
+}

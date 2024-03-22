@@ -30,13 +30,13 @@ export type Distribution =
   | 'bottom-right'
   | 'center'
 
-const formatter = computed(() => (currentSlideRoute.value.meta?.slide as any)?.frontmatter || {})
-const distribution = computed(() => (formatter.value.grow || 'full') as Distribution)
-const opacity = computed<number>(() => +(formatter.value.growOpacity || 0.4))
-const hue = computed<number>(() => +(formatter.value.growHue || 0))
-const seed = computed<string>(() => (formatter.value.growSeed === 'false' || formatter.value.growSeed === false)
+const frontmatter = computed(() => (currentSlideRoute.value.meta?.slide as any)?.frontmatter || {})
+const distribution = computed(() => (frontmatter.value.grow || 'full') as Distribution)
+const opacity = computed<number>(() => +(frontmatter.value.growOpacity || 0.4))
+const hue = computed<number>(() => +(frontmatter.value.growHue || 0))
+const seed = computed<string>(() => (frontmatter.value.growSeed === 'false' || frontmatter.value.growSeed === false)
   ? Date.now().toString()
-  : formatter.value.growSeed || 'default',
+  : frontmatter.value.growSeed || 'default',
 )
 const overflow = 0.3
 const disturb = 0.3
@@ -152,15 +152,15 @@ const poly3 = usePloy(3)
     aria-hidden="true"
   >
     <div
-      class="clip bg-gradient-to-r from-[#00DC82] to-white/10"
+      class="clip bg-gradient-to-r from-[#00dcc2] to-white/10"
       :style="{ 'clip-path': `polygon(${poly1})`, 'opacity': opacity }"
     />
     <div
-      class="clip bg-gradient-to-l from-[#2f96ad] to-white/10"
+      class="clip bg-gradient-to-l from-[#2366a6] to-white/10"
       :style="{ 'clip-path': `polygon(${poly2})`, 'opacity': opacity }"
     />
     <div
-      class="clip bg-gradient-to-t from-lime to-white/10"
+      class="clip bg-gradient-to-t from-[#5523a6] to-white/10"
       :style="{ 'clip-path': `polygon(${poly3})`, 'opacity': 0.2 }"
     />
   </div>

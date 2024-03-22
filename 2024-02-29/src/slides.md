@@ -12,8 +12,7 @@ title: The Progressive Path
 ![](/af-logo-animated.svg){.w-30.mt--10.mb-5}
 
 <!--
-Hello everyone! It's great to be back here, and I hope you all enjoy the conference so far as much as I do.
-We had a lot of great talks and discussions from technical perspectives, and today I'd like to give a relatively non-technical talk. Hope it can bring you some thoughts and inspirations.
+Hello everyone! I am very glad to be here and I hope you have enjoyed the conference so far. Today it's talk about something soft, non-technical, and maybe more like some ideas. Hope it can bring you some thoughts and inspirations.
 -->
 
 ---
@@ -73,6 +72,7 @@ title: Anthony's Roads to Open Source
 <div abs-br mx-10 my-11 flex="~ col gap-4 items-end" text-left v-click="1">
   <span>Vue Amsterdam</span>
   <div text-xs opacity-75 mt--4>Feb. 29th 2024</div>
+  <!-- <img src="/frontend-nation.svg" w-35 /> -->
 </div>
 
 <!--
@@ -366,7 +366,7 @@ Vue is progressive on integrations. Vue provides multiple builds and offers many
 
 [click] With tools like Nuxt, we could have server-side rendering with Vue to maximize the end-user experience as well as better SEO results.
 
-[click] Native targeting it also possible via Ionic or NativeScripts, as Jessica just made an awesome showcase.
+[click] Native targeting it also possible via Ionic or NativeScripts.
 
 [click] And then we have the upcoming Vapor mode, which allows components to opt-in a more performance VNode-less render engine to optimize even further in performance critcal scenarios.
 -->
@@ -679,7 +679,11 @@ And then, let's take one more example, Vite.
 
 [click] In the "Vite philosophy" section, the docs mentions that "Vite works closely with projects in the ecosystem to minimize regressions on each release".
 
-That's see how it's done in action.
+Vite is on major version 5 right now. And during the past 4 years, we basically keep the pace of release 1 major version per year to keep up the JavaScript ecosystem and the evolving standards.
+
+Some of you probably have been through that periods where we do major releases. The last one with Vite 5 and was released on November last year.
+
+It's not a secret that Vite's major releases have very smooth migration paths. We received many comments mentions about their successful migrations cases.
 -->
 
 ---
@@ -695,12 +699,6 @@ class: flex items-center justify-center
 </div>
 
 <!--
-Vite is on major version 5 right now. And during the past 4 years, we basically keep the pace of release 1 major version per year to keep up the JavaScript ecosystem and the evolving standards.
-
-Some of you probably have been through that periods where we do major releases. The last one with Vite 5 and was released on November last year.
-
-It's not a secret that Vite's major releases have very smooth migration paths. We received many comments mentions about their successful migrations cases.
-
 [click] Project monorepo mention that they upgraded Vite 2 to Vite 3 with only bumpping version, everything keeps working as-is.
 
 [click] Kilian even describe Vite as the "Most painless full-version upgrade of a build system ever" on the release of Vite 5.
@@ -897,16 +895,6 @@ Progressive on <span flex="inline gap-1 items-center" text-rose translate-y-0.6>
     Provide middle stages for migration
   </div>
 </div>
-
-<!-- <div text-xl text-white:50 v-click>
-Extensible <span flex="inline gap-1 items-center" text-blue translate-y-0.6><div i-ph-plugs-duotone />Plugin System</span>
-</div>
-<div flex="~ gap-2 items-center" mb3 ml37 v-click>
-  <div i-ph-arrow-bend-down-right-duotone op50 />
-  <div>
-    Progressive and scales by the community
-  </div>
-</div> -->
 
 </div>
 
