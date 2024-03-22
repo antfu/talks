@@ -384,6 +384,16 @@ to = "/2024/vue-amsterdam/index.html"
 status = 200
 
 [[redirects]]
+from = "/2024/reactparis/pdf"
+to = "https://github.com/antfu/talks/blob/main/2024-03-22/2024-03-22-react-paris-en.pdf?raw=true"
+status = 302
+
+[[redirects]]
+from = "/2024-03-22/pdf"
+to = "https://github.com/antfu/talks/blob/main/2024-03-22/2024-03-22-react-paris-en.pdf?raw=true"
+status = 302
+
+[[redirects]]
 from = "/2024/reactparis/src"
 to = "https://github.com/antfu/talks/tree/main/2024-03-22"
 status = 302

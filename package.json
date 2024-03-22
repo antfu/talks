@@ -12,7 +12,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^2.9.0",
     "@iconify/json": "^2.2.195",
-    "@slidev/cli": "^0.48.5",
+    "@slidev/cli": "^0.48.6",
     "@slidev/theme-default": "^0.25.0",
     "@types/node": "^20.11.30",
     "@types/prompts": "^2.4.9",

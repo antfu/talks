@@ -15,8 +15,8 @@ importers:
         specifier: ^2.2.195
         version: 2.2.195
       '@slidev/cli':
-        specifier: ^0.48.5
-        version: 0.48.5(@types/markdown-it@13.0.7)(@types/node@20.11.30)(@vue/compiler-sfc@3.4.21)(playwright-chromium@1.42.1)(postcss@8.4.35)
+        specifier: ^0.48.6
+        version: 0.48.6(@types/markdown-it@13.0.7)(@types/node@20.11.30)(@vue/compiler-sfc@3.4.21)(playwright-chromium@1.42.1)(postcss@8.4.35)
       '@slidev/theme-default':
         specifier: ^0.25.0
         version: 0.25.0
@@ -1340,8 +1340,8 @@ packages:
     engines: {node: '>=14.16'}
     dev: true
 
-  /@slidev/cli@0.48.5(@types/markdown-it@13.0.7)(@types/node@20.11.30)(@vue/compiler-sfc@3.4.21)(playwright-chromium@1.42.1)(postcss@8.4.35):
-    resolution: {integrity: sha512-GXn+AY2V69Q1yWigDsh7FuJoQmIS7Wqzia8Ov1Yn06VoxqBeWfkFQBo6sqw+UYmMl6PAa+4qIQD5b+0Ny+3MZA==}
+  /@slidev/cli@0.48.6(@types/markdown-it@13.0.7)(@types/node@20.11.30)(@vue/compiler-sfc@3.4.21)(playwright-chromium@1.42.1)(postcss@8.4.35):
+    resolution: {integrity: sha512-erM7dBzU0pZcN80e+Zy9vrp1zKe0rCVw6cF2e/YERvhTkRaM1HQ42j6kcxx0xJw5O3u4D/bIdwsaoUXN9I5P/w==}
     engines: {node: '>=18.0.0'}
     hasBin: true
     peerDependencies:
@@ -1359,9 +1359,9 @@ packages:
       '@shikijs/markdown-it': 1.1.7
       '@shikijs/twoslash': 1.1.7(typescript@5.4.3)
       '@shikijs/vitepress-twoslash': 1.1.7(typescript@5.4.3)
-      '@slidev/client': 0.48.5(@vue/compiler-sfc@3.4.21)(postcss@8.4.35)(vite@5.1.6)
-      '@slidev/parser': 0.48.5(@vue/compiler-sfc@3.4.21)(postcss@8.4.35)(typescript@5.4.3)(vite@5.1.6)
-      '@slidev/types': 0.48.5(@vue/compiler-sfc@3.4.21)(postcss@8.4.35)(typescript@5.4.3)(vite@5.1.6)
+      '@slidev/client': 0.48.6(@vue/compiler-sfc@3.4.21)(postcss@8.4.35)(vite@5.1.6)
+      '@slidev/parser': 0.48.6(@vue/compiler-sfc@3.4.21)(postcss@8.4.35)(typescript@5.4.3)(vite@5.1.6)
+      '@slidev/types': 0.48.6(@vue/compiler-sfc@3.4.21)(postcss@8.4.35)(typescript@5.4.3)(vite@5.1.6)
       '@unocss/extractor-mdc': 0.58.5
       '@unocss/reset': 0.58.6
       '@vitejs/plugin-vue': 5.0.4(vite@5.1.6)(vue@3.4.21)
@@ -1442,8 +1442,8 @@ packages:
       - vue-template-es2015-compiler
     dev: true
 
-  /@slidev/client@0.48.5(@vue/compiler-sfc@3.4.21)(postcss@8.4.35)(vite@5.1.6):
-    resolution: {integrity: sha512-Wy4IiWYyiviT99KKcQYm/SEwe8SY2dVJoOBbJHFvZWYxIpAjin7Vu2g0NIWfgMMCtqWBZZ0NE03lr2zcJ2C2OQ==}
+  /@slidev/client@0.48.6(@vue/compiler-sfc@3.4.21)(postcss@8.4.35)(vite@5.1.6):
+    resolution: {integrity: sha512-DIeQmFIgUZrZj0AAktKB2vHm2qlUhPD4Sef+ua+O1xjPJru7r8qY6LzgKhrOyBntbr0tUKNDZ4ub/I4HttW3Gg==}
     engines: {node: '>=18.0.0'}
     dependencies:
       '@antfu/utils': 0.7.7
@@ -1452,9 +1452,9 @@ packages:
       '@iconify-json/svg-spinners': 1.1.2
       '@shikijs/monaco': 1.1.7
       '@shikijs/vitepress-twoslash': 1.1.7(typescript@5.4.3)
-      '@slidev/parser': 0.48.5(@vue/compiler-sfc@3.4.21)(postcss@8.4.35)(typescript@5.4.3)(vite@5.1.6)
+      '@slidev/parser': 0.48.6(@vue/compiler-sfc@3.4.21)(postcss@8.4.35)(typescript@5.4.3)(vite@5.1.6)
       '@slidev/rough-notation': 0.1.0
-      '@slidev/types': 0.48.5(@vue/compiler-sfc@3.4.21)(postcss@8.4.35)(typescript@5.4.3)(vite@5.1.6)
+      '@slidev/types': 0.48.6(@vue/compiler-sfc@3.4.21)(postcss@8.4.35)(typescript@5.4.3)(vite@5.1.6)
       '@typescript/ata': 0.9.4(typescript@5.4.3)
       '@unhead/vue': 1.8.18(vue@3.4.21)
       '@unocss/reset': 0.58.6
@@ -1504,11 +1504,11 @@ packages:
       js-yaml: 4.1.0
     dev: true
 
-  /@slidev/parser@0.48.5(@vue/compiler-sfc@3.4.21)(postcss@8.4.35)(typescript@5.4.3)(vite@5.1.6):
-    resolution: {integrity: sha512-K/fnfJVtkZu140gbrRO3BXBtZNisVUdZ+DLdh6NfV914rLLbSRSGYUpk/LnM9J3NJ9CtNimyXsxaDd8TwB7fIA==}
+  /@slidev/parser@0.48.6(@vue/compiler-sfc@3.4.21)(postcss@8.4.35)(typescript@5.4.3)(vite@5.1.6):
+    resolution: {integrity: sha512-gG3MD9LpO9LqQkHFz8uWNovtDjR3VM6cKQnGnXxoynxOBFOUa5H8WZzNFgJ7U82dP8aQ5EDl7WIAJ53ZP+b2bA==}
     engines: {node: '>=18.0.0'}
     dependencies:
-      '@slidev/types': 0.48.5(@vue/compiler-sfc@3.4.21)(postcss@8.4.35)(typescript@5.4.3)(vite@5.1.6)
+      '@slidev/types': 0.48.6(@vue/compiler-sfc@3.4.21)(postcss@8.4.35)(typescript@5.4.3)(vite@5.1.6)
       js-yaml: 4.1.0
     transitivePeerDependencies:
       - '@svgr/core'
@@ -1544,8 +1544,8 @@ packages:
     engines: {node: '>=18.0.0'}
     dev: true
 
-  /@slidev/types@0.48.5(@vue/compiler-sfc@3.4.21)(postcss@8.4.35)(typescript@5.4.3)(vite@5.1.6):
-    resolution: {integrity: sha512-IlTZeKozBpu2Y0qGUyF1MKbLUhFyfI+6tSSs/UIzGUxhWnpfsJvXFf3/rGeIDmBtAmM/jUam9JP9ZfPRwioc8Q==}
+  /@slidev/types@0.48.6(@vue/compiler-sfc@3.4.21)(postcss@8.4.35)(typescript@5.4.3)(vite@5.1.6):
+    resolution: {integrity: sha512-8SpuOxiE6sDSrFfwDqlnRDhcqhYY63vIZ0+oXP43mlKh7nlsj+ORPXv6YrKdCroScao6g+RId9q1inAtTkwyIA==}
     engines: {node: '>=18.0.0'}
     dependencies:
       '@antfu/utils': 0.7.7
