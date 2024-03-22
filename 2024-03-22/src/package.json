@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "slidev",
-    "build": "slidev build --base /2024/reactparis/ --out ../../dist/2023/reactparis",
+    "build": "slidev build --base /2024/reactparis/ --out ../../dist/2024/reactparis",
     "export": "slidev export --dark --per-slide --output ../2024-03-22-react-paris-en.pdf"
   }
 }
