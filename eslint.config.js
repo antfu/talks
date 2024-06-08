@@ -4,11 +4,14 @@ export default antfu({
   vue: true,
   formatters: {
     css: true,
-    markdown: true,
-    slidev: {
-      files: [
-        '*/src/slides.md',
-      ],
-    },
+    // markdown: true,
+    // slidev: {
+    //   files: [
+    //     '*/src/slides.md',
+    //   ],
+    // },
   },
+  ignores: [
+    '**/demo/eslint/**',
+  ],
 })
