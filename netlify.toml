@@ -434,6 +434,56 @@ to = "/2024/cityjs-athens/index.html"
 status = 200
 
 [[redirects]]
+from = "/2024/jsnation/pdf"
+to = "https://github.com/antfu/talks/blob/main/2024-06-13/2024-06-13-jsnation-en.pdf?raw=true"
+status = 302
+
+[[redirects]]
+from = "/2024-06-13/pdf"
+to = "https://github.com/antfu/talks/blob/main/2024-06-13/2024-06-13-jsnation-en.pdf?raw=true"
+status = 302
+
+[[redirects]]
+from = "/2024/jsnation/src"
+to = "https://github.com/antfu/talks/tree/main/2024-06-13"
+status = 302
+
+[[redirects]]
+from = "2024-06-13"
+to = "https://talks.antfu.me/2024/jsnation/"
+status = 301
+
+[[redirects]]
+from = "/2024/jsnation/*"
+to = "/2024/jsnation/index.html"
+status = 200
+
+[[redirects]]
+from = "/2024/react-summit/pdf"
+to = "https://github.com/antfu/talks/blob/main/2024-06-14/2024-06-14-react-summit-en.pdf?raw=true"
+status = 302
+
+[[redirects]]
+from = "/2024-06-14/pdf"
+to = "https://github.com/antfu/talks/blob/main/2024-06-14/2024-06-14-react-summit-en.pdf?raw=true"
+status = 302
+
+[[redirects]]
+from = "/2024/react-summit/src"
+to = "https://github.com/antfu/talks/tree/main/2024-06-14"
+status = 302
+
+[[redirects]]
+from = "2024-06-14"
+to = "https://talks.antfu.me/2024/react-summit/"
+status = 301
+
+[[redirects]]
+from = "/2024/react-summit/*"
+to = "/2024/react-summit/index.html"
+status = 200
+
+[[redirects]]
 from = "/"
 to = "https://antfu.me/talks"
 status = 302

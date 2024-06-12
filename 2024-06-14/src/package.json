@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build --base /2024/react-summit/ --out ../../dist/2024/react-summit",
+    "export": "slidev export --dark --per-slide --output ../2024-06-14-react-summit-en.pdf"
+  }
+}
