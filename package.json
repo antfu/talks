@@ -1,7 +1,7 @@
 {
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@9.2.0",
+  "packageManager": "pnpm@9.3.0",
   "scripts": {
     "build": "rimraf dist && pnpm -r run build",
     "dev": "esno scripts/picker.ts dev --open",
@@ -10,9 +10,9 @@
     "update": "esno scripts/redirects.ts"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.20.0",
-    "@eslint/config-inspector": "^0.4.10",
-    "@iconify/json": "^2.2.217",
+    "@antfu/eslint-config": "^2.21.0",
+    "@eslint/config-inspector": "^0.4.11",
+    "@iconify/json": "^2.2.218",
     "@slidev/cli": "^0.49.10",
     "@slidev/client": "^0.49.10",
     "@slidev/theme-default": "^0.25.0",
@@ -26,14 +26,14 @@
     "fast-glob": "^3.3.2",
     "markdown-it-magic-link": "^0.1.4",
     "playwright-chromium": "^1.44.1",
-    "pnpm": "^9.2.0",
+    "pnpm": "^9.3.0",
     "prettier-plugin-slidev": "^1.0.5",
     "prompts": "^2.4.2",
     "rimraf": "^5.0.7",
     "seedrandom": "^3.0.5",
     "typescript": "^5.4.5",
     "unocss": "^0.60.4",
-    "vue-router": "^4.3.2",
-    "vue-tsc": "^2.0.19"
+    "vue-router": "^4.3.3",
+    "vue-tsc": "^2.0.21"
   }
 }
