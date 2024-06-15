@@ -50,9 +50,9 @@ Working at {NuxtLabs}<br>
 <!--
 My name is Anthony Fu...
 
-So, as you can see, at the frontend level, I am pretty much from the Vue community. And this is actually my second time attending a React event, it's my great honor to speak and share my perspective with you here. Even though my talk is probably the least React talk today, I hope you find it useful at some extent.
+So, as you can see, at the frontend level, I am pretty much from the Vue community. And this is actually my second time attending a React event. But the event is awesome and really makes me feel home because we have a React conference with the color of Vue. Thanks to everyone that make this event possible. It's my great honor to speak and share my perspective with you here.
 
-And here is the deal, I will try to talk about something you might find interesting, and you gonna teach me how to properly use the `useEffect` hook later.
+Since I don't know a lot of React to talk about, here is the deal, I will try to talk about something you might find interesting, and you gonna teach me how to properly use the `useEffect` hook later.
 -->
 
 ---
@@ -162,7 +162,7 @@ layout: center
 ![](/i18n-ally-hover.png){.h-100.contrast-110}
 
 <!--
-This is a screenshot of the extension that shows its basic features. Well, the extension itself isn't our main topic today. But hope this screenshot can give you a basic idea of what it is.
+This is a screenshot of the extension that shows its basic features. This screenshot should give you a basic idea of what it is.
 -->
 
 ---
