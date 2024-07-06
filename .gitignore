@@ -3,3 +3,6 @@ node_modules
 *-export*
 dist
 .DS_Store
+
+# Vendor
+2024-07-06/src/yak-shaving-map

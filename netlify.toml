@@ -484,6 +484,31 @@ to = "/2024/react-summit/index.html"
 status = 200
 
 [[redirects]]
+from = "/2024/vueconf-shenzhen/pdf"
+to = "https://github.com/antfu/talks/blob/main/2024-07-06/2024-07-06-vueconf-shenzhen-zh.pdf?raw=true"
+status = 302
+
+[[redirects]]
+from = "/2024-07-06/pdf"
+to = "https://github.com/antfu/talks/blob/main/2024-07-06/2024-07-06-vueconf-shenzhen-zh.pdf?raw=true"
+status = 302
+
+[[redirects]]
+from = "/2024/vueconf-shenzhen/src"
+to = "https://github.com/antfu/talks/tree/main/2024-07-06"
+status = 302
+
+[[redirects]]
+from = "2024-07-06"
+to = "https://talks.antfu.me/2024/vueconf-shenzhen/"
+status = 301
+
+[[redirects]]
+from = "/2024/vueconf-shenzhen/*"
+to = "/2024/vueconf-shenzhen/index.html"
+status = 200
+
+[[redirects]]
 from = "/"
 to = "https://antfu.me/talks"
 status = 302
