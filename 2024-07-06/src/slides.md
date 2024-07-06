@@ -35,10 +35,10 @@ glowSeed: 14
   <div><a href="https://antfu.me" target="_blank" class="border-none! font-300">antfu.me</a></div>
   <div i-ri-github-line op50 ma text-xl ml4/>
   <div><a href="https://github.com/antfu" target="_blank" class="border-none! font-300">antfu</a></div>
-  <div i-ri-mastodon-line op50 ma text-xl ml4 />
-  <div><a href="https://m.webtoo.ls/@antfu" target="_blank" class="border-none! font-300">antfu@webtoo.ls</a></div>
   <div i-ri-twitter-x-line op50 ma text-xl ml4/>
   <div><a href="https://twitter.com/antfu7" target="_blank" class="border-none! font-300">antfu7</a></div>
+  <div i-ri-bilibili-line op50 ma text-xl ml4/>
+  <div><a href="https://space.bilibili.com/668380" target="_blank" class="border-none! font-300" ws-nowrap>AnthonyFu 一个托尼</a></div>
 </div>
 
 <img src="/anthony-hi.png" v-click absolute top-36 right-35 w-40 />
@@ -468,13 +468,13 @@ glow: topmost
   <div flex="~ col">
     <a href="https://antfu.me" text-sm op50 hover:underline target="_blank">Anthony Fu's</a>
     <a text-2xl href="https://github.com/antfu/yak-shaving-map" target="_blank" hover:underline>
-      Yak Map 耗牛地图
+      Yak Map 牦牛地图
     </a>
   </div>
 </div>
 
 <!--
-希望我的这个经历可以对大家有所启发。每个人擅长的和感兴趣的的格不相同，以及很多项目的诞生会有一定的时效性与偶然性，每个人的成长之路和耗牛地图也一定会不尽相同。我也非常期待可以看到你们的版本。
+希望我的这个经历可以对大家有所启发。每个人擅长的和感兴趣的的格不相同，以及很多项目的诞生会有一定的时效性与偶然性，每个人的成长之路和牦牛地图也一定会不尽相同。我也非常期待可以看到你们的版本。
 -->
 
 ---
