@@ -7,7 +7,8 @@
     "dev": "esno scripts/picker.ts dev --open",
     "typecheck": "vue-tsc --noEmit",
     "lint": "eslint .",
-    "update": "esno scripts/redirects.ts"
+    "update": "esno scripts/redirects.ts",
+    "prepare": "git submodule update --init --recursive"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.21.2",

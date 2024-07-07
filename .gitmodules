@@ -1,0 +1,3 @@
+[submodule "2024-07-06/src/yak-shaving-map"]
+	path = 2024-07-06/src/yak-shaving-map
+	url = https://github.com/antfu/yak-shaving-map
