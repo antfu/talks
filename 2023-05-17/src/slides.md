@@ -4,7 +4,7 @@ highlighter: shiki
 css: unocss
 colorSchema: dark
 transition: fade-out
-growSize: 1.5
+glowSize: 1.5
 ---
 
 <div mt--2>
@@ -25,8 +25,8 @@ Anthony Fu
 
 ---
 layout: intro
-growX: 10
-growY: 90
+glowX: 10
+glowY: 90
 style: 'padding-left: 8rem;'
 ---
 
@@ -64,9 +64,9 @@ class: text-center
 
 ---
 layout: center
-growX: 50
-growY: 120
-growSize: 1.5
+glowX: 50
+glowY: 120
+glowSize: 1.5
 ---
 
 <h1 class="text-5xl!" w-200>I Get</h1>
@@ -75,18 +75,18 @@ growSize: 1.5
 
 ---
 layout: center
-growX: -10
-growY: 50
-growSize: 0.75
+glowX: -10
+glowY: 50
+glowSize: 0.75
 ---
 
 <img src="/notifications-count.png" w-100 mix-blend-lighten filter-contrast-120 />
 
 ---
 layout: center
-growX: 50
-growY: 0
-growSize: 1.5
+glowX: 50
+glowY: 0
+glowSize: 1.5
 clicks: 4
 ---
 
@@ -96,16 +96,16 @@ clicks: 4
 
 ---
 layout: fact
-growX: 0
-growY: 50
+glowX: 0
+glowY: 50
 ---
 
 <h1 class="text-4xl!">What Does Empty Inbox Looks Like?</h1>
 
 ---
 layout: center
-growX: -10
-growY: -10
+glowX: -10
+glowY: -10
 class: text-center
 ---
 
@@ -118,8 +118,8 @@ Take a break, write some code, do what you do best.
 
 ---
 layout: center
-growX: 50
-growY: 0
+glowX: 50
+glowY: 0
 ---
 
 # Why Inbox-Zero?
@@ -135,9 +135,9 @@ growY: 0
 
 ---
 layout: fact
-growX: 50
-growY: 0
-growSize: 1.5
+glowX: 50
+glowY: 0
+glowSize: 1.5
 ---
 
 # Reduce Notifications Created
@@ -153,9 +153,9 @@ contribution guide, issue form/templates, etc
 
 ---
 layout: fact
-growX: 50
-growY: 120
-growSize: 1.5
+glowX: 50
+glowY: 120
+glowSize: 1.5
 clicks: 1
 ---
 
@@ -165,9 +165,9 @@ clicks: 1
 
 ---
 layout: fact
-growX: 50
-growY: 0
-growSize: 1.5
+glowX: 50
+glowY: 0
+glowSize: 1.5
 ---
 
 # Seek for Notifications
@@ -193,9 +193,9 @@ layout: center
 
 ---
 layout: fact
-growX: 0
-growY: 50
-growSize: 1.5
+glowX: 0
+glowY: 50
+glowSize: 1.5
 ---
 
 # Group your Notifications
@@ -204,8 +204,8 @@ by repository, instead of time
 <div class="number-bg">2</div>
 
 ---
-growX: 110
-growY: -10
+glowX: 110
+glowY: -10
 clicks: 2
 ---
 
@@ -215,9 +215,9 @@ clicks: 2
 
 ---
 layout: fact
-growX: 90
-growY: 90
-growSize: 1.5
+glowX: 90
+glowY: 90
+glowSize: 1.5
 ---
 
 # What to Focus
@@ -242,9 +242,9 @@ layout: center
 
 ---
 layout: center
-growX: 50
-growY: 100
-growSize: 1.1
+glowX: 50
+glowY: 100
+glowSize: 1.1
 ---
 
 <div text-center mt4 op50 italic font-serif mb2>I wrote a userscript:</div>
@@ -254,8 +254,8 @@ growSize: 1.1
 <div text-center mt4 op50 italic font-serif v-click>It's hacky and opinionated!</div>
 
 ---
-growX: 110
-growY: 110
+glowX: 110
+glowY: 110
 ---
 
 <img absolute left-10 top-10 src="/notifications-grouped.png" w-150 />
@@ -314,8 +314,8 @@ layout: center
 ---
 layout: intro
 class: text-center pb-5
-growX: 50
-growY: 120
+glowX: 50
+glowY: 120
 ---
 
 # Thank You!

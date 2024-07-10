@@ -14,8 +14,8 @@ Hello everyone, it's my great honor to be here, and thanks for having me! First,
 
 ---
 layout: intro
-growSeed: 15
-growOpacity: 0.3
+glowSeed: 15
+glowOpacity: 0.3
 class: pl-25
 ---
 
@@ -94,8 +94,8 @@ So let's say we already have an Open Source project, or planning to create one. 
 
 ---
 clicks: 4
-growX: 0
-growY: 0
+glowX: 0
+glowY: 0
 ---
 
 ## Consider your Target Users
@@ -134,7 +134,7 @@ Under this idea, let's take a look at some examples of how we can do that.
 ---
 layout: center
 class: text-center
-grow: left
+glow: left
 ---
 
 #### For example {.op60}
@@ -259,7 +259,7 @@ In short, we might be able to make things more universal by breaking the set cir
 
 ---
 layout: center
-grow: top
+glow: top
 ---
 
 <div flex="~ items-center justify-center gap-6" mr15>
@@ -292,8 +292,8 @@ And that's how I did it! [click] I took some time to do a huge refactor, designe
 
 ---
 layout: center
-grow: left
-growSeed: 1
+glow: left
+glowSeed: 1
 ---
 
 ![](/stars.png){.w-150}
@@ -308,8 +308,8 @@ When it comes to numbers, we can see a steep increase of the stars at the time o
 
 ---
 layout: center
-growHue: 70
-growSeed: 10
+glowHue: 70
+glowSeed: 10
 ---
 
 <img src="/ecosystem/vite.svg" alt="" w-25 ma />
@@ -324,8 +324,8 @@ Then let's talk about another example, Vite. Initially, [click] Vite was an expe
 -->
 
 ---
-growX: 50
-growY: 0
+glowX: 50
+glowY: 0
 preload: false
 ---
 
@@ -424,8 +424,8 @@ So, we know that being universal has a lot great benefits. However actually, I w
 
 ---
 class: h-full
-growX: 50
-growY: -20
+glowX: 50
+glowY: -20
 ---
 
 ## Deployment
@@ -502,8 +502,8 @@ And then we realize that is a problem that probably every meta-framework has to 
 -->
 
 ---
-growX: 50
-growY: 0
+glowX: 50
+glowY: 0
 clicks: 4
 class: h-full
 ---
@@ -548,7 +548,7 @@ And similarly, in terms of the bundle tools. Nuxt 2 was built on top of Webpack 
 
 ---
 class: h-full
-growX: 0
+glowX: 0
 ---
 
 <h1 text-lime v-click="6">The "Set Union" <div class="inline-block i-gis-union translate-y-1/10" /></h1>
@@ -629,7 +629,7 @@ We extract the universal parts, [click] expand the scope and [click] grow the co
 
 ---
 class: "h-full [&_a]:border-0!"
-growX: 0
+glowX: 0
 ---
 
 <div mt-25 />
@@ -789,8 +789,8 @@ It's all about collaboration and communities. I have a strong believe in open so
 ---
 layout: intro
 class: text-center pb-5
-growX: 50
-growY: 120
+glowX: 50
+glowY: 120
 ---
 
 # Thank You!

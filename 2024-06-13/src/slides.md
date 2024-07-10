@@ -5,7 +5,7 @@ colorSchema: dark
 transition: fade-out
 mdc: true
 layout: center
-growSeed: 4
+glowSeed: 4
 title: ESLint One for All Made Easy
 monacoTypesIgnorePackages:
   - '@antfu/install-pkg'
@@ -39,8 +39,8 @@ Hello everyone, so glad to be here today at JSNation.
 
 ---
 layout: intro
-growSeed: 15
-growOpacity: 0.3
+glowSeed: 15
+glowOpacity: 0.3
 class: pl-25
 ---
 
@@ -108,7 +108,7 @@ Today, I'd like to give it a very broad and ambitious topic, "ESLint, [click]One
 
 ---
 layout: center
-grow: bottom
+glow: bottom
 ---
 
 <div flex="~ col items-center justify-center w-full">
@@ -395,7 +395,7 @@ And now, let's talk about the interesting new tools and possibilities that are e
 -->
 
 ---
-grow: left
+glow: left
 ---
 
 <div w="40%">
@@ -853,7 +853,7 @@ To summarize today's topic, I'd like to say that ESLint makes it possible to be 
 ---
 class: grid grid-cols-[1fr_1fr] p0 h-full
 clicks: 1
-grow: left
+glow: left
 ---
 
 <div p4 flex="~ col gap-1 items-center justify-center" transition duration-500 :class="$clicks >= 1 ? '' : 'translate-x-65'">
@@ -920,8 +920,8 @@ I am honestly a bit flattered to see that even tho I didn't intend to have this 
 ---
 layout: intro
 class: text-center pb-5
-growX: 50
-growY: 120
+glowX: 50
+glowY: 120
 ---
 
 # Thank you!

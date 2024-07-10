@@ -1,14 +1,14 @@
 <script setup lang="ts">
 /**
- * A new grow effect system powered by blured polygons
+ * A new glow effect system powered by blured polygons
  *
  * Credits to @pi0 @Atinux
  *
  * Properties:
- * - grow: 'left' | 'right' | 'top' | 'bottom' | 'full' -  Distribution of the polygons points
- * - growOpacity: number - Opacity of the polygons (4)
- * - growHue: number - Hue shift for the polygons (default: 0)
- * - growSeed: string | false - Seed for the stable random distribution (default: 'default')
+ * - glow: 'left' | 'right' | 'top' | 'bottom' | 'full' -  Distribution of the polygons points
+ * - glowOpacity: number - Opacity of the polygons (4)
+ * - glowHue: number - Hue shift for the polygons (default: 0)
+ * - glowSeed: string | false - Seed for the stable random distribution (default: 'default')
  */
 import { computed, ref, watch } from 'vue'
 import { useNav } from '@slidev/client'
@@ -31,12 +31,12 @@ export type Distribution =
   | 'center'
 
 const formatter = computed(() => (currentSlideRoute.value.meta?.slide as any)?.frontmatter || {})
-const distribution = computed(() => (formatter.value.grow || 'full') as Distribution)
-const opacity = computed<number>(() => +(formatter.value.growOpacity || 0.4))
-const hue = computed<number>(() => +(formatter.value.growHue || 0))
-const seed = computed<string>(() => (formatter.value.growSeed === 'false' || formatter.value.growSeed === false)
+const distribution = computed(() => (formatter.value.glow || 'full') as Distribution)
+const opacity = computed<number>(() => +(formatter.value.glowOpacity || 0.4))
+const hue = computed<number>(() => +(formatter.value.glowHue || 0))
+const seed = computed<string>(() => (formatter.value.glowSeed === 'false' || formatter.value.glowSeed === false)
   ? Date.now().toString()
-  : formatter.value.growSeed || 'default',
+  : formatter.value.glowSeed || 'default',
 )
 const overflow = 0.3
 const disturb = 0.3

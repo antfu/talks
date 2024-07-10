@@ -24,8 +24,8 @@ Anthony Fu
 
 ---
 layout: intro
-growX: 10
-growY: 90
+glowX: 10
+glowY: 90
 class: pl30
 ---
 
@@ -62,8 +62,8 @@ layout: center
 
 ---
 layout: center
-growX: 50
-growY: 50
+glowX: 50
+glowY: 50
 ---
 
 <h1 font-bold class="text-5xl!">Nuxt Developer Experience</h1>
@@ -103,8 +103,8 @@ growY: 50
 </v-click>
 
 ---
-growX: 0
-growY: 50
+glowX: 0
+glowY: 50
 class: flex
 ---
 
@@ -184,8 +184,8 @@ class: ml-30 mt-5
 ---
 layout: center
 class: text-center
-growX: 50
-growY: 50
+glowX: 50
+glowY: 50
 ---
 
 # In the Past 8 Months
@@ -193,8 +193,8 @@ growY: 50
 Since the Nuxt DevTools has announced
 
 ---
-growX: 100
-growY: 100
+glowX: 100
+glowY: 100
 class: ml-20 mt-5
 ---
 
@@ -216,8 +216,8 @@ class: ml-20 mt-5
 
 ---
 class: text-center
-growX: 90
-growY: 0
+glowX: 90
+glowY: 0
 preload: false
 ---
 
@@ -227,8 +227,8 @@ preload: false
 
 ---
 class: text-center
-growX: 90
-growY: 0
+glowX: 90
+glowY: 0
 preload: false
 ---
 
@@ -238,8 +238,8 @@ preload: false
 
 ---
 class: text-center
-growX: 90
-growY: 0
+glowX: 90
+glowY: 0
 preload: false
 ---
 
@@ -249,8 +249,8 @@ preload: false
 
 ---
 class: text-center
-growX: 90
-growY: 0
+glowX: 90
+glowY: 0
 preload: false
 ---
 
@@ -260,8 +260,8 @@ preload: false
 
 ---
 class: text-center
-growX: 90
-growY: 0
+glowX: 90
+glowY: 0
 preload: false
 ---
 
@@ -271,8 +271,8 @@ preload: false
 
 ---
 class: text-center
-growX: 90
-growY: 0
+glowX: 90
+glowY: 0
 preload: false
 ---
 
@@ -282,8 +282,8 @@ preload: false
 
 ---
 class: text-center
-growX: 90
-growY: 0
+glowX: 90
+glowY: 0
 preload: false
 ---
 
@@ -293,8 +293,8 @@ preload: false
 
 ---
 class: text-center
-growX: 90
-growY: 0
+glowX: 90
+glowY: 0
 preload: false
 ---
 
@@ -304,8 +304,8 @@ preload: false
 
 ---
 class: text-center
-growX: 90
-growY: 0
+glowX: 90
+glowY: 0
 preload: false
 ---
 
@@ -315,8 +315,8 @@ preload: false
 
 ---
 class: text-center
-growX: 90
-growY: 0
+glowX: 90
+glowY: 0
 preload: false
 ---
 
@@ -326,8 +326,8 @@ preload: false
 
 ---
 class: text-center
-growX: 90
-growY: 0
+glowX: 90
+glowY: 0
 preload: false
 ---
 
@@ -337,8 +337,8 @@ preload: false
 
 ---
 class: text-center
-growX: 90
-growY: 0
+glowX: 90
+glowY: 0
 preload: false
 ---
 
@@ -348,8 +348,8 @@ preload: false
 
 ---
 class: text-center
-growX: 90
-growY: 0
+glowX: 90
+glowY: 0
 preload: false
 ---
 
@@ -359,8 +359,8 @@ preload: false
 
 ---
 class: text-center
-growX: 90
-growY: 0
+glowX: 90
+glowY: 0
 preload: false
 ---
 
@@ -370,8 +370,8 @@ preload: false
 
 ---
 class: text-center
-growX: 90
-growY: 0
+glowX: 90
+glowY: 0
 preload: false
 ---
 
@@ -381,8 +381,8 @@ preload: false
 
 ---
 class: text-center
-growX: 90
-growY: 0
+glowX: 90
+glowY: 0
 preload: false
 ---
 
@@ -392,8 +392,8 @@ preload: false
 
 ---
 layout: center
-growX: 50
-growY: 100
+glowX: 50
+glowY: 100
 ---
 
 <FeatureList />
@@ -403,8 +403,8 @@ That's only a part of features we provide. We are happy to hear if any of them h
 -->
 
 ---
-growX: 100
-growY: 50
+glowX: 100
+glowY: 50
 ---
 
 # Community Modules
@@ -449,8 +449,8 @@ We are super excited to see more and more projects are exploring the possibiliti
 
 ---
 layout: center
-growX: 0
-growY: 50
+glowX: 0
+glowY: 50
 ---
 
 # What's Next?
@@ -458,8 +458,8 @@ growY: 50
 ---
 layout: center
 class: text-center
-growX: 50
-growY: 50
+glowX: 50
+glowY: 50
 ---
 
 <div relative>
@@ -527,8 +527,8 @@ Nuxt DevTools 1.0 serves as a milestone. There are no many new features in 1.0, 
 
 ---
 layout: center
-growX: 0
-growY: 0
+glowX: 0
+glowY: 0
 ---
 
 <h1 flex="~ gap-2">
@@ -576,8 +576,8 @@ And lastly, we came up an idea called DevTools Kit, a shared infrastructures and
 -->
 
 ---
-growX: 120
-growY: 90
+glowX: 120
+glowY: 90
 clicks: 20
 ---
 
@@ -609,8 +609,8 @@ So, that's our vision, each feature could share and collabrate across different 
 ---
 layout: center
 class: text-center
-growX: 50
-growY: -10
+glowX: 50
+glowY: -10
 ---
 
 <div text-6xl font-extrabold>Developer Experience</div>
@@ -623,8 +623,8 @@ So in the end, I'd say, that Developer Experience is the key to great softwares 
 ---
 layout: intro
 class: text-center pb-5
-growX: 50
-growY: 120
+glowX: 50
+glowY: 120
 ---
 
 # Thank You!

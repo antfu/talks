@@ -5,9 +5,9 @@ css: unocss
 colorSchema: dark
 transition: fade-out
 mdc: true
-growX: 50
-growY: 130
-growSize: 1.5
+glowX: 50
+glowY: 130
+glowSize: 1.5
 ---
 
 ![](/af-logo-animated.svg){.w-30.mt--10.mb-5}
@@ -32,8 +32,8 @@ Anthony Fu
 
 ---
 layout: intro
-growX: 0
-growY: 90
+glowX: 0
+glowY: 90
 style: 'padding-left: 9rem;'
 ---
 
@@ -92,8 +92,8 @@ So let's say we already have an Open Source project, or planning to create one. 
 
 ---
 clicks: 4
-growX: 0
-growY: 0
+glowX: 0
+glowY: 0
 ---
 
 ## Consider your Target Users
@@ -126,8 +126,8 @@ Under this idea, let's take a look at some examples of how we can do that.
 ---
 layout: center
 class: text-center
-growX: -10
-growY: 50
+glowX: -10
+glowY: 50
 ---
 
 #### For example {.op60}
@@ -159,8 +159,8 @@ This is a screenshot of the extension that shows its basic features. Well, the e
 -->
 
 ---
-growX: 0
-growY: 100
+glowX: 0
+glowY: 100
 clicks: 10
 class: h-full
 ---
@@ -251,8 +251,8 @@ And then when it comes to the intersection between VS Code and i18n, we see that
 
 ---
 layout: center
-growX: 0
-growY: 50
+glowX: 0
+glowY: 50
 ---
 
 <div flex="~ items-center justify-center gap-6" mr15>
@@ -283,9 +283,9 @@ And that's how I did it! I took some time to do a huge refactor, designed a plug
 
 ---
 layout: center
-growSize: 0.001
-growX: 30
-growY: -20
+glowSize: 0.001
+glowX: 30
+glowY: -20
 ---
 
 ![](/stars.png){.w-150}
@@ -300,9 +300,9 @@ When it comes to numbers, we can clear see a steep increase of the stars at the 
 
 ---
 layout: center
-growX: 50
-growY: 35
-growSize: 0.6
+glowX: 50
+glowY: 35
+glowSize: 0.6
 clicks: 2
 ---
 
@@ -319,8 +319,8 @@ Then let's talk about our old friend, Vite. This is a story that probably most o
 -->
 
 ---
-growX: 50
-growY: 0
+glowX: 50
+glowY: 0
 preload: false
 ---
 
@@ -366,8 +366,8 @@ So, we know that being universal has a lot great benefits. But actually, being s
 
 ---
 layout: center
-growX: 50
-growY: 50
+glowX: 50
+glowY: 50
 ---
 
 <h1 font-bold class="text-5xl!" flex="~ gap-3 items-center">
@@ -418,8 +418,8 @@ And here, let's look into a couple of features Nuxt provides.
 
 ---
 class: h-full
-growX: 50
-growY: -20
+glowX: 50
+glowY: -20
 clicks: 10
 ---
 
@@ -491,8 +491,8 @@ And then we realize that is a problem that probably every meta-framework has to 
 -->
 
 ---
-growX: 50
-growY: 0
+glowX: 50
+glowY: 0
 clicks: 4
 class: h-full
 ---
@@ -533,7 +533,7 @@ That's the initial motivation for us to create `unplugin`, an unified plugin int
 
 ---
 class: h-full
-growX: 0
+glowX: 0
 clicks: 8
 ---
 
@@ -662,8 +662,8 @@ That's all for my talk. Thank you!
 ---
 layout: intro
 class: text-center pb-5
-growX: 50
-growY: 120
+glowX: 50
+glowY: 120
 ---
 
 # Thank You!

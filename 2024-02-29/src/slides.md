@@ -5,7 +5,7 @@ css: unocss
 colorSchema: dark
 transition: fade-out
 mdc: true
-growSeed: 4
+glowSeed: 4
 title: The Progressive Path
 ---
 
@@ -18,7 +18,7 @@ Hello everyone! I am very glad to be here and I hope you have enjoyed the confer
 ---
 layout: intro
 class: pl-40
-growSeed: 14
+glowSeed: 14
 ---
 
 # Anthony Fu
@@ -87,8 +87,8 @@ Today, it's going to be the Part 2 - [click] "The Progressive Path".
 -->
 
 ---
-growX: 100
-growY: 80
+glowX: 100
+glowY: 80
 ---
 
 ### Previous Episode{.op50.mb-2}
@@ -115,8 +115,8 @@ The topic was independent from today's, so no worries if you missed it.
 ---
 layout: center
 class: text-center
-growX: 50
-growY: 100
+glowX: 50
+glowY: 100
 ---
 
 <h1 important-text-5xl v-click>What is a Tool?</h1>
@@ -138,7 +138,7 @@ I guess no one wants to use a tool that makes things slower and more complicated
 -->
 
 ---
-grow: right
+glow: right
 class: text-center
 clicks: 5
 title: What Makes a Good Tool?
@@ -203,7 +203,7 @@ Thus we know that, when we are making tools, we have to think about those cases 
 
 ---
 class: text-2xl
-grow: right
+glow: right
 title: Make things easier!
 ---
 
@@ -267,7 +267,7 @@ We know that the complexity of things might transfer from one place to another, 
 -->
 
 ---
-grow: bottom
+glow: bottom
 ---
 
 # What is Progressive?
@@ -308,8 +308,8 @@ So from a progressive perspective, I think that's why stairs has been invented.
 -->
 
 ---
-growX: 50
-growY: 130
+glowX: 50
+glowY: 130
 class: flex flex-col items-center justify-center
 title: Vue
 ---
@@ -390,8 +390,8 @@ In the end, the goal is to make our tool easy to adapt for different levels of n
 -->
 
 ---
-growX: 50
-growY: 130
+glowX: 50
+glowY: 130
 class: flex flex-col items-center justify-center
 title: Nuxt
 ---
@@ -415,7 +415,7 @@ And that brings us to the next section, "Progressive on Onboarding".
 -->
 
 ---
-grow: bottom
+glow: bottom
 ---
 
 # Progressive on Onboarding
@@ -604,7 +604,7 @@ All those features are opt-in, meaning that if you don't need a certain feature,
 
 ---
 class: grid grid-cols-[auto_640px] gap-4 items-center justify-center
-grow: left
+glow: left
 ---
 
 <div flex="~ col gap-4">
@@ -624,7 +624,7 @@ For example, DevTools provides a modules tab, that you can have a quick overview
 
 ---
 class: grid grid-cols-[640px_auto] gap-6 items-center justify-center
-grow: right
+glow: right
 ---
 
 ![](/nuxt-tutorial.png){.my--10}
@@ -658,7 +658,7 @@ In short, the point here is that we should grow with users and not putting too m
 -->
 
 ---
-growHue: 100
+glowHue: 100
 class: flex flex-col items-center justify-center
 ---
 
@@ -687,8 +687,8 @@ It's not a secret that Vite's major releases have very smooth migration paths. W
 -->
 
 ---
-growHue: 90
-grow: top-right
+glowHue: 90
+glow: top-right
 class: flex items-center justify-center
 ---
 
@@ -707,8 +707,8 @@ And many more comments like this. Thank you and we are glad to hear those storie
 -->
 
 ---
-growHue: 60
-grow: right
+glowHue: 60
+glow: right
 class: flex flex-col items-start justify-center
 ---
 
@@ -751,7 +751,7 @@ And that brings up one other aspect of progressive.
 -->
 
 ---
-grow: right
+glow: right
 ---
 
 # Progressive on Breaking Changes
@@ -828,8 +828,8 @@ For Nuxt, we introduced Nuxt Bridge, to briging the changes betwen Nuxt 2 and 3.
 ---
 layout: center
 class: text-center
-growX: 50
-growY: 0
+glowX: 50
+glowY: 0
 ---
 
 <h1 important-text-5xl>Allow Coexistence</h1>
@@ -843,7 +843,7 @@ From my understand, I think the progressive of breaking changes is fundamentally
 -->
 
 ---
-grow: right
+glow: right
 ---
 
 <!--
@@ -913,8 +913,8 @@ So, to recap today's topic, we have talked the progressiveness on different aspe
 ---
 layout: center
 class: text-center
-growX: 50
-growY: 0
+glowX: 50
+glowY: 0
 ---
 
 <h1 important-text-5xl>Progressive Paths</h1>
@@ -934,8 +934,8 @@ I hope you enjoy and find it useful.
 ---
 layout: intro
 class: text-center pb-5
-growX: 50
-growY: 120
+glowX: 50
+glowY: 120
 ---
 
 # Thank you!

@@ -22,8 +22,8 @@ Anthony Fu
 
 ---
 layout: intro
-growX: 10
-growY: 90
+glowX: 10
+glowY: 90
 style: 'padding-left: 8rem;'
 ---
 
@@ -54,9 +54,9 @@ Working at NuxtLabs.<br>
 
 ---
 layout: center
-growX: 50
-growY: 120
-growSize: 1.5
+glowX: 50
+glowY: 120
+glowSize: 1.5
 ---
 
 # Developer Experience
@@ -66,8 +66,8 @@ Let's start by talking about Developer Experience. These years we have heard abo
 -->
 
 ---
-growX: 50
-growY: 0
+glowX: 50
+glowY: 0
 ---
 
 # Responsiveness
@@ -141,8 +141,8 @@ All of these features are trying to provide the common practice and sensiable de
 -->
 
 ---
-growX: 80
-growY: 80
+glowX: 80
+glowY: 80
 ---
 
 # Conventions
@@ -182,8 +182,8 @@ Conventions are introduced to greatly reduce the boilerplates you need to write 
 -->
 
 ---
-growX: 0
-growY: 90
+glowX: 0
+glowY: 90
 ---
 
 # Ecosystem
@@ -207,8 +207,8 @@ When it comes to the ecosystem, Nuxt has a large community to build modules arou
 -->
 
 ---
-growX: 0
-growY: 50
+glowX: 0
+glowY: 50
 ---
 
 # One problem <span v-click> - Transparency</span>
@@ -232,9 +232,9 @@ So how can we improve this?
 -->
 
 ---
-growX: 0
-growY: -30
-growFollow: false
+glowX: 0
+glowY: -30
+glowFollow: false
 ---
 
 # vite-plugin-inspect
@@ -250,8 +250,8 @@ Since `vite-plugin-inspect` is for Vite, it can actually work with any framework
 
 ---
 layout: center
-growX: 20
-growY: 0
+glowX: 20
+glowY: 0
 ---
 
 # One step further
@@ -263,8 +263,8 @@ So, by having the context of Nuxt, let's take one step forward -
 ---
 layout: 'center'
 class: 'text-center'
-growX: 50
-growY: 10
+glowX: 50
+glowY: 10
 ---
 
 <div v-click transition-all duration-500 :class="$clicks === 0 ? 'op0' : $clicks > 1 ? 'op50 text-2xl' : 'translate-y-10 text-4xl'">Introducing</div>
@@ -303,9 +303,9 @@ So that's the plan. And it's indeed a big plan to achieve. Today I am going to s
 ---
 layout: center
 class: text-center
-growX: 50
-growY: 50
-growSize: 0.4
+glowX: 50
+glowY: 50
+glowSize: 0.4
 ---
 
 <h1>Demo time!</h1>
@@ -318,7 +318,7 @@ Let's go demo time!
 layout: iframe
 url: http://localhost:5314/
 scale: 0.5
-growFollow: false
+glowFollow: false
 ---
 
 <!--
@@ -376,8 +376,8 @@ Alright, so that's the feature we had for Nuxt DevTools right now. We hope you l
 ---
 layout: center
 class: text-center
-growX: 50
-growY: 0
+glowX: 50
+glowY: 0
 ---
 
 # One more thing!
@@ -386,7 +386,7 @@ growY: 0
 layout: iframe
 url: http://localhost:5314/
 scale: 0.5
-growFollow: false
+glowFollow: false
 ---
 
 <!--
@@ -406,8 +406,8 @@ This is only something we have right now as a MVP. We see great potential on thi
 ---
 layout: center
 class: text-center
-growX: 10
-growY: 90
+glowX: 10
+glowY: 90
 ---
 
 # Open Sourced
@@ -421,8 +421,8 @@ And so, the preview of Nuxt DevTools is open-sourced, right now! You can give it
 ---
 layout: center
 class: text-center
-growX: 50
-growY: -20
+glowX: 50
+glowY: -20
 ---
 
 <pre text-3xl flex font-mono class="select-none!">
@@ -435,8 +435,8 @@ growY: -20
 ---
 layout: intro
 class: text-center pb-5
-growX: 50
-growY: 120
+glowX: 50
+glowY: 120
 ---
 
 # Thank You!

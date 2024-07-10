@@ -22,8 +22,8 @@ Anthony Fu
 
 ---
 layout: intro
-growX: 10
-growY: 90
+glowX: 10
+glowY: 90
 style: 'padding-left: 8rem;'
 ---
 
@@ -54,8 +54,8 @@ Working at NuxtLabs.<br>
 
 ---
 layout: center
-growX: 50
-growY: 50
+glowX: 50
+glowY: 50
 ---
 
 <h1 font-bold class="text-5xl!">Developer Experience</h1>
@@ -95,8 +95,8 @@ growY: 50
 </v-click>
 
 ---
-growX: 0
-growY: 50
+glowX: 0
+glowY: 50
 class: flex
 ---
 
@@ -113,9 +113,9 @@ class: flex
 </div>
 
 ---
-growX: 50
-growY: -80
-growSize: 2
+glowX: 50
+glowY: -80
+glowSize: 2
 class: h-full flex flex-col justify-center
 ---
 
@@ -134,8 +134,8 @@ class: h-full flex flex-col justify-center
 ---
 layout: 'center'
 class: 'text-center'
-growX: 50
-growY: 10
+glowX: 50
+glowY: 10
 ---
 
 <div v-click transition-all duration-500 :class="$clicks === 0 ? 'op0' : $clicks > 1 ? 'op50 text-2xl' : 'translate-y-10 text-4xl'">Introducing</div>
@@ -168,9 +168,9 @@ growY: 10
 ---
 layout: center
 class: text-center
-growX: 50
-growY: 50
-growSize: 0.4
+glowX: 50
+glowY: 50
+glowSize: 0.4
 ---
 
 <h1>Demo time!</h1>
@@ -178,15 +178,15 @@ growSize: 0.4
 ---
 layout: center
 class: text-center
-growX: 50
-growY: 0
+glowX: 50
+glowY: 0
 ---
 
 ---
 layout: center
 class: text-center
-growX: 10
-growY: 90
+glowX: 10
+glowY: 90
 ---
 
 # Open Sourced at
@@ -196,8 +196,8 @@ growY: 90
 ---
 layout: center
 class: text-center
-growX: 50
-growY: -20
+glowX: 50
+glowY: -20
 ---
 
 # Q&A
@@ -205,8 +205,8 @@ growY: -20
 ---
 layout: intro
 class: text-center pb-5
-growX: 50
-growY: 120
+glowX: 50
+glowY: 120
 ---
 
 # Thank You!

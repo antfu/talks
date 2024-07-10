@@ -1,14 +1,14 @@
 <script setup lang="ts">
 /**
- * A new grow effect system powered by blured polygons
+ * A new glow effect system powered by blured polygons
  *
  * Credits to @pi0 @Atinux
  *
  * Properties:
- * - grow: 'left' | 'right' | 'top' | 'bottom' | 'full' -  Distribution of the polygons points
- * - growOpacity: number - Opacity of the polygons (4)
- * - growHue: number - Hue shift for the polygons (default: 0)
- * - growSeed: string | false - Seed for the stable random distribution (default: 'default')
+ * - glow: 'left' | 'right' | 'top' | 'bottom' | 'full' -  Distribution of the polygons points
+ * - glowOpacity: number - Opacity of the polygons (4)
+ * - glowHue: number - Hue shift for the polygons (default: 0)
+ * - glowSeed: string | false - Seed for the stable random distribution (default: 'default')
  */
 import { computed, ref, watch } from 'vue'
 import { useNav } from '@slidev/client'
@@ -31,12 +31,12 @@ export type Distribution =
   | 'center'
 
 const frontmatter = computed(() => (currentSlideRoute.value.meta?.slide as any)?.frontmatter || {})
-const distribution = computed(() => (frontmatter.value.grow || 'full') as Distribution)
-const opacity = computed<number>(() => +(frontmatter.value.growOpacity || 0.4))
-const hue = computed<number>(() => +(frontmatter.value.growHue || 0))
-const seed = computed<string>(() => (frontmatter.value.growSeed === 'false' || frontmatter.value.growSeed === false)
+const distribution = computed(() => (frontmatter.value.glow || 'full') as Distribution)
+const opacity = computed<number>(() => +(frontmatter.value.glowOpacity || 0.4))
+const hue = computed<number>(() => +(frontmatter.value.glowHue || 0))
+const seed = computed<string>(() => (frontmatter.value.glowSeed === 'false' || frontmatter.value.glowSeed === false)
   ? Date.now().toString()
-  : frontmatter.value.growSeed || 'default',
+  : frontmatter.value.glowSeed || 'default',
 )
 const overflow = 0.3
 const disturb = 0.3
