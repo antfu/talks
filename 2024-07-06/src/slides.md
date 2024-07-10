@@ -102,9 +102,6 @@ class: pl20
 -->
 
 ---
-glowX: 100
-glowY: 80
----
 
 <div grid="~ cols-2 gap-10" mt4>
 
@@ -454,7 +451,9 @@ clicks: 46
 zoom: 0.75
 layout: none
 class: flex h-full w-full
-glow: topmost
+glow: top
+glowOpacity: 0.2
+glowSeed: 18
 ---
 
 <RenderWhen context="visible">
@@ -468,7 +467,7 @@ glow: topmost
   <div flex="~ col">
     <a href="https://antfu.me" text-sm op50 hover:underline target="_blank">Anthony Fu's</a>
     <a text-2xl href="https://github.com/antfu/yak-shaving-map" target="_blank" hover:underline>
-      Yak Map 牦牛地图
+      Yak Map
     </a>
   </div>
 </div>
