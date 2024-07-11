@@ -1,5 +1,4 @@
 import { defineMonacoSetup } from '@slidev/types'
-import type * as monaco from 'monaco-editor'
 
 // @unocss-include
 

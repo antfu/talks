@@ -8,7 +8,7 @@
     "export": "slidev export --per-slide --output ../2024-06-13-jsnation-en.pdf"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.21.2",
+    "@antfu/eslint-config": "^2.22.0",
     "@eslint/config-inspector": "^0.5.1",
     "eslint": "^9.6.0",
     "vis-timeline": "^7.7.3"

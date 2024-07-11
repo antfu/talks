@@ -19,7 +19,9 @@ h6 {
 
 /* Transitions */
 .slidev-vclick-target {
-  transition: opacity 500ms ease, filter 200ms ease;
+  transition:
+    opacity 500ms ease,
+    filter 200ms ease;
 }
 
 .slidev-vclick-hidden {
@@ -28,13 +30,16 @@ h6 {
   filter: blur(3px);
 }
 
-
 .fade-out-leave-active {
-  transition: opacity calc(var(--slidev-transition-duration) * 0.6) ease-out, filter 200ms ease;
+  transition:
+    opacity calc(var(--slidev-transition-duration) * 0.6) ease-out,
+    filter 200ms ease;
 }
 
 .fade-out-enter-active {
-  transition: opacity calc(var(--slidev-transition-duration) * 0.8) ease-in, filter 200ms ease;
+  transition:
+    opacity calc(var(--slidev-transition-duration) * 0.8) ease-in,
+    filter 200ms ease;
   transition-delay: calc(var(--slidev-transition-duration) * 0.6);
 }
 
@@ -44,7 +49,6 @@ h6 {
   filter: blur(5px);
 }
 
-
 /* Magic Links */
 .markdown-magic-link {
   display: inline-flex;
@@ -52,7 +56,8 @@ h6 {
   transform: translateY(6px);
   line-height: 100%;
   color: #fffc;
-  --uno: gap-1 transition rounded px1 py1 mx--0.5 important-border-0 font-condensed;
+  --uno: gap-1 transition rounded px1 py1 mx--0.5 important-border-0
+    font-condensed;
 }
 
 .markdown-magic-link:hover {

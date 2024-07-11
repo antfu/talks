@@ -2,4 +2,4 @@
 
 2024/07/06
 
-[VueConf Shenzhen 2023](https://vue.w3ctech.com/)
+[VueConf Shenzhen 2024](https://vue.w3ctech.com/)

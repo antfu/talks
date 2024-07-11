@@ -23,7 +23,7 @@ a:has(> code) {
   border-radius: 5px;
 }
 
-.monaco-editor .suggest-widget, 
+.monaco-editor .suggest-widget,
 .monaco-editor .suggest-details {
   background: #16161670 !important;
   backdrop-filter: blur(8px);
@@ -46,7 +46,10 @@ h6 {
 
 /* Transitions */
 .slidev-vclick-target {
-  transition: opacity 500ms ease, filter 200ms ease, color 300ms ease;
+  transition:
+    opacity 500ms ease,
+    filter 200ms ease,
+    color 300ms ease;
 }
 
 .slidev-vclick-hidden {
@@ -55,13 +58,16 @@ h6 {
   filter: blur(3px);
 }
 
-
 .fade-out-leave-active {
-  transition: opacity calc(var(--slidev-transition-duration) * 0.6) ease-out, filter 200ms ease;
+  transition:
+    opacity calc(var(--slidev-transition-duration) * 0.6) ease-out,
+    filter 200ms ease;
 }
 
 .fade-out-enter-active {
-  transition: opacity calc(var(--slidev-transition-duration) * 0.8) ease-in, filter 200ms ease;
+  transition:
+    opacity calc(var(--slidev-transition-duration) * 0.8) ease-in,
+    filter 200ms ease;
   transition-delay: calc(var(--slidev-transition-duration) * 0.6);
 }
 
@@ -82,7 +88,8 @@ h6 {
   transform: translateY(5px);
   line-height: 100%;
   color: #000b;
-  --uno: gap-1 transition rounded px1 py1 mx--0.5 important-border-0 font-condensed;
+  --uno: gap-1 transition rounded px1 py1 mx--0.5 important-border-0
+    font-condensed;
 }
 
 .dark .markdown-magic-link {
