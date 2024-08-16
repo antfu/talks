@@ -8,9 +8,9 @@
     "export": "slidev export --per-slide --output ../2024-06-08-cityjs-athens-en.pdf"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.22.0",
-    "@eslint/config-inspector": "^0.5.1",
-    "eslint": "^9.6.0",
+    "@antfu/eslint-config": "^2.25.2",
+    "@eslint/config-inspector": "^0.5.3",
+    "eslint": "^9.9.0",
     "vis-timeline": "^7.7.3"
   }
 }
