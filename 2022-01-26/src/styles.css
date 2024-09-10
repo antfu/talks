@@ -48,24 +48,8 @@ ul .slidev-vclick-prior {
 }
 
 .slidev-page-1 {
-  background: radial-gradient(
-      ellipse,
-      rgba(var(--bg-gradient), 0.9) 40%,
-      rgba(var(--bg-gradient), 0.4) 120%
-    ),
-    radial-gradient(
-      ellipse at top,
-      rgba(var(--bg-gradient), 0.8) 20%,
-      rgba(var(--bg-gradient), 0) 100%
-    ),
-    radial-gradient(
-      ellipse at left,
-      rgba(var(--bg-gradient), 0.5) 20%,
-      rgba(var(--bg-gradient), 0) 100%
-    ),
-    radial-gradient(
-      ellipse at right,
-      rgba(var(--bg-gradient), 0.6) 20%,
-      rgba(var(--bg-gradient), 0) 100%
-    );
+  background: radial-gradient(ellipse, rgba(var(--bg-gradient), 0.9) 40%, rgba(var(--bg-gradient), 0.4) 120%),
+    radial-gradient(ellipse at top, rgba(var(--bg-gradient), 0.8) 20%, rgba(var(--bg-gradient), 0) 100%),
+    radial-gradient(ellipse at left, rgba(var(--bg-gradient), 0.5) 20%, rgba(var(--bg-gradient), 0) 100%),
+    radial-gradient(ellipse at right, rgba(var(--bg-gradient), 0.6) 20%, rgba(var(--bg-gradient), 0) 100%);
 }

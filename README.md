@@ -6,6 +6,7 @@ Slides &amp; code for my talks, using [Slidev](https://sli.dev).
 
 ###### 2024
 
+- `en` [Anthony's Roads to Open Source - The Progressive Path](./2024-10-03) - ViteConf
 - `zh` [Anthony's Roads to Open Source - The Set Theory 集合论](./2024-07-10) - Vue Shenzhen Meetup
 - `zh` [Anthony's Roads to Open Source - Yak Shaving 薅牛毛](./2024-07-06) - VueConf China
 - `en` [Anthony's Roads to Open Source - The Set Theory](./2024-06-14) - React Summit

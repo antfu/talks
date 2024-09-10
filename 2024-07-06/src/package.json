@@ -8,7 +8,7 @@
     "export": "slidev export --per-slide --output ../2024-07-06-vueconf-shenzhen-zh.pdf"
   },
   "devDependencies": {
-    "chroma-js": "^2.6.0",
+    "chroma-js": "^3.0.0",
     "vis-data": "^7.1.9",
     "vis-network": "^9.1.9"
   }

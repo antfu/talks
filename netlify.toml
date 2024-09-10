@@ -1,3 +1,4 @@
+
 [build]
 publish = "dist"
 command = "pnpm run build"
@@ -5,6 +6,7 @@ command = "pnpm run build"
 [build.environment]
 NODE_VERSION = "20"
 PLAYWRIGHT_BROWSERS_PATH = "0"
+
 
 [[redirects]]
 from = "/2021/composable-vue/pdf"
@@ -504,6 +506,46 @@ status = 301
 [[redirects]]
 from = "/2024/vueconf-shenzhen/*"
 to = "/2024/vueconf-shenzhen/index.html"
+status = 200
+
+[[redirects]]
+from = "/2023/vuefesjapan/src"
+to = "https://github.com/antfu/talks/tree/main/2024-07-10"
+status = 302
+
+[[redirects]]
+from = "2024-07-10"
+to = "https://talks.antfu.me/2023/vuefesjapan/"
+status = 301
+
+[[redirects]]
+from = "/2023/vuefesjapan/*"
+to = "/2023/vuefesjapan/index.html"
+status = 200
+
+[[redirects]]
+from = "/2024/viteconf/pdf"
+to = "https://github.com/antfu/talks/blob/main/2024-10-03/2024-10-03-viteconf-en.pdf?raw=true"
+status = 302
+
+[[redirects]]
+from = "/2024-10-03/pdf"
+to = "https://github.com/antfu/talks/blob/main/2024-10-03/2024-10-03-viteconf-en.pdf?raw=true"
+status = 302
+
+[[redirects]]
+from = "/2024/viteconf/src"
+to = "https://github.com/antfu/talks/tree/main/2024-10-03"
+status = 302
+
+[[redirects]]
+from = "2024-10-03"
+to = "https://talks.antfu.me/2024/viteconf/"
+status = 301
+
+[[redirects]]
+from = "/2024/viteconf/*"
+to = "/2024/viteconf/index.html"
 status = 200
 
 [[redirects]]
