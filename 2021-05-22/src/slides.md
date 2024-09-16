@@ -523,7 +523,7 @@ export function useTimeAgo(
 ```
 
 ```ts
-import { Ref, computed, unref } from 'vue'
+import { computed, Ref, unref } from 'vue'
 
 type MaybeRef<T> = Ref<T> | T
 
@@ -562,8 +562,8 @@ title.value = 'Hello World'
 ###### 绑定上一个现有的 Ref
 
 ```ts
-import { computed, ref } from 'vue'
 import { useTitle } from '@vueuse/core'
+import { computed, ref } from 'vue'
 
 const name = ref('Hello')
 const title = computed(() => {
@@ -591,8 +591,8 @@ name.value = 'Hi' // Hi - World
 <v-clicks>
 
 ```ts {monaco}
-import { ref, watch } from 'vue'
 import { MaybeRef } from '@vueuse/core'
+import { ref, watch } from 'vue'
 
 export function useTitle(
   newTitle: MaybeRef<string | null | undefined>
@@ -1162,8 +1162,8 @@ layout: center
 为 Vue 2 提供组合式 API 的插件。<br><carbon-logo-github class="inline-block"/> [vuejs/composition-api](https://github.com/vuejs/composition-api)
 
 ```ts
-import Vue from 'vue'
 import VueCompositionAPI from '@vue/composition-api'
+import Vue from 'vue'
 
 Vue.use(VueCompositionAPI)
 ```

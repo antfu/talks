@@ -230,8 +230,8 @@ For those who haven't on the Flat config yet, in today's talk, I am here to tell
 // eslint.config.js
 import eslint from '@eslint/js'
 import typescript from '@eslint-typescript/eslint-plugin'
-import vue from 'eslint-plugin-vue'
 import n from 'eslint-plugin-n'
+import vue from 'eslint-plugin-vue'
 
 export default [ // export an array of configs
   eslint.configs.recommended,
@@ -404,10 +404,10 @@ npx @eslint/migrate-config .eslintrc.json
 <span i-carbon:arrow-right mt-40 />
 
 ```js
+import { FlatCompat } from '@eslint/eslintrc'
+import _import from 'eslint-plugin-import'
 // eslint.config.mjs
 import prettier from 'eslint-plugin-prettier'
-import _import from 'eslint-plugin-import'
-import { FlatCompat } from '@eslint/eslintrc'
 
 const compat = new FlatCompat()
 export default [
@@ -540,9 +540,9 @@ In another tab, you can also browse each rule available, given the plugins you h
 
 ```ts {*|*|7-9|10-17}{at:3}
 import eslint from '@eslint/js'
-import typescript from 'typescript-eslint'
 import unocss from '@unocss/eslint-plugin'
 import vue from 'eslint-plugin-vue'
+import typescript from 'typescript-eslint'
 
 export default [
   eslint.configs.recommended,
@@ -566,11 +566,11 @@ export default [
 <div v-after>
 
 ```ts {*|1,7|8-10|11-21}{at:3}
-import { compose } from 'eslint-flat-config-utils'
 import eslint from '@eslint/js'
-import typescript from 'typescript-eslint'
 import unocss from '@unocss/eslint-plugin'
+import { compose } from 'eslint-flat-config-utils'
 import vue from 'eslint-plugin-vue'
+import typescript from 'typescript-eslint'
 
 export default compose(
   eslint.configs.recommended,

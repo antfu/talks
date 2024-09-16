@@ -1,5 +1,5 @@
-import { defineConfig } from 'unocss/vite'
 import config from '@slidev/client/uno.config'
+import { defineConfig } from 'unocss/vite'
 
 export default defineConfig({
   ...config,

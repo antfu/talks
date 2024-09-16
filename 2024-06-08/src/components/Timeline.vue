@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { onMounted, ref, watch } from 'vue'
 import { DataSet, Timeline } from 'vis-timeline/standalone'
+import { onMounted, ref, watch } from 'vue'
 
 const el = ref<HTMLElement | null>(null)
 

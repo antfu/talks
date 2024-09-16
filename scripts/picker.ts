@@ -1,8 +1,8 @@
 import fs from 'node:fs/promises'
 import process from 'node:process'
 import { fileURLToPath } from 'node:url'
-import prompts from 'prompts'
 import { execa } from 'execa'
+import prompts from 'prompts'
 
 async function startPicker(args: string[]) {
   const folders = (await fs.readdir(new URL('..', import.meta.url), { withFileTypes: true }))

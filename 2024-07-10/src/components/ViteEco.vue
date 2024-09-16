@@ -1,8 +1,8 @@
 <script setup lang="ts">
 /// <reference types="vite/client" />
 
-import { computed, onActivated, ref } from 'vue'
 import { useNow } from '@vueuse/core'
+import { computed, onActivated, ref } from 'vue'
 
 const imagesRecord = import.meta.glob('../public/ecosystem/*.{svg,png}', { eager: true, as: 'url' })
 const images = Object.values(imagesRecord)

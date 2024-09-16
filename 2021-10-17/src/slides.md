@@ -857,8 +857,8 @@ function render(_ctx, _cache) {
 ```ts {2-4}
 import { resolveComponent as _resolveComponent } from 'vue'
 import _component_my_button from '../components/MyButton.vue'
-import _component_my_input from '../components/MyInput.vue'
 import _component_my_container from '../components/MyContainer.vue'
+import _component_my_input from '../components/MyInput.vue'
 
 function render(_ctx, _cache) {
   return () => { /* ... */ }
