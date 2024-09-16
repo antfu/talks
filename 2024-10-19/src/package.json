@@ -1,0 +1,15 @@
+{
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build --base /2024/vue-fes-japan/ --out ../../dist/2024/vue-fes-japan",
+    "export": "slidev export --per-slide --output ../2024-10-19-vue-fes-japan-en.pdf"
+  },
+  "devDependencies": {
+    "chroma-js": "catalog:",
+    "vis-data": "catalog:",
+    "vis-network": "catalog:"
+  }
+}

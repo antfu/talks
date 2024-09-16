@@ -1,6 +1,6 @@
-import { defineConfig } from 'unocss/vite'
 import config from '@slidev/client/uno.config'
 import { presetWebFonts } from 'unocss'
+import { defineConfig } from 'unocss/vite'
 
 export default defineConfig({
   ...config,

@@ -6,20 +6,21 @@ Slides &amp; code for my talks, using [Slidev](https://sli.dev).
 
 ###### 2024
 
-- `en` [Anthony's Roads to Open Source - The Progressive Path](./2024-10-03) - ViteConf
-- `zh` [Anthony's Roads to Open Source - The Set Theory 集合论](./2024-07-10) - Vue Shenzhen Meetup
-- `zh` [Anthony's Roads to Open Source - Yak Shaving 薅牛毛](./2024-07-06) - VueConf China
-- `en` [Anthony's Roads to Open Source - The Set Theory](./2024-06-14) - React Summit
+- `en+jp` [Yak Shaving ヤク剃り](./2024-10-19) - Vue Fes Japan
+- `en` [The Progressive Path](./2024-10-03) - ViteConf
+- `zh` [The Set Theory 集合论](./2024-07-10) - Vue Shenzhen Meetup
+- `zh` [Yak Shaving 薅牛毛](./2024-07-06) - VueConf China
+- `en` [The Set Theory](./2024-06-14) - React Summit
 - `en` [ESLint One for All Made Easy](./2024-06-13) - JS Nation
 - `en` [ESLint One for All Made Easy](./2024-06-08) - CityJS Athens
-- `en` [Anthony's Roads to Open Source - The Set Theory](./2024-03-22) - React Paris
-- `en` [Anthony's Roads to Open Source - The Progressive Path](./2024-02-29) - Vue Amsterdam
+- `en` [The Set Theory](./2024-03-22) - React Paris
+- `en` [The Progressive Path](./2024-02-29) - Vue Amsterdam
 
 ###### 2023
 
-- `en` [Anthony's Roads to Open Source - The Set Theory 集合論](./2023-10-28) - Vue Fes Japan
+- `en+jp` [The Set Theory 集合論](./2023-10-28) - Vue Fes Japan
 - `en` [Now, and the Future of Nuxt DevTools](./2023-10-18) - Nuxt Nation
-- `en` [Anthony's Roads to Open Source - The Set Theory](./2023-10-05) - ViteConf
+- `en` [The Set Theory](./2023-10-05) - ViteConf
 - `en` [Developer Experience with Nuxt DevTools](./2023-05-25) - StrasbourgJS
 - `en` [How I Manage GitHub Notifications](./2023-05-17) - GitHub Maintainer Summit
 - `en` [Developer Experience with Nuxt](./2023-02-09) - Vue Amsterdam
