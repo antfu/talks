@@ -5,7 +5,10 @@ Slides &amp; code for my talks, using [Slidev](https://sli.dev).
 [Upcoming Talks](https://antfu.me/talks)
 
 ###### 2024
-
+<!--
+- `cn` ESLint One for All Made Easy - WebConf Taiwan
+- `cn` ESLint One for All Made Easy - FEDAY Xiamen -->
+- `en` [Journey to Nuxt Icon](./2024-11-12) - Nuxt Nation
 - `en+jp` [Yak Shaving ヤク剃り](./2024-10-19) - Vue Fes Japan
 - `en` [The Progressive Path](./2024-10-03) - ViteConf
 - `zh` [The Set Theory 集合论](./2024-07-10) - Vue Shenzhen Meetup

@@ -8,10 +8,25 @@ mdc: true
 glowSeed: 4
 title: Yak Shaving
 remoteAssets: true
-description: Anthony's journey of open source development. The process of ideation and project development, as well as finding one's own position and direction in the open source community. Helping you better understand and participate in open source.
+description: Anthony's journey of open source development. The process of
+  ideation and project development, as well as finding one's own position and
+  direction in the open source community. Helping you better understand and
+  participate in open source.
+addons:
+  - slidev-addon-graph
 ---
 
 ![](/af-logo-animated.svg){.w-30.mt--10.mb-5}
+
+<!--
+みなさん、こんにちは。また お会いて 嬉しいです。
+
+この素晴らしい イベントに <ruby>再<rt>ふたた</rt></ruby>び 招待して いただき、ありがとうございます。
+
+ちなみに、僕は最近日本語を本気で勉強し始めました。また、よろしくお願いします。
+
+Good to meet you again! Thank a lot for having me here.
+-->
 
 ---
 layout: intro
@@ -23,7 +38,7 @@ glowSeed: 14
 
 <div class="[&>*]:important-leading-10 opacity-80">
 
-Core team member of {Vite} {Vue} and {Nuxt}<br>
+Core team member of {Vue} {Vite} and {Nuxt}<br>
 Creator of {Vitest} {Slidev} {UnoCSS} {Type Challenges} {Elk}<br>
 Maintainer of {ESLint Stylistic} {Shiki} {Twoslash}<br>
 Working at {NuxtLabs}<br>
@@ -41,7 +56,11 @@ Working at {NuxtLabs}<br>
   <div><a href="https://twitter.com/antfu7" target="_blank" class="border-none! font-300">antfu7</a></div>
 </div>
 
-<img src="https://antfu.me/avatar.png" v-click rounded-full absolute top-38 right-15 w-40 />
+<img src="https://antfu.me/avatar.png" rounded-full absolute top-38 right-15 w-40 />
+
+<!--
+Let me introduce myself quickly, my name is Anthony Fu. I am the core team member of Vue, Vite and Nuxt. Also the creator of Vitest, Slidev, UnoCSS, and a few other open-source projects. I am currently at NuxtLabs on the framework team. You can find me on social media with the links below.
+-->
 
 ---
 layout: cover
@@ -54,14 +73,23 @@ title: Anthony's Roads to Open Source
   <span>Open Source </span>
   <sup v-click>3/n</sup>
 </div>
-<div mt1 forward:delay-300 v-click>Yak Shaving<span font-jp v-click="5">「ヤク剃り」</span></div>
+<div mt1 forward:delay-300 v-click>Yak Shaving<span font-jp v-click="4">「ヤク剃り」</span></div>
 </h1>
 
 <div abs-br mx-10 mb-10 flex="~ col gap-4 items-end" text-left v-click="1">
-  <!-- <span>ViteConf</span> -->
   <img src="/vue-fes-japan.svg" w-40 />
   <div text-sm opacity-75 mt--4>Oct. 19th 2024</div>
 </div>
+
+<!--
+Today, I'd like to talk about Open Source again [click] and my own journey with open source.
+
+[click] Like I mentioned last year, Open Source is a very big topic. So I break it into a series of talks, today's topic is the 3rd one.
+
+[click] It's called Yak Shaving.
+
+[click] 少し難しいですが、とりあえず、「ヤク剃り」と呼びたいです。 I hope it make a bit sense :P
+-->
 
 ---
 
@@ -86,6 +114,10 @@ title: Anthony's Roads to Open Source
 Recordings on [antfu.me](https://antfu.me)
 
 </div>
+
+<!--
+This series about Open Source consists of multiple parts, part 1 is The Set Theory that I gave the last year. And the second one is called "The Progressive Path", maybe someday I can do it again here in Japan. In the meantime, you can always find the slides and recordings of my previous talks on my website.
+-->
 
 ---
 class: flex justify-center items-center gap-20 px40 text-xl
@@ -122,17 +154,32 @@ glow: bottom
 </div>
 </div>
 
+<!--
+Back to our topic today. So, what is yak shaving? It seems to be pretty random right?
+
+Let's break it down and see how it explains.
+
+[click] Yak is a type of cattle with long hair and long horns. I don't really know to to pronounce the kanji in Japanese.
+
+[click] Shaving means removing hair from the body.
+
+Combine the two together, they still don't explain much.
+-->
+
 ---
 layout: center
-disabled: true
 ---
 
 <figure>
-  <img src="/yak-shaving-by-david-revoy.jpg" rounded-lg w-180 />
+  <img src="/yak-shaving-by-david-revoy.jpg" rounded-2xl w-180 />
   <figcaption mt-2 op50 text-sm>
     Yak Shaving - by <a href="https://en.wikipedia.org/wiki/en:David_Revoy" title="w:en:David Revoy"><span title="French illustrator and creator of the webcomic ''Pepper&amp;Carrot''">David Revoy</span></a>
   </figcaption>
 </figure>
+
+<!--
+Here is an illustration by David Revoy to give you some impressions of Yak Shaving on literal.
+-->
 
 ---
 
@@ -151,17 +198,37 @@ disabled: true
 - After spending half a month, you realize that frameworks don't work well, you decide to invent a <span text-green>new framework</span>.
 - Another month passes, and you realize that you now need: <span text-violet>routing</span>, <span text-yellow>state management</span>, <span text-blue>IDE plugins</span>, <span text-teal>DevTools</span>, and more.
 - Two years later...
-- You find yourself inexplicably doing <span text-fuchsia>yak shaving</span> in Tibet...
+- You find yourself inexplicably doing <span text-fuchsia>shaving a yak</span> in Tibet...
 - Wait, what about your blog?
 
 </v-clicks>
 </div>
 
-<div v-click>
-  <YakExample scale-130 />
+<div>
+</div>
 </div>
 
-</div>
+<YakExample absolute top-0 right-0 bottom-0 w-100 />
+
+<!--
+Well, I hope I didn't make it more confusing for you.
+
+Yak Shaving is actually a term we use to describe a phenomenon in the tech world or our daily lives. Let me give you the same example.
+
+[click] Let's say today we wanted to write a blog, but after some searching,
+
+[click] We found that the existing tools don't quite meet our needs, so we decided to create our own static site generator.
+
+[click] After spending half a month building, we realized that the frameworks don't work well with our generator, so we decided to invent a new framework.
+
+[click] Another month passed, and we realized that we now need routing, state management, IDE plugins, DevTools, and more.
+
+[click] Two years later...
+
+[click] You somehow find yourself inexplicably shaving a yak in Tibet...
+
+[click] But wait, what about your blog?
+-->
 
 ---
 class: flex flex-col gap-4 items-center justify-center
@@ -185,11 +252,11 @@ class: flex flex-col gap-4 items-center justify-center
 </div>
 
 <!--
-Just like the example we mentioned earlier, the term "Yak Shaving" refers to a series of task chains that are triggered in the process of solving a problem, resulting in deviating from the original goal. It is said that this term originated from a short film at MIT, in which the character was constantly interrupted by secondary tasks in order to complete a certain task, and eventually, like our previous example, found themselves shaving a yak. This term usually carries a negative connotation and is often used to educate people to stay focused on the goal and avoid getting lost in endless details.
+Just like the example we mentioned earlier, the term "Yak Shaving" refers to [click] a series of task chains that are triggered in the process of solving a problem, resulting [click] in deviating from the original goal. [click] This term usually carries a negative connotation and is often used to educate people to stay focused on the goal and avoid getting lost in endless details.
 
 [click] This term also has a similar saying, called "Down to the Rabbit Hole."
 
-[click] Although this term is often used in a derogatory sense, what if we consider it from another perspective? What if we were able to accomplish all the things we mentioned? Wouldn't we potentially come up with a completely new solution?
+Although this term is often used in a derogatory sense, what if we consider it from another perspective? What if we were able to accomplish all the things we mentioned? Wouldn't we potentially come up with a completely new solution?
 
 Of course, we know that these things have a considerable level of complexity, and it is impossible to complete them on our own in a short period of time. It is easy to get lost in this process and eventually give up.
 
@@ -209,19 +276,19 @@ glowSeed: 10
 <div flex="~ col gap-4" py6>
 
 <span v-click>
-  <div flex="~ inline" text-blue mr2 px2 rounded bg-blue:10>Demand</div><br>
+  <div flex="~ inline" text-blue mr2 px2 rounded bg-blue:10>Demand 要件</div><br>
   <span text-blue2>Start from your own needs, with a deeper <br>understanding of the problem</span>
 </span>
 <span v-click>
-  <div flex="~ inline" text-rose mr2 px2 rounded bg-rose:10>Motivation</div><br>
+  <div flex="~ inline" text-rose mr2 px2 rounded bg-rose:10>Motivation 動機</div><br>
   <span text-rose2>Solve your own problems, and maybe help others</span>
 </span>
 <span v-click>
-  <div flex="~ inline" text-yellow mr2 px2 rounded bg-yellow:10>Validation</div><br>
+  <div flex="~ inline" text-yellow mr2 px2 rounded bg-yellow:10>Validation 検証</div><br>
   <span text-yellow2>Your needs are likely to be others' needs,<br>validate your ideas through the community</span>
 </span>
 <span v-click>
-  <div flex="~ inline" text-green mr2 px2 rounded bg-green:10>Iterating</div><br>
+  <div flex="~ inline" text-green mr2 px2 rounded bg-green:10>Iterating 繰り返す</div><br>
   <span text-green2>Refine the design with discussion and contributions from community</span>
 </span>
 
@@ -273,7 +340,7 @@ Here, let's analyze how we can effectively utilize "Yak Shaving" to come up with
 
 By following this approach, we can gather the essential elements for the continuous development of open source projects - what we are skilled at and enjoy, and what the community needs.
 
-This foundation is much more practical than simply speculating about what kind of open source projects will be successful.
+This approach is much more practical than trying to guess what kind of open source projects will be successful.
 -->
 
 ---
@@ -345,6 +412,23 @@ This foundation is much more practical than simply speculating about what kind o
 
 </div>
 
+<!--
+Let's take some real examples of how this works [click] in the business world.
+
+[click] So we know Shopify. At the very begining, they actually started by selling snowboards,
+[click] At some point, they want to scale up their business, so they started to build an online store to sell more snowboards.
+[click] While they build the store for themselves, they found out that this can also be a common need for other kind of stores - which they end up building the e-commerce store platform we know today.
+
+[click] Then we have Epic Games.
+[click] They first started by trying to make a 3D game,
+[click] But they found out that making 3D games is hard, so they made a game engine to make things easier,
+[click] The engine is now called Unreal Engine, where they are now licensing it to other game developers.
+
+[click] Similarly, we have Amazon [click] that first started working on [click] the infrastructure for their store, and [click] end up have AWS, [click] which became Amazon's largest revenue source today.
+
+[click] Then we have Slack, [click] first work on a game [click] that eventually failed, [click] but their internal communication app [click] now becomes their main bussiness and selling to enterprises.
+-->
+
 ---
 glow: right
 ---
@@ -395,17 +479,17 @@ So, let's get back to open source. Here, I would like to briefly outline what I 
 
 [click] If you can't find an existing tool that meets your expectations or if the existing tools don't fit your needs but could be a general solution, congratulations! You may have a viable idea. At this point, you can start implementing your own tool by first creating an MVP (Minimum Viable Product) to validate the feasibility of your idea. When designing, keep in mind the idea of decoupling interfaces for future extensibility.
 
-[click] The key to avoiding the yak shaving trap is "timely return." You don't need to make it perfect; it just needs to meet your current needs. The important thing is to return to your main task in a timely manner. You can refine the details of the tool later.
+[click] The key to avoiding the yak shaving trap is "to get back in time". You don't need to make it perfect; it just needs to meet your current needs. The important thing is to return to your main task in a timely manner. You can refine the details of the tool later.
 
 [click] Assuming we have completed our main task and have some extra time, if you are still interested in the tool, you can extract it into a separate library, write brief documentation explaining your motivation for creating the tool, and then open-source the repository.
 
 [click] Once all of this is done, you can promote your repository appropriately. Share it with colleagues, post it on social media, and so on. This will help gather feedback from the community and understand the pros and cons of your solution.
 
-[click] I highly encourage you to write a technical blog post summarizing your journey during this process. Share the problems you encountered, the solutions you proposed, and the lessons you learned. This not only introduces your tool but also serves as a valuable technical resource. Even people who don't directly use your tool can learn something from your exploration. Even in the worst case scenario, if our idea is ultimately proven to be unfeasible, this blog post can still be a valuable exploration. Just like in academic papers, the failure to validate a hypothesis is also an important contribution.
+[click] I highly encourage you to write a technical blog post summarizing your journey during this process. Share the problems you encountered, the solutions you proposed, and the lessons you learned. This not only for introducing your tool to others, but also serves as a valuable technical resource. Even people who don't directly use your tool can learn something from your exploration. Even in the worst case scenario, if our idea is ultimately proven to be unfeasible, this blog post can still be a valuable exploration. Just like in academic papers, the failure to validate a hypothesis is also an important contribution.
 
 [click] In the end, we can use the open source community to validate the generality of our solution.
 
-[click] If our project doesn't gain much attention in the end, that's okay. At least we solved our own problem, summarized the solution, and gained valuable experience. Projects born out of yak shaving may have ourselves as the first users.
+[click] If our project doesn't gain much attention in the end, that's okay. Lower our expectation, at least we solved our own problem, summarized the solution, and gained valuable experience.
 
 [click] But if our tool is fortunate enough to be embraced by the community, we will naturally receive notifications from GitHub indicating that others are starting to contribute. At this point, we can start discussing with the community, accepting feedback, fixing bugs, adding new features, and so on. Throughout this process, you will find that your tool becomes more refined, and while helping others, the improved tool will also benefit you.
 
@@ -417,6 +501,10 @@ layout: center
 ---
 
 # Anthony's Road of Yak Shaving {.important-text-5xl}
+
+<!--
+That said, here I'd like to share some of my journey of Yak Shaving, for your reference and hope can bring you some inspiration.
+-->
 
 ---
 clicks: 46
@@ -444,6 +532,40 @@ glowSeed: 18
 </div>
 
 <!--
+My journey in open source started with a project built on Nuxt called BreadSplit around 5 years ago, an app for managing shared wallets. At that point, we wanted to internationalization, but I found that there were no good tools for managing the translations in VS Code, [click] so I made the extension called `i18n Ally` to improve the experience.
+
+[click] From this project, I also extracted the composables we use internally out to become VueUse. At that time, the Vue 3 was not yet ready, and the community still hesitated about the new Composition API. I was trying to make VueUse work on both Vue 2 and Vue 3 to cover more users and make the transition easier (kinda like the "Set Theory" mindset we talked about last year). [click] I started to contribute to the  `@vue/composition-api` plugin to make sure the behavior aligns with Vue 3. [click] This project later got me into the Vue and also later came up with the library `vue-demi`.
+
+[click] As I joined the Vue team, I started to dig deeper into the composition API and the reactivity system. [click] It got me to create Vue Reactivity experiments, and ReactiVue, which hook VUe's reactivity API into React.
+
+[click] And then Vite came out; [click] I started trying the new build tool with Vue 3 and made the icon explorer `Icones`. It's my first app built on top of Vite. From that as the starting point, I found out that there are so many things missing in Vite because it was very young. Then I built [click] `vite-pwa`, and a bunch of plugins like [clicks] auto-imports, components, icons etc to enhance the developer experience of Vite.
+
+[click] Since I worked a lot with icons, I started to involve with the Iconify project, [click] combining with my experience of VS Code extension when making `i18n ally`, [click] I made `Iconify IntelliSense` to display icons inside our code.
+
+[click] From the work on Vite plugins, I made `vite-plugin-inspect` to see the internal of Vite's pipeline and help myself to debug.
+
+[click] By combining all my exploration of the vite ecosystem, I extract them into the template called `Vitesse`, which somehow became quite popular. On top of that, I also made a variation [click] called `vitesse-webext` for browser extensions, and [click] a small library for it.
+
+[click] With Vite becoming more and more mature, [click] I started to migrate my blog site to Vite. Along the way, I made [click] a vite plugin for compiling markdown, and [click] `vite-ssg` for static site generator (what a coincidence to our previous examples :P)
+
+[click] When it comes to styling, I found the project called Windi CSS, which was more like an on-demand version of Tailwind, and I started to contribute and build a plugin for it.
+
+[click] At the same time, I have to prepare a talk about Vue. As a side product of my procrastination, I made Slidev, the slides maker that you are looking at right now. [click] from Slidev, I also made `drauu` for drawing on slides, and `broz` for taking beautiful screenshots.
+
+[click] Then, with the experience I got with Windi CSS, I made UnoCSS, an atomic CSS engine that is highly extensible. [click] Combining with Iconify, I came up with the Pure CSS icons solution. Which I think is still the best approach for icons today.
+
+[click] From my work on Vitesse, I got invited to work on Nuxt. [click] From my work at Nuxt [click], I made `unplugin` to allow plugins to support both Vite and webpack easily, and [click] `unimport` to unify auto-import usages.
+
+To improve Nuxt' SSR experience in development, Pooya and I came up with the SSR runtime for Vite that [click] later became `vite-node`. Having the foundation of `vite-node`, it made [click] `Vitest` possible. When making Vitest, we need a way to communicate between worker threads and main threads. [click] I came up with the library `birpc` to handle remote procedure calls.
+
+With the foundation work of `vite-plugin-inspect` and `birpc`, [click] I started to work on `Nuxt DevTools` to present you the internal of your Nuxt app and help you to understand it better. Then we have [click] `magicast` to write changes back to your config easier; We build [click] Elk the maston client with Nuxt. [click] Then the Nuxt Playground `learn.nuxt.com`.
+
+Amount all these project, highlighting code becomes a tricky thing to do right, so [click] I started to work on improve Shiki, and end up completely rewriting it. From it I also made [click] `shiki-magic-move`, [click] `shiki/monaco`, [click] Twoslash integration, etc.
+
+[click] Then I somehow get trapped into the ESLint ecosystem, [click] I started to take over the ESLint Stylistic project, I made the [click] config inspector which later become official, and a lot other small utilities. [click] All these experience I got working on them later be utilized to make the [click] Nuxt ESLint module possible.
+
+Wooof. You can see I really down to the rabbit hole super deep. [click]
+
 I hope my experience can inspire everyone. Each person has their own strengths and interests, and the birth of many projects has a certain timeliness and randomness. Everyone's journey of growth and yak shaving map will certainly be different. I am also very much looking forward to seeing your versions.
 -->
 
@@ -457,7 +579,7 @@ glow: center
 <div text-2xl op75 font-jp v-click>オープンソースは与えることです</div>
 
 <!--
-At the end, I would like to reiterate the expectations on open source. While open source is a broad topic, different people may have different interpretations and expectations of open source. However, I believe that Open Source is about Giving.
+Before we call it a day, I would like to reiterate the expectations on open source. While open source is a broad topic, different people may have different interpretations and expectations of open source. However, I believe that Open Source is about Giving.
 -->
 
 ---
@@ -508,7 +630,7 @@ glow: bottom
 </div>
 
 <!--
-I think everyone has their own motivations and goals for participating in open source. It could be to improve their skills, to have better job opportunities, or simply to make the world a better place, among other reasons. Open source is a diverse community, and these motivations are all valid. However, different motivations may lead to different expectations of open source. Here, I want to talk about adjusting our expectations of open source, which can help us better integrate into the community and enjoy the benefits of open source.
+I think everyone has their own motivations and goals for participating in open source. It could be to improve their skills, to have better job opportunities, or simply to make the world a better place, among other reasons. Open source is a diverse community, and all these motivations are valid. However, different motivations may lead to different expectations of open source. Here, I want to talk about adjusting our expectations of open source, which could help us better integrate into the community and enjoy the benefits of open source.
 
 [click] I like to think of open source projects as gifts. When we use someone else's open source project, it's like receiving a free lunch from a stranger. And when we contribute to open source, it's like giving a gift, a gesture from our hearts. [click] When you give a gift, you may often receive something in return, but reciprocity should not be the primary goal of giving. [click] For me, the process of open source itself is the goal. I enjoy sharing and working together with others to solve problems. When you stop focusing on the rewards, you will enjoy the process more, and in the long run, you may receive even more, just like how I am grateful for the opportunity to stand here today and share my thoughts with all of you, thanks to the opportunities provided by open source. [click] Open source is not just about code; it is a community, a culture, a spirit. [click] When you become part of this community, you will meet a group of generous and helpful people. They will appreciate your contributions, and you will also receive gratitude and assistance from many others. I believe this spirit of mutual support is at the core of open source.
 
@@ -526,10 +648,14 @@ glowY: 120
 
 <div font-jp mt--2 text-2xl op75>ありがとうこざいます！</div>
 
-<p pt-2 op50>
+<div pt-2 op50>
 
 Slides on [antfu.me](https://antfu.me)
 
-</p>
+</div>
 
-<!-- 最后，希望大家都能在开源社区中找到适合自己的位置，并且享受这个过程，祝大家开源顺利。谢谢大家！  -->
+<!--
+Finally, I hope everyone can find their own place in the open source community and enjoy the process. Wishing you all the best in your open source journey.
+
+お疲れさまでした！ありがとうございました。アフターパーティーを お楽しみください。
+-->
