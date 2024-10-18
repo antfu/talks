@@ -547,6 +547,56 @@ to = "/2024/viteconf/index.html"
 status = 200
 
 [[redirects]]
+from = "/2024/vue-fes-japan/pdf"
+to = "https://github.com/antfu/talks/blob/main/2024-10-19/2024-10-19-vue-fes-japan-en.pdf?raw=true"
+status = 302
+
+[[redirects]]
+from = "/2024-10-19/pdf"
+to = "https://github.com/antfu/talks/blob/main/2024-10-19/2024-10-19-vue-fes-japan-en.pdf?raw=true"
+status = 302
+
+[[redirects]]
+from = "/2024/vue-fes-japan/src"
+to = "https://github.com/antfu/talks/tree/main/2024-10-19"
+status = 302
+
+[[redirects]]
+from = "2024-10-19"
+to = "https://talks.antfu.me/2024/vue-fes-japan/"
+status = 301
+
+[[redirects]]
+from = "/2024/vue-fes-japan/*"
+to = "/2024/vue-fes-japan/index.html"
+status = 200
+
+[[redirects]]
+from = "/2024/nuxt-nation/pdf"
+to = "https://github.com/antfu/talks/blob/main/2024-11-12/2024-11-12-nuxt-nation-en.pdf?raw=true"
+status = 302
+
+[[redirects]]
+from = "/2024-11-12/pdf"
+to = "https://github.com/antfu/talks/blob/main/2024-11-12/2024-11-12-nuxt-nation-en.pdf?raw=true"
+status = 302
+
+[[redirects]]
+from = "/2024/nuxt-nation/src"
+to = "https://github.com/antfu/talks/tree/main/2024-11-12"
+status = 302
+
+[[redirects]]
+from = "2024-11-12"
+to = "https://talks.antfu.me/2024/nuxt-nation/"
+status = 301
+
+[[redirects]]
+from = "/2024/nuxt-nation/*"
+to = "/2024/nuxt-nation/index.html"
+status = 200
+
+[[redirects]]
 from = "/"
 to = "https://antfu.me/talks"
 status = 302
