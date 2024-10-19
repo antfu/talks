@@ -19,9 +19,9 @@ addons:
 ![](/af-logo-animated.svg){.w-30.mt--10.mb-5}
 
 <!--
-みなさん、こんにちは。また お会いて 嬉しいです。
+みなさん、こんにちは。また お会いできて 嬉しいです。
 
-この素晴らしい イベントに <ruby>再<rt>ふたた</rt></ruby>び 招待して いただき、ありがとうございます。
+この素晴らしい イベントに <ruby>再<rt>ふたた</rt></ruby>び 招待して いただき、ありがとうございます。スタッフの皆さん、ここまで お疲れ様です。
 
 ちなみに、僕は最近日本語を本気で勉強し始めました。また、よろしくお願いします。
 
@@ -56,10 +56,15 @@ Working at {NuxtLabs}<br>
   <div><a href="https://twitter.com/antfu7" target="_blank" class="border-none! font-300">antfu7</a></div>
 </div>
 
-<img src="https://antfu.me/avatar.png" rounded-full absolute top-38 right-15 w-40 />
+<img src="/anthony-hi.png" v-click absolute top-36 right-35 w-40 />
+<img src="/hi.png" v-after absolute top-30 right-26 w-8 rotate-10 delay-300 />
+
+<!-- <img src="https://antfu.me/avatar.png" rounded-full absolute top-38 right-15 w-40 /> -->
 
 <!--
-Let me introduce myself quickly, my name is Anthony Fu. I am the core team member of Vue, Vite and Nuxt. Also the creator of Vitest, Slidev, UnoCSS, and a few other open-source projects. I am currently at NuxtLabs on the framework team. You can find me on social media with the links below.
+Let me introduce myself quickly, my name is Anthony Fu. [click] Hi!
+
+I am the core team member of Vue, Vite and Nuxt. Also the creator of Vitest, Slidev, UnoCSS, and a few other open-source projects. I am currently at NuxtLabs on the framework team. You can find me on social media with the links below.
 -->
 
 ---
@@ -479,7 +484,7 @@ So, let's get back to open source. Here, I would like to briefly outline what I 
 
 [click] If you can't find an existing tool that meets your expectations or if the existing tools don't fit your needs but could be a general solution, congratulations! You may have a viable idea. At this point, you can start implementing your own tool by first creating an MVP (Minimum Viable Product) to validate the feasibility of your idea. When designing, keep in mind the idea of decoupling interfaces for future extensibility.
 
-[click] The key to avoiding the yak shaving trap is "to get back in time". You don't need to make it perfect; it just needs to meet your current needs. The important thing is to return to your main task in a timely manner. You can refine the details of the tool later.
+[click] The key to avoiding the yak shaving trap is "to get back in time". [click] You don't need to make it perfect; it just needs to meet your current needs. The important thing is to return to your main task in a timely manner. You can refine the details of the tool later.
 
 [click] Assuming we have completed our main task and have some extra time, if you are still interested in the tool, you can extract it into a separate library, write brief documentation explaining your motivation for creating the tool, and then open-source the repository.
 
@@ -576,10 +581,10 @@ glow: center
 
 <h1 important-text-5xl><span transition duration-700 inline-block :class="$clicks === 0 ? 'translate-x-40' : ''">Open Source</span> <span forward:delay-400 v-click>is about Giving</span></h1>
 
-<div text-2xl op75 font-jp v-click>オープンソースは与えることです</div>
+<div text-2xl op75 font-jp v-after forward:delay-800>オープンソースは与えることです</div>
 
 <!--
-Before we call it a day, I would like to reiterate the expectations on open source. While open source is a broad topic, different people may have different interpretations and expectations of open source. However, I believe that Open Source is about Giving.
+Before we call it a day, I would like to reiterate the expectations on open source. While open source is a broad topic, different people may have different interpretations and expectations of open source. [click] However, I believe that Open Source is about Giving.
 -->
 
 ---
