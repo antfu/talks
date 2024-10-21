@@ -121,7 +121,7 @@ Recordings on [antfu.me](https://antfu.me)
 </div>
 
 <!--
-This series about Open Source consists of multiple parts, part 1 is The Set Theory that I gave the last year. And the second one is called "The Progressive Path", maybe someday I can do it again here in Japan. In the meantime, you can always find the slides and recordings of my previous talks on my website.
+This series about Open Source consists of multiple parts, part 1 is The Set Theory that I gave the last year. And the second one is called "The Progressive Path", maybe someday I can do it again here in Japan. In the meantime, [click] you can always find the slides and recordings of my previous talks on my website.
 -->
 
 ---
@@ -186,6 +186,8 @@ layout: center
 Here is an illustration by David Revoy to give you some impressions of Yak Shaving on literal.
 -->
 
+---
+glow: left
 ---
 
 # An Example of "Yak Shaving"
@@ -482,9 +484,9 @@ So, let's get back to open source. Here, I would like to briefly outline what I 
 
 [click] Then, we can search if there are existing libraries in the market. Following the principle of "do less work if possible," it's best to reuse existing solutions. [click] At the same time, you can contribute to open source by providing feedback and suggestions to improve existing solutions.
 
-[click] If you can't find an existing tool that meets your expectations or if the existing tools don't fit your needs but could be a general solution, congratulations! You may have a viable idea. At this point, you can start implementing your own tool by first creating an MVP (Minimum Viable Product) to validate the feasibility of your idea. When designing, keep in mind the idea of decoupling interfaces for future extensibility.
+If you can't find an existing tool that meets your expectations or if the existing tools don't fit your needs but could be a general solution, congratulations! You may have a viable idea. [click] At this point, you can start implementing your own tool by first creating an MVP (Minimum Viable Product) to validate the feasibility of your idea. When designing, keep in mind the idea of decoupling interfaces for future extensibility.
 
-[click] The key to avoiding the yak shaving trap is "to get back in time". [click] You don't need to make it perfect; it just needs to meet your current needs. The important thing is to return to your main task in a timely manner. You can refine the details of the tool later.
+[click] The key to avoiding the yak-shaving trap is "to get back in time." [click] You don't need to make it perfect; it just needs to meet your current needs. The important thing is to return to your main task in a timely manner. You can refine the details of the tool later.
 
 [click] Assuming we have completed our main task and have some extra time, if you are still interested in the tool, you can extract it into a separate library, write brief documentation explaining your motivation for creating the tool, and then open-source the repository.
 
@@ -543,7 +545,7 @@ My journey in open source started with a project built on Nuxt called BreadSplit
 
 [click] As I joined the Vue team, I started to dig deeper into the composition API and the reactivity system. [click] It got me to create Vue Reactivity experiments, and ReactiVue, which hook VUe's reactivity API into React.
 
-[click] And then Vite came out; [click] I started trying the new build tool with Vue 3 and made the icon explorer `Icones`. It's my first app built on top of Vite. From that as the starting point, I found out that there are so many things missing in Vite because it was very young. Then I built [click] `vite-pwa`, and a bunch of plugins like [clicks] auto-imports, components, icons etc to enhance the developer experience of Vite.
+[click] And then Vite came out; [click] I started trying the new build tool with Vue 3 and made the icon explorer `Icones`. It's my first app built on top of Vite. From that as the starting point, I found out that there are so many things missing in Vite because it was very young. Then I built [click] `vite-pwa`, and a bunch of plugins like [click] auto-imports, components, icons etc to enhance the developer experience of Vite.
 
 [click] Since I worked a lot with icons, I started to involve with the Iconify project, [click] combining with my experience of VS Code extension when making `i18n ally`, [click] I made `Iconify IntelliSense` to display icons inside our code.
 
@@ -551,7 +553,7 @@ My journey in open source started with a project built on Nuxt called BreadSplit
 
 [click] By combining all my exploration of the vite ecosystem, I extract them into the template called `Vitesse`, which somehow became quite popular. On top of that, I also made a variation [click] called `vitesse-webext` for browser extensions, and [click] a small library for it.
 
-[click] With Vite becoming more and more mature, [click] I started to migrate my blog site to Vite. Along the way, I made [click] a vite plugin for compiling markdown, and [click] `vite-ssg` for static site generator (what a coincidence to our previous examples :P)
+[click] With Vite becoming more and more mature, I started to migrate my blog site to Vite. Along the way, I made [click] a vite plugin for compiling markdown, and [click] `vite-ssg` for static site generator (what a coincidence to our previous examples :P)
 
 [click] When it comes to styling, I found the project called Windi CSS, which was more like an on-demand version of Tailwind, and I started to contribute and build a plugin for it.
 
