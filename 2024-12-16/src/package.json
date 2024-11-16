@@ -1,0 +1,16 @@
+{
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npx @eslint/config-inspector --config=eslint.demo.config.ts --no-open & slidev",
+    "build": "slidev build --base /2024/jsnation/ --out ../../dist/2024/jsnation",
+    "export": "slidev export --per-slide --output ../2024-06-13-jsnation-en.pdf"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "catalog:",
+    "@eslint/config-inspector": "catalog:",
+    "eslint": "catalog:",
+    "vis-timeline": "catalog:"
+  }
+}
