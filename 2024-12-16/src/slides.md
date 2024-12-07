@@ -36,9 +36,7 @@ monacoTypesIgnorePackages:
 <!--
 Hello everyone, thanks a lot for having me and I hope you are enjoying the conference so far.
 
-It's a shame I couldn't come to Berlin in person this time, hopefully the next time.
-
-Either ways, I wish you will find my talk today interesting today.
+It's a shame I couldn't make it to Berlin in person this time. But I hope my topic today would be interesting to you
 -->
 
 ---
@@ -79,9 +77,9 @@ Working at {NuxtLabs}<br>
 <!--
 Let me introduce myself a bit, my...
 
-As you can see, I am pretty enthusiastic about open source which driven me to work on many projects. I love building tools, and figuring out solutions to the problems I encounter. For example, the slides you are looking at are powered by Slidev, a markdown-based presentation tool that is built on top of Web technologies. It was born when I found the existing tools were not flexible enough for me to present my code.
+As you can see, I am pretty enthusiastic about open source which driven me to work on many projects. I love building tools, and figuring out solutions of problems I encountered. For example, the slides you are looking at are powered by Slidev, a markdown-based presentation tool that is built on top of Web technologies. It was born when I found the existing tools were not flexible enough for me to present my code.
 
-Similarly, when I looked into ESLint and its ecosystem a few months ago, I found many things are interesting with a lot potential by not yet fully explored. So today, I'd like to share with you some of my findings and practices during my recent exploration around it.
+Similarly, when I looked into ESLint and its ecosystem a few months ago, I found many things are interesting with a lot potential,  but was not yet fully explored. So today, I'd like to share with you some of my findings and practices during my recent exploration around it.
 -->
 
 ---
@@ -135,7 +133,7 @@ glow: bottom
 </div>
 
 <!--
-So, you probably have heard ESLint version 9.0 was released [click] roughly two months ago. [click]The main highlight of this major version is the rolling out of a new configuration system for ESLint called the Flat Config.
+So, you are probably already aware that ESLint version 9.0 was released [click] around 7 months ago. [click]The main highlight of this major version is the rolling out of a new configuration system for ESLint called the Flat Config.
 -->
 
 ---
@@ -227,8 +225,8 @@ For those who haven't on the Flat config yet, in today's talk, I am here to tell
 
 ```js {*|2-3,8-9|4-5,11-14|*}{at:4}
 // eslint.config.js
-import eslint from '@eslint/js'
 import typescript from '@eslint-typescript/eslint-plugin'
+import eslint from '@eslint/js'
 import n from 'eslint-plugin-n'
 import vue from 'eslint-plugin-vue'
 
@@ -434,13 +432,7 @@ eslint --inspect-config
 </v-click>
 </div>
 
-<iframe
-  :src="__DEV__ ? 'http://localhost:7777' : 'https://eslint-config.antfu.me/configs'"
-  onload="this.style.visibility = 'visible';"
-  scale-60 origin-top-right absolute right-0 top-0 bottom-0 w="95%" h="167%"
-  border="l main"
-  style="filter:contrast(1.15);visibility:hidden;"
-/>
+<InspectorIframe />
 
 <div v-show="false">
 <!-- This block is for type discovery -->
@@ -464,9 +456,9 @@ The first one is the ESLint Config Inspector - a visualized DevTools, that allow
 
 [click] Since in ESLint, you can have different rule sets that apply to different file types or are more granular to their exact file path. In the config inspector, you can also enter the file path to test how rules are enabled for that file.
 
-In another tab, you can also browse each rule available, given the plugins you have installed. You can filter them and see which rules you are using, which rules you don't, which are recommended ones, and which are deprecated.
+In another tab, you can also browse each rule that is available, given the plugins you have installed. You can filter them and see which rules you are using, which rules you don't, which are recommended ones, and which are deprecated.
 
-[click] Here I have my config file as an example. The config is a factory function that takes some rather high-level options. With the config inspector, we could see how it was resolved based on the options we provided. We could also try to change the options and see how it affects the result. For example, I could also provide it the path of my tsconfig, which will enable the type-aware rules for me automatically.
+[click] Here, I have my config preset as an example. The code frame here reflects my eslint config file on the disk. The config is a factory function that takes some rather high-level options. With the config inspector, we could see how it was resolved based on the options we provided. We could also try to change the options and see how it affects the result. For example, I could also provide it the path of my tsconfig, which will enable the type-aware rules for me automatically.
 -->
 
 ---
@@ -755,11 +747,11 @@ To me, I see ESLint as a mature and powerful AST Toolkit that has a large ecosys
 </div>
 
 <!--
-The is that ESLint can be a [click] Formatter.
+I want to say that ESLint can also be a [click] Formatter.
 
 This is certainly not new, as many projects have been using ESLint that way since the very beginning.
 
-While this topic is actually a bit controversial, which you might hear people saying you should use a dedicated formatter like Prettier or dprint. To me, I see this all down to that those stylistic rules for ESLint take a lot of maintenance effort. Last year, ESLint and the TypeScript ESLint teams decided to deprecate those stylistic rules from the core. [click] And then, I initiated the ESLint Stylistic project, gathering all those stylistic rules for JS, TS, and JSX into this organization and making a community keep maintaining them. I keep using ESLint as formatter as I see it much more flexible and customizable than Prettier due to ESLint's nature.
+While this topic is actually a bit controversial, which you might hear people saying you should use a dedicated formatter like Prettier or dprint. To me, I see this all down to that those stylistic rules for ESLint take a lot of maintenance effort. Last year, ESLint and the TypeScript ESLint teams decided to deprecate those stylistic rules from the core. [click] And then, I initiated the ESLint Stylistic project, [click] gathering all those stylistic rules for JS, TS, and JSX into [click] this organization and making a community keep maintaining them. I keep using ESLint as formatter as I see it much more flexible and customizable than Prettier due to ESLint's nature.
 
 [click] If you are using VS Code, you can see `editor.codeActionOnSave` to auto-fix eslint errors on save. And use `eslint.rules.customizations` to silent stylistic rules in your IDE so they work more like a formatter. For other code editors, I believe there are similar configs for doing the same.
 -->
@@ -785,7 +777,7 @@ For example, [click] I made `eslint-plugin-command` to do on-demand micro-codemo
 
 As you can see in the video, we could put a magic comment saying `to-function` right above an arrow function. Upon saving, the arrow function will be automatically converted into the function declaration, without you to manually move things around.
 
-Similarly, you can also convert it back with `to-arrow`, sort an object or array with `keep-sorted`, make sure an array is unique with `keep-unique`... etc.
+Similarly, we can also sort an object or array with `keep-sorted`, make sure an array is unique with `keep-unique`... etc.
 
 If you learn a little bit about AST, it shouldn't be hard to write your one-off codemod rules to migrate your codebase as well.
 -->

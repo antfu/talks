@@ -93,14 +93,16 @@ Here, you can see many icons from different collections, each with its own prope
 
 # Engineering Challenges
 
-<div grid="~ gap-10 cols-3" py10 w-max>
+Good icons need to be:
+
+<div grid="~ gap-12 gap-y-15 cols-3" py10 w-max>
 
 <div v-click flex="~ col gap-1">
-  <div flex="~ gap-1 items-center" text-xl ml--1>
-    <div text-pink text-3xl i-ph-palette-duotone />
+  <div flex="~ gap-1 items-center" text-3xl ml--1>
+    <div text-pink text-4xl i-ph-palette-duotone />
     <div text-pink3>Colorable</div>
   </div>
-  <div text-sm op60 mb1>Adapt the color on the fly</div>
+  <div text-base op60 mb1>Adapt the color on the fly</div>
   <div flex="~ gap-2 items-end">
     <div i-ph-backpack-duotone text-blue />
     <div i-ph-tree-palm-duotone text-green />
@@ -111,25 +113,25 @@ Here, you can see many icons from different collections, each with its own prope
 </div>
 
 <div v-click flex="~ col gap-1">
-  <div flex="~ gap-1 items-center" text-xl ml--1>
-    <div text-green text-3xl  i-ph-arrows-in-simple-duotone />
+  <div flex="~ gap-1 items-center" text-3xl ml--1>
+    <div text-green text-4xl  i-ph-arrows-in-simple-duotone />
     <div text-green3>Scalable</div>
   </div>
-  <div text-sm op60 mb1 mb--1>Resize as ease</div>
+  <div text-base op60 mb1 mb--1>Resize as ease</div>
   <div flex="~ gap-2 items-end">
-    <div i-ph-at-duotone text-sm />
+    <div i-ph-at-duotone text-base />
     <div i-ph-at-duotone text-lg />
     <div i-ph-at-duotone text-2xl />
-    <div i-ph-at-duotone text-3xl />
+    <div i-ph-at-duotone text-4xl />
   </div>
 </div>
 
 <div v-click flex="~ col gap-1">
-  <div flex="~ gap-1 items-center" text-xl ml--1>
-    <div text-blue text-3xl i-ph-users-four-duotone />
+  <div flex="~ gap-1 items-center" text-3xl ml--1>
+    <div text-blue text-4xl i-ph-users-four-duotone />
     <div text-blue3>Large Amount</div>
   </div>
-  <div text-sm op60 mb1>Manage hundreds of icons</div>
+  <div text-base op60 mb1>Manage hundreds of icons</div>
   <div flex="~ gap-2 items-center">
     <div i-ph-user-duotone />
     <div i-ph-user-circle-duotone />
@@ -141,11 +143,11 @@ Here, you can see many icons from different collections, each with its own prope
 </div>
 
 <div v-click flex="~ col gap-1">
-  <div flex="~ gap-1 items-center" text-xl ml--1>
-    <div text-amber text-3xl i-ph-cube-duotone/>
+  <div flex="~ gap-1 items-center" text-3xl ml--1>
+    <div text-amber text-4xl i-ph-cube-duotone/>
     <div text-amber3>Bundling</div>
   </div>
-  <div text-sm op60 mb1>Optimize bundle</div>
+  <div text-base op60 mb1>Optimize bundle</div>
   <div flex="~ gap-2 items-center">
     <div i-ph-image-duotone />
     <div i-ph-text-aa-duotone />
@@ -155,11 +157,11 @@ Here, you can see many icons from different collections, each with its own prope
 </div>
 
 <div v-click flex="~ col gap-1">
-  <div flex="~ gap-1 items-center" text-xl ml--1>
-    <div text-violet text-3xl i-ph-network-duotone />
+  <div flex="~ gap-1 items-center" text-3xl ml--1>
+    <div text-violet text-4xl i-ph-network-duotone />
     <div text-violet3>Loading</div>
   </div>
-  <div text-sm op60 mb1>Fetch icons on-demand</div>
+  <div text-base op60 mb1>Fetch icons on-demand</div>
   <div flex="~ gap-2 items-center">
     <div i-ph-circle-dashed-duotone />
     <div i-ph-triangle-dashed-duotone />
@@ -171,11 +173,11 @@ Here, you can see many icons from different collections, each with its own prope
 </div>
 
 <div v-click flex="~ col gap-1">
-  <div flex="~ gap-1 items-center" text-xl ml--1>
-    <div text-rose text-3xl i-ph-hand-deposit-duotone />
+  <div flex="~ gap-1 items-center" text-3xl ml--1>
+    <div text-rose text-4xl i-ph-hand-deposit-duotone />
     <div text-rose3>Dynamic</div>
   </div>
-  <div text-sm op60 mb1>Icons not known at compile time</div>
+  <div text-base op60 mb1>Icons not known at compile time</div>
   <div flex="~ gap-2 items-center">
     <div i-ph-cloud-arrow-down-duotone />
     <div i-mdi-cloud-arrow-down-outline />
@@ -523,7 +525,7 @@ import 'iconify-icon'
 />
 
 <!--
-So back to the solutions we were talking about, Iconify also comes with it's own runtime solution. That you can simpliy [click] import the library and [click] use any icons as an web components.
+So back to the solutions we were talking about, Iconify also comes with it's own runtime solution. That you can simply [click] import the library and [click] use any icons as an web components.
 
 [click] Under the hood, the component will send requests to the Iconify API, and the api will serve the needed icons from the massive icons collection.
 
@@ -718,13 +720,13 @@ hide: true
 
 ---
 
-<h1 text-center flex="~ col gap-1 items-center" py6>
-<div flex="~ gap-2 items-center" font-bold><div i-logos-nuxt-icon text-3xl /> Nuxt Icon</div>
+<h1 text-center flex="~ col gap-1 items-center" py5>
+<div flex="~ gap-2 items-center" font-bold><div i-logos-nuxt-icon text-3xl /> Integrate Icons to Nuxt</div>
 </h1>
 
 <div grid="~ cols-[1fr_max-content_1fr] gap-8" px-10 mt4>
 
-<div flex="~ col gap-6" py2 transition duration-500 :class="$clicks < 6 ? 'translate-x-55' : ''">
+<div flex="~ col gap-6" py2 transition duration-500 :class="$clicks < 6 ? 'translate-x-55' : 'translate-x-20'">
   <div
     v-click
     op50 font-bold uppercase text-sm tracking-0.2em text-right
@@ -761,9 +763,9 @@ hide: true
   </div>
 </div>
 
-<div w-1px h-full border="l main" v-click />
+<div w-1px h-full border="l main" translate-x-25 v-click />
 
-<div flex="~ col gap-6" py2>
+<div flex="~ col gap-6" py2 translate-x-25>
   <div op50 font-bold uppercase text-sm tracking-0.2em v-after>Solutions</div>
 
   <div flex="~ col" mt4 v-click>
@@ -890,8 +892,10 @@ Ummm, so, [click] why don't we choose both?
 </div>
 </div>
 
-<div text-center mt10 v-click>
-Both mode can be serialized on SSR with no runtime cost
+<div absolute left-0 right-0 bottom-0 p14 flex>
+  <div text-center mt10 text-orange bg-orange:10 rounded px4 p2 ma v-click>
+  Both mode can be serialized on SSR with no runtime cost
+  </div>
 </div>
 
 <!--

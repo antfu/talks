@@ -6,9 +6,9 @@ Slides &amp; code for my talks, using [Slidev](https://sli.dev).
 
 ###### 2024
 <!--
-- `cn` [ESLint One for All Made Easy](./2024-12-28) - WebConf Taiwan
-- `cn` [ESLint One for All Made Easy](./2024-12-07) - FEDAY Xiamen -->
+- `cn` [ESLint One for All Made Easy](./2024-12-28) - WebConf Taiwan -->
 - `en` [ESLint One for All Made Easy](./2024-12-16) - React Day Berlin
+- `cn` [ESLint One for All Made Easy](./2024-12-07) - FEDAY Xiamen
 - `en` [Journey to Nuxt Icon](./2024-11-12) - Nuxt Nation
 - `en+jp` [Yak Shaving ヤク剃り](./2024-10-19) - Vue Fes Japan
 - `en` [The Progressive Path](./2024-10-03) - ViteConf
