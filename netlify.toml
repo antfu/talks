@@ -1,3 +1,4 @@
+
 [build]
 publish = "dist"
 command = "pnpm run build"
@@ -5,6 +6,7 @@ command = "pnpm run build"
 [build.environment]
 NODE_VERSION = "20"
 PLAYWRIGHT_BROWSERS_PATH = "0"
+
 
 [[redirects]]
 from = "/2021/composable-vue/pdf"
@@ -594,6 +596,46 @@ status = 301
 [[redirects]]
 from = "/2024/nuxt-nation/*"
 to = "/2024/nuxt-nation/index.html"
+status = 200
+
+[[redirects]]
+from = "/2024/feday/pdf"
+to = "https://github.com/antfu/talks/blob/main/2024-12-07/2024-12-07-feday-en.pdf?raw=true"
+status = 302
+
+[[redirects]]
+from = "/2024-12-07/pdf"
+to = "https://github.com/antfu/talks/blob/main/2024-12-07/2024-12-07-feday-en.pdf?raw=true"
+status = 302
+
+[[redirects]]
+from = "/2024/feday/src"
+to = "https://github.com/antfu/talks/tree/main/2024-12-07"
+status = 302
+
+[[redirects]]
+from = "2024-12-07"
+to = "https://talks.antfu.me/2024/feday/"
+status = 301
+
+[[redirects]]
+from = "/2024/feday/*"
+to = "/2024/feday/index.html"
+status = 200
+
+[[redirects]]
+from = "/2024/react-day-berlin/src"
+to = "https://github.com/antfu/talks/tree/main/2024-12-16"
+status = 302
+
+[[redirects]]
+from = "2024-12-16"
+to = "https://talks.antfu.me/2024/react-day-berlin/"
+status = 301
+
+[[redirects]]
+from = "/2024/react-day-berlin/*"
+to = "/2024/react-day-berlin/index.html"
 status = 200
 
 [[redirects]]
