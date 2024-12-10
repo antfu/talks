@@ -600,12 +600,12 @@ status = 200
 
 [[redirects]]
 from = "/2024/feday/pdf"
-to = "https://github.com/antfu/talks/blob/main/2024-12-07/2024-12-07-feday-en.pdf?raw=true"
+to = "https://github.com/antfu/talks/blob/main/2024-12-07/2024-12-07-feday-zh.pdf?raw=true"
 status = 302
 
 [[redirects]]
 from = "/2024-12-07/pdf"
-to = "https://github.com/antfu/talks/blob/main/2024-12-07/2024-12-07-feday-en.pdf?raw=true"
+to = "https://github.com/antfu/talks/blob/main/2024-12-07/2024-12-07-feday-zh.pdf?raw=true"
 status = 302
 
 [[redirects]]
