@@ -639,6 +639,31 @@ to = "/2024/react-day-berlin/index.html"
 status = 200
 
 [[redirects]]
+from = "/2024/oadc/pdf"
+to = "https://github.com/antfu/talks/blob/main/2024-12-21/2024-12-21-oadc-zh.pdf?raw=true"
+status = 302
+
+[[redirects]]
+from = "/2024-12-21/pdf"
+to = "https://github.com/antfu/talks/blob/main/2024-12-21/2024-12-21-oadc-zh.pdf?raw=true"
+status = 302
+
+[[redirects]]
+from = "/2024/oadc/src"
+to = "https://github.com/antfu/talks/tree/main/2024-12-21"
+status = 302
+
+[[redirects]]
+from = "2024-12-21"
+to = "https://talks.antfu.me/2024/oadc/"
+status = 301
+
+[[redirects]]
+from = "/2024/oadc/*"
+to = "/2024/oadc/index.html"
+status = 200
+
+[[redirects]]
 from = "/"
 to = "https://antfu.me/talks"
 status = 302
