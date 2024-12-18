@@ -85,10 +85,9 @@ class: pl20
   <span v-click>「薅牛毛」</span>
 </h1>
 
-<img src="/oadc.png" h-20 absolute bottom-10 right-10 v-click="2" />
+<img src="/oadc.png" h-20 absolute bottom-16 right-8 v-click="2" />
 
-<div abs-br mx-10 my-11 flex="~ col gap-4 items-end" text-left v-click="3">
-  <span>开放原子开发者大会</span>
+<div abs-br mx-10 my-11 flex="~ col gap-4 items-end" text-left v-click="2">
   <div text-xs opacity-75 mt--4>2024.12.21</div>
 </div>
 
