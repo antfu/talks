@@ -664,6 +664,21 @@ to = "/2024/oadc/index.html"
 status = 200
 
 [[redirects]]
+from = "/2024/webconf-tw/src"
+to = "https://github.com/antfu/talks/tree/main/2024-12-28"
+status = 302
+
+[[redirects]]
+from = "2024-12-28"
+to = "https://talks.antfu.me/2024/webconf-tw/"
+status = 301
+
+[[redirects]]
+from = "/2024/webconf-tw/*"
+to = "/2024/webconf-tw/index.html"
+status = 200
+
+[[redirects]]
 from = "/"
 to = "https://antfu.me/talks"
 status = 302

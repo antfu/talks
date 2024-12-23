@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "kill -9 $(lsof -ti:7777) && npx @eslint/config-inspector --config=eslint.demo.config.ts --no-open & slidev",
     "build": "slidev build --base /2024/feday/ --out ../../dist/2024/feday",
-    "export": "slidev export --per-slide --output ../2024-12-07-feday-en.pdf"
+    "export": "slidev export --per-slide --output ../2024-12-07-feday-zh.pdf"
   },
   "devDependencies": {
     "@antfu/eslint-config": "catalog:",
