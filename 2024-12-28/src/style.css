@@ -84,7 +84,6 @@ h6 {
 /* Magic Links */
 .markdown-magic-link {
   display: inline-flex;
-  align-items: center;
   transform: translateY(5px);
   line-height: 100%;
   color: #000b;

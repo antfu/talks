@@ -45,14 +45,30 @@ class: pl-30
 
 <div class="[&>*]:important-leading-10 opacity-80">
 
-{Vite} {Vue} {Nuxt} 核心團隊成員<br>
-{Vitest} {Slidev} {UnoCSS} {VueUse} {Type Challenges} 作者<br>
-{ESLint Stylistic} {Shiki} {Twoslash} 維護者<br>
-就職於 {NuxtLabs}<br>
+<div mt--4 ml--1 v-click>
+
+<span font-serif text-2xl italic v-mark.linethrough.red="{at:2,roughness:6,seed:146}">Senior Frontend Linter</span> <span italic op50 ml1>at</span> {NuxtLabs}
+
+</div>
+<div mt-8 v-click="'+2'">
+
+{Vite} {Vue} {Nuxt} 核心團隊成員
+
+</div>
+<div v-click>
+
+{Vitest} {Slidev} {UnoCSS} {VueUse} {Type Challenges} 作者
+
+</div>
+<div v-click>
+
+{ESLint Stylistic} {Shiki} {Twoslash} 維護者
 
 </div>
 
-<div my-10 w-min flex="~ gap-1" items-center justify-center>
+</div>
+
+<div v-click my-12 w-min flex="~ gap-1" items-center justify-center>
   <div i-ri-user-3-line op50 ma text-xl />
   <div><a href="https://antfu.me" target="_blank" class="border-none! font-300">antfu.me</a></div>
   <div i-ri-github-line op50 ma text-xl ml4/>
@@ -65,9 +81,12 @@ class: pl-30
   <div><a href="https://space.bilibili.com/668380" target="_blank" class="border-none! font-300" ws-nowrap>AnthonyFu 一個托尼</a></div>
 </div>
 
-<img src="https://antfu.me/avatar.png" absolute top-36 right-30 w-40 rounded-full />
+<img src="https://antfu.me/avatar.png" absolute top-20 right-30 w-40 rounded-full />
 
 <!--
+
+我是 Anthony Fu, 我的 Title 是 Senior Frontend Linter, 目前在 NuxtLabs 工作。
+
 ...
 
 如你所見，我對開源充滿熱情，這驅使我參與和制作了很多專案。我享受制作工具和探索解決方案的過程。
@@ -390,75 +409,112 @@ export default [
 layout: fact
 ---
 
+# One for All{.important-text-3em}
+
+一個設定檔適配各種不同的專案
+
+<!--
+所以在這裏，我想再次強調主題，一個打十個。
+
+通過最大化的靈活性和可定制性，現在可以擁有一個單一的共享設定檔，覆蓋所有不同類型的專案。
+-->
+
+---
+
+<div grid="~ cols-2 gap-8">
+
+<div flex="~ col gap-2">
+
+### 舊設定檔
+
+```json {*|3-7|*|10-14|*}{at:1}
+{
+  "extends": [
+    "@antfu/eslint-config",
+    "@antfu/eslint-config-ts",
+    "@antfu/eslint-config-vue",
+    "@antfu/eslint-config-vue-ts"
+    // ...需要提供所有的組合
+  ],
+  "rules": {
+    // 為了修改一項設定檔需要非常的多的手動覆蓋
+    "indent": ["error", 4],
+    "@typescript-eslint/indent": ["error", 4],
+    "jsx-indent": ["error", 4],
+    "vue/indent": ["error", 4]
+  }
+}
+```
+
+</div>
+<div flex="~ col gap-2">
+
+### 扁平設定檔
+
+```ts {*|4-5|*|6-8|*}{at:1}
+import antfu from '@antfu/eslint-config'
+
+export default antfu({
+  vue: true,
+  typescript: true,
+  stylistic: {
+    indent: 4
+  }
+  // ...
+})
+```
+
+<div flex="~ col gap-2" mt-3>
+
+<div v-click class="slidev-vclick-target" :class="$clicks === 1 ? 'text-green' : ''">
+  <div i-ph-check-circle-duotone text-green inline-block translate-y-2px />
+  設定檔可以接受高階用戶選項
+</div>
+
+<div v-click class="slidev-vclick-target" :class="$clicks === 2 ? 'text-green' : ''">
+  <div i-ph-check-circle-duotone text-green inline-block translate-y-2px />
+  一個設定檔適用於所有專案
+</div>
+
+<div v-click class="slidev-vclick-target" :class="$clicks === 3 ? 'text-green' : ''" >
+  <div i-ph-check-circle-duotone text-green inline-block translate-y-2px />
+  <span v-mark.green.delay400="5">
+    像 Prettier 一樣提供最小設定檔，開箱即用
+  </span>
+</div>
+
+<div v-click class="slidev-vclick-target">
+  <div i-ph-check-circle-duotone text-green inline-block translate-y-2px />
+  <span v-mark.green.delay400="5">
+    同時擁有 ESLint 完整靈活的可自定義能力
+  </span>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<!--
+這裏我們可以快速比較一下
+
+[click] 在新的扁平設定檔中，共享設定檔可以是一個接受用戶選項的工廠函數，這是在舊設定檔中無法做到的。想象一下，如果我希望我的設定檔同時適用於 TypeScript 和非 TypeScript 專案，Vue 和非 Vue 專案，我將需要做一個 monorepo 來發布不同組合的設定檔。正如你所看到的，這種方式並不具備良好的擴展性，因為每增加一個選項，我們的組合數量就會翻倍。
+
+[click] 扁平設定檔允許你提供語義化的選項來動態切換每個功能，使得一個單一的設定檔能夠適應不同的專案。
+
+[click] 因此，我們還可以進行高級抽象來吸收底層的覆雜性，並提供一個像 Prettier 一樣的最小設定檔接口，最終用戶甚至不需要擔心底層的細節，[click] 但在他們真正需要時仍然可以完全控制。
+-->
+
+---
+layout: fact
+---
+
 # 工具生態{.important-text-3em}
 
 隨著新的 Flat Config 帶來的新工具和可能性
 
 <!--
-現在，讓我們談談這種新格式所帶來的有趣的新工具和可能性。
--->
-
----
-glow: left
----
-
-<div w="40%">
-
-## Config Inspector <sup text-lime bg-lime:15 px1.5 rounded text-sm>官方</sup>
-
-<div mt-4 />
-<v-click>
-
-```bash
-eslint --inspect-config
-```
-
-</v-click>
-<div mt-4 />
-
-<v-clicks>
-
-- 設定檔可視化
-- 理解設定檔組合
-- 內置設定檔
-- 檔案路徑測試器
-
-</v-clicks>
-<div mt-4 />
-<v-click>
-
-<<< ./eslint.demo.config.ts {monaco-write}{height:'220px'}
-
-</v-click>
-</div>
-
-<InspectorIframe />
-
-<div v-show="false">
-<!-- This block is for type discovery -->
-
-```ts {monaco}
-import antfu from '@antfu/eslint-config'
-```
-
-</div>
-
-<!--
-第一個介紹的是 ESLint Config Inspector - 一個可視化的開發工具，允許你檢查和操作最終解析的設定檔。
-
-[click] 你可以在專案根目錄下運行 `eslint --inspect-config` 來嘗試它，它會在瀏覽器中打開一個帶有 UI 的頁面，就像你在右邊看到的那樣。
-
-[click] 首先，它會渲染你所有的設定檔項。你可以看到所有的設定檔都列在這裏，因為它是扁平的。這裏我有一個相當覆雜的設定檔設置，包含了很多設定檔項。但通過每個設定檔提供的名稱，你可以輕松地看到和理解它們的用途。
-
-[click] 你還可以展開每個專案，查看它們如何貢獻到最終的設定檔中，比如啟用了多少規則，或者它們的目標檔案類型是什麽，等等。
-
-[click] 在每個規則中，你還可以看到它們的選項，一個簡短的描述，以及一個指向它們文件頁面的鏈接。
-
-[click] 由於在 ESLint 中，你可以有不同的規則集應用於不同的檔案類型，或者更細粒度地應用於它們的確切檔案路徑。在設定檔檢查器中，你還可以輸入檔案路徑來測試這些規則是如何為該檔案啟用的。
-
-在另一個標簽中，你還可以瀏覽每個可用的規則，鑒於你已經安裝的外掛。你可以過濾它們，查看你正在使用哪些規則，哪些規則你沒有使用，哪些是推薦的，哪些是已棄用的。
-
-[click] 這裏我有我的設定檔檔案作為示例。這個設定檔是一個工廠函數，接受一些相當高級的選項。通過設定檔檢查器，我們可以看到它是如何根據我們提供的選項解析的。我們還可以嘗試更改選項，看看它如何影響結果。例如，我還可以提供我的 tsconfig 的路徑，這將自動為我啟用類型感知的規則。
+談談這種新格式所帶來的有趣的新工具和可能性。
 -->
 
 ---
@@ -551,103 +607,66 @@ export default compose(
 -->
 
 ---
-layout: fact
+glow: left
 ---
 
-# One for All{.important-text-3em}
+<div w="40%">
 
-一個設定檔適配各種不同的專案
+## Config Inspector <sup text-lime bg-lime:15 px1.5 rounded text-sm>官方</sup>
 
-<!--
-所以在這裏，我想再次強調主題 - 一統江湖，或者說，一個打十個。
+<div mt-4 />
+<v-click>
 
-通過最大化的靈活性和可定制性，現在可以擁有一個單一的共享設定檔，覆蓋所有不同類型的專案。
--->
-
----
-
-<div grid="~ cols-2 gap-8">
-
-<div flex="~ col gap-2">
-
-### 舊設定檔
-
-```json {*|3-7|*|10-14|*}{at:1}
-{
-  "extends": [
-    "@antfu/eslint-config",
-    "@antfu/eslint-config-ts",
-    "@antfu/eslint-config-vue",
-    "@antfu/eslint-config-vue-ts"
-    // ...需要提供所有的組合
-  ],
-  "rules": {
-    // 為了修改一項設定檔需要非常的多的手動覆蓋
-    "indent": ["error", 4],
-    "@typescript-eslint/indent": ["error", 4],
-    "jsx-indent": ["error", 4],
-    "vue/indent": ["error", 4]
-  }
-}
+```bash
+eslint --inspect-config
 ```
 
+</v-click>
+<div mt-4 />
+
+<v-clicks>
+
+- 設定檔可視化
+- 理解設定檔組合
+- 內置設定檔
+- 檔案路徑測試器
+
+</v-clicks>
+<div mt-4 />
+<v-click>
+
+<<< ./eslint.demo.config.ts {monaco-write}{height:'220px'}
+
+</v-click>
 </div>
-<div flex="~ col gap-2">
 
-### 扁平設定檔
+<InspectorIframe />
 
-```ts {*|4-5|*|6-8|*}{at:1}
+<div v-show="false">
+<!-- This block is for type discovery -->
+
+```ts {monaco}
 import antfu from '@antfu/eslint-config'
-
-export default antfu({
-  vue: true,
-  typescript: true,
-  stylistic: {
-    indent: 4
-  }
-  // ...
-})
 ```
-
-<div flex="~ col gap-2" mt-3>
-
-<div v-click class="slidev-vclick-target" :class="$clicks === 1 ? 'text-green' : ''">
-  <div i-ph-check-circle-duotone text-green inline-block translate-y-2px />
-  設定檔可以接受高階用戶選項
-</div>
-
-<div v-click class="slidev-vclick-target" :class="$clicks === 2 ? 'text-green' : ''">
-  <div i-ph-check-circle-duotone text-green inline-block translate-y-2px />
-  一個設定檔適用於所有專案
-</div>
-
-<div v-click class="slidev-vclick-target" :class="$clicks === 3 ? 'text-green' : ''" >
-  <div i-ph-check-circle-duotone text-green inline-block translate-y-2px />
-  <span v-mark.green.delay400="5">
-    像 Prettier 一樣提供最小設定檔，開箱即用
-  </span>
-</div>
-
-<div v-click class="slidev-vclick-target">
-  <div i-ph-check-circle-duotone text-green inline-block translate-y-2px />
-  <span v-mark.green.delay400="5">
-    同時擁有 ESLint 完整靈活的可自定義能力
-  </span>
-</div>
-
-</div>
-</div>
 
 </div>
 
 <!--
-這裏我們可以快速比較一下
+第一個介紹的是 ESLint Config Inspector - 一個可視化的開發工具，允許你檢查和操作最終解析的設定檔。
 
-[click] 在新的扁平設定檔中，共享設定檔可以是一個接受用戶選項的工廠函數，這是在舊設定檔中無法做到的。想象一下，如果我希望我的設定檔同時適用於 TypeScript 和非 TypeScript 專案，Vue 和非 Vue 專案，我將需要做一個 monorepo 來發布不同組合的設定檔。正如你所看到的，這種方式並不具備良好的擴展性，因為每增加一個選項，我們的組合數量就會翻倍。
+[click] 你可以在專案根目錄下運行 `eslint --inspect-config` 來嘗試它，它會在瀏覽器中打開一個帶有 UI 的頁面，就像你在右邊看到的那樣。
 
-[click] 扁平設定檔允許你提供語義化的選項來動態切換每個功能，使得一個單一的設定檔能夠適應不同的專案。
+[click] 首先，它會渲染你所有的設定檔項。你可以看到所有的設定檔都列在這裏，因為它是扁平的。這裏我有一個相當覆雜的設定檔設置，包含了很多設定檔項。但通過每個設定檔提供的名稱，你可以輕松地看到和理解它們的用途。
 
-[click] 因此，我們還可以進行高級抽象來吸收底層的覆雜性，並提供一個像 Prettier 一樣的最小設定檔接口，最終用戶甚至不需要擔心底層的細節，[click] 但在他們真正需要時仍然可以完全控制。
+[click] 你還可以展開每個專案，查看它們如何貢獻到最終的設定檔中，比如啟用了多少規則，或者它們的目標檔案類型是什麽，等等。
+
+[click] 在每個規則中，你還可以看到它們的選項，一個簡短的描述，以及一個指向它們文件頁面的鏈接。
+
+[click] 由於在 ESLint 中，你可以有不同的規則集應用於不同的檔案類型，或者更細粒度地應用於它們的確切檔案路徑。在設定檔檢查器中，你還可以輸入檔案路徑來測試這些規則是如何為該檔案啟用的。
+
+在另一個標簽中，你還可以瀏覽每個可用的規則，鑒於你已經安裝的外掛。你可以過濾它們，查看你正在使用哪些規則，哪些規則你沒有使用，哪些是推薦的，哪些是已棄用的。
+
+[click] 這裏我有我的設定檔檔案作為示例。這個設定檔是一個工廠函數，接受一些相當高級的選項。通過設定檔檢查器，我們可以看到它是如何根據我們提供的選項解析的。我們還可以嘗試更改選項，看看它如何影響結果。例如，我還可以提供我的 tsconfig 的路徑，這將自動為我啟用類型感知的規則。
 -->
 
 ---
@@ -906,36 +925,3 @@ glowY: 120
 # 謝謝
 
 投影片在 [antfu.me](https://antfu.me)
-
----
-
-# 附錄：🦀 Rust Linter <span text-4xl v-click> - <span font-800 text-blue3><span hue-rotate-180>🦀</span> 為時尚早</span></span>
-
-<div grid="~ cols-2 gap4 items-center justify-center" px25 h-95>
-
-<div>
-
-<div v-click>Rust 工具鏈仍面臨的問題</div>
-
-<v-clicks>
-
-- 外掛系統
-
-- 多語言支持
-- 自定義規則
-- 靈活性 >>> 運行速度
-- 基於類型的規則
-
-</v-clicks>
-
-</div>
-
-<div text-sm flex="~ col items-center" v-click >
-
-<a text-2xl href="https://chatgpt.com/share/674e8ffc-822c-800b-bb35-bca788ce6241" target="_blank">ChatGPT 的總結</a>
-
-<QRCode w-40 mix-blend-lighten text="https://chatgpt.com/share/674e8ffc-822c-800b-bb35-bca788ce6241"/>
-
-</div>
-
-</div>

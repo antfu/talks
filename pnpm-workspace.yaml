@@ -5,8 +5,8 @@ catalog:
   '@eslint/config-inspector': ^0.6.0
   '@iconify/collections': ^1.0.500
   '@iconify/json': ^2.2.289
-  '@slidev/cli': ^0.51.0-beta.1
-  '@slidev/client': ^0.51.0-beta.1
+  '@slidev/cli': ^0.51.0-beta.2
+  '@slidev/client': ^0.51.0-beta.2
   '@slidev/theme-default': ^0.25.0
   '@types/node': ^22.10.2
   '@types/prompts': ^2.4.9
