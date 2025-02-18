@@ -14,5 +14,6 @@ export default antfu({
   },
   ignores: [
     '**/demo/eslint/**',
+    '**/yak-shaving-map/**',
   ],
 })
