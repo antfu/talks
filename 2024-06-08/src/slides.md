@@ -227,9 +227,9 @@ For those who haven't on the Flat config yet, in today's talk, I am here to tell
 <div v-click="2" transition duration-800 delay-50 :class="$clicks < 3 ? 'translate-y--160px': ''">
 
 ```js {*|2-3,8-9|4-5,11-14|*}{at:4}
+import typescript from '@eslint-typescript/eslint-plugin'
 // eslint.config.js
 import eslint from '@eslint/js'
-import typescript from '@eslint-typescript/eslint-plugin'
 import n from 'eslint-plugin-n'
 import vue from 'eslint-plugin-vue'
 
