@@ -24,6 +24,7 @@
     "@types/seedrandom": "catalog:",
     "chroma-js": "catalog:",
     "eslint": "catalog:",
+    "eslint-config-flat-gitignore": "catalog:",
     "eslint-plugin-format": "catalog:",
     "eslint-plugin-react-hooks": "catalog:",
     "eslint-plugin-react-refresh": "catalog:",
