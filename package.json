@@ -1,7 +1,7 @@
 {
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@10.10.0",
+  "packageManager": "pnpm@10.11.0",
   "scripts": {
     "build": "rimraf dist && pnpm -r run build",
     "dev": "esno scripts/picker.ts dev --open",
@@ -28,6 +28,7 @@
     "eslint-plugin-format": "catalog:",
     "eslint-plugin-react-hooks": "catalog:",
     "eslint-plugin-react-refresh": "catalog:",
+    "eslint-typegen": "^2.2.0",
     "esno": "catalog:",
     "execa": "catalog:",
     "fast-glob": "catalog:",
@@ -47,5 +48,9 @@
     "vis-network": "catalog:",
     "vue-router": "catalog:",
     "vue-tsc": "catalog:"
+  },
+  "resolutions": {
+    "@slidev/cli": "catalog:",
+    "@slidev/client": "catalog:"
   }
 }

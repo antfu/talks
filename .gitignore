@@ -4,4 +4,3 @@ node_modules
 dist
 .DS_Store
 **/public/assets/fonts
-.slidev

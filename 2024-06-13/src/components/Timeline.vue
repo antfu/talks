@@ -5,7 +5,7 @@ import { onMounted, ref, watch } from 'vue'
 const el = ref<HTMLElement | null>(null)
 
 onMounted(() => {
-  const end = '2025-05-12'
+  const end = '2025-10-01'
   const groups = new DataSet([
     { id: 1, content: 'Blog' },
     { id: 2, content: 'Stages' },
