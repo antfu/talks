@@ -18,6 +18,7 @@ catalog:
   eslint-plugin-format: ^1.0.1
   eslint-plugin-react-hooks: ^5.2.0
   eslint-plugin-react-refresh: ^0.4.20
+  eslint-typegen: ^2.2.0
   esno: ^4.8.0
   execa: ^9.5.3
   fast-glob: ^3.3.3

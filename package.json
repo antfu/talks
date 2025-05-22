@@ -28,7 +28,7 @@
     "eslint-plugin-format": "catalog:",
     "eslint-plugin-react-hooks": "catalog:",
     "eslint-plugin-react-refresh": "catalog:",
-    "eslint-typegen": "^2.2.0",
+    "eslint-typegen": "catalog:",
     "esno": "catalog:",
     "execa": "catalog:",
     "fast-glob": "catalog:",

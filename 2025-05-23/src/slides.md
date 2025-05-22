@@ -40,7 +40,7 @@ addons:
 
 本日はこのように皆さんの前で お話しできることを 大変光栄に 思っております。
 
-実は、登壇が決まったのは<ruby>直前<rp></rp><rt>ちょくぜん</rt><rp></rp></ruby>だったのですが、このような<ruby>貴重<rp></rp><rt>きちょう</rt><rp></rp></ruby>な機会を くださった 主催者とスタッフの皆様に、心より感謝申し上げます。
+実は、<ruby>登壇<rp></rp><rt>とうだん</rt><rp></rp></ruby>が決まったのは<ruby>直前<rp></rp><rt>ちょくぜん</rt><rp></rp></ruby>だっ たのですが、このような<ruby>貴重<rp></rp><rt>きちょう</rt><rp></rp></ruby>な機会を くださった 主催者とスタッフの皆様に、心より感謝申し上げます。
 -->
 
 ---
@@ -82,7 +82,7 @@ Working at {NuxtLabs}<br>
 まずは自己紹介をさせてください。僕はAnthonyと申します。Vite、Vue、Nuxtのコアメンバーとして活動しており、Vitest、Slidev、Type Challenges、UnoCSS、VueUseなどのオープンソースプロジェクトを作りました。
 また、ESLint Stylistic、Shiki、Twoslashのメンテナーもしています。今はNuxtLabsで働いています。
 
-僕のウェブサイト（antfu.me）やGitHubで見つけられますし、日本語用のTwitterアカウント（@antfujp）もあります。
+僕のウェブサイト（antfu.me）やGitHubで 見つけられ ますし、日本語用のTwitterアカウント（@antfujp）もあります。
 -->
 
 ---
@@ -538,7 +538,6 @@ In another tab, you can also browse each rule that is available, given the plugi
 [click] Here, I have my config preset as an example. The code frame here reflects my eslint config file on the disk. The config is a factory function that takes some rather high-level options. With the config inspector, we could see how it was resolved based on the options we provided. We could also try to change the options and see how it affects the result. For example, I could also provide it the path of my tsconfig, which will enable the type-aware rules for me automatically.
 -->
 
-
 ---
 
 <div grid="~ cols-2 gap-8">
@@ -728,7 +727,6 @@ clicks: 5
 ---
 
 ## How it works
-
 
 <div grid="~ cols-[1fr_2fr] gap-4">
 
@@ -1048,7 +1046,7 @@ And also since native languages can leverage multiple threading, it would be mor
 </div>
 
 <!--
-But looking forward, 
+But looking forward,
 [click] I'd say native linters are valuable additions to the ecosystem,
 
 [click] But before they reach feature parity with ESLint, I think they will coexist for quite a while.
