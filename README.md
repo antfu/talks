@@ -4,6 +4,10 @@ Slides &amp; code for my talks, using [Slidev](https://sli.dev).
 
 [Upcoming Talks](https://antfu.me/talks)
 
+###### 2025
+
+- `en+jp` [The New Powerful ESLint Config with Type Safety](./2025-05-23) - TSKaigi
+
 ###### 2024
 
 - `zh` [ESLint One for All Made Easy](./2024-12-28) - WebConf Taiwan

@@ -36,9 +36,11 @@ addons:
 ![](/af-logo-animated.svg){.w-30.mt--10.mb-5}
 
 <!--
-皆さんおはようございます。
+皆さん、おはようございます。
 
-本日はこのように皆様の前で お話しできることを 大変光栄に 思っております。急なお願いにもかかわらず、このイベントを<ruby>企画<rp></rp><rt>きかく</rt><rp></rp></ruby>して くださった主催者の方、本当にありがとうございます。
+本日はこのように皆さんの前で お話しできることを 大変光栄に 思っております。
+
+実は、登壇が決まったのは<ruby>直前<rp></rp><rt>ちょくぜん</rt><rp></rp></ruby>だったのですが、このような<ruby>貴重<rp></rp><rt>きちょう</rt><rp></rp></ruby>な機会を くださった 主催者とスタッフの皆様に、心より感謝申し上げます。
 -->
 
 ---
@@ -86,7 +88,7 @@ Working at {NuxtLabs}<br>
 ---
 
 <div lang="ja" font-jp text-4xl important-leading-14 mt30>
-2ヶ月前に バリから<br>
+2ヶ月前に パリから<br>
 東京に引っ越した！
 </div>
 
@@ -97,10 +99,13 @@ Working at {NuxtLabs}<br>
 <img src="/tokyo-article.png" v-click="1" absolute top-0 right--12 w-140 />
 
 <!--
-実は、2ヶ月前にパリから東京に引っ越してきました。そのことについては、僕のブログにも書いてあります。
+僕は2ヶ月前にパリから東京に引っ越してきました。[click]そのことについては、僕のブログにも書いてあります。[click]
 
-今、日本語を勉強中で、ここまでが僕の日本語の限界です。なので、ここからは英語で話させていただきます。
-いつか、すべて日本語で<ruby>講演<rp></rp><rt>こうえん</rt><rp></rp></ruby>ができるよう<ruby>努力<rp></rp><rt>どりょく</rt><rp></rp></ruby>してまいります。
+今、日本語を勉強中で、ここまでが 僕の日本語の限界です。
+
+なので、ここからは英語で話させていただきます。
+
+いつか、すべて日本語で<ruby>講演<rp></rp><rt>こうえん</rt><rp></rp></ruby>ができるよう、<ruby>努力<rp></rp><rt>どりょく</rt><rp></rp></ruby>してまいります。
 
 みなさんよろしくお願いします！
 -->
@@ -126,7 +131,7 @@ layout: cover
 </div>
 
 <!--
-So for today, I'd like to talk about the new ESLint Config, what you can do with it, and how how you can get type-safety for your configuration.
+So for today, I'd like to talk about the new ESLint Config, [click] what you can do with it, and [click] how how you can get type-safety and good developer experience for your configuration.
 
 Almost 12 years since ESLint came out, at this moment, it's easily one of the most popular tools in the JavaScript ecosystem that almost every project uses. Despite it has been around for such a long time, it's a tool that is still constantly improving and evolving.
 -->
@@ -184,11 +189,25 @@ glow: bottom
 </div>
 </h2>
 
-<img src="/eslint-v9.png" v-click mt4 w-60 rounded-lg shadow forward:delay-400 />
+<div grid="~ cols-2 gap-4" mt4>
+  <div v-click forward:delay-400 flex="~ col items-center gap-2" transition duration-500 :class="$clicks < 3 ? 'translate-x-31' : ''">
+    <img src="/eslint-v9.png" w-60 rounded-lg shadow  />
+    <div text-sm op50>2024-04-05</div>
+  </div>
+  <div v-click forward:delay-400 flex="~ col items-center gap-2">
+    <img src="/eslint-retrospective.png" w-60 rounded-lg shadow />
+    <div text-sm op50>2025-05-22</div>
+  </div>
+</div>
 </div>
 
 <!--
-So, you are probably already aware that ESLint version 9.0 was released [click] around 7 months ago. [click]The main highlight of this major version is the rolling out of a new configuration system for ESLint called the Flat Config.
+So, ESLint version 9.0 was actually released [click] over a year ago.
+
+[click] The main highlight of this major version is the rolling out of a new configuration system for ESLint called the Flat Config.
+There is a blog post that explains the motivation and the design of the new config system.
+
+[click] And just at the right time, yesterday, the ESLint team also published a new post to review the year since the release. If you are interested, please do check it out.
 -->
 
 ---
@@ -237,7 +256,7 @@ For those who haven't on the Flat config yet, in today's talk, I am here to tell
 </v-clicks>
 
 </div>
-<div v-click="1" transition duration-800 :class="$clicks < 3 ? 'translate-y--200px': ''">
+<div v-click="1" transition duration-800 :class="$clicks < 3 ? 'translate-y--200px' : $clicks < 6 ? 'translate-y--50px': ''">
 
 ```json {*|3-6|7-10|*}{at:4}
 // .eslintrc.json
@@ -278,7 +297,7 @@ For those who haven't on the Flat config yet, in today's talk, I am here to tell
 </v-clicks>
 
 </div>
-<div v-click="2" transition duration-800 delay-50 :class="$clicks < 3 ? 'translate-y--200px': ''">
+<div v-click="2" transition duration-800 delay-50 :class="$clicks < 3 ? 'translate-y--200px' : $clicks < 6 ? 'translate-y--50px': ''">
 
 ```js {*|2-3,8-9|4-5,11-14|*}{at:4}
 // eslint.config.js
@@ -310,13 +329,15 @@ export default [ // export an array of configs
 <!--
 In case you have never heard about it or haven't dig into the docs yet. Here, let me make a quick comparison between the legacy eslintrc config [click] and the new flat config for you. [click]
 
-To differentiate between those two configuration formats is rather straightforward. [click] The legacy config is named with `.eslintrc` that supports various extensions which might also read from your `package.json`. The flat config, on the other hand, would only be loaded from `eslint.config.js`, a JavaScript config file as the single source of truth.
+To differentiate between those two configuration formats is rather straightforward. [click] The legacy config is named with `.eslintrc` that supports various extensions which might also read from your `package.json`. The flat config, on the other hand, would only be loaded from `eslint.config.js`, a JavaScript config file as the single source of truth. And also of course, they recently added the TypeScript support so you can also use `eslint.config.ts`.
 
-[click] When it comes to reusing the shared config, the legacy config format implicitly uses the conventional-based `extends` property to load that config from your local `node_modules`. You would need to learn the convention a little bit to know how it resolves. While in the flat config we use the native import, where it's more explicit, and gives a lot more controls to you.
+[click] When it comes to reusing the shared config, the legacy config format implicitly uses the conventional-based `extends` property to load that config from your local `node_modules`. You would need to learn the convention a little bit to know how it resolves. While in the flat config we use the native import, where it's more explicit, have a lot more controls.
 
 [click] For plugins, it used to take an array of strings, which is again, convention-based and coupled with the plugins' package name. Now in the flat config, it takes a named object for plugins. This means you can now rename plugins easily, or switch to a fork without being forced to change every rule in your config.
 
 [click] Also, the inheritance nature of `extends` might result in a very complex tree structure as the shared configs can also have nested `extends` inside. In the flat config, it gets simplified a lot, where you explicitly import the shared configs as multiple objects or arrays, and compose them into a single flat one.
+
+[click] And finally, the legacy config is usually a JSON without much type safety. While the flat config is a JavaScript file, which is a lot easier to ensure the type safety.
 -->
 
 ---
@@ -337,9 +358,9 @@ To differentiate between those two configuration formats is rather straightforwa
 </v-clicks>
 
 <!--
-[click] For a little bit more context, Here is a graph I drew to demonstrate the timeline. While the flat config might sound new to some of you, it has actually been planned for 5 years already. [click] The RFC was created in January 2019, [click] first implementation available in v8.21.0 as experimental, which was two years ago.  [click] It became stable in v8.45.0, [click] and then became the default recently in v9.0.0. In between, the ESLint team has published multiple blog posts to explain the reasons why they want to introduce the new format, and shared the roadmap of rolling out. That's a lot of effort spent across this 5 years plan - huge respect to the ESLint team.
+[click] For a little bit more context, Here is a graph I drew to demonstrate the timeline. While the flat config might sound new to some of you, it has actually been planned for 5 years already. [click] The RFC was created in January 2019, [click] first implementation available in v8.21.0 as experimental, which was already 3 years ago. [click] It became stable in v8.45.0, [click] and then became the new default in v9.0.0. In between, the ESLint team has published multiple blog posts to explain the reasons why they want to introduce the new format, and shared the roadmap of rolling out. That's a lot of effort spent across this 5 years plan - huge respect to the ESLint team.
 
-[click] In v9.10.0, ESLint ships official TypeScript definitions, which means you don't need to install `@types/eslint` anymore. [click] And in v9.18.0, it also supports TypeScript config, so that you can use `eslint.config.ts` to write your config file.
+[click] In v9.10.0, ESLint ships official TypeScript definitions, which means you don't need to install `@types/eslint` anymore. [click] And in v9.18.0, it also supports TypeScript config as we mentioned before.
 -->
 
 ---
@@ -436,9 +457,9 @@ export default [
 </div>
 
 <!--
-Before we talk about the new exciting stuff, let me first quickly go through the tools for migrating your legacy config to the new flat config, in case you might need them.
+Before we talk about the new exciting stuff, let me first introduce you the tool for migrating your legacy config to the new flat config, in case you might need them.
 
-We have a CLI `@eslint/migrate-config` that automatically convert your legacy config file to flat config. [click] Some runtime utilities for compatibility will be introduced automatically along the way as well.
+We have an official CLI `@eslint/migrate-config` that automatically convert your legacy config file to flat config. [click] Some runtime utilities for compatibility will be introduced automatically along the way as well.
 
 I would recommend you check the ESLint docs and migration guide for more detailed instructions.
 -->
@@ -510,7 +531,7 @@ The first one is the ESLint Config Inspector - a visualized DevTools, that allow
 
 [click] In each rule, you can also see their options, a short description, and also, a link to their documentation page.
 
-[click] Since in ESLint, you can have different rule sets that apply to different file types or are more granular to their exact file path. In the config inspector, you can also enter the file path to test how rules are enabled for that file.
+[click] Since in ESLint, sometimes it's hard to know which file has which rules enabled. In the config inspector, you can also provide a file tester.
 
 In another tab, you can also browse each rule that is available, given the plugins you have installed. You can filter them and see which rules you are using, which rules you don't, which are recommended ones, and which are deprecated.
 
@@ -600,7 +621,7 @@ export default antfu({
 </div>
 
 <!--
-Here we can do a quick comparison to show what I mean.
+Here we can do a quick comparison to show what's new capabilities of the flat config.
 
 [click] In the new flat config, a shared config can be a factory function that takes user options, which we couldn't do in the legacy config. Imagine if I want my config to work in both TypeScript and non-TypeScript projects, Vue and non-Vue projects, I will need to do a monorepo to publish configs for different combinations. As you can see, it doesn't scale well, we are doubling the amount of combinations for each option.
 
@@ -608,7 +629,7 @@ Here we can do a quick comparison to show what I mean.
 
 [click] Also, it's just a JavaScript file, you can also provide types and jsdocs to your config, making it type-safe and self-documented.
 
-[click] Because of flexibility, we could also have high-level abstraction to absorb the underlying complexity, and provide a minimal configuration interface like Prettier, where end users don't even need to worry about the underlying details, [click] but still have all the control to do so when they really want to.
+[click] Because of flexibility, we could also have high-level abstraction to absorb the underlying complexity, and provide a minimal configuration interface like Prettier, where end users don't even need to worry about the underlying details, [click] but still have all the control to do so when they really want to. [click]
 -->
 
 ---
@@ -697,7 +718,7 @@ To make config customization easier, I also made a small library called `eslint-
 </v-clicks>
 
 <!--
-And then, thanks to the flexibility and also the full context available in the flat config, it also make the type generation possible. [click]
+And then, thanks to the flexibility and also the full context available in the flat config, it also make the type generation possible. I made another tool called `eslint-typegen`. [click]
 
 Simply wrap the entire config array you exported with the typegen function, it will generate a local .d.ts file based on all the plugins you have installed. This provides you with autocomplete and typechecks for all the rules are you using.
 -->
@@ -715,7 +736,7 @@ clicks: 5
 
 <div v-click="4">
 
-```ts
+```ts {*|5-9}{at:5}
 // eslint-typegen.d.ts
 // Automatically generated by eslint-typegen
 import type { Linter } from 'eslint'
@@ -756,6 +777,8 @@ Under the hood, this is made possible by the `typegen()` function.
 [click] and then save it to the `typegen.d.ts` file like the code on the right.
 
 [click] The d.ts file will augment back to the ESLint types to provide type informations on rules.
+
+With that, we got the accurate type for all the plugins, without the need for the plugins to change and provide their own types.
 -->
 
 ---
@@ -815,9 +838,9 @@ I want to say that ESLint can also be a [click] Formatter.
 
 This is certainly not new, as many projects have been using ESLint that way since the very beginning.
 
-While this topic is actually a bit controversial, which you might hear people saying you should use a dedicated formatter like Prettier or dprint. To me, I see this all down to that those stylistic rules for ESLint take a lot of maintenance effort. Last year, ESLint and the TypeScript ESLint teams decided to deprecate those stylistic rules from the core. [click] And then, I initiated the ESLint Stylistic project, [click] gathering all those stylistic rules for JS, TS, and JSX into [click] this organization and making a community keep maintaining them. I keep using ESLint as formatter as I see it much more flexible and customizable than Prettier due to ESLint's nature.
+Last year, ESLint and the TypeScript ESLint teams decided to deprecate those stylistic rules from the core. [click] And then, I initiated the ESLint Stylistic project, [click] gathering all those stylistic rules for JS, TS, and JSX into [click] this organization and making a community keep maintaining them. I keep using ESLint as formatter as I see it much more flexible and customizable than Prettier due to ESLint's nature.
 
-[click] If you are using VS Code, you can see `editor.codeActionOnSave` to auto-fix eslint errors on save. And use `eslint.rules.customizations` to silent stylistic rules in your IDE so they work more like a formatter. For other code editors, I believe there are similar configs for doing the same.
+[click] If you are using VS Code, you can set `editor.codeActionOnSave` to auto-fix eslint errors on save. And use `eslint.rules.customizations` to silent stylistic rules in your IDE so they work more like a formatter. I believe there are similar configs for doing the same for other code editors.
 -->
 
 ---
@@ -833,7 +856,7 @@ While this topic is actually a bit controversial, which you might hear people sa
 </div>
 
 <!--
-One ESLint rule is essential a function that takes the code and AST, reporting errors with optional fix information.
+A rule in ESLint is essential a function that takes the code and AST, reporting errors with optional fix information.
 
 This means that ESLint can also be a nice tool for [click] codemod.
 
@@ -960,7 +983,7 @@ If you want to learn more, you can check my personal ESLint config, where I used
 
 I am honestly a bit flattered to see that even tho I didn't intend to have this config used by the others, it ends up being quite popular to have 3 thousand stars and over 30 thousand projects using it on GitHub.
 
-[click] I wasn't trying to make you use my config, but hopefully, it can be a good reference for you to build your own shared config that is both powerful and flexible.
+[click] I wasn't trying to make you use my config, but hopefully, it can be a good reference for you to build your own shared config for yourself or for your teams, that is both powerful and flexible, and of course, type-safe.
 -->
 
 ---
@@ -979,7 +1002,7 @@ I am honestly a bit flattered to see that even tho I didn't intend to have this 
 
 </v-click>
 
-<div>Quick Take: Already usable in some scenarios, but not yet ready for majority.</div>
+<div v-click>Quick Take: Already usable in some scenarios, but not yet ready for majority.</div>
 
 <ProsCons
   :pros="[
@@ -995,15 +1018,15 @@ I am honestly a bit flattered to see that even tho I didn't intend to have this 
 />
 
 <!--
-So until now, if we talk about the future of linting, I bet you might ask, [click] what about the new uprasing native linters like `biome`, `oxlint`, `deno lint`?
+So until now, if we talk about the future of linting, I bet you might ask, [click] what about the new upraising native linters like `biome`, `oxlint`, `deno lint`?
 
-Well, my quick take is that they are already usable in some scenarios, but not yet ready for majority.
+[click] Well, my quick take is that they are already usable in some scenarios, but not yet ready for majority.
 
 The advantages of native linters are obvious, [click] they are very fast, for tools like biome and oxlint, they will providing a unified toolchain for formatting, linting, and bundling etc.
 
-[click] And also since native languages can leverage multiple threading, it would be more efficient to lint multiple files at the same time.
+And also since native languages can leverage multiple threading, it would be more efficient to lint multiple files at the same time.
 
-[click] On the other hand, the current limitations are that they are not very extensible, [click] they lack of the powerful plugin system, [click] they lack of the rich ecosystem. Also since the parsers are implemented in native languages, most of them currently only support JavaScript and TypeScript, with very limited support for custom languages like Vue and Svelte. [click] And also, they usually requires a static JSON config format, which is more like the legacy ESLint config, that don't have the great flexibility we mentioned today.
+[click] On the other hand, the current limitations are that they are not very extensible, they lack of the powerful plugin system, and lack of the rich ecosystem. Also since the parsers are implemented in native languages, most of them currently only support JavaScript and TypeScript, with very limited support for custom languages like Vue and Svelte. And also, they usually requires a static JSON config format, which is more like the legacy ESLint config, that don't have the great flexibility we mentioned today.
 -->
 
 ---
@@ -1030,7 +1053,7 @@ But looking forward,
 
 [click] But before they reach feature parity with ESLint, I think they will coexist for quite a while.
 
-[click] For better integration, I expect either ESLint can be integrated into native linters, or native linters can be integrated into ESLint during the transition period.
+[click] For better integration, I expect either ESLint can be integrated into native linters, or vice versa during the transition period.
 
 [click] Also, since type-aware linting is one of the biggest bottlenecks in terms of performance, with the new `tsgo` compiler, I hope it will help native linters maintain good performance even with type-aware linting.
 

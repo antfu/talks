@@ -13,7 +13,6 @@ export default mergeConfigs([
         fonts: {
           mono: 'DM Mono',
           sans: 'Noto Sans SC',
-          strong: 'Rubik Iso',
           fast: 'Ubuntu',
           hand: 'Caveat',
         },
