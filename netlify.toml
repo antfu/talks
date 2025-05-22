@@ -1,10 +1,12 @@
+
 [build]
 publish = "dist"
 command = "pnpm run build"
 
 [build.environment]
-NODE_VERSION = "23"
+NODE_VERSION = "20"
 PLAYWRIGHT_BROWSERS_PATH = "0"
+
 
 [[redirects]]
 from = "/2021/composable-vue/pdf"
@@ -684,6 +686,31 @@ status = 301
 [[redirects]]
 from = "/2024/webconf-tw/*"
 to = "/2024/webconf-tw/index.html"
+status = 200
+
+[[redirects]]
+from = "/2025/tskaigi/pdf"
+to = "https://github.com/antfu/talks/blob/main/2025-05-23/2025-05-23-tskaigi-en.pdf?raw=true"
+status = 302
+
+[[redirects]]
+from = "/2025-05-23/pdf"
+to = "https://github.com/antfu/talks/blob/main/2025-05-23/2025-05-23-tskaigi-en.pdf?raw=true"
+status = 302
+
+[[redirects]]
+from = "/2025/tskaigi/src"
+to = "https://github.com/antfu/talks/tree/main/2025-05-23"
+status = 302
+
+[[redirects]]
+from = "2025-05-23"
+to = "https://talks.antfu.me/2025/tskaigi/"
+status = 301
+
+[[redirects]]
+from = "/2025/tskaigi/*"
+to = "/2025/tskaigi/index.html"
 status = 200
 
 [[redirects]]

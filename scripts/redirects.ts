@@ -74,7 +74,7 @@ publish = "dist"
 command = "pnpm run build"
 
 [build.environment]
-NODE_VERSION = "20"
+NODE_VERSION = "22"
 PLAYWRIGHT_BROWSERS_PATH = "0"
 
 ${redirects}
