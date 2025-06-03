@@ -5,6 +5,7 @@ colorSchema: dark
 transition: fade-out
 mdc: true
 layout: center
+lang: ja
 glowSeed: 4
 title: Vue と WebComponents で作る Agnostic UI
 addons:
@@ -12,6 +13,17 @@ addons:
 ---
 
 ![](/af-logo-animated.svg){.w-30.mt--10.mb-5}
+
+<!-- 
+
+みなさん、こんばんは！
+
+実は、今日は僕にとって初めての日本語での登壇です。
+
+たくさん間違えるかもしれませんが、どうか温かく見守っていただけると嬉しいです。
+
+どうぞよろしくお願いいたします。
+-->
 
 ---
 layout: intro
@@ -81,12 +93,38 @@ layout: cover
 
 ---
 
-# 目標
+# 背景ストーリー
 
+Nuxt DevTools Floating Panel
+
+<div grid="~ cols-[1.4fr_max-content_1fr] gap-8 items-center justify-center" mt-10>
+
+  <div v-click flex="~ col gap-4 items-center">
+    <span text-green text-xl>希望のUI</span>
+    <img src="/expected.png" alt="Expected" shadow-2xl w-100 shadow-none border="~ main rounded-lg" />
+  </div>
+
+  <div i-ph-caret-right text-xl v-click="2" />
+
+  <div flex="~ col gap-4 items-center" v-click>
+    <span text-orange text-xl>ユーザーが実際に見るUI</span>
+    <img src="/broken-1.png" alt="Broken 1" shadow-2xl w-60 shadow-none border="~ main rounded-lg" />
+    <img src="/broken-2.png" alt="Broken 2" shadow-2xl w-60 shadow-none border="~ main rounded-lg" />
+  </div>
+
+</div>
 
 ---
 
-# Style Isolation スタイルの隔離
+# スタイルの隔離
+
+- Nuxt DevTools 見たいの Embedded にとっては、スタイルの隔離が重要です
+
+- Different UI components shares the same webpage as well as the same CSS selectors.
+
+- In some cases, the styles may interfere with each other.
+
+- Luckily, Vue has a builtin solution for this: `<style scoped>`.
 
 ---
 
@@ -146,13 +184,13 @@ layout: cover
 
 
 <div grid="~ cols-2 gap-2" py4>
-  <div v-click flex="~ col gap-4 " p4 rounded bg-green:15 text-green1>
+  <div v-click flex="~ col gap-4 " p4 rounded-xl bg-green:15 text-green1 border="~ green:30">
     <div text-5xl i-mdi-checkbox-blank-circle-outline inline-block text-green />
     <div>内部の CSS の漏洩を防ぐ </div>
   </div>
-  <div v-click flex="~ col gap-4 " p4 rounded bg-rose:15 text-rose1>
-    <div text-5xl i-mdi-selection-ellipse-arrow-inside inline-block text-rose />
-    <div>外部の CSS の侵入は<span class="text-rose">防げない</span></div>
+  <div v-click flex="~ col gap-4 " p4 rounded-xl bg-orange:15 text-orange1 border="~ orange:30">
+    <div text-5xl i-mdi-selection-ellipse-arrow-inside inline-block text-orange />
+    <div>外部の CSS の侵入は<span class="text-orange">防げない</span></div>
   </div>
 </div>
 
@@ -164,13 +202,6 @@ layout: cover
 
 
 </v-clicks>
-
----
-layout: fact
----
-
-# 解決策
-
 
 ---
 layout: fact
@@ -229,27 +260,143 @@ Shadow DOM は、WebComponents の最大の特徴です
 <img src="/shadow-dom.png" alt="Shadow DOM" shadow-2xl w-150 shadow-none />
 
 <!--
+Shadow DOM は、WebComponents の最大の特徴と思います。
 
+Shadow DOM is something that that makes a subtree acting like a single element on the main document tree. While can still have a complex DOM tree inside, it's isolated from the main document tree.
 
+With Shadow DOM, we can actually achieve the real style isolation.
 -->
 
 --- 
 
 # Style Isolation
 
+- Currently, only Shadow DOM can provide the real style isolation.
+- And only way to create a shadow DOM is to use WebComponents.
+- So if we want to do style isolation, we have to use WebComponents.
+- (Actually, iframe can also provide style isolation, but it's too heavy for our case)
+
+<!-- 
+So the reason to use WebComponents is that, only Shadow DOM can provide the real style isolation, while the only way to create a shadow DOM is to use WebComponents.
+
+So in our specific case, we have to use WebComponents to achieve the real style isolation.
+-->
+
 ---
+class: p0!
+---
+
+<script lang="ts" setup>
+import { watch } from 'vue'
+
+watch(() => $clicks.value, (val) => {
+  const el = document.getElementById('counter-element')
+  if (el) {
+    if (val === 1) {
+      el.scrollTo({ top: el.scrollHeight, behavior: 'smooth' })
+    }
+    else if (val === 0) {
+      el.scrollTo({ top: 0, behavior: 'instant' })
+    }
+  }
+}, { immediate: true })
+</script>
+
+<div grid="~ cols-2 gap-8" h-full>
+
+<div relative h-full of-hidden>
+
+<div :class="$clicks > 1 ? 'blur-1 op85' : ''" p4 transition-all h-full of-auto id="counter-element">
+
+```ts
+class CounterElement extends HTMLElement {
+  constructor() {
+    super();
+    this.count = 0;
+
+    // Attach a shadow DOM tree to this element.
+    this.attachShadow({ mode: 'open' });
+
+    // Initial render
+    this.render();
+  }
+
+  // Increment the counter
+  increment() {
+    this.count++;
+    this.render();
+  }
+
+  // Render the template
+  render() {
+    this.shadowRoot.innerHTML = `
+      <style>
+        button {
+          font-size: 1.2em;
+          padding: 0.5em 1em;
+        }
+        span {
+          margin-left: 1em;
+          font-weight: bold;
+        }
+      </style>
+      <button id="increment">Increment</button>
+      <span>${this.count}</span>
+    `;
+
+    // Set up the event listener again after re-render
+    this.shadowRoot.querySelector('#increment').onclick = () => this.increment();
+  }
+}
+
+// Define the custom element
+customElements.define('counter-element', CounterElement);
+```
+
+</div>
+
+<div v-click="2" absolute inset-0 text-3em flex lang="ja" font-jp>
+  <div h-140 w-1 border="l-3 red5 op50" absolute left="1/2" top="0" rotate-30 />
+  <div h-140 w-1 border="l-3 red5 op50" absolute left="1/2" top="0" rotate--30 />
+  <div ma rotate--10 text-red5 text-shadow>
+    めんどくさい！
+  </div>
+</div>
+
+</div>
+
+<div py10 pr8 v-click="3" flex="~ col gap-2">
 
 # Developer Experience
 
-WebComponents を使わざるを得ないとしても、最高の開発者体験を維持したい
+WebComponents を使わざるを得ないとしても、最高の開発者体験を**維持したい**
 
-Vue SFC と UnoCSS を使ってスタイリングしたい
+<span  i-logos-vue inline-block mb--0.5 /><span text-green> Vue SFC</span> と <span i-logos-unocss brightness-150 inline-block  mb--0.5 /><span text-pink> UnoCSS</span> を使いたい！
 
+```vue [Counter.vue]
+<script setup lang="ts">
+import { ref } from 'vue'
+const count = ref(0)
+</script>
 
+<template>
+  <button @click="count++" class="border border-gray-300 rounded-md p-2">
+    Increment
+  </button>
+  <span>{{ count }}</span>
+</template>
+```
+
+</div>
+</div>
 
 ---
 
 # Setup
+
+1. Wrap Vue SFC as WebComponents
+2. Configure bundler using `unplugin-vue`
+3. Construct UnoCSS styles
 
 ---
 
@@ -269,10 +416,10 @@ glowY: 120
 ありがとうございます！
 </h1>
 
-Slides available at [antfu.me](https://antfu.me)
+登壇資料は [antfu.me](https://antfu.me) で公開しています
 
 <!--
-That's all for my talk today. You can find the slides on my website antfu.me.
+以上です。登壇資料は antfu.me で公開しています。
 
-ありがとうございます！ このあとのカンファレンスもお楽しみください。
+ありがとうございます！
 -->
