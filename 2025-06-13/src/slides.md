@@ -118,13 +118,13 @@ Nuxt DevTools Floating Panel
 
 # スタイルの隔離
 
-- Nuxt DevTools 見たいの Embedded にとっては、スタイルの隔離が重要です
+- Nuxt DevTools のような埋め込みコンポーネントにとって、スタイルの隔離は重要です
 
-- Different UI components shares the same webpage as well as the same CSS selectors.
+- 異なるUIコンポーネントは同じウェブページとCSSセレクターを共有します
 
-- In some cases, the styles may interfere with each other.
+- 場合によっては、スタイルが互いに干渉する可能性があります
 
-- Luckily, Vue has a builtin solution for this: `<style scoped>`.
+- 幸いなことに、Vueにはこれに対する組み込みの解決策があります：`<style scoped>`
 
 ---
 
@@ -198,7 +198,7 @@ Nuxt DevTools Floating Panel
 
 - すべてのコンポーネントが scoped なプロジェクトには最適
 
-- 親スタイルを制御できない、embedded なプロジェクトには最適ではない
+- 親スタイルを制御できない、埋め込みプロジェクトには最適ではない
 
 
 </v-clicks>
@@ -262,24 +262,12 @@ Shadow DOM は、WebComponents の最大の特徴です
 <!--
 Shadow DOM は、WebComponents の最大の特徴と思います。
 
-Shadow DOM is something that that makes a subtree acting like a single element on the main document tree. While can still have a complex DOM tree inside, it's isolated from the main document tree.
+Shadow DOMは、サブツリーをメインドキュメントツリー上の単一の要素のように動作させるものです。
+内部では複雑なDOMツリーを持つことができますが、メインドキュメントツリーからは隔離されています。
 
-With Shadow DOM, we can actually achieve the real style isolation.
--->
+Shadow DOM により、真のスタイル隔離を実現することができます。
 
---- 
-
-# Style Isolation
-
-- Currently, only Shadow DOM can provide the real style isolation.
-- And only way to create a shadow DOM is to use WebComponents.
-- So if we want to do style isolation, we have to use WebComponents.
-- (Actually, iframe can also provide style isolation, but it's too heavy for our case)
-
-<!-- 
-So the reason to use WebComponents is that, only Shadow DOM can provide the real style isolation, while the only way to create a shadow DOM is to use WebComponents.
-
-So in our specific case, we have to use WebComponents to achieve the real style isolation.
+Because WebComponents is the only way to create a shadow DOM, we have to use it.
 -->
 
 ---
