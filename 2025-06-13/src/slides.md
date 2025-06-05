@@ -64,7 +64,7 @@ Working at {NuxtLabs}<br>
 まずは自己紹介をさせてください。僕はAnthonyと申します。Vite、Vue、Nuxtのコアメンバーとして活動しており、Vitest、Slidev、Type Challenges、UnoCSS、VueUseなどのオープンソースプロジェクトを作りました。
 また、ESLint Stylistic、Shiki、Twoslashのメンテナーもしています。今はNuxtLabsで働いています。
 
-僕のウェブサイト（antfu.me）やGitHubで 見つけられ ますし、日本語用のTwitterアカウント（@antfujp）もあります。
+僕のウェブサイト（antfu.me）やGitHubで見つけられますし、日本語用のTwitterアカウント（@antfujp）もあります。
 -->
 
 ---
@@ -380,22 +380,22 @@ const count = ref(0)
 
 ---
 
-# Setup
+# セットアップ
 
-1. Wrap Vue SFC as WebComponents
-2. Construct UnoCSS styles as a string
-3. Configure bundler using `unplugin-vue`
+1. Vue SFCをWebComponentsに変換する
+2. UnoCSSスタイルを文字列として構築する
+3. `unplugin-vue`でバンドラーを設定する
 
 ---
 
-# Convert Vue SFC to WebComponents
+# Vue SFCをWebComponentsに変換する
 
 ```ts [MyCounter.ts]
 import { defineCustomElement } from 'vue'
 import css from '../.generated/css'
 import Component from './MyCounter.vue'
 
-// Convert the Vue SFC to a WebComponent
+// Vue SFCをWebComponentに変換
 export const MyCounter = defineCustomElement(
   Component,
   {
@@ -404,27 +404,25 @@ export const MyCounter = defineCustomElement(
   },
 )
 
-// Register the component
+// コンポーネントを登録
 customElements.define('my-counter', MyCounter)
 ```
 
 <!--
-Firstly, we need to convert the Vue component to a WebComponent.
+まず、VueコンポーネントをWebComponentに変換する必要があります。
 
-We can import the Vue SFC and use the builtin `defineCustomElement` function to convert it to a WebComponent.
+Vue SFCをインポートして、`defineCustomElement`を使ってWebComponentに変換できます。
 
-Since we want the style isolation, we need to set `shadowRoot: true` and pass the styles as a string.
+スタイルの隔離が必要なので、`shadowRoot: true`を設定し、スタイルを文字列として渡します。
 
-And then we can register the component using `customElements.define`.
+そして、`customElements.define`を使ってコンポーネントを登録します。
 
-The handling of the styles is a bit different from the normal pipeline. 
-
-Here we import the css from `.generated/css.ts`. Where does it come from? Let's see the next slide.
+ここでは`.generated/css.ts`からCSSをインポートしています。これはどこから来るのでしょうか？次のスライドで見てみましょう。
 -->
 
 ---
 
-# Build UnoCSS styles as a string
+# UnoCSSスタイルを文字列として構築する
 
 ```ts [scripts/build-css.ts]
 import fs from 'node:fs/promises'
@@ -436,7 +434,7 @@ export async function buildCSS() {
 
   const uno = await createGenerator(config)
 
-  // Extract UnoCSS tokens from the files
+  // ファイルからUnoCSSトークンを抽出
   const tokens = new Set<string>()
   for (const file of files) {
     const content = await fs.readFile(file, 'utf-8')
@@ -445,64 +443,73 @@ export async function buildCSS() {
 
   const { css } = await uno.generate(tokens)
 
-  // Write the CSS to a file as a string
+  // CSSを文字列としてファイルに書き出す
   await fs.writeFile('.generated/css.ts', `export default ${JSON.stringify(css)}`)
 }
 ```
 
 <!-- 
-Since UnoCSS generate the css by usage, we need to read those files and feed them into UnoCSS manually.
+UnoCSSは使用状況に応じてCSSを生成するので、ファイルを読み込んでUnoCSSに手動で渡す必要があります。
 
-And then we save the css as a default export string to a file.
+そして、CSSをデフォルトエクスポートの文字列としてファイルに保存します。
 
-This is a bit too detailed to explain step by step, you can check the code in the repo later.
+これは細かすぎるので、詳しい説明は省きます。後でリポジトリのコードを確認してください。
 -->
 
 ---
 
-# Bundling
+# バンドリング
+
+`unplugin`がサポートする任意のバンドラーも使えます
 
 ```ts [tsdown.config.ts]
 import { defineConfig } from 'tsdown'
 import Vue from 'unplugin-vue/rolldown'
 import { buildCSS } from './scripts/build-css'
 
-// Build the CSS before the bundling
+// バンドリングの前にCSSをビルド
 await buildCSS()
 
 export default defineConfig({
   entry: ['src/index.ts'],
   plugins: [
-    // Make tsdown understand `.vue` files
+    // tsdownに`.vue`ファイルを理解させる
     Vue(),
   ],
 })
 ```
 
 <!--
-And finally, we can setup the bundling using `tsdown` or actually any bundler that supported by `unplugin`.
+最後に、`tsdown`または`unplugin`がサポートする任意のバンドラーを使って設定できます。ここでは例として`tsdown`を使っています。
 
-Then we use `unplugin-vue` to bundle the Vue components.
+そして`unplugin-vue`を使って、Vueコンポーネントをバンドルします。
+
+ファイル内で、バンドリングの前に`buildCSS`を呼び出して、最新のCSS文字列を取得できます。
 -->
-
----
-
-With these, we can author our components just like we would nomrally do in a Vue app.
 
 ---
 layout: fact
 ---
 
-<Repo name="antfu/starter-vue-webcomponent-uno" />
+<h1 font-jp important-font-400 important-text-4em>最高の開発者体験</h1>
 
-<!--
-
-詳しいこととコードについては、ぜひこのリポジトリをご覧ください
-
-antfu/starter-vue-webcomponent-uno
-
+<!-- 
+これで、普段Vueアプリを開発する時と同じ開発者体験で、WebComponentsを作成できるようになりました。
 -->
 
+---
+layout: fact
+---
+
+<div scale-150>
+<Repo name="antfu/starter-vue-webcomponent-uno" />
+</div>
+
+<!--
+詳しい情報とコードについては、ぜひこのリポジトリをご覧ください
+
+antfu/starter-vue-webcomponent-uno
+-->
 
 ---
 layout: intro
