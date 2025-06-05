@@ -262,12 +262,12 @@ Shadow DOM は、WebComponents の最大の特徴です
 <!--
 Shadow DOM は、WebComponents の最大の特徴と思います。
 
-Shadow DOMは、サブツリーをメインドキュメントツリー上の単一の要素のように動作させるものです。
-内部では複雑なDOMツリーを持つことができますが、メインドキュメントツリーからは隔離されています。
+Shadow DOMは、サブツリーをメインドキュメントツリーの一つの要素のようにします。
+中では複雑なDOMツリーを使えますが、メインドキュメントツリーからは分かれています。
 
 Shadow DOM により、真のスタイル隔離を実現することができます。
 
-Because WebComponents is the only way to create a shadow DOM, we have to use it.
+WebComponentsだけがShadow DOMを作れるので、これを使う必要があります。
 -->
 
 ---
@@ -278,7 +278,7 @@ class: p0!
 import { watch } from 'vue'
 
 watch(() => $clicks.value, (val) => {
-  const el = document.getElementById('counter-element')
+  const el = document.getElementById('my-counter')
   if (el) {
     if (val === 1) {
       el.scrollTo({ top: el.scrollHeight, behavior: 'smooth' })
@@ -294,10 +294,10 @@ watch(() => $clicks.value, (val) => {
 
 <div relative h-full of-hidden>
 
-<div :class="$clicks > 1 ? 'blur-1 op85' : ''" p4 transition-all h-full of-auto id="counter-element">
+<div :class="$clicks > 1 ? 'blur-1 op85' : ''" p4 transition-all h-full of-auto id="my-counter">
 
 ```ts
-class CounterElement extends HTMLElement {
+class MyCounter extends HTMLElement {
   constructor() {
     super();
     this.count = 0;
@@ -338,7 +338,7 @@ class CounterElement extends HTMLElement {
 }
 
 // Define the custom element
-customElements.define('counter-element', CounterElement);
+customElements.define('my-counter', MyCounter);
 ```
 
 </div>
@@ -347,7 +347,7 @@ customElements.define('counter-element', CounterElement);
   <div h-140 w-1 border="l-3 red5 op50" absolute left="1/2" top="0" rotate-30 />
   <div h-140 w-1 border="l-3 red5 op50" absolute left="1/2" top="0" rotate--30 />
   <div ma rotate--10 text-red5 text-shadow>
-    めんどくさい！
+    面倒くさい！
   </div>
 </div>
 
@@ -355,13 +355,13 @@ customElements.define('counter-element', CounterElement);
 
 <div py10 pr8 v-click="3" flex="~ col gap-2">
 
-# Developer Experience
+# 開発者体験
 
-WebComponents を使わざるを得ないとしても、最高の開発者体験を**維持したい**
+WebComponents を使わざるを得ないとしても、<br>最高の開発者体験を**維持したい**
 
 <span  i-logos-vue inline-block mb--0.5 /><span text-green> Vue SFC</span> と <span i-logos-unocss brightness-150 inline-block  mb--0.5 /><span text-pink> UnoCSS</span> を使いたい！
 
-```vue [Counter.vue]
+```vue [MyCounter.vue]
 <script setup lang="ts">
 import { ref } from 'vue'
 const count = ref(0)
@@ -383,14 +383,125 @@ const count = ref(0)
 # Setup
 
 1. Wrap Vue SFC as WebComponents
-2. Configure bundler using `unplugin-vue`
-3. Construct UnoCSS styles
+2. Construct UnoCSS styles as a string
+3. Configure bundler using `unplugin-vue`
 
 ---
 
-# Template
+# Convert Vue SFC to WebComponents
 
+```ts [MyCounter.ts]
+import { defineCustomElement } from 'vue'
+import css from '../.generated/css'
+import Component from './MyCounter.vue'
 
+// Convert the Vue SFC to a WebComponent
+export const MyCounter = defineCustomElement(
+  Component,
+  {
+    shadowRoot: true,
+    styles: [css],
+  },
+)
+
+// Register the component
+customElements.define('my-counter', MyCounter)
+```
+
+<!--
+Firstly, we need to convert the Vue component to a WebComponent.
+
+We can import the Vue SFC and use the builtin `defineCustomElement` function to convert it to a WebComponent.
+
+Since we want the style isolation, we need to set `shadowRoot: true` and pass the styles as a string.
+
+And then we can register the component using `customElements.define`.
+
+The handling of the styles is a bit different from the normal pipeline. 
+
+Here we import the css from `.generated/css.ts`. Where does it come from? Let's see the next slide.
+-->
+
+---
+
+# Build UnoCSS styles as a string
+
+```ts [scripts/build-css.ts]
+import fs from 'node:fs/promises'
+import { createGenerator } from 'unocss'
+import config from '../uno.config'
+
+export async function buildCSS() {
+  const files = await fs.glob(['components/**/*.vue'])
+
+  const uno = await createGenerator(config)
+
+  // Extract UnoCSS tokens from the files
+  const tokens = new Set<string>()
+  for (const file of files) {
+    const content = await fs.readFile(file, 'utf-8')
+    await uno.applyExtractors(content, file, tokens)
+  }
+
+  const { css } = await uno.generate(tokens)
+
+  // Write the CSS to a file as a string
+  await fs.writeFile('.generated/css.ts', `export default ${JSON.stringify(css)}`)
+}
+```
+
+<!-- 
+Since UnoCSS generate the css by usage, we need to read those files and feed them into UnoCSS manually.
+
+And then we save the css as a default export string to a file.
+
+This is a bit too detailed to explain step by step, you can check the code in the repo later.
+-->
+
+---
+
+# Bundling
+
+```ts [tsdown.config.ts]
+import { defineConfig } from 'tsdown'
+import Vue from 'unplugin-vue/rolldown'
+import { buildCSS } from './scripts/build-css'
+
+// Build the CSS before the bundling
+await buildCSS()
+
+export default defineConfig({
+  entry: ['src/index.ts'],
+  plugins: [
+    // Make tsdown understand `.vue` files
+    Vue(),
+  ],
+})
+```
+
+<!--
+And finally, we can setup the bundling using `tsdown` or actually any bundler that supported by `unplugin`.
+
+Then we use `unplugin-vue` to bundle the Vue components.
+-->
+
+---
+
+With these, we can author our components just like we would nomrally do in a Vue app.
+
+---
+layout: fact
+---
+
+<Repo name="antfu/starter-vue-webcomponent-uno" />
+
+<!--
+
+詳しいこととコードについては、ぜひこのリポジトリをご覧ください
+
+antfu/starter-vue-webcomponent-uno
+
+-->
 
 
 ---
