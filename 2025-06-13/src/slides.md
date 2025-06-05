@@ -20,7 +20,7 @@ addons:
 今日は僕にとって初めての日本語での登壇です。
 たくさん間違えるかもしれませんが、頑張ります！
 
-どうぞよろしくお願いいたします。
+どうぞよろしくお願いします。
 -->
 
 ---
@@ -61,7 +61,7 @@ Working at {NuxtLabs}<br>
 <!--
 まずは自己紹介をさせてください。僕はAnthonyと申します。
 
-ご覧に通り、僕はVite、Vue、Nuxtのコアメンバーとして活動しており、Vitest、Slidev、Type Challenges、UnoCSS、VueUseなどのオープンソースプロジェクトを作りました。
+ご覧の通り、僕はVite、Vue、Nuxtのコアメンバーとして活動しており、Vitest、Slidev、Type Challenges、UnoCSS、VueUseなどのオープンソースプロジェクトを作りました。
 また、ESLint Stylistic、Shiki、Twoslashのメンテナーもしています。今はNuxtLabsで働いています。
 
 僕のウェブサイト（antfu.me）やGitHubで見つけられますし、日本語用のTwitterアカウント（@antfujp）もあります。
@@ -119,7 +119,7 @@ Nuxt DevTools Floating Panel
 
 この発表のアイデアは、Nuxt DevToolsの開発から生まれました。Nuxt DevToolsは、アプリの中に浮かぶパネルとして提供されています。
 
-このパネルを追加する時、スタイルを適用する必要があります。設計上は左のようになるはずですが、時々ユーザーには右のよう見えることがあります。
+このパネルを追加する時、スタイルを適用する必要があります。設計上は左のようになるはずですが、時々ユーザーには右のように見えることがあります。
 
 これは、ユーザーのアプリのスタイルがパネルのスタイルに影響を与える可能性があるためです。
 
@@ -292,7 +292,7 @@ layout: fact
 
 <!--
 
-WebComponents について、実は、有名な開発者たちが書いたこういう投稿、見たことがあるかもしれません。
+WebComponents について、実は、有名な開発者たちが書いたこういう投稿を見たことがあるかもしれません。
 
 例えば、Svelte の作者の Rich Harris は、なんで WebComponents を使わないか説明しています。
 
@@ -307,7 +307,7 @@ WebComponents について、実は、有名な開発者たちが書いたこう
 
 しかし、それらの話は今日のテーマではありません。
 
-欠点があっても、今日も WebComponents を紹介したいと思います。
+欠点があっても、今日は WebComponents を紹介したいと思います。
 
 どうして WebComponents を使うのか？
 
