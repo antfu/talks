@@ -370,20 +370,20 @@ class MyCounter extends HTMLElement {
     super()
     this.count = 0
 
-    // Attach a shadow DOM tree to this element.
+    // この要素にシャドウDOMツリーをアタッチ
     this.attachShadow({ mode: 'open' })
 
-    // Initial render
+    // 初期レンダリング
     this.render()
   }
 
-  // Increment the counter
+  // カウンターをインクリメント
   increment() {
     this.count++
     this.render()
   }
 
-  // Render the template
+  // テンプレートをレンダリング
   render() {
     this.shadowRoot.innerHTML = `
       <style>
@@ -400,12 +400,12 @@ class MyCounter extends HTMLElement {
       <span>${this.count}</span>
     `
 
-    // Set up the event listener again after re-render
+    // 再レンダリング後にイベントリスナーを再設定
     this.shadowRoot.querySelector('#increment').onclick = () => this.increment()
   }
 }
 
-// Define the custom element
+// カスタム要素を定義
 customElements.define('my-counter', MyCounter)
 ```
 
@@ -519,7 +519,7 @@ export async function buildCSS() {
 ```
 
 <!--
-UnoCSSは使用状況に応じてCSSを生成するので、ファイルを読み込んでUnoCSSに手動で渡す必要があります。
+UnoCSSは使用状況に応じてCSSを生成するため、ファイルを読み込んでUnoCSSに手動で渡す必要があります。
 
 そして、CSSをデフォルトエクスポートの文字列としてファイルに保存します。
 
@@ -559,14 +559,44 @@ export default defineConfig({
 
 
 ---
+clicks: 5
+---
 
-# セットアップ
-<!-- 
-1. Vue SFCをWebComponentsに変換する
-2. UnoCSSスタイルを文字列として構築する
-3. `unplugin-vue`でバンドラーを設定する -->
+# Workflow
 
-<SetupGraph h-100 w-200 />
+<div grid="~ cols-[max-content_1fr] gap-4">
+
+<SetupGraph h-100 w-80 />
+
+<div>
+<v-clicks>
+
+1. Vue SFC を WebComponents に変換する
+
+2. `index.ts` でコンポーネントを再エクスポートする
+
+3. `tsdown` を使ってバンドルする
+
+4. `tsdown` が UnoCSS をトリガーして CSS 文字列を生成する
+
+5. パッケージにバンドルする
+
+</v-clicks>
+</div>
+
+</div>
+
+<!--
+For the workflow, we first use `defineCustomElement` to convert the Vue SFC to WebComponents.
+
+Then we re-export the components in `index.ts` to make them available in the package.
+
+Then we use `tsdown` to bundle the package.
+
+In side the `tsdown` config, we will trigger the UnoCSS to generate the CSS string before the bundling.
+
+And finally `tsdown` will bundle the package into pure JavaScript to render the agnostic UI.
+-->
 
 ---
 layout: fact
