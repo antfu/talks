@@ -564,11 +564,11 @@ clicks: 5
 
 # Workflow
 
-<div grid="~ cols-[max-content_1fr] gap-4">
+<div grid="~ cols-[max-content_1fr] gap-8">
 
 <SetupGraph h-100 w-80 />
 
-<div>
+<div flex="~ col gap-2 justify-center">
 <v-clicks>
 
 1. Vue SFC を WebComponents に変換する
