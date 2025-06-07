@@ -91,6 +91,12 @@ layout: cover
   <div text-xs opacity-75>June 13, 2025</div>
 </div>
 
+<!--
+今日の発表のテーマは　Vue と WebComponents で、作る Agnostic UI
+
+後で説明する！
+-->
+
 ---
 
 # 背景ストーリー
@@ -208,8 +214,7 @@ SFCで`<style scoped>`を使うと、スタイルはそのコンポーネント�
 
 ---
 
-# `<style scoped>` の問題点 
-
+# `<style scoped>` の問題点
 
 <div grid="~ cols-2 gap-2" py4>
   <div v-click flex="~ col gap-4 " p4 rounded-xl bg-green:15 text-green1 border="~ green:30">
@@ -242,7 +247,7 @@ button[data-v-7ba5bd90] {
 ```css [some-user-style.css]
 button {
   /* This will affect all the buttons in the page */
-  color: red !important; 
+  color: red !important;
 }
 ```
 
@@ -269,7 +274,7 @@ layout: fact
 
 # WebComponents
 
-<!-- 
+<!--
 だから、WebComponentsが必要になります。
  -->
 
@@ -362,20 +367,20 @@ watch(() => $clicks.value, (val) => {
 ```ts
 class MyCounter extends HTMLElement {
   constructor() {
-    super();
-    this.count = 0;
+    super()
+    this.count = 0
 
     // Attach a shadow DOM tree to this element.
-    this.attachShadow({ mode: 'open' });
+    this.attachShadow({ mode: 'open' })
 
     // Initial render
-    this.render();
+    this.render()
   }
 
   // Increment the counter
   increment() {
-    this.count++;
-    this.render();
+    this.count++
+    this.render()
   }
 
   // Render the template
@@ -393,15 +398,15 @@ class MyCounter extends HTMLElement {
       </style>
       <button id="increment">Increment</button>
       <span>${this.count}</span>
-    `;
+    `
 
     // Set up the event listener again after re-render
-    this.shadowRoot.querySelector('#increment').onclick = () => this.increment();
+    this.shadowRoot.querySelector('#increment').onclick = () => this.increment()
   }
 }
 
 // Define the custom element
-customElements.define('my-counter', MyCounter);
+customElements.define('my-counter', MyCounter)
 ```
 
 </div>
@@ -431,7 +436,7 @@ const count = ref(0)
 </script>
 
 <template>
-  <button @click="count++" class="border border-gray-300 rounded-md p-2">
+  <button class="border border-gray-300 rounded-md p-2" @click="count++">
     Increment
   </button>
   <span>{{ count }}</span>
@@ -441,13 +446,15 @@ const count = ref(0)
 </div>
 </div>
 
----
+<!--
+But if you have ever worked with WebComponents, you must know how complicated it is to work with. You have to manage the data update yourself, write CSS in string without syntax highlighting and autocompletions.
 
-# セットアップ
+[click] It doesn't feel it's worth it to jump from Vue to such trouble, only to get the style isolation.
 
-1. Vue SFCをWebComponentsに変換する
-2. UnoCSSスタイルを文字列として構築する
-3. `unplugin-vue`でバンドラーを設定する
+[click] 面倒くさいね！
+
+So we definitely want the best of the both worlds. We want to keep using the tools we are familiar with and to have the developer experience. We want to use Vue for the logic and UnoCSS for styling. We want something on the right instead on the left.
+-->
 
 ---
 
@@ -511,7 +518,7 @@ export async function buildCSS() {
 }
 ```
 
-<!-- 
+<!--
 UnoCSSは使用状況に応じてCSSを生成するので、ファイルを読み込んでUnoCSSに手動で渡す必要があります。
 
 そして、CSSをデフォルトエクスポートの文字列としてファイルに保存します。
@@ -550,13 +557,24 @@ export default defineConfig({
 ファイル内で、バンドリングの前に`buildCSS`を呼び出して、最新のCSS文字列を取得できます。
 -->
 
+
+---
+
+# セットアップ
+<!-- 
+1. Vue SFCをWebComponentsに変換する
+2. UnoCSSスタイルを文字列として構築する
+3. `unplugin-vue`でバンドラーを設定する -->
+
+<SetupGraph h-100 w-200 />
+
 ---
 layout: fact
 ---
 
 <h1 font-jp important-font-400 important-text-4em>最高の開発者体験</h1>
 
-<!-- 
+<!--
 これで、普段Vueアプリを開発する時と同じ開発者体験で、WebComponentsを作成できるようになりました。
 -->
 

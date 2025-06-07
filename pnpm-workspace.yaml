@@ -1,15 +1,15 @@
 packages:
   - '*/src'
 catalog:
-  '@antfu/eslint-config': ^4.13.2
-  '@eslint-react/eslint-plugin': ^1.50.0
-  '@eslint/config-inspector': ^1.0.2
-  '@iconify/collections': ^1.0.554
-  '@iconify/json': ^2.2.344
+  '@antfu/eslint-config': ^4.14.1
+  '@eslint-react/eslint-plugin': ^1.51.1
+  '@eslint/config-inspector': ^1.1.0
+  '@iconify/collections': ^1.0.556
+  '@iconify/json': ^2.2.346
   '@slidev/cli': ^51.8.1
   '@slidev/client': ^51.8.1
   '@slidev/theme-default': ^0.25.0
-  '@types/node': ^22.15.29
+  '@types/node': ^22.15.30
   '@types/prompts': ^2.4.9
   '@types/seedrandom': ^3.0.8
   chroma-js: ^3.1.2
@@ -24,7 +24,7 @@ catalog:
   fast-glob: ^3.3.3
   markdown-it-magic-link: ^0.1.4
   playwright-chromium: ^1.52.0
-  pnpm: ^10.11.0
+  pnpm: ^10.11.1
   prettier-plugin-slidev: ^1.0.5
   prompts: ^2.4.2
   rimraf: ^6.0.1
