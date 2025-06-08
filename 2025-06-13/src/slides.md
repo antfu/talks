@@ -92,9 +92,9 @@ layout: cover
 </div>
 
 <!--
-今日の発表のテーマは Vue と WebComponents で、作る Agnostic UI
+今日の発表のテーマは Vue と WebComponents で、作る Agnostic UI.
 
-なんの話ちょうど分からないかもしれませんけど、後で説明する！
+何を言いたいか分からなかったかもしれませんが、説明します。
 -->
 
 ---
@@ -332,8 +332,8 @@ Shadow DOM は、WebComponents の最大の特徴です
 <!--
 Shadow DOM は、WebComponents の最大の特徴と思います。
 
-サブツリーをメインドキュメントツリーの一つの要素のようにします。
-中では複雑なDOMツリーを使えますが、メインドキュメントツリーからは分かれています。
+Subtree を Main Document の一つの要素のようにします。
+中では複雑な DOM tree を使えますが、Main Document からは分かれています。
 
 Shadow DOM により、真のスタイル隔離を実現することができます。
 
@@ -449,7 +449,7 @@ const count = ref(0)
 </div>
 
 <!--
-WebComponentsを使ったことがある人は、その複雑さを知っているはずです。データの更新を自分で管理しなければならず、CSSを文字列として書く必要があり、シンタックスハイライトやオートコンプリートも使えません。
+WebComponents を使ったことがある人は、その複雑さを知っているはずです。データの更新を自分で管理しなければならず、CSSを文字列として書く必要があり、Syntax highlighting や Autocomplete も使えません。
 
 [click] スタイルの隔離だけのために、Vueからこんな面倒なものに移行するのは、あまり価値がないように感じます。
 
