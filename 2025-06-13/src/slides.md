@@ -61,7 +61,7 @@ Working at {NuxtLabs}<br>
 <!--
 まずは自己紹介をさせてください。僕はAnthonyと申します。
 
-ご覧の通り、僕はVite、Vue、Nuxtのコアメンバーとして活動しており、Vitest、Slidev、Type Challenges、UnoCSS、VueUseなどのオープンソースプロジェクトを作りました。
+ご覧の通り、僕はVite、Vue、Nuxtのコアメンバーとして活動しており、Vitest、Slidev、UnoCSS、VueUseなどのオープンソースプロジェクトを作りました。
 また、ESLint Stylistic、Shiki、Twoslashのメンテナーもしています。今はNuxtLabsで働いています。
 
 僕のウェブサイト（antfu.me）やGitHubで見つけられますし、日本語用のTwitterアカウント（@antfujp）もあります。
@@ -94,7 +94,7 @@ layout: cover
 <!--
 今日の発表のテーマは　Vue と WebComponents で、作る Agnostic UI
 
-後で説明する！
+なんの話ちょうど分からないかもしれませんけど、後で説明する！
 -->
 
 ---
@@ -447,13 +447,13 @@ const count = ref(0)
 </div>
 
 <!--
-But if you have ever worked with WebComponents, you must know how complicated it is to work with. You have to manage the data update yourself, write CSS in string without syntax highlighting and autocompletions.
+WebComponentsを使ったことがある人は、その複雑さを知っているはずです。データの更新を自分で管理しなければならず、CSSを文字列として書く必要があり、シンタックスハイライトやオートコンプリートも使えません。
 
-[click] It doesn't feel it's worth it to jump from Vue to such trouble, only to get the style isolation.
+[click] スタイルの隔離だけのために、Vueからこんな面倒なものに移行するのは、あまり価値がないように感じます。
 
-[click] 面倒くさいね！
+[click] それは面倒くさいじゃない？
 
-So we definitely want the best of the both worlds. We want to keep using the tools we are familiar with and to have the developer experience. We want to use Vue for the logic and UnoCSS for styling. We want something on the right instead on the left.
+だからこそ、両方の世界の最高の部分を手に入れたいのです。使い慣れたツールを使い続け、開発者体験も維持したい。Vueでロジックを、UnoCSSでスタイリングを実現したい。左側ではなく右側のようなものを望んでいます。
 -->
 
 ---
@@ -587,15 +587,17 @@ clicks: 5
 </div>
 
 <!--
-For the workflow, we first use `defineCustomElement` to convert the Vue SFC to WebComponents.
+ワークフローについて説明します。[click]
 
-Then we re-export the components in `index.ts` to make them available in the package.
+まず、`defineCustomElement`を使ってVue SFCをWebComponentsに変換します。[click]
 
-Then we use `tsdown` to bundle the package.
+次に、`index.ts`でコンポーネントを再エクスポートして、パッケージで利用できるようにします。[click]
 
-In side the `tsdown` config, we will trigger the UnoCSS to generate the CSS string before the bundling.
+そして、`tsdown`を使ってパッケージをバンドルします。[click]
 
-And finally `tsdown` will bundle the package into pure JavaScript to render the agnostic UI.
+`tsdown`の設定の中で、バンドリングの前にUnoCSSをトリガーしてCSS文字列を生成します。[click]
+
+最後に、`tsdown`がパッケージを純粋なJavaScriptにバンドルして、Agnostic UIをレンダリングします。
 -->
 
 ---
@@ -606,6 +608,19 @@ layout: fact
 
 <!--
 これで、普段Vueアプリを開発する時と同じ開発者体験で、WebComponentsを作成できるようになりました。
+-->
+
+---
+
+<div flex="~ col gap-2 items-center justify-center" mt20>
+  <img src="/nuxt-devtools.svg" w-100>
+  <a href="https://github.com/nuxt/devtools/pull/864" target="_blank" font-mono>nuxt/devtools#864</a>
+</div>
+
+<img src="/nuxt-pr.png" w-200 shadow border="t x main rounded-t-lg" absolute bottom-0 left-24 >
+
+<!--
+この技術はNuxt DevToolsで使用されています。興味があれば、PR番号864もご確認ください。
 -->
 
 ---
