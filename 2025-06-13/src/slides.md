@@ -61,7 +61,7 @@ Working at {NuxtLabs}<br>
 <!--
 まずは自己紹介をさせてください。僕はAnthonyと申します。
 
-僕はVite、Vue、Nuxtのコアメンバーとして活動しており、Vitest、Slidev、UnoCSS、VueUseなどのオープンソースプロジェクトを作りました。
+僕はVite、Vue、Nuxtのコアメンバーとして活動していて、Vitest、Slidev、UnoCSS、VueUseなどのオープンソースプロジェクトを作りました。
 また、ESLint Stylistic、Shiki、Twoslashのメンテナーもしています。今はNuxtLabsで働いています。
 
 僕のウェブサイト（antfu.me）やGitHubで見つけられますし、日本語用のTwitterアカウント（@antfujp）もあります。
@@ -77,10 +77,10 @@ layout: cover
     Vue と
   </span>
   <span flex="~ gap-2 items-center">
-    WebComponents で
+    WebComponents で作る
   </span>
   <span flex="~ gap-2 items-center">
-    作る Agnostic UI
+    Agnostic UI
   </span>
 </div>
 </h1>
@@ -92,9 +92,7 @@ layout: cover
 </div>
 
 <!--
-今日の発表のテーマは Vue と WebComponents で、作る Agnostic UI.
-
-何を言いたいか分からなかったかもしれませんが、説明します。
+今日の発表のテーマは Vue と WebComponents で作る Agnostic UI
 -->
 
 ---
@@ -149,7 +147,7 @@ Nuxt DevTools Floating Panel
 <!--
 スタイルの隔離について話すと、完全に制御できないウェブページで作業する時は珍しいケースです。
 
-Nuxt DevToolsの場合、僕たちのスタイルがユーザーのUIに影響を与えないようにしたいし、逆にユーザーのスタイルがパネルのスタイルに影響を与えないようにしたいです。
+Nuxt DevToolsの場合、僕たちのスタイルがユーザーのUIに影響を与えないようにしたいですし、逆にユーザーのスタイルがパネルのスタイルに影響を与えないようにしたいです。
 
 スタイルの隔離には、Vueには`style scoped`という組み込みの解決策があります。
 -->
@@ -211,7 +209,7 @@ Vueのscopedスタイルについて、仕組みを少し説明します。
 
 SFCで`<style scoped>`を使うと、スタイルはそのコンポーネントだけに影響します。
 
-本番環境では、Vueは各HTML要素にdata属性を追加し、生成されたCSSにセレクターを追加することで、スコープ効果を実現します。
+本番環境では、Vueは各HTML要素にdata属性を追加し、生成されたCSSにセレクターを追加することで、スコープを実現します。
 -->
 
 ---
@@ -261,7 +259,7 @@ button {
 <!--
 `style scoped`はスタイルの隔離を実現する素晴らしいツールですが、制限があります。
 
-data属性を注入することで、`style scoped`は内部のスタイルが外に漏れるのを防ぐことができます。しかし、考えてみると、[click]内部のスタイルが外に漏れるのを防ぐだけで、[click]外部のスタイルが中に入ってくるのを防ぐことはできません。
+data 属性を注入することで、`style scoped`は内部のスタイルが外に漏れるのを防ぐことができます。しかし、考えてみると、[click]内部のスタイルが外に漏れるのを防ぐだけで、[click]外部のスタイルが中に入ってくるのを防ぐことはできません。
 
 [click]つまり、`style scoped` はアプリ全体を制御できる場合のスタイル隔離には素晴らしいツールです。スタイルが外に漏れなければ、中に入ってくるスタイルを心配する必要はありません。
 
@@ -277,7 +275,7 @@ layout: fact
 # WebComponents
 
 <!--
-WebComponentsを使うことになります
+そこで、WebComponents の登場です。
 -->
 
 ---
@@ -298,7 +296,6 @@ layout: fact
 <img src="/wc-ryan.png" alt="WebComponents Are Not the Future" border="~ main rounded-lg" shadow-2xl w-150 absolute left-90 top-45 />
 
 <!--
-
 WebComponents について、実は、有名な開発者たちが書いたこういう投稿を見たことがあるかもしれません。
 
 例えば、Svelte の作者の Rich Harris は、なんで WebComponents を使わないか説明しています。
@@ -318,7 +315,7 @@ WebComponents について、実は、有名な開発者たちが書いたこう
 
 どうして WebComponents を使うのか？
 
-それは、Shadow DOM のおかげです。
+それは、Shadow DOM を使いたいからです。
 -->
 
 ---
@@ -330,10 +327,10 @@ Shadow DOM は、WebComponents の最大の特徴です
 <img src="/shadow-dom.png" alt="Shadow DOM" shadow-2xl w-150 shadow-none />
 
 <!--
-Shadow DOM は、WebComponents の最大の特徴と思います。
+Shadow DOM は、WebComponents の最大の特徴だと思います。
 
 Subtree を Main Document の一つの要素のようにします。
-中では複雑な DOM tree を使えますが、Main Document からは分かれています。
+その中では複雑な DOM tree を扱えますが、Main Document からは分かれています。
 
 Shadow DOM により、真のスタイル隔離を実現することができます。
 
