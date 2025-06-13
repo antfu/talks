@@ -491,7 +491,7 @@ customElements.define('my-counter', MyCounter)
 
 [click]そして、`customElements.define`を使ってコンポーネントを登録します。
 
-ここでは`.generated/css.ts`からCSSをインポートしています。これはどこから来るのでしょうか？次のスライドで見てみましょう。
+[click]ここでは`.generated/css.ts`からCSSをインポートしています。これはどこから来るのでしょうか？次のスライドで見てみましょう。
 -->
 
 ---
@@ -525,9 +525,9 @@ export async function buildCSS() {
 <!--
 UnoCSSは使用状況に応じてCSSを生成するため、ファイルを読み込んでUnoCSSに手動で渡す必要があります。
 
-そして、CSSをデフォルトエクスポートの文字列としてファイルに保存します。
+そして、CSSをエクスポートの文字列としてファイルに保存します。
 
-これは細かすぎるので、詳しい説明は省きます。後でリポジトリのコードを確認してください。
+これは<ruby>細<rt>こま</rt></ruby>かすぎるので、詳しい説明は<ruby>省<rt>はぶ</rt></ruby>きます。後でリポジトリのコードを確認してください。
 -->
 
 ---
@@ -558,7 +558,7 @@ export default defineConfig({
 
 そして`unplugin-vue`を使って、Vueコンポーネントをバンドルします。
 
-ファイル内で、バンドリングの前に`buildCSS`を呼び出して、最新のCSS文字列を取得できます。
+ファイル内で、バンドリングの前に`buildCSS`を呼び出して、最新のCSS文字列を<ruby>取得<rt>しゅとく</rt></ruby>できます。
 -->
 
 ---
@@ -600,7 +600,7 @@ clicks: 5
 
 `tsdown`の設定の中で、バンドリングの前にUnoCSSをトリガーしてCSS文字列を生成します。[click]
 
-最後に、`tsdown`がパッケージを純粋なJavaScriptにバンドルして、Agnostic UIをレンダリングします。
+最後に、`tsdown`がパッケージを純粋なJavaScriptにバンドルして、Agnostic UIを作りますた。
 -->
 
 ---
@@ -623,7 +623,7 @@ layout: fact
 <img src="/nuxt-pr.png" w-200 shadow border="t x main rounded-t-lg" absolute bottom-0 left-24 >
 
 <!--
-この技術はNuxt DevToolsで使用されています。興味があれば、PR番号864もご確認ください。
+この技術はNuxt DevToolsで使用されています。興味があれば、このPRもご確認ください。
 -->
 
 ---
