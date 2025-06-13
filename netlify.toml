@@ -4,7 +4,7 @@ publish = "dist"
 command = "pnpm run build"
 
 [build.environment]
-NODE_VERSION = "20"
+NODE_VERSION = "22"
 PLAYWRIGHT_BROWSERS_PATH = "0"
 
 
@@ -711,6 +711,31 @@ status = 301
 [[redirects]]
 from = "/2025/tskaigi/*"
 to = "/2025/tskaigi/index.html"
+status = 200
+
+[[redirects]]
+from = "/2025/v-tokyo/pdf"
+to = "https://github.com/antfu/talks/blob/main/2025-06-13/2025-06-13-v-tokyo.pdf?raw=true"
+status = 302
+
+[[redirects]]
+from = "/2025-06-13/pdf"
+to = "https://github.com/antfu/talks/blob/main/2025-06-13/2025-06-13-v-tokyo.pdf?raw=true"
+status = 302
+
+[[redirects]]
+from = "/2025/v-tokyo/src"
+to = "https://github.com/antfu/talks/tree/main/2025-06-13"
+status = 302
+
+[[redirects]]
+from = "2025-06-13"
+to = "https://talks.antfu.me/2025/v-tokyo/"
+status = 301
+
+[[redirects]]
+from = "/2025/v-tokyo/*"
+to = "/2025/v-tokyo/index.html"
 status = 200
 
 [[redirects]]

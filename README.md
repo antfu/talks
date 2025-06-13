@@ -6,7 +6,8 @@ Slides &amp; code for my talks, using [Slidev](https://sli.dev).
 
 ###### 2025
 
-- `en+jp` [The New Powerful ESLint Config with Type Safety](./2025-05-23) - TSKaigi
+- `ja` [Vue と WebComponents で作る Agnostic UI](./2025-06-13) - v-tokyo #23
+- `en+ja` [The New Powerful ESLint Config with Type Safety](./2025-05-23) - TSKaigi
 
 ###### 2024
 
@@ -15,7 +16,7 @@ Slides &amp; code for my talks, using [Slidev](https://sli.dev).
 - `en` [ESLint One for All Made Easy](./2024-12-16) - React Day Berlin
 - `zh` [ESLint One for All Made Easy](./2024-12-07) - FEDAY Xiamen
 - `en` [Journey to Nuxt Icon](./2024-11-12) - Nuxt Nation
-- `en+jp` [Yak Shaving ヤク剃り](./2024-10-19) - Vue Fes Japan
+- `en+ja` [Yak Shaving ヤク剃り](./2024-10-19) - Vue Fes Japan
 - `en` [The Progressive Path](./2024-10-03) - ViteConf
 - `zh` [The Set Theory 集合论](./2024-07-10) - Vue Shenzhen Meetup
 - `zh` [Yak Shaving 薅牛毛](./2024-07-06) - VueConf China
@@ -27,7 +28,7 @@ Slides &amp; code for my talks, using [Slidev](https://sli.dev).
 
 ###### 2023
 
-- `en+jp` [The Set Theory 集合論](./2023-10-28) - Vue Fes Japan
+- `en+ja` [The Set Theory 集合論](./2023-10-28) - Vue Fes Japan
 - `en` [Now, and the Future of Nuxt DevTools](./2023-10-18) - Nuxt Nation
 - `en` [The Set Theory](./2023-10-05) - ViteConf
 - `en` [Developer Experience with Nuxt DevTools](./2023-05-25) - StrasbourgJS

@@ -1,30 +1,30 @@
 packages:
   - '*/src'
 catalog:
-  '@antfu/eslint-config': ^4.13.2
-  '@eslint-react/eslint-plugin': ^1.49.0
-  '@eslint/config-inspector': ^1.0.2
-  '@iconify/collections': ^1.0.550
-  '@iconify/json': ^2.2.340
-  '@slidev/cli': ^51.7.1
-  '@slidev/client': ^51.7.1
+  '@antfu/eslint-config': ^4.14.1
+  '@eslint-react/eslint-plugin': ^1.52.2
+  '@eslint/config-inspector': ^1.1.0
+  '@iconify/collections': ^1.0.558
+  '@iconify/json': ^2.2.348
+  '@slidev/cli': ^51.8.1
+  '@slidev/client': ^51.8.2
   '@slidev/theme-default': ^0.25.0
-  '@types/node': ^22.15.21
+  '@types/node': ^24.0.1
   '@types/prompts': ^2.4.9
   '@types/seedrandom': ^3.0.8
   chroma-js: ^3.1.2
-  eslint: ^9.27.0
+  eslint: ^9.28.0
   eslint-config-flat-gitignore: ^2.1.0
   eslint-plugin-format: ^1.0.1
   eslint-plugin-react-hooks: ^5.2.0
   eslint-plugin-react-refresh: ^0.4.20
   eslint-typegen: ^2.2.0
   esno: ^4.8.0
-  execa: ^9.5.3
+  execa: ^9.6.0
   fast-glob: ^3.3.3
   markdown-it-magic-link: ^0.1.4
-  playwright-chromium: ^1.52.0
-  pnpm: ^10.11.0
+  playwright-chromium: ^1.53.0
+  pnpm: ^10.12.1
   prettier-plugin-slidev: ^1.0.5
   prompts: ^2.4.2
   rimraf: ^6.0.1
@@ -32,10 +32,10 @@ catalog:
   slidev-addon-graph: ^0.1.1
   taze: ^19.1.0
   typescript: ^5.8.3
-  unocss: ^66.1.2
+  unocss: ^66.2.0
   uqr: ^0.1.2
   vis-data: ^7.1.9
-  vis-network: ^9.1.10
+  vis-network: ^9.1.12
   vis-timeline: ^7.7.4
   vue-router: ^4.5.1
   vue-tsc: ^2.2.10
