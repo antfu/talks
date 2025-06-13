@@ -61,7 +61,7 @@ Working at {NuxtLabs}<br>
 <!--
 まずは自己紹介をさせてください。僕はAnthonyと申します。
 
-僕はVite、Vue、Nuxtのコアメンバーとして活動していて、Vitest、Slidev、UnoCSS、VueUseなどのオープンソースプロジェクトを作りました。
+Vite、Vue、Nuxtのコアメンバーとして活動していて、Vitest、Slidev、UnoCSS、VueUseなどのオープンソースプロジェクトを作りました。
 また、ESLint Stylistic、Shiki、Twoslashのメンテナーもしています。今はNuxtLabsで働いています。
 
 僕のウェブサイト（antfu.me）やGitHubで見つけられますし、日本語用のTwitterアカウント（@antfujp）もあります。
@@ -103,9 +103,13 @@ Nuxt DevTools Floating Panel
 
 <div grid="~ cols-[1.4fr_max-content_1fr] gap-8 items-center justify-center" mt-10>
 
-  <div v-click flex="~ col gap-4 items-center">
+  <div v-click flex="~ col gap-4 items-center" relative of-visible>
     <span text-green text-xl>希望のUI</span>
     <img src="/expected.png" alt="Expected" shadow-2xl w-100 shadow-none border="~ main rounded-lg" />
+    <div abs-tl left-5 top--5 text-blue> 埋め込みパネル </div>
+    <div abs-tl left-30 top-60 text-yellow> ユーザーのアプリ </div>
+    <Arrow x1="100" y1="10" x2="180" y2="45"  text-blue />
+    <Arrow x1="200" y1="220" x2="190" y2="150"  text-yellow />
   </div>
 
   <div i-ph-caret-right text-xl v-click="2" />
@@ -145,11 +149,11 @@ Nuxt DevTools Floating Panel
 - Vueにはこれに対する組み込みの解決策があります：`<style scoped>`
 
 <!--
-スタイルの隔離について話すと、完全に制御できないウェブページで作業する時は珍しいケースです。
+スタイルの隔離について話すと、完全に<ruby>制御<rt>せいぎょ</rt></ruby>できないウェブページで<ruby>作業<rt>さぎょう</rt></ruby>する時は珍しいケースです。
 
 Nuxt DevToolsの場合、僕たちのスタイルがユーザーのUIに影響を与えないようにしたいですし、逆にユーザーのスタイルがパネルのスタイルに影響を与えないようにしたいです。
 
-スタイルの隔離には、Vueには`style scoped`という組み込みの解決策があります。
+スタイルの隔離には、Vueには`style scoped`という組み込みの<ruby>解決策<rt>かいけつさく</rt></ruby>があります。
 -->
 
 ---
@@ -209,7 +213,7 @@ Vueのスコープ付きCSSについて、原理を少し説明します。
 
 SFCで`<style scoped>`を使うと、スタイルはそのコンポーネントだけに影響します。
 
-本番環境では、Vueは各DOM要素にdata属性を追加し、生成された CSS に Selector を追加することで、スコープを実現します。
+本番環境では、Vueは各DOM要素にdata<ruby>属性<rt>ぞくせい</rt></ruby>を追加し、生成された CSS に Selector を追加することで、スコープを実現します。
 
 これは、結構便利な機能ですね。
 -->
@@ -259,7 +263,7 @@ button {
 </div>
 
 <!--
-スコープ付きCSSの隔離を実現する素晴らしいツールですが、制限があります。
+スコープ付きCSSは隔離を実現する素晴らしいツールですが、<ruby>制限<rt>せいげん</rt></ruby>があります。
 
 data 属性を注入することで、スコープ付きCSS は内部のスタイルが外に<ruby>漏<rt>も</rt></ruby>れるのを<ruby>防<rt>ふせ</rt></ruby>ぐことができます。しかし、考えてみると、[click]内部のスタイルが外に漏れるのを防ぐだけで、[click]外部のスタイルが中に入ってくるのを防ぐことはできません。
 
@@ -298,15 +302,15 @@ layout: fact
 <img src="/wc-ryan.png" alt="WebComponents Are Not the Future" border="~ main rounded-lg" shadow-2xl w-150 absolute left-90 top-45 />
 
 <!--
-WebComponents について、実は、有名な開発者たちが書いたこういう投稿を見たことがあるかもしれません。
+WebComponents について、実は、有名な開発者たちが書いた こういう 投稿を見たことがあるかもしれません。
 
 例えば、Svelte の作者の Rich Harris さんは、なぜ WebComponents を使わないか説明しています。
 
 また、Solid の作者の Ryan Carniato さんは、"WebComponents は未来ではない" と言っています。
 
-その他にも、たくさんの開発者が WebComponents に対して否定的な意見を<ruby>述<rt>の</rt></ruby>べています。
+そのほかにも、たくさんの開発者が WebComponents に対して否定的な意見を<ruby>述<rt>の</rt></ruby>べています。
 
-それらの投稿では、WebComponents の設計上の<ruby>欠陥<rt>けっしょう</rt></ruby>を<ruby>指摘<rt>してき</rt></ruby>しています。
+それらの投稿では、WebComponents の設計上の欠点を<ruby>指摘<rt>してき</rt></ruby>しています。
 もし興味がある方は、ぜひ読んでみてください。
 
 僕も実は彼らに同意しています。
@@ -463,19 +467,16 @@ WebComponents を使ったことがある人は、その複雑さを知ってい
 
 # Vue SFCをWebComponentsに変換する
 
-```ts [MyCounter.ts]
+```ts [MyCounter.ts] {*|3|5,6|7|2,8|11,12|*}
 import { defineCustomElement } from 'vue'
 import css from '../.generated/css'
 import Component from './MyCounter.vue'
 
 // Vue SFCをWebComponentに変換
-export const MyCounter = defineCustomElement(
-  Component,
-  {
-    shadowRoot: true,
-    styles: [css],
-  },
-)
+export const MyCounter = defineCustomElement(Component, { 
+  shadowRoot: true, 
+  styles: [css]
+})
 
 // コンポーネントを登録
 customElements.define('my-counter', MyCounter)
@@ -484,11 +485,11 @@ customElements.define('my-counter', MyCounter)
 <!--
 まず、VueコンポーネントをWebComponentに変換する必要があります。
 
-Vue SFCをインポートして、`defineCustomElement`を使ってWebComponentに変換できます。
+[click]Vue SFCをインポートして、[click]`defineCustomElement`を使ってWebComponentに変換できます。
 
-スタイルの隔離が必要なので、`shadowRoot: true`を設定し、スタイルを文字列として渡します。
+[click]スタイルの隔離が必要なので、`shadowRoot: true`を設定し、[click]スタイルを文字列として渡します。
 
-そして、`customElements.define`を使ってコンポーネントを登録します。
+[click]そして、`customElements.define`を使ってコンポーネントを登録します。
 
 ここでは`.generated/css.ts`からCSSをインポートしています。これはどこから来るのでしょうか？次のスライドで見てみましょう。
 -->
