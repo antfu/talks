@@ -1,0 +1,13 @@
+{
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build --base /2025/vueconf/ --out ../../dist/2025/vueconf",
+    "export": "slidev export --per-slide --output ../2025-07-12-vueconf-zh.pdf"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "catalog:"
+  }
+}

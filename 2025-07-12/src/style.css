@@ -1,0 +1,135 @@
+:root {
+  --slidev-code-padding: 8px 10px;
+  --slidev-code-background: #16161680 !important;
+}
+
+.slidev-layout a {
+  border-color: #8888;
+}
+
+a:has(> code) {
+  underline: none;
+  border: 0px !important;
+}
+
+.monaco-editor {
+  --slidev-code-background: transparent !important;
+  --vscode-editorSuggestWidget-border: #eee1 !important;
+  --vscode-editorHoverWidget-border: #eee1 !important;
+}
+
+.slidev-monaco-container-inner {
+  border: 1px solid #eee1;
+  border-radius: 5px;
+}
+
+.monaco-editor .suggest-widget,
+.monaco-editor .suggest-details {
+  background: #16161670 !important;
+  backdrop-filter: blur(8px);
+}
+
+.monaco-editor .monaco-hover {
+  background: #161616b0 !important;
+  backdrop-filter: blur(8px);
+}
+
+h6 {
+  text-transform: initial !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+}
+
+.dark #slide-content {
+  background-color: black !important;
+}
+
+/* Transitions */
+.slidev-vclick-target {
+  transition:
+    opacity 500ms ease,
+    filter 200ms ease,
+    color 300ms ease;
+}
+
+.slidev-vclick-hidden {
+  opacity: 0;
+  pointer-events: none;
+  filter: blur(3px);
+}
+
+.fade-out-leave-active {
+  transition:
+    opacity calc(var(--slidev-transition-duration) * 0.6) ease-out,
+    filter 200ms ease;
+}
+
+.fade-out-enter-active {
+  transition:
+    opacity calc(var(--slidev-transition-duration) * 0.8) ease-in,
+    filter 200ms ease;
+  transition-delay: calc(var(--slidev-transition-duration) * 0.6);
+}
+
+.fade-out-enter-from,
+.fade-out-leave-to {
+  opacity: 0;
+  filter: blur(5px);
+}
+
+.slidev-code .line {
+  transition: opacity 200ms ease;
+}
+
+/* Magic Links */
+.markdown-magic-link {
+  display: inline-flex;
+  align-items: center;
+  transform: translateY(5px);
+  line-height: 100%;
+  color: #000b;
+  --uno: gap-1 transition rounded px1 py1 mx--0.5 important-border-0 font-condensed;
+}
+
+.dark .markdown-magic-link {
+  color: #fffc;
+}
+
+.markdown-magic-link:hover {
+  background: #8883;
+}
+
+.markdown-magic-link-image {
+  display: inline-block;
+  height: 1.2em;
+  width: 1.2em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 2px;
+}
+
+.markdown-magic-link.markdown-magic-link-github-at {
+  transform: translateY(6px);
+  --uno: pl-0 py-0 pr2 uppercase text-sm gap-1.2 rounded-full;
+}
+
+.markdown-magic-link.markdown-magic-link-github-at .markdown-magic-link-image {
+  height: 1.6em;
+  width: 1.6em;
+  border-radius: 50%;
+}
+
+.slidev-code {
+  backdrop-filter: blur(10px);
+  border: 1px solid #eee1;
+}
+
+.rough-annotation > path[stroke-width='2'] {
+  stroke-width: calc(2px * var(--slidev-slide-scale));
+}
+
+.slidev-layout :not(pre) > code {
+  color: rgb(201, 158, 251);
+  background: #161616ee;
+}
