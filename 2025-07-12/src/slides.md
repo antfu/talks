@@ -45,6 +45,44 @@ class: pl-30
 
 <img src="https://antfu.me/avatar.png" absolute top-36 right-30 w-40 rounded-full />
 
+
+---
+layout: center
+glowOpacity: 0.1
+---
+
+<img src="/voidzero-nuxtlabs.png" w-120 mix-blend-lighten>
+
+---
+
+TODO: Vite Plus
+
+---
+
+Why DevTools?
+
+---
+
+Blackbox
+
+---
+
+Vite DevTools
+
+---
+
+
+
+- NuxtLabs x VoidZero
+- Vite Plus (check Evan's talk)
+- Why DevTools is important
+- Blackbox
+- Transparency
+- Vite DevTools
+- Currently Focus on the Build Mode
+- The future
+- DevTools Kit
+
 ---
 layout: intro
 class: text-center pb-5
