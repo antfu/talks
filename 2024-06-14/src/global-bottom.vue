@@ -18,17 +18,17 @@ const { currentSlideRoute } = useNav()
 
 export type Range = [number, number]
 
-export type Distribution =
-  | 'full'
-  | 'top'
-  | 'bottom'
-  | 'left'
-  | 'right'
-  | 'top-left'
-  | 'top-right'
-  | 'bottom-left'
-  | 'bottom-right'
-  | 'center'
+export type Distribution
+  = | 'full'
+    | 'top'
+    | 'bottom'
+    | 'left'
+    | 'right'
+    | 'top-left'
+    | 'top-right'
+    | 'bottom-left'
+    | 'bottom-right'
+    | 'center'
 
 const frontmatter = computed(() => (currentSlideRoute.value.meta?.slide as any)?.frontmatter || {})
 const distribution = computed(() => (frontmatter.value.glow || 'full') as Distribution)

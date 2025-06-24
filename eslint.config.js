@@ -17,3 +17,8 @@ export default antfu({
     '**/demo/eslint/**',
   ],
 })
+  .override('antfu/markdown/disables', {
+    rules: {
+      'import/newline-after-import': 'off',
+    },
+  })

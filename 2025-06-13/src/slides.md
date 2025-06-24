@@ -473,8 +473,8 @@ import css from '../.generated/css'
 import Component from './MyCounter.vue'
 
 // Vue SFCをWebComponentに変換
-export const MyCounter = defineCustomElement(Component, { 
-  shadowRoot: true, 
+export const MyCounter = defineCustomElement(Component, {
+  shadowRoot: true,
   styles: [css]
 })
 

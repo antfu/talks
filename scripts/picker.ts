@@ -14,13 +14,13 @@ async function startPicker(args: string[]) {
   const result = args.includes('-y')
     ? { folder: folders[0] }
     : await prompts([
-      {
-        type: 'select',
-        name: 'folder',
-        message: 'Pick a folder',
-        choices: folders.map(folder => ({ title: folder, value: folder })),
-      },
-    ])
+        {
+          type: 'select',
+          name: 'folder',
+          message: 'Pick a folder',
+          choices: folders.map(folder => ({ title: folder, value: folder })),
+        },
+      ])
 
   args = args.filter(arg => arg !== '-y')
 

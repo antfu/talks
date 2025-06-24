@@ -1,7 +1,7 @@
 {
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@10.12.1",
+  "packageManager": "pnpm@10.12.2",
   "scripts": {
     "build": "rimraf dist && pnpm -r run build",
     "dev": "esno scripts/picker.ts dev --open",
@@ -46,6 +46,7 @@
     "uqr": "catalog:",
     "vis-data": "catalog:",
     "vis-network": "catalog:",
+    "vite": "catalog:",
     "vue-router": "catalog:",
     "vue-tsc": "catalog:"
   },
