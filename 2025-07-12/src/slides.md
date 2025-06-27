@@ -58,30 +58,61 @@ glowOpacity: 0.1
 TODO: Vite Plus
 
 ---
+layout: fact
+---
 
-Why DevTools?
+## 为什么需要 DevTools？
 
 ---
 
-Blackbox
+## 广义的 Developer Tools
+
+「开发者工具」<span op50>Vite 本身就是一种开发者工具</span>
+
+<div mt20 />
+
+## 狭义的 DevTools
+
+「为更好的使用工具而提供的工具」
+
+Nuxt DevTools, ESLint Config Inspector, Vite Plugin Inspect, Bundle Analyzer, etc.
+
+// TODO: 截圖
+
 
 ---
 
-Vite DevTools
+<img src="/minecraft-furnace-white-line.webp" w-40 absolute top="1/2" left="1/2" translate-x="-50%" translate-y="-50%" />
 
 ---
 
+Principle of making Good Tools
 
-
-- NuxtLabs x VoidZero
-- Vite Plus (check Evan's talk)
-- Why DevTools is important
-- Blackbox
 - Transparency
-- Vite DevTools
-- Currently Focus on the Build Mode
-- The future
-- DevTools Kit
+- Extensibility
+- Learning Curve
+  - Sensible defaults
+  - Intuitive Design
+- Composability
+
+---
+
+## Vite DevTools
+
+- 目前的重心
+  - 构建模式的打包分析
+  - 插件優化
+  - 分包優化
+
+- 未來的目標
+  - 开发/生产环境
+  - 跨框架公用 DevTools 架构 (DevTools Kit)
+
+---
+clicks: 20
+---
+
+<DevToolsKit />
 
 ---
 layout: intro
