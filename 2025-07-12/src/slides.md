@@ -51,7 +51,7 @@ layout: center
 glowOpacity: 0.1
 ---
 
-<img src="/voidzero-nuxtlabs.png" w-120 mix-blend-lighten>
+<img src="/voidzero-nuxtlabs.png" w-120>
 
 ---
 
@@ -83,6 +83,51 @@ Nuxt DevTools, ESLint Config Inspector, Vite Plugin Inspect, Bundle Analyzer, et
 ---
 
 <img src="/minecraft-furnace-white-line.webp" w-40 absolute top="1/2" left="1/2" translate-x="-50%" translate-y="-50%" />
+
+
+---
+class: text-2xl
+glow: right
+---
+
+# 好工具原则
+
+<div grid="~ cols-[max-content_min-content_auto] items-center gap-6" py8>
+  <div flex="~ gap-2 items-center" text-blue relative v-click>
+    <div i-ph-magnifying-glass-duotone text-2xl />
+    <span>入门门槛</span>
+  </div>
+  <div i-ph-arrow-right-duotone op50 v-click />
+  <div v-after></div>
+
+  <div flex="~ gap-2 items-center" text-lime relative v-click>
+    <div i-ph-book-bookmark-duotone text-2xl />
+    <span>直觉设计</span>
+  </div>
+  <div i-ph-arrow-right-duotone op50 v-click />
+  <div v-after></div>
+
+  <div flex="~ gap-2 items-center" text-amber relative v-click>
+    <div i-ph-currency-circle-dollar-duotone text-2xl />
+    <span>信息透明</span>
+  </div>
+  <div i-ph-arrow-right-duotone op50 v-click />
+  <div v-after>可以清楚的看到内部的状态和过程，便于调试和优化</div>
+
+  <div flex="~ gap-2 items-center" text-orange relative v-click>
+    <div i-ph-plugs-duotone text-2xl />
+    <span>可扩展性</span>
+  </div>
+  <div i-ph-arrow-right-duotone op50 v-click />
+  <div v-after>灵活的插件和配置系统</div>
+
+  <div flex="~ gap-2 items-center" text-purple relative v-click>
+    <div i-ph-plugs-duotone text-2xl />
+    <span>可组合性</span>
+  </div>
+  <div i-ph-arrow-right-duotone op50 v-click />
+  <div v-after>模块互相解耦，易于组合和扩展</div>
+</div>
 
 ---
 
