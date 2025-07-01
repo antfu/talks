@@ -51,11 +51,14 @@ layout: center
 glowOpacity: 0.1
 ---
 
-<img src="/voidzero-nuxtlabs.png" w-120>
+<img src="/voidzero-nuxtlabs.png" w-150>
 
 ---
+layout: center
+glowOpacity: 0
+---
 
-TODO: Vite Plus
+<img src="/vite-plus.png" w-280 mix-blend-lighten>
 
 ---
 layout: fact
@@ -77,12 +80,6 @@ layout: fact
 
 Nuxt DevTools, ESLint Config Inspector, Vite Plugin Inspect, Bundle Analyzer, etc.
 
----
-layout: center
-glowOpacity: 0
----
-
-<img src="/vite-plus.png" w-280 mix-blend-lighten>
 
 ---
 
@@ -189,17 +186,6 @@ glow: bottom
     </div>
   </div>
 </div>
-
-## Vite DevTools
-
-- 目前的重心
-  - 构建模式的打包分析
-  - 插件優化
-  - 分包優化
-
-- 未來的目標
-  - 开发/生产环境
-  - 跨框架公用 DevTools 架构 (DevTools Kit)
 
 ---
 
