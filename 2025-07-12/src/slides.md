@@ -77,8 +77,12 @@ layout: fact
 
 Nuxt DevTools, ESLint Config Inspector, Vite Plugin Inspect, Bundle Analyzer, etc.
 
-// TODO: 截圖
+---
+layout: center
+glowOpacity: 0
+---
 
+<img src="/vite-plus.png" w-280 mix-blend-lighten>
 
 ---
 
@@ -130,17 +134,61 @@ glow: right
 </div>
 
 ---
-
-Principle of making Good Tools
-
-- Transparency
-- Extensibility
-- Learning Curve
-  - Sensible defaults
-  - Intuitive Design
-- Composability
-
+class: p0
+glow: bottom
 ---
+
+<div class="grid grid-cols-2 gap-4 h-full">
+  <img src="/vite-devtools.png" w-80 ma />
+
+  <div border="l main" h-full py10 flex="~ col gap-8 justify-center">
+    <div flex="~ gap-2" relative v-click>
+      <div i-material-symbols:check-circle text-green text-4xl ml--4.5 />
+      <div flex="~ col gap-1">
+        <div text-xl>ResolveId、Transform 分析</div>
+        <div op50>
+          展示每個插件對於每個文件的轉換結果
+        </div>
+      </div>
+    </div>
+    <div flex="~ gap-2" relative v-click>
+      <div i-material-symbols:check-circle text-green text-4xl ml--4.5 />
+      <div flex="~ col gap-1">
+        <div text-xl>ModuleGraph、ChunkGraph 可视化</div>
+        <div op50>
+          展示每个文件的依赖关系和 chunk 的组成
+        </div>
+      </div>
+    </div>
+    <div flex="~ gap-2" relative v-click>
+      <div i-material-symbols:build-circle text-orange text-4xl ml--4.5 />
+      <div flex="~ col gap-1">
+        <div text-xl>打包分析</div>
+        <div op50>
+          展示打包的結果，包括分包尺寸、优化建议等。
+        </div>
+      </div>
+    </div>
+    <div flex="~ gap-2" relative v-click>
+      <div i-material-symbols:lightbulb-circle text-gray text-4xl ml--4.5 />
+      <div flex="~ col gap-1">
+        <div text-xl>开发模式</div>
+        <div op50>
+          展示每個插件對於每個文件的轉換結果
+        </div>
+      </div>
+    </div>
+     <div flex="~ gap-2" relative v-click>
+      <div i-material-symbols:lightbulb-circle text-gray text-4xl ml--4.5 />
+      <div flex="~ col gap-1">
+        <div text-xl>DevTools Kit</div>
+        <div op50>
+          可扩展的 DevTools 架构
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 ## Vite DevTools
 
@@ -152,6 +200,10 @@ Principle of making Good Tools
 - 未來的目標
   - 开发/生产环境
   - 跨框架公用 DevTools 架构 (DevTools Kit)
+
+---
+
+// TODO: 截图
 
 ---
 clicks: 20
