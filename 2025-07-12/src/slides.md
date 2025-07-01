@@ -48,6 +48,14 @@ class: pl-30
 
 ---
 layout: center
+glow: bottom
+---
+
+<img src="/vite-devtools.png" w-120 />
+
+
+---
+layout: center
 glowOpacity: 0.1
 ---
 
@@ -68,11 +76,15 @@ layout: fact
 
 ---
 
+<div v-click>
+
 ## 广义的 Developer Tools
 
 「开发者工具」<span op50>Vite 本身就是一种开发者工具</span>
 
-<div mt20 />
+</div>
+
+<div mt20 v-click>
 
 ## 狭义的 DevTools
 
@@ -80,11 +92,12 @@ layout: fact
 
 Nuxt DevTools, ESLint Config Inspector, Vite Plugin Inspect, Bundle Analyzer, etc.
 
+</div>
+
 
 ---
 
 <img src="/minecraft-furnace-white-line.webp" w-40 absolute top="1/2" left="1/2" translate-x="-50%" translate-y="-50%" />
-
 
 ---
 class: text-2xl
@@ -192,10 +205,28 @@ glow: bottom
 // TODO: 截图
 
 ---
+layout: center
+---
+
+<div flex="~ gap-2 items-center" text-orange relative text-6xl>
+  <div i-ph-plugs-duotone text-7xl />
+  <span>可扩展性</span>
+</div>
+
+---
 clicks: 20
 ---
 
 <DevToolsKit />
+
+
+---
+layout: center
+---
+
+<div scale-200>
+  <Repo name="vitejs/devtools"  />
+</div>
 
 ---
 layout: intro
