@@ -75,6 +75,57 @@ layout: center
 <h1 important-text-5xl>为什么需要 DevTools？</h1>
 
 ---
+layout: none
+class: h-full
+---
+
+<div h-full grid="~ rows-2">
+
+<div p14>
+
+  <h2 text-4xl mb-2 v-click="1">广义的 Developer Tools</h2>
+
+  <div text-2xl ml--3 text-amber v-click="3">「给开发者使用的工具」</div>
+
+  <div mt-6 v-click="4">
+    <div flex="~ gap-2 items-center" text-2xl>
+      <div i-logos-vitejs w-8 />
+      <div i-logos-vitest w-8 />
+      <div i-logos-vue w-8 />
+      <div i-logos-nuxt-icon w-8 />
+      <div i-logos-react w-8 />
+      <div i-logos-eslint w-8 />
+      <div i-logos-unocss w-8 />
+      <div op50>...</div>
+    </div>
+    <div mt3 op75>
+      Vite 本身就是一种开发者工具
+    </div>
+  </div>
+
+</div>
+
+<div p13 border="t main">
+
+  <h2 text-4xl mb-2 v-click="2">狭义的 DevTools</h2>
+
+  <div text-2xl ml--3 text-lime v-click="5">「为更好的使用工具而提供的工具」</div>
+
+  <div v-click="6" mt-6 flex="~ gap-2 wrap">
+    <div px2 bg-hex-8882 rounded flex="~ gap-1 items-center"><div i-logos-chrome/> Chrome DevTools</div>
+    <div px2 bg-hex-8882 rounded flex="~ gap-1 items-center"><div i-logos-nuxt-icon w-5 /> Nuxt DevTools</div>
+    <div px2 bg-hex-8882 rounded flex="~ gap-1 items-center"><div i-logos-vue w-5 /> Vue DevTools</div>
+    <div px2 bg-hex-8882 rounded flex="~ gap-1 items-center"><div i-carbon-ibm-watson-discovery/> Vite Plugin Inspect</div>
+    <div px2 bg-hex-8882 rounded flex="~ gap-1 items-center"><div i-logos-unocss/> UnoCSS Inspector</div>
+    <div px2 bg-hex-8882 rounded flex="~ gap-1 items-center"><div i-logos-eslint/> ESLint Config Inspector</div>
+    <div px2 bg-hex-8882 rounded flex="~ gap-1 items-center"><div i-logos-vitest/> Vitest UI</div>
+    <div px2 bg-hex-8882 rounded flex="~ gap-1 items-center"><img src="/node-modules-inspector.svg" w-5/> Node Modules Inspector</div> 
+    <div op50>...</div>
+  </div>
+</div>
+</div>
+
+---
 class: text-2xl
 glow: right
 ---
@@ -118,31 +169,7 @@ glow: right
   <div v-after>灵活的插件和配置系统</div>
 </div>
 
-
----
-
-<div v-click>
-
-## 广义的 Developer Tools
-
-「开发者工具」<span op50>Vite 本身就是一种开发者工具</span>
-
-</div>
-
-<div mt20 v-click>
-
-## 狭义的 DevTools
-
-「为更好的使用工具而提供的工具」
-
-Nuxt DevTools, ESLint Config Inspector, Vite Plugin Inspect, Bundle Analyzer, etc.
-
-</div>
-
-
----
-
-<img src="/minecraft-furnace-white-line.webp" w-40 absolute top="1/2" left="1/2" translate-x="-50%" translate-y="-50%" />
+<div absolute top-66 left-9 w-220 h-17 border="2 amber rounded-xl" bg-amber:10 z--1 v-click />
 
 
 ---
@@ -153,6 +180,126 @@ layout: center
   <div text-amber2 text-5xl>Transparency</div>
   <span text-amber>信息透明</span>
 </div>
+
+---
+
+<h3 flex="~ gap-2 items-center" text-2xl>
+  <div i-logos-unocss />
+  UnoCSS Inspector
+</h3>
+
+<img src="/devtools/uno-inspector.png" w-250 />
+
+---
+
+<h3 flex="~ gap-2 items-center" text-2xl>
+  <div i-carbon-ibm-watson-discovery  />
+  Vite Plugin Inspect
+</h3>
+
+<img src="/devtools/vite-inspect.png" w-250 />
+
+---
+
+<h3 flex="~ gap-2 items-center" text-2xl>
+  <div i-carbon-ibm-watson-discovery  />
+  Vite Plugin Inspect
+</h3>
+
+<img src="/devtools/vite-inspect-graph.png" w-250 />
+
+---
+
+<h3 flex="~ gap-2 items-center" text-2xl>
+  <div i-carbon-ibm-watson-discovery  />
+  Vite Plugin Inspect
+</h3>
+
+<img src="/devtools/vite-inspect-plugin-time.png" w-250 />
+
+---
+
+<h3 flex="~ gap-2 items-center" text-2xl>
+  <div i-logos-vitest />
+  Vitest UI
+</h3>
+
+<img src="/devtools/vitest-ui.png" w-250 />
+
+---
+
+<h3 flex="~ gap-2 items-center" text-2xl>
+  <div i-logos-nuxt-icon />
+  Nuxt DevTools
+</h3>
+
+<img src="/devtools/nuxt-components-graph.png" w-250 />
+
+---
+
+<h3 flex="~ gap-2 items-center" text-2xl>
+  <div i-logos-nuxt-icon />
+  Nuxt DevTools
+</h3>
+
+<img src="/devtools/nuxt-imports.png" w-250 />
+
+---
+
+<h3 flex="~ gap-2 items-center" text-2xl>
+  <div i-logos-eslint />
+  ESLint Config Inspector
+</h3>
+
+<img src="/devtools/eslint-files.png" w-250 />
+
+---
+
+
+<h3 flex="~ gap-2 items-center" text-2xl>
+  <div i-logos-eslint />
+  ESLint Config Inspector
+</h3>
+
+<img src="/devtools/eslint-overview.png" w-250 />
+
+---
+
+
+<h3 flex="~ gap-2 items-center" text-2xl>
+  <div i-logos-eslint />
+  ESLint Config Inspector
+</h3>
+
+<img src="/devtools/eslint-plugins.png" w-250 />
+
+---
+
+<h3 flex="~ gap-2 items-center" text-2xl>
+  <img src="/node-modules-inspector.svg" w-9 />
+  Node Modules Inspector
+</h3>
+
+<img src="/devtools/node-inspector-overview.png" w-250 />
+
+---
+
+<h3 flex="~ gap-2 items-center" text-2xl>
+  <img src="/node-modules-inspector.svg" w-9 />
+  Node Modules Inspector
+</h3>
+
+<img src="/devtools/node-inspector-graph.png" w-250 />
+
+---
+
+<h3 flex="~ gap-2 items-center" text-2xl>
+  <img src="/node-modules-inspector.svg" w-9 />
+  Node Modules Inspector
+</h3>
+
+<img src="/devtools/node-inspector-sunbrust.png" w-250 />
+
 
 ---
 class: p0
