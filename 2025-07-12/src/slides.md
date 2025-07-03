@@ -49,10 +49,18 @@ class: pl-30
 ---
 layout: center
 glow: bottom
+class: text-center
 ---
 
 <img src="/vite-devtools.png" w-120 />
+<div text-3xl mt4 mb-8 tracking-0.5em text-lime>前瞻介绍</div>
 
+<div abs-br mx-10 my-11 flex="~ col gap-4 items-end" text-left op75>
+  <span>VueConf Shenzhen</span>
+  <div text-xs opacity-75 mt--4>2025.07.12</div>
+</div>
+
+<img src="/vue-shenzhen.svg" h-50 absolute bottom-0 right-0 op10 />
 
 ---
 layout: center
@@ -386,9 +394,13 @@ clicks: 20
 # Vite DevTools 的目标愿景
 
 - Vite 内部状态可视化，便于调试和优化
+
 - 提供建议和优化方案，帮助开发者更好的分包，和获得更好的 Tree-shaking 效果
+
 - 性能分析，找到构建的瓶颈
+
 - Vite Plus 集成，例如 Vitest UI、Oxlint 可视化等等
+
 - 提供统一的 DevTools 架构，让上层框架可以轻松的扩展
 
 
