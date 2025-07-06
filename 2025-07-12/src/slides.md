@@ -308,6 +308,41 @@ layout: center
 
 <img src="/devtools/node-inspector-sunbrust.png" w-250 />
 
+---
+layout: center
+glow: bottom
+class: text-center
+---
+
+<img src="/vite-devtools.png" w-120 />
+
+---
+
+# 目标愿景
+
+<div mt5 />
+
+<v-clicks depth="2">
+
+- Vite 内部状态可视化
+
+- 提供建议和优化方案
+
+  - 分包优化
+
+  - Tree-shaking 可视化
+
+  - Barrel-file 检测
+
+  - CJS/ESM 可视化
+
+- 插件和构建性能分析
+
+- Vite Plus 集成，例如 Vitest UI、Oxlint 可视化等等
+
+- 提供统一的 DevTools 架构，让上层框架可以轻松的扩展
+
+</v-clicks>
 
 ---
 class: p0
@@ -384,24 +419,10 @@ layout: center
 </div>
 
 ---
-clicks: 20
+clicks: 19
 ---
 
 <DevToolsKit />
-
----
-
-# Vite DevTools 的目标愿景
-
-- Vite 内部状态可视化，便于调试和优化
-
-- 提供建议和优化方案，帮助开发者更好的分包，和获得更好的 Tree-shaking 效果
-
-- 性能分析，找到构建的瓶颈
-
-- Vite Plus 集成，例如 Vitest UI、Oxlint 可视化等等
-
-- 提供统一的 DevTools 架构，让上层框架可以轻松的扩展
 
 
 ---

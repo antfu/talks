@@ -16,6 +16,7 @@ const themes = {
   pink: 'text-pink2 border-pink:20 bg-pink:10 shadow-pink:50',
   yellow: 'text-yellow2 border-yellow:20 bg-yellow:10 shadow-yellow:50',
   purple: 'text-purple2 border-purple:20 bg-purple:10 shadow-purple:50',
+  orange: 'text-orange2 border-orange:20 bg-orange:10 shadow-orange:50',
 }
 </script>
 

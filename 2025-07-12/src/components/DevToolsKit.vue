@@ -1,21 +1,21 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 
-const PRESENT_START = 12
+const PRESENT_START = 13
 
 const sliderStyle = computed(() => ({
   transform: $clicks.value < PRESENT_START
     ? ''
     : `translateY(${($clicks.value - PRESENT_START + 1) * -1}em)`,
 }))
+const isAstro = computed(() => $clicks.value === PRESENT_START + 5)
 const isNuxt = computed(() => $clicks.value === PRESENT_START)
-const isVue = computed(() => $clicks.value === PRESENT_START + 1)
-const isReact = computed(() => $clicks.value === PRESENT_START + 2)
-const isSvelte = computed(() => $clicks.value === PRESENT_START + 3)
-const isSolid = computed(() => $clicks.value === PRESENT_START + 4)
-const isQwik = computed(() => $clicks.value === PRESENT_START + 5)
+const isVue = computed(() => isAstro.value || $clicks.value === PRESENT_START + 1)
+const isReact = computed(() => isAstro.value || $clicks.value === PRESENT_START + 2)
+const isSvelte = computed(() => isAstro.value || $clicks.value === PRESENT_START + 3)
+const isSolid = computed(() => isAstro.value || $clicks.value === PRESENT_START + 4)
 
-const isFaded = computed(() => PRESENT_START <= $clicks.value && $clicks.value <= PRESENT_START + 6)
+const isFaded = computed(() => PRESENT_START <= $clicks.value && $clicks.value <= PRESENT_START + 5)
 </script>
 
 <template>
@@ -51,6 +51,11 @@ const isFaded = computed(() => PRESENT_START <= $clicks.value && $clicks.value <
         </div> DevTools?
       </div>
       <div font-700 flex="~ gap-2">
+        <div i-logos-astro-icon invert hue-rotate-180 /> <div text-orange6>
+          Astro
+        </div> DevTools?
+      </div>
+      <div font-700 flex="~ gap-2">
         <div i-twemoji-winking-face /> <div text-yellow>
           Your
         </div> DevTools?
@@ -72,11 +77,15 @@ const isFaded = computed(() => PRESENT_START <= $clicks.value && $clicks.value <
     <DevToolsModule
       v-after icon="i-ri-list-settings-line" name="Vite Configs" logo="i-logos-vitejs" theme="purple"
     />
+    <DevToolsModule
+      v-click icon="i-logos-vitest" name="Vitest" theme="yellow"
+    />
+    <DevToolsModule v-click name="Oxlint" theme="blue">
+      <img src="/oxc.svg" h-1.8em>
+    </DevToolsModule>
     <DevToolsModule v-click icon="i-ri-seo-line" name="SEO Tools" />
-    <DevToolsModule v-after icon="i-ri-code-box-line" name="Editors" />
     <DevToolsModule v-after icon="i-ri-empathize-line" name="Accessability" />
     <DevToolsModule v-after icon="i-simple-icons-pwa" name="PWA" />
-    <DevToolsModule v-after icon="i-ri-folder-image-line" name="Assets" />
   </div>
 
   <div flex="~ gap-2" mt2>
@@ -134,6 +143,11 @@ const isFaded = computed(() => PRESENT_START <= $clicks.value && $clicks.value <
       :glow="isReact"
     />
     <DevToolsModule
+      v-after icon="i-ri-route-line" name="Router" theme="blue" logo="i-logos-react"
+      :class="{ op30: isFaded && !isReact }"
+      :glow="isReact"
+    />
+    <DevToolsModule
       v-click icon="i-ri-route-line" name="Routes" theme="red" logo="i-logos-svelte-icon"
       :class="{ op30: isFaded && !isSvelte }"
       :glow="isSvelte"
@@ -150,21 +164,19 @@ const isFaded = computed(() => PRESENT_START <= $clicks.value && $clicks.value <
     />
     <DevToolsModule
       v-click icon="i-carbon-heat-map" name="Chunking" theme="purple" logo="i-logos-qwik-icon"
-      :class="{ op30: isFaded && !isQwik }"
-      :glow="isQwik"
+      :class="{ op30: isFaded }"
+    />
+    <DevToolsModule
+      v-click icon="i-carbon:page-scroll" name="Pages" theme="orange" logo="i-logos-astro-icon invert hue-rotate-180"
+      :class="{ op30: isFaded && !isAstro }"
+      :glow="isAstro"
     />
   </div>
 
   <div flex="~ gap-2" mt2>
-    <DevToolsModule
-      v-click icon="i-logos-vitest" name="Vitest" theme="yellow"
-    />
-    <DevToolsModule v-after name="UnoCSS">
-      <UnocssIcon h-1.7em />
-    </DevToolsModule>
-    <DevToolsModule
-      v-after icon="i-logos-storybook-icon" name="Storybook" theme="pink"
-    />
+    <DevToolsModule v-after icon="i-logos-unocss" name="UnoCSS" />
+    <DevToolsModule v-after icon="i-logos-eslint" name="ESLint" theme="purple" />
+    <DevToolsModule v-after icon="i-logos-storybook-icon" name="Storybook" theme="pink" />
     <DevToolsModule v-after name="Histoire" theme="green">
       <img src="/histoire.svg" h-1.7em>
     </DevToolsModule>
