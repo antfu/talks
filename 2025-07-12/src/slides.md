@@ -429,7 +429,71 @@ glow: bottom
 
 ---
 
-// TODO: 截图
+<div flex="~ gap-2 items-center" h-full>
+<img src="/vd/overview.png" w-120 />
+<div flex="~ col gap-2 justify-center">
+
+# 构建总览
+
+目前的 Vite DevTools 通过<br>消费 Rolldown 的产物来可视化构建过程和信息<br>
+
+</div>
+</div>
+
+
+---
+
+<img src="/vd/modules.png" w-140 />
+
+---
+
+<img src="/vd/folders.png" w-160 />
+
+
+---
+
+<img src="/vd/graph.png" w-170 />
+
+
+---
+class: important-p0
+---
+
+<div flex="~ gap-2 items-center">
+<img src="/vd/flow.png" w-100 />
+<div flex="~ col gap-2 justify-center">
+
+# 模塊转换流程
+
+从文件解析，模块加载，转换，打包，到最后的输出<br>
+可以追踪整个流程，找到瓶颈和优化点
+
+</div>
+</div>
+
+
+---
+
+<img src="/vd/transform.png" w-250 />
+
+---
+
+<img src="/vd/chunk.png" w-250 />
+
+---
+class: text-center !pt15
+---
+
+# 模块依赖关系图
+
+<img src="/vd/imports.png" w-250 />
+
+---
+
+# 性能消耗图表 <span text-lime font-mono bg-lime:10 px2 py1 rounded text-xs translate-y--6 inline-block>WIP</span>
+
+<img src="/vd/chart.png" w-200 />
+
 
 ---
 layout: center
@@ -446,6 +510,13 @@ clicks: 19
 
 <DevToolsKit />
 
+---
+
+<div flex="~ col gap-4 items-center justify-center" text-2xl w-full h-full>
+  <img src="/devtools-kit.svg" w-60 op85 />
+  <div i-ph-arrow-down-duotone text-2xl op50 />
+  <img src="/vite-devtools.png" w-100 brightness-200 />
+</div>
 
 ---
 layout: center
@@ -462,6 +533,6 @@ glowX: 50
 glowY: 120
 ---
 
-# 谢谢
+<h1 font-serif important-text-5em>感 谢</h1>
 
 幻灯片在 [antfu.me](https://antfu.me)
