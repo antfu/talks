@@ -26,7 +26,7 @@ class: pl-30
 {Vite} {Vue} {Nuxt} 核心团队成员<br>
 {Vitest} {Slidev} {UnoCSS} {Type Challenges} {Elk} 作者<br>
 {ESLint Stylistic} {Shiki} {Twoslash} 维护者<br>
-就职于 {NuxtLabs}<br>
+就职于 {NuxtLabs} / {Vercel}<br>
 
 </div>
 
@@ -68,6 +68,25 @@ glowOpacity: 0.1
 ---
 
 <img src="/voidzero-nuxtlabs.png" w-150>
+
+---
+layout: center
+glowOpacity: 0.1
+---
+
+<div flex="~ col gap-2 items-center">
+  <img src="/vercel-nuxtlabs.jpg" w-150>
+  <div text-2xl mt1>NuxtLabs is joining Vercel</div>
+</div>
+
+---
+layout: center
+glowOpacity: 0.1
+---
+
+<div flex="~ col gap-2 items-center">
+  <img src="/voidzero-vercel.png" w-140>
+</div>
 
 ---
 layout: center
@@ -179,6 +198,9 @@ glow: right
 
 <div absolute top-66 left-9 w-220 h-17 border="2 amber rounded-xl" bg-amber:10 z--1 v-click />
 
+<!--
+除了好
+-->
 
 ---
 layout: center
