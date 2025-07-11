@@ -342,29 +342,50 @@ class: text-center
 
 # 目标愿景
 
-<div mt5 />
+<div grid="~ cols-3 gap-3" py4>
+  <div v-click flex="~ col gap-1" p4 rounded bg-teal:15 text-teal1>
+    <div text-3xl i-ph:chart-donut-duotone text-teal mb2 />
+    <div>可视化</div>
+    <div text-xs op50>展示 Vite/Rolldown 内部状态和过程</div>
+  </div>
 
-<v-clicks depth="2">
+  <div v-click flex="~ col gap-1" p4 rounded bg-orange:15 text-orange1>
+    <div text-3xl i-ph:package-duotone text-orange mb2 />
+    <div>构建分析</div>
+    <div text-xs op50>提供建议和优化方案</div>
+  </div>
 
-- Vite 内部状态可视化
+  <div v-click flex="~ col gap-1" p4 rounded bg-yellow:15 text-yellow1>
+    <div text-3xl i-ph:plugs-duotone text-yellow mb2 />
+    <div>插件分析</div>
+    <div text-xs op50>帮助插件作者遵循最佳实践</div>
+  </div>
 
-- 提供建议和优化方案
+  <div v-click flex="~ col gap-1" p4 rounded bg-red:15 text-red1>
+    <div text-3xl i-ph:bug-beetle-duotone text-red mb2 />
+    <div>构建快照</div>
+    <div text-xs op50>记录构建过程，可分享和分析的重现</div>
+  </div>
 
-  - 分包优化
+  <div v-click flex="~ col gap-1" p4 rounded bg-purple:15 text-purple1>
+    <div text-3xl i-ph:stack-plus-duotone text-purple mb2 />
+    <div>Vite Plus</div>
+    <div text-xs op50>集成 Vitest UI、Oxlint 可视化等等</div>
+  </div>
 
-  - Tree-shaking 可视化
+  <div v-click flex="~ col gap-1" p4 rounded bg-blue:15 text-blue1>
+    <div text-3xl i-ph:circles-three-plus-duotone text-blue mb2 />
+    <div>DevTools Kit</div>
+    <div text-xs op50>统一的 DevTools 架构，让上层框架提供扩展</div>
+  </div>
+</div>
 
-  - Barrel-file 检测
-
-  - CJS/ESM 可视化
-
-- 插件和构建性能分析
-
-- Vite Plus 集成，例如 Vitest UI、Oxlint 可视化等等
-
-- 提供统一的 DevTools 架构，让上层框架可以轻松的扩展
-
-</v-clicks>
+<!-- 
+分包优化
+Tree-shaking 可视化
+Barrel-file 检测
+CJS/ESM 可视化
+-->
 
 ---
 class: p0
@@ -442,17 +463,47 @@ glow: bottom
 
 
 ---
+class: important-p0
+---
 
+<div flex="~ gap-2 items-center">
 <img src="/vd/modules.png" w-140 />
+<div flex="~ col gap-2 justify-center">
+
+# 打包文件列表
+
+展示所有参与打包的文件，<br>提供筛选搜索功能。
+
+</div>
+</div>
+
 
 ---
-
-<img src="/vd/folders.png" w-160 />
-
-
+class: important-p0
 ---
 
-<img src="/vd/graph.png" w-170 />
+<div flex="~ gap-2 items-center" h-full>
+<img src="/vd/folders.png" w-180 />
+<div flex="~ col gap-2 justify-center">
+
+# 打包文件树
+
+
+</div>
+</div>
+
+---
+class: important-p0
+---
+
+<div flex="~ gap-2 items-center" h-full>
+<img src="/vd/graph.png" w-180 />
+<div flex="~ col gap-2 justify-center">
+
+# 模块关系图
+
+</div>
+</div>
 
 
 ---
@@ -473,12 +524,20 @@ class: important-p0
 
 
 ---
-
-<img src="/vd/transform.png" w-250 />
-
+class: text-center
 ---
 
-<img src="/vd/chunk.png" w-250 />
+# 代码转换对比
+
+<img src="/vd/transform.png" w-240 mt--5 />
+
+---
+class: text-center
+---
+
+# 分包信息
+
+<img src="/vd/chunk.png" w-210 mt--5 />
 
 ---
 class: text-center !pt15
