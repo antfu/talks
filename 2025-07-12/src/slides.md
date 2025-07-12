@@ -63,6 +63,12 @@ class: text-center
 <img src="/vue-shenzhen.svg" h-50 absolute bottom-0 right-0 op10 />
 
 ---
+class: flex important-p0
+---
+
+<img src="https://raw.githubusercontent.com/antfu/static/refs/heads/master/sponsors.circles.png" h-full ma />
+
+---
 layout: center
 glowOpacity: 0.1
 ---
