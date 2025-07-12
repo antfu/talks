@@ -739,7 +739,7 @@ to = "/2025/v-tokyo/index.html"
 status = 200
 
 [[redirects]]
-from = "/2025/vueconf/pdf"
+from = "/2025/vueconf-china/pdf"
 to = "https://github.com/antfu/talks/blob/main/2025-07-12/2025-07-12-vueconf-zh.pdf?raw=true"
 status = 302
 
@@ -749,18 +749,18 @@ to = "https://github.com/antfu/talks/blob/main/2025-07-12/2025-07-12-vueconf-zh.
 status = 302
 
 [[redirects]]
-from = "/2025/vueconf/src"
+from = "/2025/vueconf-china/src"
 to = "https://github.com/antfu/talks/tree/main/2025-07-12"
 status = 302
 
 [[redirects]]
 from = "2025-07-12"
-to = "https://talks.antfu.me/2025/vueconf/"
+to = "https://talks.antfu.me/2025/vueconf-china/"
 status = 301
 
 [[redirects]]
-from = "/2025/vueconf/*"
-to = "/2025/vueconf/index.html"
+from = "/2025/vueconf-china/*"
+to = "/2025/vueconf-china/index.html"
 status = 200
 
 [[redirects]]
