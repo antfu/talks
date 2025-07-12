@@ -594,6 +594,36 @@ layout: center
 </div>
 
 ---
+class: text-center
+---
+
+<div text-4xl mt-20 mb-12>致谢</div>
+
+<div flex="~ gap-18 items-center justify-center" >
+
+  <div flex="~ col items-center" v-click>
+    <img src="https://avatars.githubusercontent.com/u/49502170?v=4" rounded-full w-30 mb4 />
+    <div>Yunfei He</div>
+    <div font-mono text-sm op50>@hyf0</div>
+  </div>
+
+  <div flex="~ col items-center" v-click>
+    <img src="https://avatars.githubusercontent.com/u/22515951?v=4" rounded-full w-30 mb4 />
+    <div>Arlo</div>
+    <div font-mono text-sm op50>@webfansplz</div>
+  </div>
+
+  <div flex="~ col items-center" v-click>
+    <div rounded-full w-30 h-30 bg-gray:10 flex mb4>
+      <div i-ph:user-duotone text-4em ma op50 />
+    </div>
+    <div>加入我们？</div>
+    <div font-mono text-sm op50>@you?</div>
+  </div>
+</div>
+
+
+---
 layout: intro
 class: text-center pb-5
 glowX: 50
