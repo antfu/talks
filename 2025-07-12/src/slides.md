@@ -520,7 +520,7 @@ class: important-p0
 <img src="/vd/flow.png" w-100 />
 <div flex="~ col gap-2 justify-center">
 
-# 模塊转换流程
+# 模块转换流程
 
 从文件解析，模块加载，转换，打包，到最后的输出<br>
 可以追踪整个流程，找到瓶颈和优化点
