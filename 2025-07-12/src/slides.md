@@ -45,7 +45,6 @@ class: pl-30
 
 <img src="https://antfu.me/avatar.png" absolute top-36 right-30 w-40 rounded-full />
 
-
 ---
 layout: center
 glow: bottom
@@ -152,7 +151,7 @@ class: h-full
     <div px2 bg-hex-8882 rounded flex="~ gap-1 items-center"><div i-logos-unocss/> UnoCSS Inspector</div>
     <div px2 bg-hex-8882 rounded flex="~ gap-1 items-center"><div i-logos-eslint/> ESLint Config Inspector</div>
     <div px2 bg-hex-8882 rounded flex="~ gap-1 items-center"><div i-logos-vitest/> Vitest UI</div>
-    <div px2 bg-hex-8882 rounded flex="~ gap-1 items-center"><img src="/node-modules-inspector.svg" w-5/> Node Modules Inspector</div> 
+    <div px2 bg-hex-8882 rounded flex="~ gap-1 items-center"><img src="/node-modules-inspector.svg" w-5/> Node Modules Inspector</div>
     <div op50>...</div>
   </div>
 </div>
@@ -291,7 +290,6 @@ layout: center
 
 ---
 
-
 <h3 flex="~ gap-2 items-center" text-2xl>
   <div i-logos-eslint />
   ESLint Config Inspector
@@ -300,7 +298,6 @@ layout: center
 <img src="/devtools/eslint-overview.png" w-250 />
 
 ---
-
 
 <h3 flex="~ gap-2 items-center" text-2xl>
   <div i-logos-eslint />
@@ -386,7 +383,7 @@ class: text-center
   </div>
 </div>
 
-<!-- 
+<!--
 分包优化
 Tree-shaking 可视化
 Barrel-file 检测
@@ -467,7 +464,6 @@ glow: bottom
 </div>
 </div>
 
-
 ---
 class: important-p0
 ---
@@ -483,7 +479,6 @@ class: important-p0
 </div>
 </div>
 
-
 ---
 class: important-p0
 ---
@@ -493,7 +488,6 @@ class: important-p0
 <div flex="~ col gap-2 justify-center">
 
 # 打包文件树
-
 
 </div>
 </div>
@@ -511,7 +505,6 @@ class: important-p0
 </div>
 </div>
 
-
 ---
 class: important-p0
 ---
@@ -527,7 +520,6 @@ class: important-p0
 
 </div>
 </div>
-
 
 ---
 class: text-center
@@ -558,7 +550,6 @@ class: text-center !pt15
 # 性能消耗图表 <span text-lime font-mono bg-lime:10 px2 py1 rounded text-xs translate-y--6 inline-block>WIP</span>
 
 <img src="/vd/chart.png" w-200 />
-
 
 ---
 layout: center
@@ -621,7 +612,6 @@ class: text-center
     <div font-mono text-sm op50>@you?</div>
   </div>
 </div>
-
 
 ---
 layout: intro
