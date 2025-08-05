@@ -30,12 +30,12 @@ class: pl-30
 {Vitest} {Slidev} {UnoCSS} {Type Challenges} {Elk} 作者<br>
 {ESLint Stylistic} {Shiki} {Twoslash} 維護者<br>
 
-<p v-click>
+<div v-click>
 
 就職於 {NuxtLabs} / {Vercel}<br>
 播客 {尖不想寫扣}
 
-</p>
+</div>
 
 <div flex="~ gap-1" items-center v-click>
 廈門 <div i-ri-arrow-right-line /> 台北 <div i-ri-arrow-right-line /> 上海 <div i-ri-arrow-right-line /> 巴黎 <div i-ri-arrow-right-line /> 東京
