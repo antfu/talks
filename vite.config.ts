@@ -39,6 +39,8 @@ export default defineConfig({
             'Netlify': { link: 'https://netlify.com', imageUrl: 'https://github.com/netlify.png' },
             'Stackblitz': { link: 'https://stackblitz.com', imageUrl: 'https://github.com/stackblitz.png' },
             'Vercel': { link: 'https://vercel.com', imageUrl: 'https://github.com/vercel.png' },
+            'No Coding Today': { link: 'https://bento.me/nocodingtoday', imageUrl: 'https://creatorspace.imgix.net/users/cm7ba0sfb02ziqa01b7vij5bp/qGq9BEgucXOxVACu-logo.jpg?w=100&h=100' },
+            '尖不想寫扣': { link: 'https://bento.me/nocodingtoday', imageUrl: 'https://creatorspace.imgix.net/users/cm7ba0sfb02ziqa01b7vij5bp/qGq9BEgucXOxVACu-logo.jpg?w=100&h=100' },
           },
         })
       },

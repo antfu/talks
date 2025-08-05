@@ -762,6 +762,31 @@ to = "/2025/vueconf-china/index.html"
 status = 200
 
 [[redirects]]
+from = "/2025/coscup/pdf"
+to = "https://github.com/antfu/talks/blob/main/2025-08-10/2025-08-10-coscup-zh.pdf?raw=true"
+status = 302
+
+[[redirects]]
+from = "/2025-08-10/pdf"
+to = "https://github.com/antfu/talks/blob/main/2025-08-10/2025-08-10-coscup-zh.pdf?raw=true"
+status = 302
+
+[[redirects]]
+from = "/2025/coscup/src"
+to = "https://github.com/antfu/talks/tree/main/2025-08-10"
+status = 302
+
+[[redirects]]
+from = "2025-08-10"
+to = "https://talks.antfu.me/2025/coscup/"
+status = 301
+
+[[redirects]]
+from = "/2025/coscup/*"
+to = "/2025/coscup/index.html"
+status = 200
+
+[[redirects]]
 from = "/"
 to = "https://antfu.me/talks"
 status = 302

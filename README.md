@@ -6,6 +6,7 @@ Slides &amp; code for my talks, using [Slidev](https://sli.dev).
 
 ###### 2025
 
+- `zh` [Yak Shaving 薅牛毛](./2025-08-10) - COSCUP 2025
 - `zh` [Vite DevTools 前瞻介绍](./2025-07-12) - VueConf Shenzhen
 - `ja` [Vue と WebComponents で作る Agnostic UI](./2025-06-13) - v-tokyo #23
 - `en+ja` [The New Powerful ESLint Config with Type Safety](./2025-05-23) - TSKaigi
