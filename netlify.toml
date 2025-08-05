@@ -1,3 +1,4 @@
+
 [build]
 publish = "dist"
 command = "pnpm run build"
@@ -5,6 +6,7 @@ command = "pnpm run build"
 [build.environment]
 NODE_VERSION = "22"
 PLAYWRIGHT_BROWSERS_PATH = "0"
+
 
 [[redirects]]
 from = "/2021/composable-vue/pdf"
