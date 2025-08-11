@@ -177,7 +177,6 @@ glow: bottom
 
 ---
 layout: center
-disabled: true
 ---
 
 <figure>
