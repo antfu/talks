@@ -1,7 +1,7 @@
 {
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@10.14.0",
+  "packageManager": "pnpm@10.15.0",
   "scripts": {
     "build": "rimraf dist && pnpm -r run build",
     "dev": "tsx scripts/picker.ts dev --open",

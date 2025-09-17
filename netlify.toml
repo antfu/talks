@@ -789,6 +789,31 @@ to = "/2025/coscup/index.html"
 status = 200
 
 [[redirects]]
+from = "/2025/squiggleconf/pdf"
+to = "https://github.com/antfu/talks/blob/main/2025-09-18/2025-09-18-squiggleconf-en.pdf?raw=true"
+status = 302
+
+[[redirects]]
+from = "/2025-09-18/pdf"
+to = "https://github.com/antfu/talks/blob/main/2025-09-18/2025-09-18-squiggleconf-en.pdf?raw=true"
+status = 302
+
+[[redirects]]
+from = "/2025/squiggleconf/src"
+to = "https://github.com/antfu/talks/tree/main/2025-09-18"
+status = 302
+
+[[redirects]]
+from = "2025-09-18"
+to = "https://talks.antfu.me/2025/squiggleconf/"
+status = 301
+
+[[redirects]]
+from = "/2025/squiggleconf/*"
+to = "/2025/squiggleconf/index.html"
+status = 200
+
+[[redirects]]
 from = "/"
 to = "https://antfu.me/talks"
 status = 302
