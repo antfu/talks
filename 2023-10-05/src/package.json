@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "slidev",
-    "build": "slidev build --base /2023/viteconf/ --out ../../dist/2023/viteconf",
+    "build": "tsx ../../scripts/build.ts /2023/viteconf/",
     "export": "slidev export --per-slide --output ../2023-10-05-viteconf-en.pdf"
   }
 }

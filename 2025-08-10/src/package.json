@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "slidev",
-    "build": "slidev build --base /2025/coscup/ --out ../../dist/2025/coscup",
+    "build": "tsx ../../scripts/build.ts /2025/coscup/",
     "export": "slidev export --per-slide --output ../2025-08-10-coscup-zh.pdf"
   },
   "devDependencies": {

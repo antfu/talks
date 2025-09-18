@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "kill -9 $(lsof -ti:7777) && npx @eslint/config-inspector --config=eslint.demo.config.ts --no-open --port=7777 & slidev",
-    "build": "slidev build --base /2024/react-day-berlin/ --out ../../dist/2024/react-day-berlin",
+    "build": "tsx ../../scripts/build.ts /2024/react-day-berlin/",
     "export": "slidev export --per-slide --output ../2024-12-16-react-day-berlin-en.pdf"
   },
   "devDependencies": {

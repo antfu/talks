@@ -8,6 +8,8 @@
     "allowSyntheticDefaultImports": true
   },
   "exclude": [
-    "**/*.md"
+    "**/*.md",
+    "**/dist-stale/**",
+    "**/dist/**"
   ]
 }

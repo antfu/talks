@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "slidev",
-    "build": "slidev build --base /2023/nuxt-devtools-next/ --out ../../dist/2023/nuxt-devtools-next",
+    "build": "tsx ../../scripts/build.ts /2023/nuxt-devtools-next/",
     "export": "slidev export --per-slide --output ../2023-10-18-nuxt-devtools-next-en.pdf"
   }
 }

@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "kill -9 $(lsof -ti:7777); npx @eslint/config-inspector --config=eslint.demo.config.ts --no-open & slidev",
-    "build": "slidev build --base /2025/tskaigi/ --out ../../dist/2025/tskaigi",
+    "build": "tsx ../../scripts/build.ts /2025/tskaigi/",
     "export": "slidev export --per-slide --output ../2025-05-23-tskaigi-en.pdf"
   },
   "devDependencies": {

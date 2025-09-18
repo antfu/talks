@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "slidev",
-    "build": "slidev build --base /2022/vue-nation/ --out ../../dist/2022/vue-nation",
+    "build": "tsx ../../scripts/build.ts /2022/vue-nation/",
     "export": "slidev export --dark --output ../2022-01-26-vue-nation.pdf"
   }
 }

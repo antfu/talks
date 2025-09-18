@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "slidev",
-    "build": "slidev build --base /2024/oadc/ --out ../../dist/2024/oadc",
+    "build": "tsx ../../scripts/build.ts /2024/oadc/",
     "export": "slidev export --per-slide --output ../2024-12-21-oadc-zh.pdf"
   },
   "devDependencies": {

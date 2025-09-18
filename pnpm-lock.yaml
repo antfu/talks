@@ -213,6 +213,9 @@ importers:
       taze:
         specifier: 'catalog:'
         version: 19.3.0
+      tinyexec:
+        specifier: ^1.0.1
+        version: 1.0.1
       tsx:
         specifier: 'catalog:'
         version: 4.20.5

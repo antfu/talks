@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "kill -9 $(lsof -ti:7777); npx @eslint/config-inspector --config=eslint.demo.config.ts --no-open & slidev",
-    "build": "slidev build --base /2024/webconf-tw/ --out ../../dist/2024/webconf-tw",
+    "build": "tsx ../../scripts/build.ts /2024/webconf-tw/",
     "export": "npx @eslint/config-inspector --config=eslint.demo.config.ts --no-open & slidev export --per-slide --output ../2024-12-28-webconf-tw-zh.pdf"
   },
   "devDependencies": {

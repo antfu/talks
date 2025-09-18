@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "npx @eslint/config-inspector --config=eslint.demo.config.ts --no-open & slidev",
-    "build": "slidev build --base /2024/cityjs-athens/ --out ../../dist/2024/cityjs-athens",
+    "build": "tsx ../../scripts/build.ts /2024/cityjs-athens/",
     "export": "slidev export --per-slide --output ../2024-06-08-cityjs-athens-en.pdf"
   },
   "devDependencies": {

@@ -15,6 +15,7 @@ export default antfu({
   },
   ignores: [
     '**/demo/eslint/**',
+    '**/dist-stale/**',
   ],
 })
   .override('antfu/markdown/disables', {

@@ -40,6 +40,7 @@
     "seedrandom": "catalog:",
     "slidev-addon-graph": "catalog:",
     "taze": "catalog:",
+    "tinyexec": "^1.0.1",
     "tsx": "catalog:",
     "typescript": "catalog:",
     "unocss": "catalog:",
