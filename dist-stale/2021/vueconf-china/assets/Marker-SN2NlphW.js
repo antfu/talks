@@ -1,0 +1,1 @@
+import{f as t,o,j as r}from"./modules/vue-CvjR9cJg.js";import{u as s}from"./slidev/context-CDJPmaAZ.js";const n={class:"bg-$prism-background px-2 py-1 rounded font-mono inline-block text-0.4em transform translate-y-[-1.5em] translate-x-[-0.3em]"},p={__name:"Marker",setup(a){return s(),(e,m)=>(o(),t("span",n,[r(e.$slots,"default")]))}};export{p as _};

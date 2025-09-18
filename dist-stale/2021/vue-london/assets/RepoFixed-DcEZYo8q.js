@@ -1,0 +1,1 @@
+import{_ as t}from"./Repo-d-7_dIlg.js";import{b as n,o as a}from"./modules/vue-Co4i_muW.js";import{u as r}from"./slidev/context-qbePQLlQ.js";const i={__name:"RepoFixed",props:{name:String},setup(e){return r(),(s,m)=>{const o=t;return a(),n(o,{name:e.name,class:"absolute top-12 right-12"},null,8,["name"])}}};export{i as _};

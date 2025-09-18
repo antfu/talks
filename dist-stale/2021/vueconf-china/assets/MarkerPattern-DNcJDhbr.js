@@ -1,0 +1,1 @@
+import{_ as r}from"./Marker-SN2NlphW.js";import{b as o,o as a,w as s,I as _}from"./modules/vue-CvjR9cJg.js";import{u as n}from"./slidev/context-CDJPmaAZ.js";const u={__name:"MarkerPattern",setup(m){return n(),(p,t)=>{const e=r;return a(),o(e,{class:"text-pink-500"},{default:s(()=>t[0]||(t[0]=[_(" 模式 ",-1)])),_:1,__:[0]})}}};export{u as _};

@@ -1,0 +1,1 @@
+import{_ as r}from"./Marker-SN2NlphW.js";import{b as o,o as s,w as a,I as _}from"./modules/vue-CvjR9cJg.js";import{u as n}from"./slidev/context-CDJPmaAZ.js";const u={__name:"MarkerCore",setup(m){return n(),(c,e)=>{const t=r;return s(),o(t,{class:"text-green-500"},{default:a(()=>e[0]||(e[0]=[_(" 核心 ",-1)])),_:1,__:[0]})}}};export{u as _};

@@ -13,14 +13,14 @@ const root = dirname(await findUp('pnpm-workspace.yaml', { cwd }))
 const dirStale = join(root, 'dist-stale', `.${base}`)
 const dirDist = join(root, 'dist', `.${base}`)
 
-console.log({
-  cwd,
-  base,
-  args,
-  root,
-  dirStale,
-  dirDist,
-})
+// console.log({
+//   cwd,
+//   base,
+//   args,
+//   root,
+//   dirStale,
+//   dirDist,
+// })
 
 if (existsSync(dirStale)) {
   console.log('Stale directory found, copying to dist')
@@ -35,7 +35,7 @@ if (existsSync(dirStale)) {
 else {
   console.log('No stale directory found, building')
 
-  const command = ['slidev', 'build', '--base', base, '--out', `../dist${base}`, ...args]
+  const command = ['slidev', 'build', '--base', base, '--out', `../../dist${base}`, ...args]
 
   console.log('Building', command.join(' '))
 

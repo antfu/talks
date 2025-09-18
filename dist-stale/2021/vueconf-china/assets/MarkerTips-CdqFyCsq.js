@@ -1,0 +1,1 @@
+import{_ as o}from"./Marker-SN2NlphW.js";import{b as r,o as s,w as a,I as _}from"./modules/vue-CvjR9cJg.js";import{u as n}from"./slidev/context-CDJPmaAZ.js";const u={__name:"MarkerTips",setup(m){return n(),(p,t)=>{const e=o;return s(),r(e,{class:"text-orange-400"},{default:a(()=>t[0]||(t[0]=[_(" 技巧 ",-1)])),_:1,__:[0]})}}};export{u as _};

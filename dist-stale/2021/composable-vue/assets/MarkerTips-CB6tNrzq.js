@@ -1,0 +1,1 @@
+import{_ as o}from"./Marker-DnuQo5Xx.js";import{b as r,o as s,w as a,ad as _}from"./modules/vue-DatK400y.js";import{u as n}from"./slidev/context-DGsLhW1a.js";const u={__name:"MarkerTips",setup(p){return n(),(m,t)=>{const e=o;return s(),r(e,{class:"text-orange-400"},{default:a(()=>t[0]||(t[0]=[_(" Tips ",-1)])),_:1,__:[0]})}}};export{u as _};
