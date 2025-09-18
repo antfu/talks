@@ -14,6 +14,11 @@ addons:
 
 ![](/af-logo-animated.svg){.w-30.mt--10.mb-5}
 
+<!--
+Good morning everyone! How are you doing?
+
+It's my great honor to be here giving the talk and meeting you all.
+-->
 
 ---
 layout: intro
@@ -51,7 +56,7 @@ Base in 🇯🇵 Tokyo
 clicks: 7
 zoom: 0.75
 layout: none
-class: flex h-full w-full
+class: 'flex h-full w-full'
 glow: topmost
 glowSeed: 18
 ---
@@ -73,11 +78,11 @@ glowSeed: 18
 </div>
 
 <!--
-For a little bit more about my story, I started my journey in Open Source with a personal project called BreadSplit.
+For a little bit more about my story, I started my journey in Open Source with a personal project called BreadSplit in college.
 
-[click] From that, I created a VS Code extension called i18n-ally and then VueUse, the utilities library for Vue. Since then, I've started contributing much more to open source projects, [click] like Vue and Vite. I've built tools like [click] Slidev, joined [click] the Nuxt team, and then created [click] Vitest, etc. And I ended up with [click] probably too many projects. [click]
+[click] From that, I created a VS Code extension called i18n-ally and then made VueUse, the utilities library for Vue. Since then, I've started contributing much more to open source projects, [click] like Vue and Vite. I've built tools like [click] Slidev, joined [click] the Nuxt team, and then created [click] Vitest, etc. And I kinda ended up with [click] probably too many projects. [click]
 
-I don't know how much you know about them or if you're already using some of them. What I want to say is that I feel extremely lucky to be able to work on these projects, make them useful for the community, and eventually get this great opportunity to stand here and give this talk to you. Thanks to everyone for coming here and thanks to the organizers for holding this event and inviting me here.
+This is the graph I made to show the relationships of the projects I worked on. Perhaps some of you are already familiar with or have used some of those projects. What I want to say is that I feel extremely lucky to be able to work on these projects, make them useful for the community, and eventually get this great opportunity to stand here and give this talk to you.
 -->
 
 ---
@@ -135,7 +140,7 @@ And that's totally fine for me as I consider them as a learning and experimentin
 
 [click] For that, I would also say, don't set too high expectations. It's easy for us to get excited about the idea we are working on, but they might not necessarily be the best fit for the community.
 
-[click] Then I would suggest establishing a mechanism to verify your idea with the community.
+[click] Then I would suggest establishing a mechanism to verify your idea with the community. Then we can know where to improve and iterate.
 
 So for the following tips, I'll share some practical tips that I learned from my own experience.
 -->
@@ -154,7 +159,7 @@ class: 'text-center'
 <!--
 The second tip I would give is to [click] solve your own problems first. You should be your first user of your tool, or you should be the reason why you made the tool in the first place.
 
-[click] I see this as a great way for myself to come up with good ideas and find strong motivation to keep them moving.
+[click] Build from your own pain points and eat your own dogfood.
 -->
 
 ---
@@ -224,11 +229,13 @@ I'd say that building from your own pain points is [click] a great way to come u
 
 [click] And our motivation comes from solving our own problems, with the possibility that it might also help others.
 
-[click] Furthermore, our needs are likely to be shared by others, and we can validate our ideas through the community.
+[click] Furthermore, our needs are likely to be shared by others, and we can validate our ideas with the community.
 
 [click] Finally, through community discussions and contributions, we can iterate on our designs and improve our solutions to serve even broader scenarios.
 
-By following this approach, we can gather the essential elements for the continuous development of projects - what we are skilled at and enjoy, and what the community needs.
+By doing so, we can gather the essential elements for the continuous development of projects - what we are skilled at and enjoy, and what the community needs.
+
+Hopefully this can help to make the project practical and sustainable. 
 -->
 
 ---
@@ -305,7 +312,7 @@ Specifically, I think we should be progressive on the following aspects:
 
 [click] The first would be onboarding, [click] we should make it easy to understand and get started. [click] The tip I would give is to see if you can describe your tool clearly within one sentence. If you can't, you might have made the tool too complicated.
 
-[click] Then we should be progressive on features, [click] start minimal and grow with users. [click] We should make the tool useful even in the simplest cases. For example, Vite can start with a single `index.html` file and no more. Nuxt can start with a single `app.vue` file, etc. It's easy to pack as many features as possible into our tool to make it more useful, but it could be overwhelming for users to start with a lot of features. We need to find a way to reveal features when users need them.
+[click] Then we should be progressive on features, [click] start minimal and grow with users. [click] We should make the tool useful even in the simplest cases. For example, Vite can start with a single `index.html` file and no more. Nuxt can start with a single `app.vue` file, etc. It's easy to pack as many features as possible into our tool to make it more useful, but it could be overwhelming for users to start with a lot of features. We need to find a way to reveal features as users need them.
 
 [click] Then it's about extensibility, [click] to allow the community to enhance the tool and enrich the ecosystem. [click] We should make a plugin system for users to extend it with their needs.
 
@@ -377,7 +384,7 @@ Even though Scripts and Software are technically the same thing under the hood, 
 
 [click] Software, on the other hand, is a tool that you use to solve a general problem, and you can use it for a long time. You can have it adapt to different scenarios for others with different needs.
 
-[click] So I would say, Software is logic that adapts. The adaptability gives life to the code we wrote and benefits others in the long run.
+[click] So I would say, Software is logic that adapts. The adaptability gives life to the code we wrote and benefits others in the long run. When we want to build tools for people to use, we would want to try to make our tools less scripts but more software.
 
 Why are we talking about this? I think extensibility is one of the very important ways to make software have more adaptability. For extensibility, we usually mean a plugin system.
 -->
@@ -403,15 +410,15 @@ of Having a Plugins System
 </v-clicks>
 
 <!--
-Talking about the benefits of having a plugin system, I would give a few points here.
+Talking about the benefits of having a plugin system,
 
-[click] First, it would allow you to build a community around your tool. And it would give the community power to build extensible features without being blocked by you or the maintainers. This also means it will scale better.
+[click] I would say, it allows you to build a community around your tool. And it would give the community power to build extensible features without being blocked by you or the maintainers. This also means it will scale better with the power of the community.
 
 [click] Then, as the author or the maintainer, you can also leverage the plugin system to experiment and verify your ideas without breaking changes to the core. You can implement an experimental feature as an opt-in plugin for people to try it and iterate it freely. Once it's stable enough, you can then consider if you want to merge it to the core, etc.
 
-[click] Then, making a plugin system, especially a powerful one, would also help you design a better architecture for your tool. You can have a more flexible and extensible architecture, which is also more maintainable in the long run.
+[click] Then, making a plugin system, especially a powerful one, would also help you design a better architecture for your tool. You can have a more flexible and extensible architecture, which might also be more maintainable in the long run.
 
-[click] Finally, as we mentioned before, having a plugin system would help your tool to be more extensible and cover more use cases, which would benefit more people.
+[click] Finally, as we mentioned before, having a plugin system would help your tool to be more extensible and cover more use cases, which would benefit more people and maximizing the value.
 -->
 
 ---
@@ -426,11 +433,9 @@ class: 'text-center'
 />
 
 <!--
+With that in mind, I would say a good way to build a powerful plugin system is to [click] make your core features as plugins.
 
-With that in mind, I would say a good way to build a powerful plugin system is to make your core features as plugins.
-
-This would put you in the position of both API designer and API consumer at the same time, which would help you design a more powerful plugin system.
-
+[click] This would put you in the position of both API designer and API consumer at the same time, which would help you design a more powerful plugin system.
 -->
 
 ---
@@ -490,15 +495,15 @@ This would put you in the position of both API designer and API consumer at the 
 </div>
 
 <!--
-
 Let's take Vite as an example.
 
-I don't know how many of you are familiar with the history of Vite. Vite as of today is almost the default choice for web development for almost any project, but at the very beginning, [click] it was an experiment on development tooling specifically for Vue.
+I don't know how many of you are familiar with the history of Vite. Vite as of today is almost the default choice for web development for almost any project, but at the very beginning, it was an experiment on development tooling specifically for Vue.
 
-As the idea of having a native-ESM dev server seemed to work pretty well, Evan started to think that we could have this great hot module reload experience for other frameworks as well. [click] Starting from Vite v2.0+, Vite became a framework-agnostic frontend tooling that is not bound to Vue anymore. [click] Instead, Evan extracted the hard-coded Vue-specific logic into a plugin, which also helps to ensure Vite has a very powerful plugin system.
+As the idea of having a native-ESM dev server seemed to work pretty well, Evan You started to think that we could have this great dev server experience for other frameworks as well. [click] Starting from Vite v2.0+, Vite became a framework-agnostic frontend tooling that is not bound to Vue anymore. [click] Instead, Evan extracted the hard-coded Vue-specific logic into a plugin, which also helps to ensure Vite has a very powerful plugin system to support complex cases like Vue.
 
-[click] Then we have a plugin to support React, [click] the community built the plugin for Svelte which later became official, [click] then we could have some crazy ideas like running a test runner for Vite with the same plugin pipeline, [click] and by now we have almost every meta-framework built on top of Vite and sharing the great plugin ecosystem from Vite.
+[click] Then we have a plugin to support React, [click] the community built the plugin for Svelte which later became official, [click] then we could have some crazy ideas like running a test runner for Vite with the same plugin pipeline which ends up to be Vitest, [click] and by now we have almost every meta-framework built on top of Vite and sharing the great plugin ecosystem of Vite together.
 
+This is just one of the examples, but we can see that without this move of extracting Vue as a plugin, we wouldn't have all these great tools that empower our daily development.
 -->
 
 ---
@@ -515,7 +520,7 @@ class: 'text-center'
 <!--
 Then, the final tip I would give today is [click] to work with the community. Or work with the users, depending on what type of tools you are building.
 
-[click] We can't build a great tool without the community. We need to work with people, get them engaged, and build together.
+[click] We can't just build a great tool out of nowhere. We need to work with people, get them engaged, and build together.
 -->
 
 ---
@@ -552,14 +557,15 @@ Then, the final tip I would give today is [click] to work with the community. Or
 </div>
 
 <!--
-
-The first thing I would suggest is to [click] build your own identity. People need to know who is behind the tool, especially in open source. Software as tools is a bit different from physical tools - software evolves and needs maintenance, so knowing and trusting the authors or maintainers behind a certain tool is important.
+The first thing I would suggest is to [click] build your own identity. People need to know who is behind the tool, especially in open source. Software as tools is a bit different from physical tools - software evolves and needs maintenance, so knowing and trusting the authors or maintainers behind a certain tool is important for you to get the adoption.
 
 [click] Then, of course, we should work with our users. Listen to their feedback and iterate.
 
-[click] Building a software tool, especially dev tools, is interesting, as your users are usually also developers, meaning they could potentially contribute to the tool themselves. Making a good environment for contributions and maintaining a good feedback loop for them is important to get your tool started. For example, like replying to comments or reviewing PRs in time, to make people feel they are part of the community, which potentially you could gather people with the same passion about the tool and maybe build a team to scale the project further.
+[click] Building a software tool, especially dev tools, is interesting, as your users are usually also developers, meaning they could potentially contribute to the tool themselves. 
 
-[click] Finally, we should collaborate with other projects/authors/maintainers, outside of our project. Not only could we extend the ecosystem by introducing new integrations, but we could also learn from each other, spark new ideas, and build a stronger community together.
+Making a good environment for contributions and maintaining a good feedback loop for them is important to get your tool started. For example, like replying to comments or reviewing PRs in time, to make people feel they are part of the community, which potentially you could gather people with the same passion about the tool and maybe build a team to scale the project further.
+
+[click] Finally, we should collaborate with other projects' authors or maintainers, outside of our project. Not only could we extend the ecosystem by introducing new integrations, but we could also learn from each other, spark new ideas, and build a stronger community together.
 -->
 
 ---
@@ -643,7 +649,11 @@ Recordings on [antfu.me](https://antfu.me)
 </div>
 
 <!--
-If you are interested in more detailed explanations about the topics we mentioned today, I actually gave a few dedicated talks about them. The recordings and slides are also available on my website.
+I also actually gave a few related talks before,
+
+The Set Theory about how we can expand the scopes of our projects; The Progressive path about how we can reduce the friction for people to use our tools. And then Yak Shaving about how to come up with ideas and execute them.  
+
+If you are interested, you can also find the recordings and slides on my website.
 -->
 
 ---
@@ -652,14 +662,16 @@ class: 'text-center'
 ---
 
 <div font-serif text-2.5em v-click>To Make Tools that People Love</div>
-<div text-2em text-purple v-click>is to Put Love into the Tools We Make 🤍</div>
+<div text-2em text-rose v-click>is to Put Love into the Tools We Make 🤍</div>
 
 <!--
+In a word, 
+
 Needless to say, but [click] to make tools that people love,
 
-I think the only true tip is [click] "to put love into the tools we make".
+I think the only true tip is [click] "to put love and great care into the tools we make". (pause)
 
-That's all for my talk. Thank you!
+That's all for my talk today. [click] Thank you! (pause)
 -->
 
 ---
