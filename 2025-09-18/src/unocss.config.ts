@@ -14,6 +14,10 @@ export default mergeConfigs([
           sans: 'DM Sans',
           serif: 'Bodoni Moda',
         },
+        timeouts: {
+          warning: 10_000,
+          failure: 30_000,
+        },
         processors: createLocalFontProcessor(),
       }),
     ],

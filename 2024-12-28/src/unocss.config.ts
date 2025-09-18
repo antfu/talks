@@ -17,6 +17,10 @@ export default mergeConfigs([
           fast: 'Ubuntu',
           hand: 'Caveat',
         },
+        timeouts: {
+          warning: 10_000,
+          failure: 30_000,
+        },
         processors: createLocalFontProcessor(),
       }),
     ],
