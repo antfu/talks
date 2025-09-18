@@ -80,9 +80,9 @@ glowSeed: 18
 <!--
 For a little bit more about my story, I started my journey in Open Source with a personal project called BreadSplit in college.
 
-[click] From that, I created a VS Code extension called i18n-ally and then made VueUse, the utilities library for Vue. Since then, I've started contributing much more to open source projects, [click] like Vue and Vite. I've built tools like [click] Slidev, joined [click] the Nuxt team, and then created [click] Vitest, etc. And I kinda ended up with [click] probably too many projects. [click]
+[click] From that, I created a VS Code extension called i18n-ally and then made VueUse, the utilities library for Vue. Since then, I've started contributing much more to open source projects, [click] like Vue and Vite. I've built tools like [click] Slidev, joined [click] the Nuxt team, and then created [click] Vitest, etc. And I kinda ended up with [click] probably too many projects.
 
-This is the graph I made to show the relationships of the projects I worked on. Perhaps some of you are already familiar with or have used some of those projects. What I want to say is that I feel extremely lucky to be able to work on these projects, make them useful for the community, and eventually get this great opportunity to stand here and give this talk to you.
+This is the graph I made to show the relationships of the projects I worked on. [click] Perhaps some of you are already familiar with or have used some of those projects. What I want to say is that I feel extremely lucky to be able to work on these projects, make them useful for the community, and eventually get this great opportunity to stand here and give this talk to you.
 -->
 
 ---
