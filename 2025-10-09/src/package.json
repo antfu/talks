@@ -5,6 +5,6 @@
   "scripts": {
     "dev": "slidev",
     "build": "tsx ../../scripts/build.ts /2025/viteconf/",
-    "export": "slidev export --per-slide --output ../2025-10-08-viteconf-en.pdf"
+    "export": "slidev export --per-slide --output ../2025-10-09-viteconf-en.pdf"
   }
 }

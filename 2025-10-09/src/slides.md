@@ -24,9 +24,9 @@ class: pl-30
 <div class="[&>*]:important-leading-10 opacity-80">
 
 Core team member of {Vite} {Vue} {Nuxt}<br>
-Author of {Vitest} {Slidev} {UnoCSS} {Type Challenges} {Elk}<br>
+Author of {Vitest} {Slidev} {UnoCSS} {Type Challenges}<br>
 Maintainer of {ESLint Stylistic} {Shiki} {Twoslash}<br>
-Working at {NuxtLabs} / {Vercel}<br>
+Working at {Vercel} ( {NuxtLabs} )<br>
 
 </div>
 
@@ -54,8 +54,11 @@ class: text-center
 <img src="/vite-devtools.png" w-120 />
 
 <div abs-br mx-10 my-11 flex="~ col gap-4 items-end" text-left op75>
-  <span>ViteConf</span>
-  <div text-xs opacity-75 mt--4>2025 Oct 8th</div>
+  <div>
+    <img src="/viteconf.png" h-6 alt="ViteConf">
+    <span>ViteConf</span>
+  </div>
+  <div text-xs opacity-75 mt--4>2025 Oct. 9th</div>
 </div>
 
 <img src="/vue-shenzhen.svg" h-50 absolute bottom-0 right-0 op10 />
@@ -71,7 +74,7 @@ glowOpacity: 0
 layout: center
 ---
 
-<h1 important-text-5xl>Why do we need DevTools?</h1>
+<h1 important-text-5xl>Why Do We Need DevTools?</h1>
 
 ---
 layout: none
@@ -98,7 +101,7 @@ class: h-full
       <div op50>...</div>
     </div>
     <div mt3 op75>
-      Vite itself is a developer tool
+      Vite itself is a also developer tool!
     </div>
   </div>
 
@@ -106,9 +109,9 @@ class: h-full
 
 <div p13 border="t main">
 
-  <h2 text-4xl mb-2 v-click="2">Specific DevTools</h2>
+  <h2 text-4xl mb-2 v-click="2">Special DevTools</h2>
 
-  <div text-2xl text-lime v-click="5">"Tools to better use tools"</div>
+  <div text-2xl text-lime v-click="5">"Tools for using tools better"</div>
 
   <div v-click="6" mt-6 flex="~ gap-2 wrap">
     <div px2 bg-hex-8882 rounded flex="~ gap-1 items-center"><div i-logos-chrome/> Chrome DevTools</div>
@@ -131,44 +134,44 @@ glow: right
 
 # Good Tools Principles
 
-<div grid="~ cols-[max-content_min-content_auto] items-center gap-x-10 gap-y-6" py10>
+<div grid="~ cols-[max-content_min-content_auto] items-center gap-x-10 gap-y-10" py10>
   <div flex="~ gap-2 items-center" text-blue relative v-click>
     <div i-ph-stairs-duotone text-2xl />
     <span>Entry Barrier</span>
   </div>
   <div i-ph-arrow-right-duotone op50 v-click />
-  <div text-lg v-after>Easy to get started, simple configuration, explain what it does in one sentence</div>
+  <div text-lg v-after>Easy to get started, simple config, explainable in one sentence</div>
 
   <div flex="~ gap-2 items-center" text-lime relative v-click>
     <div i-ph-book-bookmark-duotone text-2xl />
     <span>Intuitive Design</span>
   </div>
   <div i-ph-arrow-right-duotone op50 v-click />
-  <div text-lg v-after>Meets user expectations and intuition, excellent user experience</div>
+  <div text-lg v-after>Meets user expectations and intuition, good user experience</div>
 
   <div flex="~ gap-2 items-center" text-amber relative v-click>
     <div i-ph-magnifying-glass-duotone text-2xl />
     <span>Transparency</span>
   </div>
   <div i-ph-arrow-right-duotone op50 v-click />
-  <div text-lg v-after>Information transparency, can see internal state and process, easy to debug and optimize</div>
+  <div text-lg v-after>Transparent to the internal state, easy to debug and optimize</div>
 
   <div flex="~ gap-2 items-center" text-orange relative v-click>
     <div i-ph-puzzle-piece-duotone text-2xl />
     <span>Composability</span>
   </div>
   <div i-ph-arrow-right-duotone op50 v-click />
-  <div text-lg v-after>Modules are decoupled from each other, easy to combine and extend</div>
+  <div text-lg v-after>Decoupled modules, easy to combine and extend</div>
 
   <div flex="~ gap-2 items-center" text-purple relative v-click>
     <div i-ph-plugs-duotone text-2xl />
     <span>Extensibility</span>
   </div>
   <div i-ph-arrow-right-duotone op50 v-click />
-  <div text-lg v-after>Flexible plugin and configuration system</div>
+  <div text-lg v-after>Flexible plugin system and customizations</div>
 </div>
 
-<div absolute top-67 left-9 w-225 h-17 border="2 amber rounded-xl" bg-amber:10 z--1 v-click />
+<div absolute top-67 left-9 w-225 h-15 border="2 amber rounded-xl" bg-amber:10 z--1 v-click />
 
 <!--
 Besides good
@@ -179,8 +182,7 @@ layout: center
 ---
 
 <div flex="~ col gap-2 items-center" relative text-6xl>
-  <div text-amber2 text-5xl>Transparency</div>
-  <span text-amber>Information Transparency</span>
+  <span text-amber>Transparency</span>
 </div>
 
 ---
@@ -369,49 +371,49 @@ glow: bottom
     <div text-orange text-sm bg-orange:10 px2 rounded>Working in progress</div>
   </div>
 
-  <div border="l main" h-full py10 flex="~ col gap-8 justify-center">
+  <div border="l main" h-full py10 flex="~ col gap-6 justify-center">
     <div flex="~ gap-2" relative v-click>
-      <div i-material-symbols:check-circle text-green text-4xl ml--4.5 />
+      <div i-material-symbols:check-circle text-green text-4xl ml--4.5 flex-none />
       <div flex="~ col gap-1">
         <div text-xl>Module Analysis</div>
-        <div op50>
+        <div op65 text-sm>
           Display each plugin's load and transform results for each file
         </div>
       </div>
     </div>
     <div flex="~ gap-2" relative v-click>
-      <div i-material-symbols:check-circle text-green text-4xl ml--4.5 />
+      <div i-material-symbols:check-circle text-green text-4xl ml--4.5 flex-none />
       <div flex="~ col gap-1">
-        <div text-xl>Module Dependencies and Bundle Visualization</div>
-        <div op50>
+        <div text-xl>Bundle Visualization</div>
+        <div op65 text-sm>
           Display dependency relationships of each file and bundle composition
         </div>
       </div>
     </div>
     <div flex="~ gap-2" relative v-click>
-      <div i-material-symbols:build-circle text-orange text-4xl ml--4.5 />
+      <div i-material-symbols:build-circle text-orange text-4xl ml--4.5 flex-none />
       <div flex="~ col gap-1">
         <div text-xl>Bundle Analysis</div>
-        <div op50>
+        <div op65 text-sm>
           Display bundle results, including bundle size, optimization suggestions, etc.
         </div>
       </div>
     </div>
     <div flex="~ gap-2" relative v-click>
-      <div i-material-symbols:lightbulb-circle text-gray text-4xl ml--4.5 />
+      <div i-material-symbols:build-circle text-orange text-4xl ml--4.5 flex-none />
       <div flex="~ col gap-1">
-        <div text-xl>Development Mode</div>
-        <div op50>
-          Display module analysis and dependency relationships in development mode
+        <div text-xl>DevTools Kit</div>
+        <div op65 text-sm>
+          Extensible DevTools architecture
         </div>
       </div>
     </div>
-     <div flex="~ gap-2" relative v-click>
-      <div i-material-symbols:lightbulb-circle text-gray text-4xl ml--4.5 />
+    <div flex="~ gap-2" relative v-click>
+      <div i-material-symbols:lightbulb-circle text-gray text-4xl ml--4.5 flex-none />
       <div flex="~ col gap-1">
-        <div text-xl>DevTools Kit</div>
-        <div op50>
-          Extensible DevTools architecture
+        <div text-xl>Development Mode</div>
+        <div op65 text-sm>
+          Display module analysis and dependency relationships in development mode
         </div>
       </div>
     </div>
@@ -523,7 +525,6 @@ layout: center
 ---
 
 <div flex="~ col gap-2 items-center" relative text-6xl>
-  <div text-purple2 text-5xl>Extensibility</div>
   <span text-purple>Extensibility</span>
 </div>
 
