@@ -545,6 +545,32 @@ clicks: 2
 </div>
 
 ---
+
+```ts {7-19}
+import type { Plugin } from 'vite'
+
+export default MyPlugin(): Plugin {
+  return {
+    name: 'my-plugin',
+    transform: { /* ... */ },
+    devtools: {
+      setup(ctx) {
+        ctx.views.register({
+          name: 'My Plugin',
+          icon: '/my-plugin.svg',
+          viewId: 'my-plugin',
+          view: {
+            type: 'iframe',
+            url: 'http://localhost:3000/my-plugin',
+          },
+        })
+      }
+    }
+  }
+}
+```
+
+---
 layout: center
 ---
 
