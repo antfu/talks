@@ -131,6 +131,13 @@ class: h-full
 </div>
 </div>
 
+<!--
+Before we talk about why, let's first discuss what **IS** DevTools.
+
+When we talk about the DevTools, it can either means the general developer tools, or the specialized term devtools.
+
+-->
+
 ---
 class: text-2xl
 glow: right
@@ -379,8 +386,13 @@ class: important-p0
 
 # Module Transformation Flow
 
-From file parsing, module loading, transformation, bundling, to final output<br>
-Can track the entire process, find bottlenecks and optimization points
+<div op50>
+Parse <span op50>→</span> Resolve <span op50>→</span> Transform <span op50>→</span> Chunk <span op50>→</span> Bundle <span op50>→</span> Output
+</div>
+
+<div op50 mt5>
+Track the entire process, find bottlenecks and optimizations
+</div>
 
 </div>
 </div>
@@ -420,7 +432,8 @@ class: text-center
 layout: center
 ---
 
-<div text-3em>Vite DevTools is<br><span text-red font-800>NOT</span> Only about Visualizations</div>
+<div text-2.5em op50>Vite DevTools is</div>
+<div text-3em><span text-red3 font-serif font-800>NOT ONLY</span> about Visualizations</div>
 
 ---
 
