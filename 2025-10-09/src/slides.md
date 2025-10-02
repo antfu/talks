@@ -493,13 +493,11 @@ export default MyPlugin(): Plugin {
     devtools: {
       setup(ctx) {
         ctx.views.register({
-          name: 'My Plugin',
+          id: 'my-plugin',
+          type: 'iframe',
+          title: 'My Plugin',
           icon: '/my-plugin.svg',
-          viewId: 'my-plugin',
-          view: {
-            type: 'iframe',
-            url: 'http://localhost:3000/my-plugin',
-          },
+          url: 'http://localhost:3000/my-plugin',
         })
       }
     }
