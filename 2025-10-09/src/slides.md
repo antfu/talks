@@ -14,36 +14,40 @@ title: Vite DevTools
 
 ---
 layout: intro
-glowSeed: 15
-glowOpacity: 0.3
-class: pl-30
+class: pl-25
+glowSeed: 14
 ---
 
-# Anthony Fu
+<h1 font-serif>Anthony Fu</h1>
 
 <div class="[&>*]:important-leading-10 opacity-80">
 
-Core team member of {Vite} {Vue} {Nuxt}<br>
-Author of {Vitest} {Slidev} {UnoCSS} {Type Challenges}<br>
+Core team member of {Vite} {Vue} and {Nuxt}<br>
+Creator of {Vitest} {Slidev} {UnoCSS} {Type Challenges} {Elk}<br>
 Maintainer of {ESLint Stylistic} {Shiki} {Twoslash}<br>
-Working at {Vercel} ( {NuxtLabs} )<br>
+Working at {NuxtLabs} / {Vercel}<br>
+Base in 🇯🇵 Tokyo
 
 </div>
 
-<div my-10 w-min flex="~ gap-1" items-center justify-center>
+<div mt-10 w-min flex="~ gap-1" items-center justify-center>
   <div i-ri-user-3-line op50 ma text-xl />
   <div><a href="https://antfu.me" target="_blank" class="border-none! font-300">antfu.me</a></div>
   <div i-ri-github-line op50 ma text-xl ml4/>
   <div><a href="https://github.com/antfu" target="_blank" class="border-none! font-300">antfu</a></div>
-  <div i-ri-bluesky-line op50 ma text-xl ml4/>
-  <div><a href="https://bsky.app/antfu.me" target="_blank" class="border-none! font-300">antfu.me</a></div>
+  <div i-ri-mastodon-line op50 ma text-xl ml4 />
+  <div><a href="https://m.webtoo.ls/@antfu" target="_blank" class="border-none! font-300">antfu@webtoo.ls</a></div>
   <div i-ri-twitter-x-line op50 ma text-xl ml4/>
   <div><a href="https://twitter.com/antfu7" target="_blank" class="border-none! font-300">antfu7</a></div>
-  <div i-ri-bilibili-line op50 ma text-xl ml4/>
-  <div><a href="https://space.bilibili.com/668380" target="_blank" class="border-none! font-300" ws-nowrap>AnthonyFu</a></div>
 </div>
 
-<img src="https://antfu.me/avatar.png" absolute top-36 right-30 w-40 rounded-full />
+<img src="https://antfu.me/avatar.png" rounded-full absolute top-38 right-15 w-40 />
+
+<!--
+
+So for today's topic, let's go straight to the point. Let's talk about...
+
+-->
 
 ---
 layout: center
@@ -51,17 +55,15 @@ glow: bottom
 class: text-center
 ---
 
-<img src="/vite-devtools.png" w-120 />
+<img src="/vite-devtools.png" w-140 />
 
-<div abs-br mx-10 my-11 flex="~ col gap-4 items-end" text-left op75>
+<div abs-br mx-10 my-11 flex="~ gap-2 items-center" text-left op75>
+  <img src="/viteconf.png" h-12 alt="ViteConf">
   <div>
-    <img src="/viteconf.png" h-6 alt="ViteConf">
-    <span>ViteConf</span>
+    <div text-lg>ViteConf</div>
+    <div text-xs opacity-75>Oct. 9th, 2025</div>
   </div>
-  <div text-xs opacity-75 mt--4>2025 Oct. 9th</div>
 </div>
-
-<img src="/vue-shenzhen.svg" h-50 absolute bottom-0 right-0 op10 />
 
 ---
 layout: center
@@ -74,7 +76,9 @@ glowOpacity: 0
 layout: center
 ---
 
-<h1 important-text-5xl>Why Do We Need DevTools?</h1>
+<h1 important-text-5xl font-serif>Why DevTools?</h1>
+
+<!-- So, first thing first, why do we need DevTools? -->
 
 ---
 layout: none
@@ -182,7 +186,7 @@ layout: center
 ---
 
 <div flex="~ col gap-2 items-center" relative text-6xl>
-  <span text-amber>Transparency</span>
+  <span font-serif>Transparency</span>
 </div>
 
 ---
@@ -310,115 +314,6 @@ class: text-center
 
 <img src="/vite-devtools.png" w-120 />
 
----
-
-# Goals & Vision
-
-<div grid="~ cols-3 gap-3" py4>
-  <div v-click flex="~ col gap-1" p4 rounded bg-teal:15 text-teal1>
-    <div text-3xl i-ph:chart-donut-duotone text-teal mb2 />
-    <div>Visualization</div>
-    <div text-xs op50>Display Vite/Rolldown internal state and process</div>
-  </div>
-
-  <div v-click flex="~ col gap-1" p4 rounded bg-orange:15 text-orange1>
-    <div text-3xl i-ph:package-duotone text-orange mb2 />
-    <div>Build Analysis</div>
-    <div text-xs op50>Provide suggestions and optimization solutions</div>
-  </div>
-
-  <div v-click flex="~ col gap-1" p4 rounded bg-yellow:15 text-yellow1>
-    <div text-3xl i-ph:plugs-duotone text-yellow mb2 />
-    <div>Plugin Analysis</div>
-    <div text-xs op50>Help plugin authors follow best practices</div>
-  </div>
-
-  <div v-click flex="~ col gap-1" p4 rounded bg-red:15 text-red1>
-    <div text-3xl i-ph:bug-beetle-duotone text-red mb2 />
-    <div>Build Snapshots</div>
-    <div text-xs op50>Record build process, shareable and analyzable reproduction</div>
-  </div>
-
-  <div v-click flex="~ col gap-1" p4 rounded bg-purple:15 text-purple1>
-    <div text-3xl i-ph:stack-plus-duotone text-purple mb2 />
-    <div>Vite Plus</div>
-    <div text-xs op50>Integrate Vitest UI, Oxlint visualization, etc.</div>
-  </div>
-
-  <div v-click flex="~ col gap-1" p4 rounded bg-blue:15 text-blue1>
-    <div text-3xl i-ph:circles-three-plus-duotone text-blue mb2 />
-    <div>DevTools Kit</div>
-    <div text-xs op50>Unified DevTools architecture, allowing upper frameworks to provide extensions</div>
-  </div>
-</div>
-
-<!--
-Bundle optimization
-Tree-shaking visualization
-Barrel-file detection
-CJS/ESM visualization
--->
-
----
-class: p0
-glow: bottom
----
-
-<div class="grid grid-cols-2 gap-4 h-full">
-
-  <div ma flex="~ col gap-2 items-center">
-    <img src="/vite-devtools.png" w-80 />
-    <div text-orange text-sm bg-orange:10 px2 rounded>Working in progress</div>
-  </div>
-
-  <div border="l main" h-full py10 flex="~ col gap-6 justify-center">
-    <div flex="~ gap-2" relative v-click>
-      <div i-material-symbols:check-circle text-green text-4xl ml--4.5 flex-none />
-      <div flex="~ col gap-1">
-        <div text-xl>Module Analysis</div>
-        <div op65 text-sm>
-          Display each plugin's load and transform results for each file
-        </div>
-      </div>
-    </div>
-    <div flex="~ gap-2" relative v-click>
-      <div i-material-symbols:check-circle text-green text-4xl ml--4.5 flex-none />
-      <div flex="~ col gap-1">
-        <div text-xl>Bundle Visualization</div>
-        <div op65 text-sm>
-          Display dependency relationships of each file and bundle composition
-        </div>
-      </div>
-    </div>
-    <div flex="~ gap-2" relative v-click>
-      <div i-material-symbols:build-circle text-orange text-4xl ml--4.5 flex-none />
-      <div flex="~ col gap-1">
-        <div text-xl>Bundle Analysis</div>
-        <div op65 text-sm>
-          Display bundle results, including bundle size, optimization suggestions, etc.
-        </div>
-      </div>
-    </div>
-    <div flex="~ gap-2" relative v-click>
-      <div i-material-symbols:build-circle text-orange text-4xl ml--4.5 flex-none />
-      <div flex="~ col gap-1">
-        <div text-xl>DevTools Kit</div>
-        <div op65 text-sm>
-          Extensible DevTools architecture
-        </div>
-      </div>
-    </div>
-    <div flex="~ gap-2" relative v-click>
-      <div i-material-symbols:lightbulb-circle text-gray text-4xl ml--4.5 flex-none />
-      <div flex="~ col gap-1">
-        <div text-xl>Development Mode</div>
-        <div op65 text-sm>
-          Display module analysis and dependency relationships in development mode
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
 ---
 
@@ -521,18 +416,47 @@ class: text-center !pt15
 <img src="/vd/chart.png" w-200 />
 
 ---
+class: text-center
+layout: center
+---
+
+<div text-3em>Vite DevTools is<br><span text-red font-800>NOT</span> Only about Visualizations</div>
+
+---
+
+// TODO: some graph circles
+
+<!--
+If you think about the visual we just talked about, you will find that you might often need them, or they could be a bit too advanced to our daily development.
+
+This is actually totally make sense, because Vite is a framework-agnostic tool. Agnostic means that we don't know about the framework you use, we shouldn't know. This gives Vite great flexibility and extensibility, but also made Vite hard to present the interesting information that are more closer to the actual Vite users, like the app we are building, or the state of the framework we are using etc.
+
+If we stopped here, it means the Vite DevTools can only be the common divisor among all the frameworks, which is not always useful to the majority of the users.
+
+That's why the next thing we are going to talk about is, Extensibility.
+-->
+
+---
 layout: center
 ---
 
 <div flex="~ col gap-2 items-center" relative text-6xl>
-  <span text-purple>Extensibility</span>
+  <span font-serif>Extensibility</span>
 </div>
+
+<!--
+I see Extensibility is one of the most important factors that makes Vite as it is today. There is no reason we should not doing it for Vite DevTools.
+-->
 
 ---
 clicks: 19
 ---
 
 <DevToolsKit />
+
+<!--
+If you have watched my previous talks, this is a slide I made in roughly two years ago, picturing the idea of having a DevTools Kit.
+-->
 
 ---
 clicks: 2
@@ -571,6 +495,138 @@ export default MyPlugin(): Plugin {
 ```
 
 ---
+
+It will be provided as:
+
+- Embedded Floating Panel
+- Standalone Webpage
+- Deployable SPA
+- Browser Extension
+- Standalone Electron App (?)
+
+And we will provide all these infrastructure for framework/tools integrations.
+
+
+---
+
+# Goals & Vision
+
+<div grid="~ cols-3 gap-3" py4>
+  <div v-click flex="~ col gap-1" p4 rounded bg-teal:15 text-teal1>
+    <div text-3xl i-ph:chart-donut-duotone text-teal mb2 />
+    <div>Visualization</div>
+    <div text-xs op50>Display Vite/Rolldown internal state and process</div>
+  </div>
+
+  <div v-click flex="~ col gap-1" p4 rounded bg-orange:15 text-orange1>
+    <div text-3xl i-ph:package-duotone text-orange mb2 />
+    <div>Build Analysis</div>
+    <div text-xs op50>Provide suggestions and optimization solutions</div>
+  </div>
+
+  <div v-click flex="~ col gap-1" p4 rounded bg-yellow:15 text-yellow1>
+    <div text-3xl i-ph:plugs-duotone text-yellow mb2 />
+    <div>Plugin Analysis</div>
+    <div text-xs op50>Help plugin authors follow best practices</div>
+  </div>
+
+  <div v-click flex="~ col gap-1" p4 rounded bg-red:15 text-red1>
+    <div text-3xl i-ph:bug-beetle-duotone text-red mb2 />
+    <div>Build Snapshots</div>
+    <div text-xs op50>Record build process, shareable and analyzable reproduction</div>
+  </div>
+
+  <div v-click flex="~ col gap-1" p4 rounded bg-purple:15 text-purple1>
+    <div text-3xl i-ph:stack-plus-duotone text-purple mb2 />
+    <div>Vite Plus</div>
+    <div text-xs op50>Integrate Vitest UI, Oxlint visualization, etc.</div>
+  </div>
+
+  <div v-click flex="~ col gap-1" p4 rounded bg-blue:15 text-blue1>
+    <div text-3xl i-ph:circles-three-plus-duotone text-blue mb2 />
+    <div>DevTools Kit</div>
+    <div text-xs op50>Unified DevTools architecture, allowing upper frameworks to provide extensions</div>
+  </div>
+</div>
+
+<!--
+Bundle optimization
+Tree-shaking visualization
+Barrel-file detection
+CJS/ESM visualization
+-->
+
+---
+class: p0
+glow: bottom
+---
+
+<div class="grid grid-cols-[3fr_4fr] gap-4 h-full">
+
+  <div ma flex="~ col gap-2 items-center">
+    <img src="/vite-devtools.png" w-80 />
+    <div text-orange text-sm bg-orange:10 px2 rounded>Progress</div>
+  </div>
+
+  <div border="l main" h-full py10 flex="~ col gap-6 justify-center">
+    <div flex="~ gap-2" relative v-click>
+      <div i-material-symbols:check-circle text-green text-3xl ml--4.5 flex-none />
+      <div flex="~ col gap-1">
+        <div text-xl>Module Analysis</div>
+        <div op65 text-sm>
+          Display each plugin's load and transform results for each file
+        </div>
+      </div>
+    </div>
+    <div flex="~ gap-2" relative v-click>
+      <div i-material-symbols:check-circle text-green text-3xl ml--4.5 flex-none />
+      <div flex="~ col gap-1">
+        <div text-xl>Bundle Visualization</div>
+        <div op65 text-sm>
+          Display dependency relationships of each file and bundle composition
+        </div>
+      </div>
+    </div>
+    <div flex="~ gap-2" relative v-click>
+      <div i-material-symbols:build-circle text-orange text-3xl ml--4.5 flex-none />
+      <div flex="~ col gap-1">
+        <div text-xl>Bundle Analysis</div>
+        <div op65 text-sm>
+          Display build size, optimization suggestions, etc.
+        </div>
+      </div>
+    </div>
+    <div flex="~ gap-2" relative v-click>
+      <div i-material-symbols:build-circle text-orange text-3xl ml--4.5 flex-none />
+      <div flex="~ col gap-1">
+        <div text-xl>DevTools Kit</div>
+        <div op65 text-sm>
+          Extensible DevTools architecture
+        </div>
+      </div>
+    </div>
+    <div flex="~ gap-2" relative v-click>
+      <div i-material-symbols:lightbulb-circle text-gray text-3xl ml--4.5 flex-none />
+      <div flex="~ col gap-1">
+        <div text-xl>Development Mode</div>
+        <div op65 text-sm>
+          Waiting for Full bundle mode
+        </div>
+      </div>
+    </div>
+    <div flex="~ gap-2" relative v-click>
+      <div i-material-symbols:lightbulb-circle text-gray text-3xl ml--4.5 flex-none />
+      <div flex="~ col gap-1">
+        <div text-xl>Integrations</div>
+        <div op65 text-sm>
+          Collaborate with frameworks to unified the DevTools experience
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+---
 layout: center
 ---
 
@@ -582,20 +638,19 @@ layout: center
 class: text-center
 ---
 
-<div text-4xl mt-20 mb-12>Acknowledgments</div>
+<div text-4xl mt-20 mb-12>Thanks to</div>
 
 <div flex="~ gap-18 items-center justify-center" >
+  <div flex="~ col items-center" v-click>
+    <img src="https://avatars.githubusercontent.com/u/22515951?v=4" rounded-full w-30 mb4 />
+    <div>Arlo</div>
+    <div font-mono text-sm op50>@webfansplz</div>
+  </div>
 
   <div flex="~ col items-center" v-click>
     <img src="https://avatars.githubusercontent.com/u/49502170?v=4" rounded-full w-30 mb4 />
     <div>Yunfei He</div>
     <div font-mono text-sm op50>@hyf0</div>
-  </div>
-
-  <div flex="~ col items-center" v-click>
-    <img src="https://avatars.githubusercontent.com/u/22515951?v=4" rounded-full w-30 mb4 />
-    <div>Arlo</div>
-    <div font-mono text-sm op50>@webfansplz</div>
   </div>
 
   <div flex="~ col items-center" v-click>

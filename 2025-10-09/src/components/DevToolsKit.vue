@@ -23,7 +23,7 @@ const isFaded = computed(() => PRESENT_START <= $clicks.value && $clicks.value <
     <div transition-all duration-500 :style="sliderStyle">
       <div flex="~ gap-2">
         <img src="/devtools-kit.svg" h-1em>
-        <sup v-click op75 text-base translate-y-2 inline-block>计划</sup>
+        <sup v-click op75 text-base translate-y-2 inline-block>Idea</sup>
       </div>
       <div font-700 flex="~ gap-2">
         <div i-logos-nuxt-icon /> <div text-green>
@@ -64,18 +64,18 @@ const isFaded = computed(() => PRESENT_START <= $clicks.value && $clicks.value <
   </div>
 
   <div v-click op50 my2>
-    模块化、可组合、互相协作
+    Modular, Composable, Collabrative
   </div>
 
   <div flex="~ gap-2" mt3>
     <DevToolsModule
-      v-click icon="i-ri-box-3-line" name="打包分析" logo="i-logos-vitejs" theme="purple"
+      v-click icon="i-ri-box-3-line" name="Bundle Analyzer" logo="i-logos-vitejs" theme="purple"
     />
     <DevToolsModule
-      v-after icon="i-ri-search-2-line" name="插件分析" logo="i-logos-vitejs" theme="purple"
+      v-after icon="i-ri-search-2-line" name="Plugin Analyzer" logo="i-logos-vitejs" theme="purple"
     />
     <DevToolsModule
-      v-after icon="i-ri-list-settings-line" name="Vite 配置" logo="i-logos-vitejs" theme="purple"
+      v-after icon="i-ri-list-settings-line" name="Vite Config" logo="i-logos-vitejs" theme="purple"
     />
     <DevToolsModule
       v-click icon="i-logos-vitest" name="Vitest" theme="yellow"
@@ -83,49 +83,49 @@ const isFaded = computed(() => PRESENT_START <= $clicks.value && $clicks.value <
     <DevToolsModule v-click name="Oxlint" theme="blue">
       <img src="/oxc.svg" h-1.8em>
     </DevToolsModule>
-    <DevToolsModule v-click icon="i-ri-seo-line" name="SEO 工具" />
-    <DevToolsModule v-after icon="i-ri-empathize-line" name="无障碍" />
+    <DevToolsModule v-click icon="i-ri-seo-line" name="SEO Tools" />
+    <DevToolsModule v-after icon="i-ri-empathize-line" name="Accessibility" />
     <DevToolsModule v-after icon="i-simple-icons-pwa" name="PWA" />
   </div>
 
   <div flex="~ gap-2" mt2>
     <DevToolsModule
-      v-click icon="i-carbon-assembly-cluster" name="组件" theme="green" logo="i-logos-vue"
+      v-click icon="i-carbon-assembly-cluster" name="Components" theme="green" logo="i-logos-vue"
       :class="{ op30: isFaded && !isVue && !isNuxt }"
       :glow="isVue || isNuxt"
     />
     <DevToolsModule
-      v-after icon="i-carbon-network-4" name="响应式" theme="green" logo="i-logos-vue"
+      v-after icon="i-carbon-network-4" name="Reactivity" theme="green" logo="i-logos-vue"
       :class="{ op30: isFaded && !isVue && !isNuxt }"
       :glow="isVue || isNuxt"
     />
     <DevToolsModule
-      v-after icon="i-ri-route-line" name="路由" theme="green" logo="i-logos-vue"
+      v-after icon="i-ri-route-line" name="Router" theme="green" logo="i-logos-vue"
       :class="{ op30: isFaded && !isVue && !isNuxt }"
       :glow="isVue || isNuxt"
     />
     <DevToolsModule
-      v-after icon="i-icon-park-outline-pineapple" name="Pinia 可视化" theme="green" logo="i-logos-vue"
+      v-after icon="i-icon-park-outline-pineapple" name="Pinia" theme="green" logo="i-logos-vue"
       :class="{ op30: isFaded && !isVue && !isNuxt }"
       :glow="isVue || isNuxt"
     />
     <DevToolsModule
-      v-click icon="i-ri-shapes-line" name="Nuxt 模块" theme="teal" logo="i-logos-nuxt-icon"
+      v-click icon="i-ri-shapes-line" name="Nuxt Modules" theme="teal" logo="i-logos-nuxt-icon"
       :class="{ op30: isFaded && !isNuxt }"
       :glow="isNuxt"
     />
     <DevToolsModule
-      v-after icon="i-carbon-function" name="自动导入" theme="teal" logo="i-logos-nuxt-icon"
+      v-after icon="i-carbon-function" name="Auto Imports" theme="teal" logo="i-logos-nuxt-icon"
       :class="{ op30: isFaded && !isNuxt }"
       :glow="isNuxt"
     />
     <DevToolsModule
-      v-after icon="i-carbon-volume-file-storage" name="文件路由" theme="teal" logo="i-logos-nuxt-icon"
+      v-after icon="i-carbon-volume-file-storage" name="File Router" theme="teal" logo="i-logos-nuxt-icon"
       :class="{ op30: isFaded && !isNuxt }"
       :glow="isNuxt"
     />
     <DevToolsModule
-      v-after icon="i-carbon-network-public" name="服务端 API" theme="teal" logo="i-logos-nuxt-icon"
+      v-after icon="i-carbon-network-public" name="Server API" theme="teal" logo="i-logos-nuxt-icon"
       :class="{ op30: isFaded && !isNuxt }"
       :glow="isNuxt"
     />
@@ -138,36 +138,36 @@ const isFaded = computed(() => PRESENT_START <= $clicks.value && $clicks.value <
       :glow="isReact"
     />
     <DevToolsModule
-      v-after icon="i-carbon-data-set" name="状态管理" theme="blue" logo="i-logos-react"
+      v-after icon="i-carbon-data-set" name="State Management" theme="blue" logo="i-logos-react"
       :class="{ op30: isFaded && !isReact }"
       :glow="isReact"
     />
     <DevToolsModule
-      v-after icon="i-ri-route-line" name="路由" theme="blue" logo="i-logos-react"
+      v-after icon="i-ri-route-line" name="Router" theme="blue" logo="i-logos-react"
       :class="{ op30: isFaded && !isReact }"
       :glow="isReact"
     />
     <DevToolsModule
-      v-click icon="i-ri-route-line" name="文件路由" theme="red" logo="i-logos-svelte-icon"
+      v-click icon="i-ri-route-line" name="File Router" theme="red" logo="i-logos-svelte-icon"
       :class="{ op30: isFaded && !isSvelte }"
       :glow="isSvelte"
     />
     <DevToolsModule
-      v-after icon="i-carbon-assembly-cluster" name="组件" theme="red" logo="i-logos-svelte-icon"
+      v-after icon="i-carbon-assembly-cluster" name="Components" theme="red" logo="i-logos-svelte-icon"
       :class="{ op30: isFaded && !isSvelte }"
       :glow="isSvelte"
     />
     <DevToolsModule
-      v-click icon="i-carbon-network-4" name="响应式" theme="blue" logo="i-logos-solidjs-icon"
+      v-click icon="i-carbon-network-4" name="Reactivity" theme="blue" logo="i-logos-solidjs-icon"
       :class="{ op30: isFaded && !isSolid }"
       :glow="isSolid"
     />
     <DevToolsModule
-      v-click icon="i-carbon-heat-map" name="分包" theme="purple" logo="i-logos-qwik-icon"
+      v-click icon="i-carbon-heat-map" name="Chunking" theme="purple" logo="i-logos-qwik-icon"
       :class="{ op30: isFaded }"
     />
     <DevToolsModule
-      v-click icon="i-carbon:page-scroll" name="数据管理" theme="orange" logo="i-logos-astro-icon invert hue-rotate-180"
+      v-click icon="i-carbon:page-scroll" name="Content" theme="orange" logo="i-logos-astro-icon invert hue-rotate-180"
       :class="{ op30: isFaded && !isAstro }"
       :glow="isAstro"
     />
@@ -181,7 +181,7 @@ const isFaded = computed(() => PRESENT_START <= $clicks.value && $clicks.value <
       <img src="/histoire.svg" h-1.7em>
     </DevToolsModule>
     <DevToolsModule
-      v-after icon="i-ri-more-line" name="更多..." border-dashed
+      v-after icon="i-ri-more-line" name="More..." border-dashed
     />
   </div>
 </template>

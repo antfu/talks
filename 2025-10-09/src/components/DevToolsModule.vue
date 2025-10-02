@@ -31,7 +31,7 @@ const themes = {
     <slot>
       <div text-3xl :class="icon" />
     </slot>
-    <div text-11px op50>
+    <div text-10px op50 text-center>
       {{ name }}
     </div>
     <div :class="logo" absolute top-1 right-1 text-sm />

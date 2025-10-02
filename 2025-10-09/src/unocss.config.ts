@@ -11,10 +11,8 @@ export default mergeConfigs([
     presets: [
       presetWebFonts({
         fonts: {
-          mono: 'DM Mono',
-          sans: 'Noto Sans SC',
-          fast: 'Ubuntu',
-          hand: 'Caveat',
+          sans: 'DM Sans',
+          serif: 'Bodoni Moda',
         },
         timeouts: {
           warning: 10_000,
