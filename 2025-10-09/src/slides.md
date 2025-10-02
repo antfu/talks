@@ -649,31 +649,40 @@ layout: center
 
 ---
 class: text-center
+transition: view-transition
 ---
 
 <div text-4xl mt-20 mb-12>Thanks to</div>
 
 <div flex="~ gap-18 items-center justify-center" >
   <div flex="~ col items-center" v-click>
-    <img src="https://avatars.githubusercontent.com/u/22515951?v=4" rounded-full w-30 mb4 />
+    <img src="/avatars/webfansplz.png" rounded-full w-30 mb4 view-transition-contributor-webfansplz duration-1000 />
     <div>Arlo</div>
     <div font-mono text-sm op50>@webfansplz</div>
   </div>
 
   <div flex="~ col items-center" v-click>
-    <img src="https://avatars.githubusercontent.com/u/49502170?v=4" rounded-full w-30 mb4 />
+    <img src="/avatars/Akryum.png" rounded-full w-30 mb4 view-transition-contributor-akryum duration-1000 />
+    <div>Guillaume Chau</div>
+    <div font-mono text-sm op50>@Akryum</div>
+  </div>
+
+  <div flex="~ col items-center" v-click>
+    <img src="/avatars/hyf0.png" rounded-full w-30 mb4 view-transition-contributor-hyf0 duration-1000 />
     <div>Yunfei He</div>
     <div font-mono text-sm op50>@hyf0</div>
   </div>
 
   <div flex="~ col items-center" v-click>
-    <div rounded-full w-30 h-30 bg-gray:10 flex mb4>
-      <div i-ph:user-duotone text-4em ma op50 />
-    </div>
-    <div>Join us?</div>
-    <div font-mono text-sm op50>@you?</div>
+    <img src="/avatars/atinux.png" rounded-full w-30 mb4 view-transition-contributor-atinux duration-1000 />
+    <div>Sébastien Chopin</div>
+    <div font-mono text-sm op50>@Atinux</div>
   </div>
 </div>
+
+---
+
+<Contributors />
 
 ---
 layout: intro

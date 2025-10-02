@@ -133,3 +133,7 @@ h6 {
   color: rgb(201, 158, 251);
   background: #161616ee;
 }
+
+::view-transition-group(*) {
+  animation-duration: 0.6s;
+}
