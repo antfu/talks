@@ -427,27 +427,26 @@ layout: center
 
 <div font-serif text-5xl my-10 mb-20>Being Agnostic</div>
 
-<v-clicks>
+<ul>
+  <li v-click my8>Far from Users' Interests (Too Low-level)</li>
 
-- Far from Users' Interests (Too Low-level)
+  <li v-click="3" my8>"Common Divisor" Among All the Frameworks</li>
 
-- "Common Divisor" Among All the Frameworks
-
-- Have to also be "Extensible"
-
-</v-clicks>
+  <li v-click="4" my8>Have to also be "Extensible"</li>
+</ul>
 
 <div absolute top-10 right-10>
-  <img 
+  <img
+    v-click="2"
     src="/set-intersections.png" w-120 transition-all duration-400
-    :class="$clicks === 2 ? 'saturate-0' : ''"
+    :class="$clicks === 3 ? 'saturate-0' : ''"
   >
   <div
-    border-2 border-purple rounded-full absolute transition-all duration-400
+    border-2 border-purple rounded-full absolute transition-all delay-200 duration-500
     flex
+    v-click="3"
     :class="[
-      $clicks <= 1 ? 'op0': '',
-      $clicks <= 2 ? 'w-20.5 h-20.5 top-50 left-50 bg-purple:20' : 'w-110 h-110 top-5 left-5'
+      $clicks <= 3 ? 'w-20.5 h-20.5 top-50 left-50 bg-purple:20' : 'w-110 h-110 top-5 left-5'
     ]"
   >
     <div i-logos-vitejs ma text-4xl />
@@ -459,7 +458,7 @@ If you think about the UI we just talked about, you will find that you might oft
 
 [click] This is actually totally make sense, because Vite is a framework-agnostic tool. Agnostic means that we don't know about the framework you use, we shouldn't know. This gives Vite great flexibility and extensibility to be the infrastructure of modern framework, but also made Vite hard to present the interesting information that are more closer to the actual Vite users, like the app we are building, or the state of the framework we are using etc.
 
-If you see the graph on the right, imagine each circle represents a specific framework or intergrations. Being agnostic means that Vite DevTools can only be the [click] common divisor among all the frameworks, which is not quite limited to always useful to the majority of the users.
+[click] If you look at the graph on the right, imagine each circle represents a specific framework or intergrations. Being agnostic means that Vite DevTools can only be the [click] common divisor among all the frameworks, which is not quite limited to always useful to the majority of the users.
 
 [click] That's why the next thing we are going to talk about is, Extensibility. In order to bring intersting, framework specific information to the users, we have to provide the capability for frameworks to do so.
 -->
@@ -585,7 +584,7 @@ I would picture Vite DevTools as the shared infrastructure for building DevTools
 
 ---
 
-# Goals & Vision
+<h1 font-serif text-4xl>Goals & Vision</h1>
 
 <div grid="~ cols-3 gap-3" py4>
   <div v-click flex="~ col gap-1" p4 rounded bg-teal:15 text-teal1>
@@ -708,7 +707,7 @@ class: text-center
 transition: view-transition
 ---
 
-<div text-4xl mt-20 mb-12>Thanks to</div>
+<h1 font-serif text-4xl mt-20 important-mb-16>Thanks to</h1>
 
 <div flex="~ gap-18 items-center justify-center" >
   <div flex="~ col items-center" v-click>
@@ -735,6 +734,10 @@ transition: view-transition
     <div font-mono text-sm op50>@Atinux</div>
   </div>
 </div>
+
+<!--
+And finally, I'd like to say thank you to [click] Arlo who had helped a lot on the development of Vite DevTools; [click] Guillaume for being so inspiration for his previous work on Vue DevTools and testing frameworks UIs, while also brainstormed and prototyped the idea of DevTools together. [click] Then YunFei for coordinates on the Rolldown side to provide APIs that made Vite DevTools possible. [click] And great thanks to Sebastien who invested me so much on building DevTools for Nuxt and now for Vite
+-->
 
 ---
 
