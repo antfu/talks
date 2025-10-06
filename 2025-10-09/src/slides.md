@@ -425,77 +425,43 @@ layout: center
 
 ---
 
-<h1 text-lime v-click="6">The "Set Union" <div class="inline-block i-gis-union translate-y-1/10" /></h1>
+<div font-serif text-5xl my-10 mb-20>Being Agnostic</div>
 
-<div mt-10 />
+<v-clicks>
 
-<v-clicks :at="6">
+- Far from Users' Interests (Too Low-level)
 
-- Extract the universal parts
+- "Common Divisor" Among All the Frameworks
 
-- Expand the scopes
-
-- Grow the communities
+- Have to also be "Extensible"
 
 </v-clicks>
 
-<div
-  v-click="1"
-  absolute w-90 h-90 left-110 top-30 border="~ green rounded-full"
-  bg-green:20 text-3xl text-green flex="~ items-center justify-center"
->
-  <div i-logos-nuxt-icon text-6xl />
+<div absolute top-10 right-10>
+  <img 
+    src="/set-intersections.png" w-120 transition-all duration-400
+    :class="$clicks === 2 ? 'saturate-0' : ''"
+  >
+  <div
+    border-2 border-purple rounded-full absolute transition-all duration-400
+    flex
+    :class="[
+      $clicks <= 1 ? 'op0': '',
+      $clicks <= 2 ? 'w-20.5 h-20.5 top-50 left-50 bg-purple:20' : 'w-110 h-110 top-5 left-5'
+    ]"
+  >
+    <div i-logos-vitejs ma text-4xl />
+  </div>
 </div>
-
-<div
-  v-click="2"
-  absolute w-50 h-50 left-192 top-55 border="~ yellow/50 rounded-full"
-  bg-yellow:10 text-2xl text-yellow flex="~ gap-3 items-center justify-center"
-  transition-all duration-500
-  :class="$clicks >= 2 ? '' : 'scale-50 translate-x--40 op0'"
->
-   unjs
-</div>
-
-<div
-  v-click="3"
-  absolute w-60 h-60 left-170 top-8 border="~ violet rounded-full"
-  bg-violet:20 text-3xl text-violet flex="~ gap-2 items-center justify-center"
-  transition-all duration-500
-  :class="$clicks >= 3 ? '' : 'scale-50 translate-x--20 translate-y-20 op0'"
->
-   nitro
-</div>
-
-<div
-  v-click="4"
-  absolute w-40 h-40 left-184 top-90 border="~ gray rounded-full"
-  bg-gray:20 text-gray flex="~ gap-1 items-center justify-center"
-  transition-all duration-500
-  :class="$clicks >= 4 ? '' : 'scale-50 translate-x--20 translate-y--20 op0'"
->
-   unplugin
-</div>
-
-<div
-  v-click="5"
-  absolute w-40 h-40 left-90 top-90 border="~ lime/50 rounded-full"
-  bg-lime:10 text-lime flex="~ gap-2 col items-center justify-center"
-  transition-all duration-500
-  :class="$clicks >= 5 ? '' : 'scale-50 translate-x-20 translate-y--20 op0'"
->
-   vite-node
-</div>
-
 
 <!--
-If you think about the visual we just talked about, you will find that you might often need them, or they could be a bit too advanced to our daily development.
+If you think about the UI we just talked about, you will find that you might often need them, or they could be a bit too advanced to our daily development.
 
-This is actually totally make sense, because Vite is a framework-agnostic tool. Agnostic means that we don't know about the framework you use, we shouldn't know. This gives Vite great flexibility and extensibility, but also made Vite hard to present the interesting information that are more closer to the actual Vite users, like the app we are building, or the state of the framework we are using etc.
+[click] This is actually totally make sense, because Vite is a framework-agnostic tool. Agnostic means that we don't know about the framework you use, we shouldn't know. This gives Vite great flexibility and extensibility to be the infrastructure of modern framework, but also made Vite hard to present the interesting information that are more closer to the actual Vite users, like the app we are building, or the state of the framework we are using etc.
 
-If we stopped here, it means the Vite DevTools can only be the common divisor among all the frameworks, which is not always useful to the majority of the users.
+If you see the graph on the right, imagine each circle represents a specific framework or intergrations. Being agnostic means that Vite DevTools can only be the [click] common divisor among all the frameworks, which is not quite limited to always useful to the majority of the users.
 
-That's why the next thing we are going to talk about is, Extensibility.
+[click] That's why the next thing we are going to talk about is, Extensibility. In order to bring intersting, framework specific information to the users, we have to provide the capability for frameworks to do so.
 -->
 
 ---
@@ -521,7 +487,7 @@ If you have watched my previous talks, this is a slide I made in roughly two yea
 -->
 
 ---
-clicks: 2
+clicks: 1
 ---
 
 <div flex="~ col gap-4 items-center justify-center" text-2xl w-full h-full>
@@ -595,13 +561,21 @@ export default function MyPlugin(): Plugin {
 <img src="/vite-devtools.png" w-80 brightness-200 />
 <div ml-16 op70 mt--1 mb10>Shared infrastructure for DevTools</div>
 
-- Embedded Floating Panel
-- Standalone Webpage
-- Deployable SPA
-- Browser Extension
-- Standalone Electron App (?)
+<v-clicks depth="2" ml-10>
 
-And we will provide all these infrastructure for framework/tools integrations.
+- Shared RPC layer for Client-Server/Client-Client Communications
+
+- Unified Entries and Routing
+
+- Isomorphic Views
+  - Embedded Floating Panel
+  
+  - Standalone Webpage
+  - Deployable SPA
+  - Browser Extension
+  - Standalone Electron App (?)
+
+</v-clicks>
 
 <!--
 I would picture Vite DevTools as the shared infrastructure for building DevTools.
@@ -728,13 +702,6 @@ glow: bottom
   </div>
 </div>
 
----
-layout: center
----
-
-<div scale-200>
-  <Repo name="vitejs/devtools"  />
-</div>
 
 ---
 class: text-center
@@ -772,6 +739,14 @@ transition: view-transition
 ---
 
 <Contributors />
+
+---
+layout: center
+---
+
+<div scale-200>
+  <Repo name="vitejs/devtools"  />
+</div>
 
 ---
 layout: intro
