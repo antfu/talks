@@ -433,11 +433,72 @@ layout: center
 ---
 
 <div text-2.5em op50>Vite DevTools is</div>
-<div text-3em><span text-red3 font-serif font-800>NOT ONLY</span> about Visualizations</div>
+<div text-3em><span font-serif font-800>NOT ONLY</span> about Visualizations</div>
 
 ---
 
-// TODO: some graph circles
+<h1 text-lime v-click="6">The "Set Union" <div class="inline-block i-gis-union translate-y-1/10" /></h1>
+
+<div mt-10 />
+
+<v-clicks :at="6">
+
+- Extract the universal parts
+
+- Expand the scopes
+
+- Grow the communities
+
+</v-clicks>
+
+<div
+  v-click="1"
+  absolute w-90 h-90 left-110 top-30 border="~ green rounded-full"
+  bg-green:20 text-3xl text-green flex="~ items-center justify-center"
+>
+  <div i-logos-nuxt-icon text-6xl />
+</div>
+
+<div
+  v-click="2"
+  absolute w-50 h-50 left-192 top-55 border="~ yellow/50 rounded-full"
+  bg-yellow:10 text-2xl text-yellow flex="~ gap-3 items-center justify-center"
+  transition-all duration-500
+  :class="$clicks >= 2 ? '' : 'scale-50 translate-x--40 op0'"
+>
+   unjs
+</div>
+
+<div
+  v-click="3"
+  absolute w-60 h-60 left-170 top-8 border="~ violet rounded-full"
+  bg-violet:20 text-3xl text-violet flex="~ gap-2 items-center justify-center"
+  transition-all duration-500
+  :class="$clicks >= 3 ? '' : 'scale-50 translate-x--20 translate-y-20 op0'"
+>
+   nitro
+</div>
+
+<div
+  v-click="4"
+  absolute w-40 h-40 left-184 top-90 border="~ gray rounded-full"
+  bg-gray:20 text-gray flex="~ gap-1 items-center justify-center"
+  transition-all duration-500
+  :class="$clicks >= 4 ? '' : 'scale-50 translate-x--20 translate-y--20 op0'"
+>
+   unplugin
+</div>
+
+<div
+  v-click="5"
+  absolute w-40 h-40 left-90 top-90 border="~ lime/50 rounded-full"
+  bg-lime:10 text-lime flex="~ gap-2 col items-center justify-center"
+  transition-all duration-500
+  :class="$clicks >= 5 ? '' : 'scale-50 translate-x-20 translate-y--20 op0'"
+>
+   vite-node
+</div>
+
 
 <!--
 If you think about the visual we just talked about, you will find that you might often need them, or they could be a bit too advanced to our daily development.
