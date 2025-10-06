@@ -72,6 +72,48 @@ glowOpacity: 0
 
 <img src="/vite-plus.png" w-280 mix-blend-lighten>
 
+<!--
+
+So you might heard about the plan of Vite Plus, which is aim to provide a unified toolchain for the JavaScript ecosystem.
+
+From Vite as the starting point, we are building Rolldown and the underlying Oxc, that would provide fast and more consistent Linter, Formater, Bundler, Minifier etc.
+
+On top of Vite, we will also integrate Vitest as part of the Vite Plus ecosystem for testing on both Node.js and browser.
+
+With such a grant roadmap, we also want to provide some UI devtools for better visualization and analysis experiences. This is where Vite DevTools comes into the view.
+-->
+
+---
+zoom: 1.6
+---
+
+<div flex="~ col gap-2">
+<pre class="shiki shiki-themes vitesse-dark vitesse-light slidev-code"><code><span op50>$ </span><span class="text-purple3!">vite</span> <span op75>dev</span></code> <span v-click="6" class="text-yellow!">--ui</span></pre>
+<pre v-click class="shiki shiki-themes vitesse-dark vitesse-light slidev-code"><code><span op50>$ </span><span class="text-purple3!">vite</span> <span op75>build</span></code> <span v-click="6" class="text-yellow!">--ui</span></pre>
+<pre v-click class="shiki shiki-themes vitesse-dark vitesse-light slidev-code"><code><span op50>$ </span><span class="text-purple3!">vite</span> <span op75>test</span></code> <span v-click="6" class="text-yellow!">--ui</span></pre>
+<pre v-click class="shiki shiki-themes vitesse-dark vitesse-light slidev-code"><code><span op50>$ </span><span class="text-purple3!">vite</span> <span op75>lint</span></code> <span v-click="6" class="text-yellow!">--ui</span></pre>
+<pre v-click class="shiki shiki-themes vitesse-dark vitesse-light slidev-code"><code><span op50>$ </span><span class="text-purple3!">vite</span> <span op75>format</span></code> <span v-click="6" class="text-yellow!">--ui</span></pre>
+<pre v-click class="shiki shiki-themes vitesse-dark vitesse-light slidev-code"><code><span op50>$ </span><span class="text-purple3!">vite</span> <span op75>lib</span></code> <span v-click="6" class="text-yellow!">--ui</span></pre>
+</div>
+
+<!--
+
+For a more concrete example,
+
+We know that we have the CLI `vite dev` for dev server and `vite build` for building the production bundle.
+
+We are going to have `vite test` which will be powered by Vitest to run your test suites.
+
+Then we will have `vite lint` and `vite format` powered by Oxc, which going to be the same parser as Vite on Rolldown.
+
+And then we might have `vite lib` for building libraries that are built on top of `tsdown` and Rolldown.
+
+And so on. As we mentioned, the goal is to provide a single unified toolchain with incredible performance for JavaScript ecosystem.
+
+About Vite DevTools, it going to be presented as a cli flag `--ui` for all the sub command and show the UI interface for each operation and understand the internal better.
+
+-->
+
 ---
 layout: center
 ---
@@ -134,7 +176,7 @@ class: h-full
 <!--
 Before we talk about why, let's first discuss what **IS** DevTools.
 
-When we talk about the DevTools, it can either means the general developer tools, or the specialized term devtools.
+When we talk about the DevTools, it can either means the general developer tools, or the specialized term, DevTools.
 
 -->
 
@@ -217,38 +259,11 @@ layout: center
 ---
 
 <h3 flex="~ gap-2 items-center" text-2xl>
-  <div i-carbon-ibm-watson-discovery  />
-  Vite Plugin Inspect
-</h3>
-
-<img src="/devtools/vite-inspect-graph.png" w-250 />
-
----
-
-<h3 flex="~ gap-2 items-center" text-2xl>
-  <div i-carbon-ibm-watson-discovery  />
-  Vite Plugin Inspect
-</h3>
-
-<img src="/devtools/vite-inspect-plugin-time.png" w-250 />
-
----
-
-<h3 flex="~ gap-2 items-center" text-2xl>
   <div i-logos-vitest />
   Vitest UI
 </h3>
 
 <img src="/devtools/vitest-ui.png" w-250 />
-
----
-
-<h3 flex="~ gap-2 items-center" text-2xl>
-  <div i-logos-nuxt-icon />
-  Nuxt DevTools
-</h3>
-
-<img src="/devtools/nuxt-components-graph.png" w-250 />
 
 ---
 
@@ -267,33 +282,6 @@ layout: center
 </h3>
 
 <img src="/devtools/eslint-files.png" w-250 />
-
----
-
-<h3 flex="~ gap-2 items-center" text-2xl>
-  <div i-logos-eslint />
-  ESLint Config Inspector
-</h3>
-
-<img src="/devtools/eslint-overview.png" w-250 />
-
----
-
-<h3 flex="~ gap-2 items-center" text-2xl>
-  <div i-logos-eslint />
-  ESLint Config Inspector
-</h3>
-
-<img src="/devtools/eslint-plugins.png" w-250 />
-
----
-
-<h3 flex="~ gap-2 items-center" text-2xl>
-  <img src="/node-modules-inspector.svg" w-9 />
-  Node Modules Inspector
-</h3>
-
-<img src="/devtools/node-inspector-overview.png" w-250 />
 
 ---
 
@@ -544,21 +532,54 @@ clicks: 2
 
 ---
 
-```ts {7-19}
+<div grid="~ cols-[3fr_4fr] gap-4">
+
+<div>
+
+<div font-serif text-2xl mb10 mt10>Vite DevTools Plugin</div>
+
+<v-clicks>
+
+- A superset of Vite Plugin
+
+- An additional `devtools` hook
+
+- Built-in RPC integrations
+
+- Built-in view hosting
+
+- Flexible and extensible
+
+</v-clicks>
+
+</div>
+<div v-click="1">
+
+```ts {*|7-26|8-16|17-25|*}{at:2}
 import type { Plugin } from 'vite'
 
-export default MyPlugin(): Plugin {
+export default function MyPlugin(): Plugin {
   return {
     name: 'my-plugin',
     transform: { /* ... */ },
     devtools: {
-      setup(ctx) {
-        ctx.views.register({
+      /* pesudo-code for demo */
+      async setup({ rpc, views, docks }) {
+        rpc.register({
+          name: 'my-plugin:hello',
+          async handler(message) {
+            console.log(`Hello from client, ${message}`)
+          }
+        })
+
+        views.staticHost('./dist/client', '/.my-plugin')
+
+        docks.register({
           id: 'my-plugin',
-          type: 'iframe',
           title: 'My Plugin',
-          icon: '/my-plugin.svg',
-          url: 'http://localhost:3000/my-plugin',
+          icon: '/.my-plugin/favicon.svg',
+          type: 'iframe', // can also be 'webcomponent', 'action', 'custom'
+          url: '/.my-plugin',
         })
       }
     }
@@ -566,9 +587,13 @@ export default MyPlugin(): Plugin {
 }
 ```
 
+</div>
+</div>
+
 ---
 
-It will be provided as:
+<img src="/vite-devtools.png" w-80 brightness-200 />
+<div ml-16 op70 mt--1 mb10>Shared infrastructure for DevTools</div>
 
 - Embedded Floating Panel
 - Standalone Webpage
@@ -577,6 +602,11 @@ It will be provided as:
 - Standalone Electron App (?)
 
 And we will provide all these infrastructure for framework/tools integrations.
+
+<!--
+I would picture Vite DevTools as the shared infrastructure for building DevTools.
+
+-->
 
 
 ---
