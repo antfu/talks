@@ -44,9 +44,9 @@ Base in 🇯🇵 Tokyo
 <img src="https://antfu.me/avatar.png" rounded-full absolute top-38 right-15 w-40 />
 
 <!--
+...
 
 So for today's topic, let's go straight to the point. Let's talk about...
-
 -->
 
 ---
@@ -73,8 +73,7 @@ glowOpacity: 0
 <img src="/vite-plus.png" w-280 mix-blend-lighten>
 
 <!--
-
-So you might heard about the plan of Vite Plus, which is aim to provide a unified toolchain for the JavaScript ecosystem.
+So you might have already heard about the plan of Vite Plus, which is aimed to provide a unified toolchain for the JavaScript ecosystem.
 
 From Vite as the starting point, we are building Rolldown and the underlying Oxc, that would provide fast and more consistent Linter, Formater, Bundler, Minifier etc.
 
@@ -176,8 +175,14 @@ class: h-full
 <!--
 Before we talk about why, let's first discuss what **IS** DevTools.
 
-When we talk about the DevTools, it can either means the general developer tools, or the specialized term, DevTools.
+When we talk about the DevTools, it can either means [click] the general developer tools, or the [click] specialized term, DevTools.
 
+I would define the general developer tools, [click] the tools for developers. In that sense, the tools we use daily in our developement like [click] Vite, Vitest, Vue, Nuxt, etc, are all developer tools.
+
+On the other hand, for the special DevTools, we usually mean [click] the tools for using tools better.
+For example, [click] we know Chrome have the DevTools builtin, and then we have Nuxt DevTools, Vue DevTools, etc.
+
+The DevTools we are going to talk about today all refer to the later.
 -->
 
 ---
@@ -227,7 +232,21 @@ glow: right
 <div absolute top-67 left-9 w-225 h-15 border="2 amber rounded-xl" bg-amber:10 z--1 v-click />
 
 <!--
-Besides good
+Why we are building tools for using tools?
+
+If you think about what makes a good tool, I would give the following points.
+
+The first thing is the [click] Entry Barrier, [click] A good tools should be easy to start with, easy to config, and usually easy to be explained with in one single stantance.
+
+Then the second would be [click] Intuitive, [click] we should meets users' expactations and intuition, to make good developer experience and easy to discover new features.
+
+The third I would pick is [click] Transparency, [click] when using a tool, it's better for users to know how it works and what's its state. If something went wrong, we could find out why and fix them easier.
+
+Then it would be [click] Composibility, [click] having decoupled modules would make features easier to combine and extend with other tools to leverage the full power.
+
+The final one I would pick is [click] Extensibility, [click] What make software different from one-off scripts is that software are about to adopt and handle different senarios. And being extenisble by having flexile plugin system and ability to customize is one of the very important aspects of good software.
+
+That said, the reason we are building DevTools is trying to provide the great [click] Transparency to our tools, to help the users understand the tools better and see through the internal state.
 -->
 
 ---
@@ -238,6 +257,10 @@ layout: center
   <span font-serif>Transparency</span>
 </div>
 
+<!--
+So let's talk about Transparency
+-->
+
 ---
 
 <h3 flex="~ gap-2 items-center" text-2xl>
@@ -246,6 +269,10 @@ layout: center
 </h3>
 
 <img src="/devtools/uno-inspector.png" w-250 />
+
+<!--
+My personal journey with building DevTools starts with UnoCSS. As UnoCSS generates CSS utilities on-demand based on the codebase. When working on that, one thing I found tricky is to know why one utiltiy was included and why the other is not. So I built this inspector to show how each file is scanned and how they are contributed to the utiltities list, etc. This kind of transparency helped us to build the engine more efficient with better accurecy.
+-->
 
 ---
 
@@ -309,6 +336,9 @@ class: text-center
 
 <img src="/vite-devtools.png" w-120 />
 
+<!--
+So, finally, let's see what we are having in Vite DevTools
+-->
 
 ---
 
@@ -533,7 +563,7 @@ clicks: 19
 <DevToolsKit />
 
 <!--
-If you have watched my previous talks, this is a slide I made in roughly two years ago, picturing the idea of having a DevTools Kit.
+If you have watched my previous talks, this is a slide I made in roughly two years ago, picturing the idea of having a shared interface for building DevTools, called DevTools Kit.
 -->
 
 ---
@@ -630,8 +660,12 @@ export default function MyPlugin(): Plugin {
 <!--
 I would picture Vite DevTools as the shared infrastructure for building DevTools.
 
--->
+[click] To make the communication eaiser, we provide the built-in RPC layer for plugin authors to extend and communicate between server and clients easier like function call in all the different envoriements.
 
+[click] Then we will provide unfied entry points and routing system. ??
+
+[click]
+-->
 
 ---
 
@@ -676,10 +710,7 @@ I would picture Vite DevTools as the shared infrastructure for building DevTools
 </div>
 
 <!--
-Bundle optimization
-Tree-shaking visualization
-Barrel-file detection
-CJS/ESM visualization
+The godl
 -->
 
 ---
@@ -752,6 +783,9 @@ glow: bottom
   </div>
 </div>
 
+<!--
+The scopes of Vite DevTools become pretty big and it takes a bit longer than our expectation.
+-->
 
 ---
 class: text-center
@@ -793,6 +827,10 @@ And finally, I'd like to say thank you to [click] Arlo who had helped a lot on t
 ---
 
 <Contributors />
+
+<!--
+Also thanks to all the contributors who previously contributed to Vite DevTools, Nuxt DevTools and Vue DevTools. All your help
+-->
 
 ---
 layout: center
