@@ -402,18 +402,69 @@ class: text-center
 <img src="/vd/chunk.png" w-210 mt--5 />
 
 ---
-class: text-center !pt15
----
-
-# Module Dependency Graph
-
-<img src="/vd/imports.png" w-250 />
-
----
 
 # Performance Consumption Chart <span text-lime font-mono bg-lime:10 px2 py1 rounded text-xs translate-y--6 inline-block>WIP</span>
 
 <img src="/vd/chart.png" w-200 />
+
+---
+class: important-p0
+---
+
+<div flex="~ gap-2 items-center" h-full>
+<img src="/vd/plugins.png" w-120 mt20 />
+<div flex="~ col gap-2 justify-center">
+
+# Plugins
+
+List of all the plugins in their order of execution
+
+</div>
+</div>
+
+---
+class: text-center !pt10
+---
+
+# Plugin Hooks
+
+<img src="/vd/plugins-details.png" w-300 mt--5 />
+
+
+---
+class: important-p0
+---
+
+<div flex="~ gap-2 items-center" h-full>
+<img src="/vd/chunks-list.png" w-150 />
+<div flex="~ col gap-2 justify-center">
+
+# Chunking
+
+Relationship between chunks and files
+
+</div>
+</div>
+
+---
+class: text-center !pt10
+---
+
+# Bundled Packages
+
+with Duplicated Packages Detection
+
+<img src="/vd/packages.png" w-300 mt--5 />
+
+
+---
+class: text-center !pt10
+---
+
+# Packages Size Graph
+
+<img src="/vd/packages-size.png" w-300 mt--5 />
+
 
 ---
 class: text-center
