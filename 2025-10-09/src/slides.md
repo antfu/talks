@@ -22,11 +22,11 @@ glowSeed: 14
 
 <div class="[&>*]:important-leading-10 opacity-80">
 
-Core team member of {Vite} {Vue} and {Nuxt}<br>
-Creator of {Vitest} {Slidev} {UnoCSS} {Type Challenges} {Elk}<br>
-Maintainer of {ESLint Stylistic} {Shiki} {Twoslash}<br>
+Core team member of {Vite}, {Vue}, and {Nuxt}<br>
+Creator of {Vitest}, {Slidev}, {UnoCSS}, {Type Challenges}, and {Elk}<br>
+Maintainer of {ESLint Stylistic}, {Shiki}, and {Twoslash}<br>
 Working at {NuxtLabs} / {Vercel}<br>
-Base in 🇯🇵 Tokyo
+Based in 🇯🇵 Tokyo
 
 </div>
 
@@ -46,7 +46,7 @@ Base in 🇯🇵 Tokyo
 <!--
 ...
 
-So for today's topic, let's go straight to the point. Let's talk about...
+For today's topic, let's get straight to the point. Let's talk about...
 -->
 
 ---
@@ -73,13 +73,13 @@ glowOpacity: 0
 <img src="/vite-plus.png" w-280 mix-blend-lighten>
 
 <!--
-So you might have already heard about the plan of Vite Plus, which is aimed to provide a unified toolchain for the JavaScript ecosystem.
+You might have already heard about the Vite Plus plan, which aims to provide a unified toolchain for the JavaScript ecosystem.
 
-From Vite as the starting point, we are building Rolldown and the underlying Oxc, that would provide fast and more consistent Linter, Formater, Bundler, Minifier etc.
+Starting from Vite, we're building Rolldown and the underlying Oxc, which will provide fast and more consistent linting, formatting, bundling, and minification.
 
-On top of Vite, we will also integrate Vitest as part of the Vite Plus ecosystem for testing on both Node.js and browser.
+On top of Vite, we'll also integrate Vitest as part of the Vite Plus ecosystem for testing on both Node.js and browser environments.
 
-With such a grant roadmap, we also want to provide some UI devtools for better visualization and analysis experiences. This is where Vite DevTools comes into the view.
+With such an ambitious roadmap, we also want to provide UI devtools for better visualization and analysis experiences. This is where Vite DevTools comes into play.
 -->
 
 ---
@@ -96,21 +96,19 @@ zoom: 1.6
 </div>
 
 <!--
-
 For a more concrete example,
 
-We know that we have the CLI `vite dev` for dev server and `vite build` for building the production bundle.
+We know that we have the CLI `vite dev` for the dev server and `vite build` for building the production bundle.
 
-We are going to have `vite test` which will be powered by Vitest to run your test suites.
+[click] We're going to have `vite test`, which will be powered by Vitest to run your test suites.
 
-Then we will have `vite lint` and `vite format` powered by Oxc, which going to be the same parser as Vite on Rolldown.
+[click] Then we'll have `vite lint` and `vite format` powered by Oxc, which will use the same parser as Vite and Rolldown.
 
-And then we might have `vite lib` for building libraries that are built on top of `tsdown` and Rolldown.
+[click] And then we might have `vite lib` for building libraries, built on top of `tsdown` and Rolldown.
 
-And so on. As we mentioned, the goal is to provide a single unified toolchain with incredible performance for JavaScript ecosystem.
+[click] And so on. As we mentioned, the goal is to provide a single unified toolchain with incredible performance for the JavaScript ecosystem.
 
-About Vite DevTools, it going to be presented as a cli flag `--ui` for all the sub command and show the UI interface for each operation and understand the internal better.
-
+[click] Regarding Vite DevTools, it will be presented as a CLI flag `--ui` for all subcommands, showing the UI interface for each operation and helping you understand the internals better.
 -->
 
 ---
@@ -119,7 +117,7 @@ layout: center
 
 <h1 important-text-5xl font-serif>Why DevTools?</h1>
 
-<!-- So, first thing first, why do we need DevTools? -->
+<!-- So, first things first, why do we need DevTools? -->
 
 ---
 layout: none
@@ -175,14 +173,14 @@ class: h-full
 <!--
 Before we talk about why, let's first discuss what **IS** DevTools.
 
-When we talk about the DevTools, it can either means [click] the general developer tools, or the [click] specialized term, DevTools.
+When we talk about DevTools, it can either mean [click] general developer tools, or the [click] specialized term, DevTools.
 
-I would define the general developer tools, [click] the tools for developers. In that sense, the tools we use daily in our developement like [click] Vite, Vitest, Vue, Nuxt, etc, are all developer tools.
+I would define general developer tools as [click] tools for developers. In that sense, the tools we use daily in our development like [click] Vite, Vitest, Vue, Nuxt, etc., are all developer tools.
 
-On the other hand, for the special DevTools, we usually mean [click] the tools for using tools better.
-For example, [click] we know Chrome have the DevTools builtin, and then we have Nuxt DevTools, Vue DevTools, etc.
+On the other hand, for the special DevTools, we usually mean [click] tools for using tools better.
+For example, [click] we know Chrome has built-in DevTools, and then we have Nuxt DevTools, Vue DevTools, etc.
 
-The DevTools we are going to talk about today all refer to the later.
+The DevTools we're going to talk about today all refer to the latter.
 -->
 
 ---
@@ -232,21 +230,21 @@ glow: right
 <div absolute top-67 left-9 w-225 h-15 border="2 amber rounded-xl" bg-amber:10 z--1 v-click />
 
 <!--
-Why we are building tools for using tools?
+Why are we building tools for using tools?
 
 If you think about what makes a good tool, I would give the following points.
 
-The first thing is the [click] Entry Barrier, [click] A good tools should be easy to start with, easy to config, and usually easy to be explained with in one single sentence.
+The first thing is the [click] Entry Barrier, [click] A good tool should be easy to start with, easy to configure, and usually easy to explain in one single sentence.
 
-Then the second would be [click] Intuitive, [click] we should meets users' expactations and intuition, to make good developer experience and easy to discover new features.
+Then the second would be [click] Intuitive, [click] we should meet users' expectations and intuition, to create a good developer experience and make it easy to discover new features.
 
-The third I would pick is [click] Transparency, [click] when using a tool, it's better for users to know how it works and what's its state. If something went wrong, we could find out why and fix them easier.
+The third I would pick is [click] Transparency, [click] when using a tool, it's better for users to know how it works and what its state is. If something goes wrong, we can find out why and fix it more easily.
 
-Then it would be [click] Composability, [click] having decoupled modules would make features easier to combine and extend with other tools to leverage the full power.
+Then it would be [click] Composability, [click] having decoupled modules would make features easier to combine and extend with other tools to leverage their full power.
 
-The final one I would pick is [click] Extensibility, [click] What make software different from one-off scripts is that software are about to adopt and handle different scenarios. And being extensible by having flexile plugin system and ability to customize is one of the very important aspects of good software.
+The final one I would pick is [click] Extensibility, [click] What makes software different from one-off scripts is that software is meant to adopt and handle different scenarios. Being extensible with a flexible plugin system and the ability to customize is one of the very important aspects of good software.
 
-That said, the reason we are building DevTools is trying to provide the great [click] Transparency to our tools, to help the users understand the tools better and see through the internal state.
+That said, the reason we're building DevTools is to provide great [click] Transparency to our tools, to help users understand the tools better and see through the internal state.
 -->
 
 ---
@@ -258,7 +256,7 @@ layout: center
 </div>
 
 <!--
-So let's talk about Transparency
+So let's talk about Transparency.
 -->
 
 ---
@@ -271,7 +269,7 @@ So let's talk about Transparency
 <img src="/devtools/uno-inspector.png" w-250 />
 
 <!--
-My personal journey with building DevTools starts with UnoCSS. As UnoCSS generates CSS utilities on-demand based on the codebase. When working on that, one thing I found tricky is to know why one utility was included and why the other is not. So I built this inspector to show how each file is scanned and how they are contributed to the utilities list, etc. This kind of transparency helped us to build the engine more efficient with better accuracy.
+My personal journey with building DevTools starts with UnoCSS. Since UnoCSS generates CSS utilities on-demand based on the codebase, when working on it, one thing I found tricky was knowing why one utility was included and why another wasn't. So I built this inspector to show how each file is scanned and how they contribute to the utilities list, etc. This kind of transparency helped us build the engine more efficiently with better accuracy.
 -->
 
 ---
@@ -283,6 +281,10 @@ My personal journey with building DevTools starts with UnoCSS. As UnoCSS generat
 
 <img src="/devtools/vite-inspect.png" w-250 />
 
+<!--
+At the beginning of the Vite ecosystem, I was building quite a few plugins for Vite and it was always tricky to debug as I have to console.log here and there to see the internal state of the transformed code. So I end up building this UI called Vite Plugin inspect, showing the transform internals.
+-->
+
 ---
 
 <h3 flex="~ gap-2 items-center" text-2xl>
@@ -291,6 +293,10 @@ My personal journey with building DevTools starts with UnoCSS. As UnoCSS generat
 </h3>
 
 <img src="/devtools/vitest-ui.png" w-250 />
+
+<!--
+Then I have the UI for Vitest to visualize the status and also the module relationships for each test file.
+-->
 
 ---
 
@@ -301,6 +307,10 @@ My personal journey with building DevTools starts with UnoCSS. As UnoCSS generat
 
 <img src="/devtools/nuxt-imports.png" w-250 />
 
+<!--
+Nuxt DevTools was a significant project that displays the internal state of Nuxt in various aspects, while also providing an API for Nuxt modules to contribute to DevTools. This is actually the main source of the inspiration for Vite DevTools.
+-->
+
 ---
 
 <h3 flex="~ gap-2 items-center" text-2xl>
@@ -309,6 +319,10 @@ My personal journey with building DevTools starts with UnoCSS. As UnoCSS generat
 </h3>
 
 <img src="/devtools/eslint-files.png" w-250 />
+
+<!--
+Then I also built the ESLint Config Inspector to visualize the relationship of ESLint's new flat config. It started with a fun side project and later became the official one for ESLint.
+-->
 
 ---
 
@@ -319,6 +333,10 @@ My personal journey with building DevTools starts with UnoCSS. As UnoCSS generat
 
 <img src="/devtools/node-inspector-graph.png" w-250 />
 
+<!--
+You probably heard the joke of the blackhole of your node_modules, but have you ever been curious about what things are actually inside it? I was, so I made the Node Modules Inspector to show the full graph of the relationship of all the packages inside your node_modules so you can play with it.
+-->
+
 ---
 
 <h3 flex="~ gap-2 items-center" text-2xl>
@@ -327,6 +345,10 @@ My personal journey with building DevTools starts with UnoCSS. As UnoCSS generat
 </h3>
 
 <img src="/devtools/node-inspector-sunbrust.png" w-250 />
+
+<!--
+You can also see how each package contributed to your node_modules in side by visuals.
+-->
 
 ---
 layout: center
@@ -337,7 +359,9 @@ class: text-center
 <img src="/vite-devtools.png" w-120 />
 
 <!--
-So, finally, let's see what we are having in Vite DevTools
+For all of that, what I want is to show you how DevTools can be interesting in many different aspects and also share with you my own journey towards building DevTools.
+
+So, finally, let's see what we have in Vite DevTools.
 -->
 
 ---
@@ -348,10 +372,14 @@ So, finally, let's see what we are having in Vite DevTools
 
 # Build Overview
 
-Current Vite DevTools visualizes build process and information<br>by consuming Rolldown's output<br>
+Current focusing on build mode<br>by consuming Rolldown's output<br>
 
 </div>
 </div>
+
+<!--
+So for Vite DevTools, we are currently focusing on the build mode of Rolldown Vite by consuming the output data from Rolldown.
+-->
 
 ---
 class: important-p0
@@ -368,6 +396,10 @@ Display all files participating in the bundle,<br>providing filtering and search
 </div>
 </div>
 
+<!--
+The first thing we wanted you to know is how many modules are built into your bundle. If they are from your own source code, or npm packages, or some generated virtual modules from plugin you have installed.
+-->
+
 ---
 class: important-p0
 ---
@@ -376,10 +408,16 @@ class: important-p0
 <img src="/vd/folders.png" w-180 />
 <div flex="~ col gap-2 justify-center">
 
-# Bundle File Tree
+# File Tree
+
+Bundled files in tree view
 
 </div>
 </div>
+
+<!--
+We also provide different views like tree, where you goup them by type and folders
+-->
 
 ---
 class: important-p0
@@ -393,6 +431,10 @@ class: important-p0
 
 </div>
 </div>
+
+<!--
+Or the graph view to see how and why each module has been included, and know their import relationship.
+-->
 
 ---
 class: important-p0
@@ -415,6 +457,10 @@ Track the entire process, find bottlenecks and optimizations
 </div>
 </div>
 
+<!--
+And then, inside each module, we show the whole transformation and bundling flow to see how your module is being processed from the source code, id resolution, transform, chunking, treeshaking, bundling, etc. This takes a big step forward from the previous vite-plugin-inspect by leveraging the full metadata from Rolldown. This would be useful for finding out bugs of plugins, or optimize for your chunking.
+-->
+
 ---
 class: text-center
 ---
@@ -423,19 +469,31 @@ class: text-center
 
 <img src="/vd/transform.png" w-240 mt--5 />
 
+<!--
+In transform, you can see the before and after between each plugins process and we will highlight the differences.
+-->
+
 ---
 class: text-center
 ---
 
-# Bundle Information
+# Chunk Information
 
 <img src="/vd/chunk.png" w-210 mt--5 />
+
+<!--
+Then in the chunking, you can see how many modules are in each of your chunks. For example, ideally, you don't want your entry chunk to be too big, as it would need to be loaded on every page. This page will explain why the chunk became big and provide guidance on how to optimize it.
+-->
 
 ---
 
 # Performance Consumption Chart <span text-lime font-mono bg-lime:10 px2 py1 rounded text-xs translate-y--6 inline-block>WIP</span>
 
 <img src="/vd/chart.png" w-200 />
+
+<!--
+We also care about performance, this table would tell you when working on that module, how each hook and how every plugin is costing you time, and poentially find the slow plugins to optimize.
+-->
 
 ---
 class: important-p0
@@ -452,6 +510,10 @@ List of all the plugins in their order of execution
 </div>
 </div>
 
+<!--
+Talking about plugins, they are the essential components that make Vite has such a powerful ecosystem but also they could commonly become the bottleneck of your build performance. Here we list all the plugins that participating your build pipeline, where you click into each of them.
+-->
+
 ---
 class: text-center !pt10
 ---
@@ -460,6 +522,9 @@ class: text-center !pt10
 
 <img src="/vd/plugins-details.png" w-300 mt--5 />
 
+<!--
+Inside that, you can see how this plugin is using the hooks and how it contributes to the entire build pipeline. This could be interesting to see which plugin on which file is slowing down the most. In the future, we will also provide some actionable suggestions that you can use to report to upstream and inform the plugin author of them.
+-->
 
 ---
 class: important-p0
@@ -476,6 +541,10 @@ Relationship between chunks and files
 </div>
 </div>
 
+<!--
+About chunking, we also visualize what are the files included in them and what's the relationship between each chunk.
+-->
+
 ---
 class: text-center !pt10
 ---
@@ -486,6 +555,9 @@ with Duplicated Packages Detection
 
 <img src="/vd/packages.png" w-300 mt--5 />
 
+<!--
+A huge portion of our app usually comes from 3rd-party npm packages. But usually we overlook how their impact on our apps. This tab lists all the packages that went into our bundle and their bundled size. And most importantly, it shows the versions and would tell you when you are having duplicated packages with different versions, which we likely want to avoid.
+-->
 
 ---
 class: text-center !pt10
@@ -495,6 +567,9 @@ class: text-center !pt10
 
 <img src="/vd/packages-size.png" w-300 mt--5 />
 
+<!--
+About the package size, don't let the package author tell you how small their packages are, as when tree shaking takes place, the size can vary based on your usage. In Vite DevTools, we have a visual representation of the size of your dependencies based on your real usage.
+-->
 
 ---
 class: text-center
@@ -505,7 +580,7 @@ layout: center
 <div text-3em><span font-serif font-800>NOT ONLY</span> about Visualizations</div>
 
 <!--
-That's said, I also wanted to mention that Vite DevTools is NOT ONLY about internal data visualizations.
+That said, I also wanted to mention that Vite DevTools is NOT ONLY about internal data visualizations.
 -->
 
 ---
@@ -539,13 +614,13 @@ That's said, I also wanted to mention that Vite DevTools is NOT ONLY about inter
 </div>
 
 <!--
-If you think about the UI we just talked about, you will find that you might often need them, or they could be a bit too advanced to our daily development.
+If you think about the UI we just talked about, you'll find that you might not often need them, or they could be a bit too advanced for our daily development.
 
-[click] This is actually totally make sense, because Vite is a framework-agnostic tool. Agnostic means that we don't know about the framework you use, we shouldn't know. This gives Vite great flexibility and extensibility to be the infrastructure of modern framework, but also made Vite hard to present the interesting information that are more closer to the actual Vite users, like the app we are building, or the state of the framework we are using etc.
+[click] This actually makes total sense, because Vite is a framework-agnostic tool. Agnostic means that we don't know about the framework you use, and we shouldn't know. This gives Vite great flexibility and extensibility to be the infrastructure of modern frameworks, but it also makes it hard for Vite to present interesting information that's closer to actual Vite users, like the app we're building, or the state of the framework we're using, etc.
 
-[click] If you look at the graph on the right, imagine each circle represents a specific framework or intergrations. Being agnostic means that Vite DevTools can only be the [click] common divisor among all the frameworks, which is not quite limited to always useful to the majority of the users.
+[click] If you look at the graph on the right, imagine each circle represents a specific framework or integration. Being agnostic means that Vite DevTools can only be the [click] common divisor among all frameworks, which is quite limited and not always useful to the majority of users.
 
-[click] That's why the next thing we are going to talk about is, Extensibility. In order to bring intersting, framework specific information to the users, we have to provide the capability for frameworks to do so.
+[click] That's why the next thing we're going to talk about is Extensibility. In order to bring interesting, framework-specific information to users, we have to provide the capability for frameworks to do so.
 -->
 
 ---
@@ -557,7 +632,7 @@ layout: center
 </div>
 
 <!--
-I see Extensibility is one of the most important factors that makes Vite as it is today. There is no reason we should not doing it for Vite DevTools.
+I see Extensibility as one of the most important factors that makes Vite what it is today. There's no reason we shouldn't do it for Vite DevTools.
 -->
 
 ---
@@ -567,22 +642,20 @@ clicks: 19
 <DevToolsKit />
 
 <!--
-If you have watched my previous talks, this is a slide I made in roughly two years ago when presenting Nuxt DevTools, [click] picturing the idea of having a shared interface for building DevTools, called DevTools Kit.
+If you've watched my previous talks, this is a slide I made roughly two years ago when presenting Nuxt DevTools, [click] picturing the idea of having a shared interface for building DevTools, called DevTools Kit.
 
-[click] The idea is trying to create a modular, composable, collabrative DevTools ecosystem.
+[click] The idea is to create a modular, composable, collaborative DevTools ecosystem.
 
-[click] For example, we know that we have some features that are general and not coupled with other frameworks. [click] Then we have features from the VIte Plus ecosystem, like Vitest and [click] Oxc related tools like linting anf formating.
-[click] Maybe going to the frontend, we could also have some general web related information like SEO, accessibility, PWA and so one.
+[click] For example, we know that we have some features that are general and not coupled with other frameworks. [click] Then we have features from the Vite Plus ecosystem, like Vitest and [click] Oxc-related tools like linting and formatting.
+[click] Maybe going to the frontend, we could also have some general web-related information like SEO, accessibility, PWA and so on.
 
-[click] Going specific to the frameworks, let's take Vue as an example, we might have UI for visualizing components, reactivity, routers, etc. [click] Going further, we have meta-framework like Nuxt that would also serving Nuxt-specific visualizations.
-
-// TODO: fix clicks, add tanstack, node modules?
+[click] Going specific to frameworks, let's take Vue as an example, we might have UI for visualizing components, reactivity, routers, etc. [click] Going further, we have meta-frameworks like Nuxt that would also serve Nuxt-specific visualizations.
 
 [click] In that sense, we might also have tools for React, [click] for Svelte, [click] for Solid, [click] for Qwik and so on.
 
-[click] Then we could have tools integrations as well.
+[click] Then we could have tool integrations as well.
 
-If you think all of these blocks are pluggable extensions, then we could compose them easily based on our needs. for example, [click] taking all the Vue and Nuxt feature, we could have Nuxt DevTools. [click] without Nuxt-specific parts, we could have Vite DevTools. [click] SImilarly we could have DevTools for other frameworks easily [click] [click] [click] under the same infrastructure. And in the end, you might be able to customize it based on your projects' specific needs and have [click] Your own DevTools.
+If you think all of these blocks are pluggable extensions, then we could compose them easily based on our needs. For example, [click] taking all the Vue and Nuxt features, we could have Nuxt DevTools. [click] Without Nuxt-specific parts, we could have Vite DevTools. [click] Similarly, we could have DevTools for other frameworks easily [click] [click] [click] under the same infrastructure. And in the end, you might be able to customize it based on your project's specific needs and have [click] Your own DevTools.
 -->
 
 ---
@@ -596,11 +669,11 @@ clicks: 1
 </div>
 
 <!--
-The original idea of DevTools Kit was discontinued due to various reasons, mainly because we are not sure how much people would adopt to it. 
+The original idea of DevTools Kit was discontinued due to various reasons, mainly because we weren't sure how much people would adopt it. 
 
-But this time is different, since we are building the DevTools for Vite, it means that when it's ready, all the frameworks built on top of Vite would naturally benefit form without friction.
+But this time is different, since we're building the DevTools for Vite, it means that when it's ready, all frameworks built on top of Vite would naturally benefit from it without friction.
 
-[click] So we are bringing the vision of DevTools kit to Vite DevTools, instead of asking DevTools authors to migrate to a common pattern, now they will just be building plugins for Vite.
+[click] So we're bringing the vision of DevTools Kit to Vite DevTools, instead of asking DevTools authors to migrate to a common pattern, now they'll just be building plugins for Vite.
 -->
 
 ---
@@ -670,16 +743,29 @@ export default function MyPlugin(): Plugin {
 <!--
 Let's take a glance at how the Vite DevTools Plugin would look.
 
-So in general, a Vite DevTools plugin would be [click] a superset of Vite Plugin, meaning you don't need to do anything special, but only [click] by adding a `devtools` hook to your plugin, it would work. The code on the right is a pseudo-code snippet of how you would do that. And it actually already works, but the reason I called it pseudo is because nothing is set in stone yet and we are still expoloring the interface and it might change a lot.
+So in general, a Vite DevTools plugin would be [click] a superset of a Vite Plugin, meaning you don't need to do anything special, but only [click] by adding a `devtools` hook to your plugin, it would work. The code on the right is a pseudo-code snippet of how you would do that. And it actually already works, but the reason I called it pseudo is because nothing is set in stone yet and we're still exploring the interface and it might change a lot.
 
 [click] Vite DevTools will provide the built-in RPC, remote-procedure call, layer for plugin authors to extend and communicate between the server and clients more easily.
 
 [click] We also wanted to make it possible for users to decide the ways to consume the devtools. In Vite DevTools, we will support an embedded floating panel, similar to Nuxt DevTools, or via a browser extension to be presented in the browser DevTools, or a standalone webpage, or a deployable SPA as a snapshot of your current data, etc. Vite DevTools will provide the abstraction layer for supporting these scenarios isomorphically.
+
+(next is the demo video)
 -->
 
 ---
+layout: 'none'
+class: 'flex h-full'
+---
 
-// TODO: videos
+<SlidevVideo autoplay controls muted ma w="90%" rounded border="~ main">
+  <source src="/vd/docks-demo.mp4" type="video/mp4" />
+</SlidevVideo>
+
+<!--
+
+So here is how it would look like. In general, we will provide a dock-like UI to be the entry point of all the integrations. Upon each integrations, we provide frames to render each DevTools UI, or it can be a custom renderer or running scripts. Here is a quick PoC to have Vitest, Nuxt DevTools, UnoCSS integrated. In the future we will work with more DevTool authors to bring them to Vite DevTools, while also verify the capability of our plugin API.
+
+-->
 
 ---
 
@@ -726,9 +812,9 @@ So in general, a Vite DevTools plugin would be [click] a superset of Vite Plugin
 <!--
 On a broader view, the goal and vision of Vite DevTools is that we will provide better transparency and enable the capability for the ecosystem to explore even further.
 
-[click] Built-in, we will provide visualizations of the Vite internals, [click] Analysis and actionable suggestions for your build and plugins pipeline, [click] Build comparison across multiple commits to see how your app changes over time, [click] Build snapshots via deployable SPA for you to even share your build meta as reproduction, and so on.
+[click] Built-in, we will provide visualizations of the Vite internals, [click] Analysis and actionable suggestions for your build and plugin pipeline, [click] Build comparison across multiple commits to see how your app changes over time, [click] Build snapshots via deployable SPA for you to even share your build metadata as reproduction, and so on.
 
-[click] Then we're going to have first-party Vite Plus integrations like Vitest UI and Oxlint, [click] And finally the DevTools Kit for plugin authors to build on top of this infra and create even more interesting use cases.
+[click] Then we're going to have first-party Vite Plus integrations like Vitest UI and Oxlint, [click] And finally the DevTools Kit for plugin authors to build on top of this infrastructure and create even more interesting use cases.
 -->
 
 ---
@@ -802,17 +888,17 @@ glow: bottom
 </div>
 
 <!--
-The scope of Vite DevTools becomes pretty big, and it takes a bit longer than we expected.
+The scope of Vite DevTools has become pretty big, and it's taking a bit longer than we expected.
 
-So currently we have [click] implemented quite some [click] visualizations, as we talked before.
+So currently we have [click] implemented quite a few [click] visualizations, as we talked about before.
 
-And then [click] we are continuing to work on having more insight for bundle analysis, which we are working closely with the Rolldown team on this. [click] We had the DevTools Kit baseline working already have some prototype of porting Nuxt DevTools to Vite DevTools working, but there is a lot of polishing that needs to be done and documents to be written.
+And then [click] we're continuing to work on having more insights for bundle analysis, which we're working closely with the Rolldown team on. [click] We have the DevTools Kit baseline working and already have some prototype of porting Nuxt DevTools to Vite DevTools working, but there's a lot of polishing that needs to be done and documents to be written.
 
-[click] Currently, the core UI of Vite DevTools is focusing on build mode only, and we are waiting for the Vite full bundle mode to roll out to support the development mode.
+[click] Currently, the core UI of Vite DevTools is focusing on build mode only, and we're waiting for the Vite full bundle mode to roll out to support the development mode.
 
 [click] And finally, in the long term, we want to work and collaborate with the ecosystem to bring the effort together and have everybody benefit from this system.
 
-In short, unfortunately, Vite DevTools is not yet usable at this moment, and we are actively working on it. Please be patient and stay tuned, we will let you know when it's ready to try!
+In short, unfortunately, Vite DevTools is not yet usable at this moment, and we're actively working on it. Please be patient and stay tuned, we'll let you know when it's ready to try!
 -->
 
 ---
@@ -849,7 +935,7 @@ transition: view-transition
 </div>
 
 <!--
-Finally, I'd like to say thank you to [click] Arlo who had helped a lot on the development of Vite DevTools; [click] Guillaume for being so inspiration for his previous work on Vue DevTools and testing frameworks UIs, while also brainstormed and prototyped the idea of DevTools together. [click] Then YunFei for coordinates on the Rolldown side to provide APIs that made Vite DevTools possible. [click] And great thanks to Sebastien who seeded the idea of Nuxt DevTools, and invested me so much on building it and now for Vite.
+Finally, I'd like to say thank you to [click] Arlo who has helped a lot with the development of Vite DevTools; [click] Guillaume for being so inspiring with his previous work on Vue DevTools and testing framework UIs, while also brainstorming and prototyping the idea of DevTools together. [click] Then YunFei for coordinating on the Rolldown side to provide APIs that made Vite DevTools possible. [click] And great thanks to Sebastien who seeded the idea of Nuxt DevTools, and invested so much in building it and now for Vite.
 -->
 
 ---
@@ -857,9 +943,9 @@ Finally, I'd like to say thank you to [click] Arlo who had helped a lot on the d
 <Contributors />
 
 <!--
-Also thanks to all the contributors who previously contributed to Vite DevTools, Nuxt DevTools and Vue DevTools. All your contributors and ideas made us being able to build Vite DevTools today. Thank you!
+Also thanks to all the contributors who previously contributed to Vite DevTools, Nuxt DevTools and Vue DevTools. All your contributions and ideas made it possible for us to build Vite DevTools today. Thank you!
 
-Also I'd invite you join us and help out!
+Also, I'd invite you to join us and help out!
 -->
 
 ---
@@ -871,9 +957,9 @@ layout: center
 </div>
 
 <!--
-The source code is located at repository `vitejs/devtools`, go check it out! There are many things going on at the same time so it could be overwhelming, but we will try to improve the contributions guides and docs in the mean time for you to contribute better.
+The source code is located at repository `vitejs/devtools`, go check it out! There are many things going on at the same time so it could be overwhelming, but we will try to improve the contribution guides and docs in the meantime for you to contribute better.
 
-I am really looking forward to seeing how we could work with the whole ecosystem to explore and build even better toolings.
+I'm really looking forward to seeing how we could work with the whole ecosystem to explore and build even better tooling.
 
 Thank you!
 -->
