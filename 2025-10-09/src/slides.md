@@ -236,15 +236,15 @@ Why we are building tools for using tools?
 
 If you think about what makes a good tool, I would give the following points.
 
-The first thing is the [click] Entry Barrier, [click] A good tools should be easy to start with, easy to config, and usually easy to be explained with in one single stantance.
+The first thing is the [click] Entry Barrier, [click] A good tools should be easy to start with, easy to config, and usually easy to be explained with in one single sentence.
 
 Then the second would be [click] Intuitive, [click] we should meets users' expactations and intuition, to make good developer experience and easy to discover new features.
 
 The third I would pick is [click] Transparency, [click] when using a tool, it's better for users to know how it works and what's its state. If something went wrong, we could find out why and fix them easier.
 
-Then it would be [click] Composibility, [click] having decoupled modules would make features easier to combine and extend with other tools to leverage the full power.
+Then it would be [click] Composability, [click] having decoupled modules would make features easier to combine and extend with other tools to leverage the full power.
 
-The final one I would pick is [click] Extensibility, [click] What make software different from one-off scripts is that software are about to adopt and handle different senarios. And being extenisble by having flexile plugin system and ability to customize is one of the very important aspects of good software.
+The final one I would pick is [click] Extensibility, [click] What make software different from one-off scripts is that software are about to adopt and handle different scenarios. And being extensible by having flexile plugin system and ability to customize is one of the very important aspects of good software.
 
 That said, the reason we are building DevTools is trying to provide the great [click] Transparency to our tools, to help the users understand the tools better and see through the internal state.
 -->
@@ -271,7 +271,7 @@ So let's talk about Transparency
 <img src="/devtools/uno-inspector.png" w-250 />
 
 <!--
-My personal journey with building DevTools starts with UnoCSS. As UnoCSS generates CSS utilities on-demand based on the codebase. When working on that, one thing I found tricky is to know why one utiltiy was included and why the other is not. So I built this inspector to show how each file is scanned and how they are contributed to the utiltities list, etc. This kind of transparency helped us to build the engine more efficient with better accurecy.
+My personal journey with building DevTools starts with UnoCSS. As UnoCSS generates CSS utilities on-demand based on the codebase. When working on that, one thing I found tricky is to know why one utility was included and why the other is not. So I built this inspector to show how each file is scanned and how they are contributed to the utilities list, etc. This kind of transparency helped us to build the engine more efficient with better accuracy.
 -->
 
 ---
@@ -565,16 +565,16 @@ clicks: 19
 <!--
 If you have watched my previous talks, this is a slide I made in roughly two years ago when presenting Nuxt DevTools, [click] picturing the idea of having a shared interface for building DevTools, called DevTools Kit.
 
-[click] The idea is trying to create a modular, compsoable, collabrative DevTools ecosystem.
+[click] The idea is trying to create a modular, composable, collabrative DevTools ecosystem.
 
 [click] For example, we know that we have some features that are general and not coupled with other frameworks. [click] Then we have features from the VIte Plus ecosystem, like Vitest and [click] Oxc related tools like linting anf formating.
-[click] Maybe going to the frontend, we could also have some general web related information like SEO, accessibilty, PWA and so one.
+[click] Maybe going to the frontend, we could also have some general web related information like SEO, accessibility, PWA and so one.
 
 [click] Going specific to the frameworks, let's take Vue as an example, we might have UI for visualizing components, reactivity, routers, etc. [click] Going further, we have meta-framework like Nuxt that would also serving Nuxt-specific visualizations.
 
 // TODO: fix clicks, add tanstack, node modules?
 
-[click] In that sense, we might also have tools for React, [click] for Svelte, [click] for Soild, [click] for Qwik and so on.
+[click] In that sense, we might also have tools for React, [click] for Svelte, [click] for Solid, [click] for Qwik and so on.
 
 [click] Then we could have tools integrations as well.
 
@@ -592,11 +592,11 @@ clicks: 1
 </div>
 
 <!--
-The original idea of DevTools Kit was discountiuned due to various reasons, mainly because we are not sure how much people would adopt to it. 
+The original idea of DevTools Kit was discontinued due to various reasons, mainly because we are not sure how much people would adopt to it. 
 
 But this time is different, since we are building the DevTools for Vite, it means that when it's ready, all the frameworks built on top of Vite would naturally benefit form without friction.
 
-[click] So we are bringing the vision of DevTools kit to Vite DevTools, instead of asking DevTools aurthor to migrate to a common pattern, now they will just be building plugins for Vite.
+[click] So we are bringing the vision of DevTools kit to Vite DevTools, instead of asking DevTools authors to migrate to a common pattern, now they will just be building plugins for Vite.
 -->
 
 ---
@@ -670,11 +670,11 @@ Let's take a glance of how the Vite DevTools Plugin would looks like.
 
 I would picture Vite DevTools as the shared infrastructure for building DevTools.
 
-[click] To make the communication eaiser, we provide the built-in RPC layer for plugin authors to extend and communicate between server and clients easier like function call in all the different envoriements.
+[click] To make the communication easier, we provide the built-in RPC layer for plugin authors to extend and communicate between server and clients easier like function call in all the different environments.
 
-[click] We also wanted to make it possible for users to decide the ways to consume the devtools. Either with a embedded floating panel like Nuxt DevTools, or via browser extension to be presented in the browser DevTools, or a standalone webpage, or a deployable SPA as a snapshot of your current data, etc. Vite DevTools will provide the abastraction layer for supporting these senarios isomorphically.
+[click] We also wanted to make it possible for users to decide the ways to consume the devtools. Either with a embedded floating panel like Nuxt DevTools, or via browser extension to be presented in the browser DevTools, or a standalone webpage, or a deployable SPA as a snapshot of your current data, etc. Vite DevTools will provide the abstraction layer for supporting these scenarios isomorphically.
 
-[click] We will provide unfied entry points and routing system. ??
+[click] We will provide unified entry points and routing system. ??
 -->
 
 ---
@@ -724,7 +724,7 @@ I would picture Vite DevTools as the shared infrastructure for building DevTools
 </div>
 
 <!--
-On a boarder view, the goal and vision of Vite DevTools is that we will provide better transparency and enable the capibility for the ecosystem to explorer even further.
+On a boarder view, the goal and vision of Vite DevTools is that we will provide better transparency and enable the capability for the ecosystem to explorer even further.
 
 [click] Builtin, we will provide visualization of
 -->
@@ -859,7 +859,7 @@ layout: center
 </div>
 
 <!--
-The source code is located reposity `vitejs/devtools`, go check it out! There are many things going on at the same time so it could be overwhelming, but we will try to improve the contributions guides and docs in the mean time for you to contribute better.
+The source code is located at repository `vitejs/devtools`, go check it out! There are many things going on at the same time so it could be overwhelming, but we will try to improve the contributions guides and docs in the mean time for you to contribute better.
 
 I am really looking forward to seeing how we could work with the whole ecosystem to explore and build even better toolings.
 
