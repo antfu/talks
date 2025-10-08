@@ -563,7 +563,22 @@ clicks: 19
 <DevToolsKit />
 
 <!--
-If you have watched my previous talks, this is a slide I made in roughly two years ago, picturing the idea of having a shared interface for building DevTools, called DevTools Kit.
+If you have watched my previous talks, this is a slide I made in roughly two years ago when presenting Nuxt DevTools, [click] picturing the idea of having a shared interface for building DevTools, called DevTools Kit.
+
+[click] The idea is trying to create a modular, compsoable, collabrative DevTools ecosystem.
+
+[click] For example, we know that we have some features that are general and not coupled with other frameworks. [click] Then we have features from the VIte Plus ecosystem, like Vitest and [click] Oxc related tools like linting anf formating.
+[click] Maybe going to the frontend, we could also have some general web related information like SEO, accessibilty, PWA and so one.
+
+[click] Going specific to the frameworks, let's take Vue as an example, we might have UI for visualizing components, reactivity, routers, etc. [click] Going further, we have meta-framework like Nuxt that would also serving Nuxt-specific visualizations.
+
+// TODO: fix clicks, add tanstack, node modules?
+
+[click] In that sense, we might also have tools for React, [click] for Svelte, [click] for Soild, [click] for Qwik and so on.
+
+[click] Then we could have tools integrations as well.
+
+If you think all of these blocks are pluggable extensions, then we could compose them easily based on our needs. for example, [click] taking all the Vue and Nuxt feature, we could have Nuxt DevTools. [click] without Nuxt-specific parts, we could have Vite DevTools. [click] SImilarly we could have DevTools for other frameworks easily [click] [click] [click] under the same infrastructure. And in the end, you might be able to customize it based on your projects' specific needs and have [click] Your own DevTools.
 -->
 
 ---
@@ -576,6 +591,14 @@ clicks: 1
   <img src="/vite-devtools.png" w-100 brightness-200 v-click="1" delay-500 />
 </div>
 
+<!--
+The original idea of DevTools Kit was discountiuned due to various reasons, mainly because we are not sure how much people would adopt to it. 
+
+But this time is different, since we are building the DevTools for Vite, it means that when it's ready, all the frameworks built on top of Vite would naturally benefit form without friction.
+
+[click] So we are bringing the vision of DevTools kit to Vite DevTools, instead of asking DevTools aurthor to migrate to a common pattern, now they will just be building plugins for Vite.
+-->
+
 ---
 
 <div grid="~ cols-[3fr_4fr] gap-4">
@@ -586,22 +609,25 @@ clicks: 1
 
 <v-clicks>
 
-- A superset of Vite Plugin
+- A Superset of Vite Plugin
 
-- An additional `devtools` hook
+- Via the Additional `devtools` Hook
 
-- Built-in RPC integrations
+- Built-in RPC Layer
 
-- Built-in view hosting
-
-- Flexible and extensible
+- Built-in Isomorphic Views Hosting
+  - Embedded Floating Panel
+  
+  - Browser Extension
+  - Standalone Webpage
+  - Deployable SPA
 
 </v-clicks>
 
 </div>
 <div v-click="1">
 
-```ts {*|7-26|8-16|17-25|*}{at:2}
+```ts {*|7-27|8-16|17-26|*}{at:2}
 import type { Plugin } from 'vite'
 
 export default function MyPlugin(): Plugin {
@@ -624,7 +650,8 @@ export default function MyPlugin(): Plugin {
           id: 'my-plugin',
           title: 'My Plugin',
           icon: '/.my-plugin/favicon.svg',
-          type: 'iframe', // can also be 'webcomponent', 'action', 'custom'
+          // type can also be 'webcomponent', 'action' etc.
+          type: 'iframe',
           url: '/.my-plugin',
         })
       }
@@ -636,24 +663,25 @@ export default function MyPlugin(): Plugin {
 </div>
 </div>
 
+<!--
+Let's take a glance of how the Vite DevTools Plugin would looks like.
+
+// TODO:
+-->
+
 ---
 
 <img src="/vite-devtools.png" w-80 brightness-200 />
 <div ml-16 op70 mt--1 mb10>Shared infrastructure for DevTools</div>
 
-<v-clicks depth="2" ml-10>
+<v-clicks depth="1" ml-10>
 
 - Shared RPC layer for Client-Server/Client-Client Communications
 
-- Unified Entries and Routing
 
-- Isomorphic Views
-  - Embedded Floating Panel
+- 
   
-  - Standalone Webpage
-  - Deployable SPA
-  - Browser Extension
-  - Standalone Electron App (?)
+- Unified Entries and Routing
 
 </v-clicks>
 
@@ -662,9 +690,11 @@ I would picture Vite DevTools as the shared infrastructure for building DevTools
 
 [click] To make the communication eaiser, we provide the built-in RPC layer for plugin authors to extend and communicate between server and clients easier like function call in all the different envoriements.
 
-[click] Then we will provide unfied entry points and routing system. ??
+[click] We also wanted to make it possible for users to decide the ways to consume the devtools. Either with a embedded floating panel like Nuxt DevTools, or via browser extension to be presented in the browser DevTools, or a standalone webpage, or a deployable SPA as a snapshot of your current data, etc. Vite DevTools will provide the abastraction layer for supporting these senarios isomorphically.
 
-[click]
+[click] We will provide unfied entry points and routing system. ??
+
+// TODO: merge this slide up and provide a short video?
 -->
 
 ---
@@ -710,7 +740,9 @@ I would picture Vite DevTools as the shared infrastructure for building DevTools
 </div>
 
 <!--
-The godl
+On a boarder view, the goal and vision of Vite DevTools is that we will provide better transparency and enable the capibility for the ecosystem to explorer even further.
+
+[click] Builtin, we will provide visualization of
 -->
 
 ---
@@ -821,7 +853,7 @@ transition: view-transition
 </div>
 
 <!--
-And finally, I'd like to say thank you to [click] Arlo who had helped a lot on the development of Vite DevTools; [click] Guillaume for being so inspiration for his previous work on Vue DevTools and testing frameworks UIs, while also brainstormed and prototyped the idea of DevTools together. [click] Then YunFei for coordinates on the Rolldown side to provide APIs that made Vite DevTools possible. [click] And great thanks to Sebastien who invested me so much on building DevTools for Nuxt and now for Vite
+And finally, I'd like to say thank you to [click] Arlo who had helped a lot on the development of Vite DevTools; [click] Guillaume for being so inspiration for his previous work on Vue DevTools and testing frameworks UIs, while also brainstormed and prototyped the idea of DevTools together. [click] Then YunFei for coordinates on the Rolldown side to provide APIs that made Vite DevTools possible. [click] And great thanks to Sebastien who seeded the idea of Nuxt DevTools, and invested me so much on building it and now for Vite.
 -->
 
 ---
@@ -829,7 +861,9 @@ And finally, I'd like to say thank you to [click] Arlo who had helped a lot on t
 <Contributors />
 
 <!--
-Also thanks to all the contributors who previously contributed to Vite DevTools, Nuxt DevTools and Vue DevTools. All your help
+Also thanks to all the contributors who previously contributed to Vite DevTools, Nuxt DevTools and Vue DevTools. All your contributors and ideas made us being able to build Vite DevTools today. Thank you!
+
+Also I'd invite you join us and help out!
 -->
 
 ---
@@ -839,6 +873,14 @@ layout: center
 <div scale-200>
   <Repo name="vitejs/devtools"  />
 </div>
+
+<!--
+The source code is located reposity `vitejs/devtools`, go check it out! There are many things going on at the same time so it could be overwhelming, but we will try to improve the contributions guides and docs in the mean time for you to contribute better.
+
+I am really looking forward to seeing how we could work with the whole ecosystem to explore and build even better toolings.
+
+Thank you!
+-->
 
 ---
 layout: intro
