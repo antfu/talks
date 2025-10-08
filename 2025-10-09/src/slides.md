@@ -504,6 +504,10 @@ layout: center
 <div text-2.5em op50>Vite DevTools is</div>
 <div text-3em><span font-serif font-800>NOT ONLY</span> about Visualizations</div>
 
+<!--
+That's said, I also wanted to mention that Vite DevTools is NOT ONLY about internal data visualizations.
+-->
+
 ---
 
 <div font-serif text-5xl my-10 mb-20>Being Agnostic</div>
@@ -664,17 +668,13 @@ export default function MyPlugin(): Plugin {
 </div>
 
 <!--
-Let's take a glance of how the Vite DevTools Plugin would looks like.
+Let's take a glance at how the Vite DevTools Plugin would look.
 
-===
+So in general, a Vite DevTools plugin would be [click] a superset of Vite Plugin, meaning you don't need to do anything special, but only [click] by adding a `devtools` hook to your plugin, it would work. The code on the right is a pseudo-code snippet of how you would do that. And it actually already works, but the reason I called it pseudo is because nothing is set in stone yet and we are still expoloring the interface and it might change a lot.
 
-I would picture Vite DevTools as the shared infrastructure for building DevTools.
+[click] Vite DevTools will provide the built-in RPC, remote-procedure call, layer for plugin authors to extend and communicate between the server and clients more easily.
 
-[click] To make the communication easier, we provide the built-in RPC layer for plugin authors to extend and communicate between server and clients easier like function call in all the different environments.
-
-[click] We also wanted to make it possible for users to decide the ways to consume the devtools. Either with a embedded floating panel like Nuxt DevTools, or via browser extension to be presented in the browser DevTools, or a standalone webpage, or a deployable SPA as a snapshot of your current data, etc. Vite DevTools will provide the abstraction layer for supporting these scenarios isomorphically.
-
-[click] We will provide unified entry points and routing system. ??
+[click] We also wanted to make it possible for users to decide the ways to consume the devtools. In Vite DevTools, we will support an embedded floating panel, similar to Nuxt DevTools, or via a browser extension to be presented in the browser DevTools, or a standalone webpage, or a deployable SPA as a snapshot of your current data, etc. Vite DevTools will provide the abstraction layer for supporting these scenarios isomorphically.
 -->
 
 ---
@@ -724,9 +724,11 @@ I would picture Vite DevTools as the shared infrastructure for building DevTools
 </div>
 
 <!--
-On a boarder view, the goal and vision of Vite DevTools is that we will provide better transparency and enable the capability for the ecosystem to explorer even further.
+On a broader view, the goal and vision of Vite DevTools is that we will provide better transparency and enable the capability for the ecosystem to explore even further.
 
-[click] Builtin, we will provide visualization of
+[click] Built-in, we will provide visualizations of the Vite internals, [click] Analysis and actionable suggestions for your build and plugins pipeline, [click] Build comparison across multiple commits to see how your app changes over time, [click] Build snapshots via deployable SPA for you to even share your build meta as reproduction, and so on.
+
+[click] Then we're going to have first-party Vite Plus integrations like Vitest UI and Oxlint, [click] And finally the DevTools Kit for plugin authors to build on top of this infra and create even more interesting use cases.
 -->
 
 ---
@@ -800,7 +802,17 @@ glow: bottom
 </div>
 
 <!--
-The scopes of Vite DevTools become pretty big and it takes a bit longer than our expectation.
+The scope of Vite DevTools becomes pretty big, and it takes a bit longer than we expected.
+
+So currently we have [click] implemented quite some [click] visualizations, as we talked before.
+
+And then [click] we are continuing to work on having more insight for bundle analysis, which we are working closely with the Rolldown team on this. [click] We had the DevTools Kit baseline working already have some prototype of porting Nuxt DevTools to Vite DevTools working, but there is a lot of polishing that needs to be done and documents to be written.
+
+[click] Currently, the core UI of Vite DevTools is focusing on build mode only, and we are waiting for the Vite full bundle mode to roll out to support the development mode.
+
+[click] And finally, in the long term, we want to work and collaborate with the ecosystem to bring the effort together and have everybody benefit from this system.
+
+In short, unfortunately, Vite DevTools is not yet usable at this moment, and we are actively working on it. Please be patient and stay tuned, we will let you know when it's ready to try!
 -->
 
 ---
@@ -837,7 +849,7 @@ transition: view-transition
 </div>
 
 <!--
-And finally, I'd like to say thank you to [click] Arlo who had helped a lot on the development of Vite DevTools; [click] Guillaume for being so inspiration for his previous work on Vue DevTools and testing frameworks UIs, while also brainstormed and prototyped the idea of DevTools together. [click] Then YunFei for coordinates on the Rolldown side to provide APIs that made Vite DevTools possible. [click] And great thanks to Sebastien who seeded the idea of Nuxt DevTools, and invested me so much on building it and now for Vite.
+Finally, I'd like to say thank you to [click] Arlo who had helped a lot on the development of Vite DevTools; [click] Guillaume for being so inspiration for his previous work on Vue DevTools and testing frameworks UIs, while also brainstormed and prototyped the idea of DevTools together. [click] Then YunFei for coordinates on the Rolldown side to provide APIs that made Vite DevTools possible. [click] And great thanks to Sebastien who seeded the idea of Nuxt DevTools, and invested me so much on building it and now for Vite.
 -->
 
 ---
