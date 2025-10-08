@@ -605,7 +605,7 @@ But this time is different, since we are building the DevTools for Vite, it mean
 
 <div>
 
-<div font-serif text-2xl mb10 mt10>Vite DevTools Plugin</div>
+<div font-serif text-2em my6>Vite DevTools Plugin</div>
 
 <v-clicks>
 
@@ -666,26 +666,8 @@ export default function MyPlugin(): Plugin {
 <!--
 Let's take a glance of how the Vite DevTools Plugin would looks like.
 
-// TODO:
--->
+===
 
----
-
-<img src="/vite-devtools.png" w-80 brightness-200 />
-<div ml-16 op70 mt--1 mb10>Shared infrastructure for DevTools</div>
-
-<v-clicks depth="1" ml-10>
-
-- Shared RPC layer for Client-Server/Client-Client Communications
-
-
-- 
-  
-- Unified Entries and Routing
-
-</v-clicks>
-
-<!--
 I would picture Vite DevTools as the shared infrastructure for building DevTools.
 
 [click] To make the communication eaiser, we provide the built-in RPC layer for plugin authors to extend and communicate between server and clients easier like function call in all the different envoriements.
@@ -693,9 +675,11 @@ I would picture Vite DevTools as the shared infrastructure for building DevTools
 [click] We also wanted to make it possible for users to decide the ways to consume the devtools. Either with a embedded floating panel like Nuxt DevTools, or via browser extension to be presented in the browser DevTools, or a standalone webpage, or a deployable SPA as a snapshot of your current data, etc. Vite DevTools will provide the abastraction layer for supporting these senarios isomorphically.
 
 [click] We will provide unfied entry points and routing system. ??
-
-// TODO: merge this slide up and provide a short video?
 -->
+
+---
+
+// TODO: videos
 
 ---
 
@@ -710,14 +694,14 @@ I would picture Vite DevTools as the shared infrastructure for building DevTools
 
   <div v-click flex="~ col gap-1" p4 rounded bg-orange:15 text-orange1>
     <div text-3xl i-ph:package-duotone text-orange mb2 />
-    <div>Build Analysis</div>
-    <div text-xs op50>Provide suggestions and optimization solutions</div>
+    <div>Analysis & Suggestions</div>
+    <div text-xs op50>Provide suggestions and optimization solutions for build and plugins</div>
   </div>
 
   <div v-click flex="~ col gap-1" p4 rounded bg-yellow:15 text-yellow1>
-    <div text-3xl i-ph:plugs-duotone text-yellow mb2 />
-    <div>Plugin Analysis</div>
-    <div text-xs op50>Help plugin authors follow best practices</div>
+    <div text-3xl i-ph-chart-line-up-duotone text-yellow mb2 />
+    <div>Build Comparison</div>
+    <div text-xs op50>Compare and track build results across commits</div>
   </div>
 
   <div v-click flex="~ col gap-1" p4 rounded bg-red:15 text-red1>

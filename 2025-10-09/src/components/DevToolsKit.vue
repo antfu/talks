@@ -23,7 +23,7 @@ const isFaded = computed(() => PRESENT_START <= $clicks.value && $clicks.value <
     <div transition-all duration-500 :style="sliderStyle">
       <div flex="~ gap-2">
         <img src="/devtools-kit.svg" h-1em>
-        <sup v-click op75 text-base translate-y-2 inline-block>Idea</sup>
+        <sup op75 text-base translate-y-2 inline-block>Idea</sup>
       </div>
       <div font-700 flex="~ gap-2">
         <div i-logos-nuxt-icon /> <div text-green>
@@ -63,7 +63,7 @@ const isFaded = computed(() => PRESENT_START <= $clicks.value && $clicks.value <
     </div>
   </div>
 
-  <div v-click op50 my2>
+  <div op50 my2>
     Modular, Composable, Collabrative
   </div>
 
@@ -174,11 +174,20 @@ const isFaded = computed(() => PRESENT_START <= $clicks.value && $clicks.value <
   </div>
 
   <div flex="~ gap-2" mt2>
-    <DevToolsModule v-after icon="i-logos-unocss" name="UnoCSS" />
+    <DevToolsModule v-click icon="i-logos-unocss" name="UnoCSS" />
+    <DevToolsModule v-after name="Tanstack" theme="blue">
+      <img src="/tanstack.png" h-1.7em>
+    </DevToolsModule>
     <DevToolsModule v-after icon="i-logos-eslint" name="ESLint" theme="purple" />
     <DevToolsModule v-after icon="i-logos-storybook-icon" name="Storybook" theme="pink" />
     <DevToolsModule v-after name="Histoire" theme="green">
       <img src="/histoire.svg" h-1.7em>
+    </DevToolsModule>
+    <DevToolsModule v-after name="CPUPro">
+      <img src="/cpupro.png" h-1.7em>
+    </DevToolsModule>
+    <DevToolsModule v-after name="Node Modules" theme="green">
+      <img src="/node-modules-inspector.svg" h-1.7em>
     </DevToolsModule>
     <DevToolsModule
       v-after icon="i-ri-more-line" name="More..." border-dashed
