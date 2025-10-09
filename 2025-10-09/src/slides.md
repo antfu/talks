@@ -22,9 +22,9 @@ glowSeed: 14
 
 <div class="[&>*]:important-leading-10 opacity-80">
 
-Core team member of {Vite} {Vue} and {Nuxt}<br>
-Creator of {Vitest} {Slidev} {UnoCSS} {Type Challenges} and {Elk}<br>
-Maintainer of {ESLint Stylistic} {Shiki} and {Twoslash}<br>
+Core team member of {Vite} {Vue} {Nuxt}<br>
+Creator of {Vitest} {Slidev} {UnoCSS} {Type Challenges} {Elk}<br>
+Maintainer of {ESLint Stylistic} {Shiki} {Twoslash}<br>
 Working at {NuxtLabs} / {Vercel}<br>
 Based in 🇯🇵 Tokyo
 
