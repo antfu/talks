@@ -6,6 +6,7 @@ Slides &amp; code for my talks, using [Slidev](https://sli.dev).
 
 ###### 2025
 
+- `en` [Vite DevTools](./2025-10-09) - ViteConf Amsterdam 2025
 - `en` [Make Tools That People Love](./2025-09-18) - SquiggleConf 2025
 - `zh` [Yak Shaving 薅牛毛](./2025-08-10) - COSCUP 2025
 - `zh` [Vite DevTools 前瞻介绍](./2025-07-12) - VueConf Shenzhen

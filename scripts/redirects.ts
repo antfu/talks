@@ -18,7 +18,7 @@ const bases = (await Promise.all(
     const command = json.scripts?.build
     if (!command)
       return
-    const base = command.match(/ --base (.*?)\s/)?.[1]
+    const base = command.match(/ (\S*)$/)?.[1]
     if (!base)
       return
     return {

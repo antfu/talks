@@ -814,6 +814,31 @@ to = "/2025/squiggleconf/index.html"
 status = 200
 
 [[redirects]]
+from = "/2025/viteconf/pdf"
+to = "https://github.com/antfu/talks/blob/main/2025-10-09/2025-10-09-viteconf-en.pdf?raw=true"
+status = 302
+
+[[redirects]]
+from = "/2025-10-09/pdf"
+to = "https://github.com/antfu/talks/blob/main/2025-10-09/2025-10-09-viteconf-en.pdf?raw=true"
+status = 302
+
+[[redirects]]
+from = "/2025/viteconf/src"
+to = "https://github.com/antfu/talks/tree/main/2025-10-09"
+status = 302
+
+[[redirects]]
+from = "2025-10-09"
+to = "https://talks.antfu.me/2025/viteconf/"
+status = 301
+
+[[redirects]]
+from = "/2025/viteconf/*"
+to = "/2025/viteconf/index.html"
+status = 200
+
+[[redirects]]
 from = "/"
 to = "https://antfu.me/talks"
 status = 302
