@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "slidev",
+    "build": "tsx ../../scripts/build.ts /2025/vuefes/",
+    "export": "slidev export --per-slide --output ../2025-10-25-vuefes-ja.pdf"
+  }
+}
