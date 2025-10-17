@@ -669,7 +669,7 @@ clicks: 1
 </div>
 
 <!--
-The original idea of DevTools Kit was discontinued due to various reasons, mainly because we weren't sure how many people would adopt it. 
+The original idea of DevTools Kit was discontinued due to various reasons, mainly because we weren't sure how many people would adopt it.
 
 But this time is different. Since we're building the DevTools for Vite, it means that when it's ready, all frameworks built on top of Vite would naturally benefit from it without friction.
 
@@ -694,7 +694,7 @@ But this time is different. Since we're building the DevTools for Vite, it means
 
 - Built-in Isomorphic Views Hosting
   - Embedded Floating Panel
-  
+
   - Browser Extension
   - Standalone Webpage
   - Deployable SPA

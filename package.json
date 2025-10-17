@@ -1,7 +1,7 @@
 {
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@10.18.0",
+  "packageManager": "pnpm@10.18.3",
   "scripts": {
     "build": "rimraf dist && pnpm -r run build",
     "dev": "tsx scripts/picker.ts dev --open",
@@ -40,7 +40,7 @@
     "seedrandom": "catalog:",
     "slidev-addon-graph": "catalog:",
     "taze": "catalog:",
-    "tinyexec": "^1.0.1",
+    "tinyexec": "catalog:",
     "tsx": "catalog:",
     "typescript": "catalog:",
     "unocss": "catalog:",

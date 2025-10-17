@@ -51,7 +51,6 @@ Base in 🇯🇵 Tokyo
 
 <img src="https://antfu.me/avatar.png" rounded-full absolute top-38 right-15 w-40 />
 
-
 ---
 clicks: 7
 zoom: 0.75
@@ -150,10 +149,10 @@ layout: center
 class: 'text-center'
 ---
 
-<TipTitle 
+<TipTitle
   title="Solve Your Own Problems"
   description="Build from your own pain points. Eat your own dogfood."
-  number="2" 
+  number="2"
 />
 
 <!--
@@ -235,7 +234,7 @@ I'd say that building from your own pain points is [click] a great way to come u
 
 By doing so, we can gather the essential elements for the continuous development of projects - what we are skilled at and enjoy, and what the community needs.
 
-Hopefully this can help to make the project practical and sustainable. 
+Hopefully this can help to make the project practical and sustainable.
 -->
 
 ---
@@ -427,7 +426,7 @@ class: 'text-center'
 ---
 
 <TipTitle
-  title="Make Core Feature Plugins" 
+  title="Make Core Feature Plugins"
   description="To verify you have a powerful plugin API."
   number="4.1"
 />
@@ -440,7 +439,7 @@ With that in mind, I would say a good way to build a powerful plugin system is t
 
 ---
 
-<div 
+<div
   absolute left-0 right-0 top-0 bottom-0 grid="~ cols-[1fr_max-content_1fr] gap-2" px10 items-center
   transition-all duration-400
   :class="$clicks >= 2 ? 'pr-80' : ''"
@@ -561,7 +560,7 @@ The first thing I would suggest is to [click] build your own identity. People ne
 
 [click] Then, of course, we should work with our users. Listen to their feedback and iterate.
 
-[click] Building a software tool, especially dev tools, is interesting, as your users are usually also developers, meaning they could potentially contribute to the tool themselves. 
+[click] Building a software tool, especially dev tools, is interesting, as your users are usually also developers, meaning they could potentially contribute to the tool themselves.
 
 Making a good environment for contributions and maintaining a good feedback loop for them is important to get your tool started. For example, like replying to comments or reviewing PRs in time, to make people feel they are part of the community, which potentially you could gather people with the same passion about the tool and maybe build a team to scale the project further.
 
@@ -613,7 +612,6 @@ There are many more things I wanted to go into in more detail, but due to the ti
 Reach out to me if you are interested in hearing more about them. You can also find the slides on my website antfu.me afterward.
 -->
 
-
 ---
 layout: center
 ---
@@ -651,7 +649,7 @@ Recordings on [antfu.me](https://antfu.me)
 <!--
 I also actually gave a few related talks before,
 
-The Set Theory about how we can expand the scopes of our projects; The Progressive path about how we can reduce the friction for people to use our tools. And then Yak Shaving about how to come up with ideas and execute them.  
+The Set Theory about how we can expand the scopes of our projects; The Progressive path about how we can reduce the friction for people to use our tools. And then Yak Shaving about how to come up with ideas and execute them.
 
 If you are interested, you can also find the recordings and slides on my website.
 -->
@@ -665,7 +663,7 @@ class: 'text-center'
 <div text-2em text-rose v-click>is to Put Love into the Tools We Make 🤍</div>
 
 <!--
-In a word, 
+In a word,
 
 Needless to say, but [click] to make tools that people love,
 
