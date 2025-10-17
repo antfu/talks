@@ -30,6 +30,7 @@ catalog:
   seedrandom: ^3.0.5
   slidev-addon-graph: ^1.0.0
   taze: ^19.7.0
+  tinyexec: ^1.0.1
   tsx: ^4.20.6
   typescript: ^5.9.3
   unocss: 66.4.0
