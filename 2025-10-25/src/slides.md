@@ -109,7 +109,7 @@ zoom: 1.6
 <pre v-click class="shiki shiki-themes vitesse-dark vitesse-light slidev-code"><code><span op50>$ </span><span class="text-purple3!">vite</span> <span op75>build</span></code> <span v-click="6" class="text-yellow!">--ui</span></pre>
 <pre v-click class="shiki shiki-themes vitesse-dark vitesse-light slidev-code"><code><span op50>$ </span><span class="text-purple3!">vite</span> <span op75>test</span></code> <span v-click="6" class="text-yellow!">--ui</span></pre>
 <pre v-click class="shiki shiki-themes vitesse-dark vitesse-light slidev-code"><code><span op50>$ </span><span class="text-purple3!">vite</span> <span op75>lint</span></code> <span v-click="6" class="text-yellow!">--ui</span></pre>
-<pre v-click class="shiki shiki-themes vitesse-dark vitesse-light slidev-code"><code><span op50>$ </span><span class="text-purple3!">vite</span> <span op75>format</span></code> <span v-click="6" class="text-yellow!">--ui</span></pre>
+<pre v-click class="shiki shiki-themes vitesse-dark vitesse-light slidev-code"><code><span op50>$ </span><span class="text-purple3!">vite</span> <span op75>fmt</span></code> <span v-click="6" class="text-yellow!">--ui</span></pre>
 <pre v-click class="shiki shiki-themes vitesse-dark vitesse-light slidev-code"><code><span op50>$ </span><span class="text-purple3!">vite</span> <span op75>lib</span></code> <span v-click="6" class="text-yellow!">--ui</span></pre>
 </div>
 
@@ -189,11 +189,11 @@ class: h-full
 </div>
 
 <!--
-なぜ必要かお話しする前に、まずDevToolsが**何なのか**をお話ししましょう。
+その前に、まず DevTools が **何なのか** をお話ししましょう。
 
 DevToolsについて話すとき、[click] 広義 Developer Toolsか、[click] 狭義 DevToolsのどちらかを指すことがあります。
 
-僕は広義 Developer Toolsを[click] 開発者向けのツールとして定義します。その意味で、日常的に使っている[click] Vite、Vitest、Vue、Nuxtなどは全てデベロッパーツールです。
+僕は広義 Developer Toolsを[click] 開発者向けのツールとして定義します。その意味で、日常的に使っている[click] Vite、Vitest、Vue、Nuxt などは全て Developer Tools です。
 
 一方で、狭義 DevToolsについては、通常[click] ツールをより良く使うためのツールを意味します。
 例えば、[click] Chromeには内蔵のDevToolsがありますし、Nuxt DevTools、Vue DevToolsなどもあります。
@@ -258,9 +258,9 @@ glow: right
 
 3つ目に選ぶのは[click] 透明性で、[click] ツールを使うとき、ユーザーがその仕組みと状態を知っている方が良いです。何か問題が起きたら、なぜ起きたかを調べて修正しやすくなります。
 
-それから[click] 組み合わせ可能性で、[click] 分離されたモジュールがあると、他のツールと組み合わせて拡張して、その力を最大限活用しやすくなります。
+それから[click] 組み合わせ可能性で、[click] 分離された Module があると、他のツールと組み合わせて拡張して、その力を最大限活用しやすくなります。
 
-最後に選ぶのは[click] 拡張性で、[click] ソフトウェアを一回限りのスクリプトと違うものにするのは、ソフトウェアが異なるシナリオに適応して処理することを意図していることです。柔軟なプラグインシステムとカスタマイズ能力を持つ拡張性は、良いソフトウェアの非常に重要な側面の一つです。
+最後に選ぶのは[click] 拡張性で、[click] Software を一回限りの Script と違うものにするのは、Software が異なるシナリオに適応して処理することを意図していることです。柔軟なプラグインシステムとカスタマイズ能力を持つ拡張性は、良いソフトウェアの非常に重要な側面の一つです。
 
 そういうわけで、DevToolsを作っている理由は、僕たちのツールに素晴らしい[click] 透明性を提供して、ユーザーがツールをより理解し、内部状態を見通せるようにするためです。
 -->
@@ -288,7 +288,7 @@ layout: center
 <img src="/devtools/uno-inspector.png" w-250 />
 
 <!--
-僕のDevToolsの旅はUnoCSSから始まりました。あるCSSユーティリティがなぜ含まれるのか不明だったため、インスペクターを作成しました。これにより各ファイルがどのようにスキャンされ、リストに貢献するかが分かります。この透明性はエンジン構築をより効率にしました。
+僕のDevToolsの旅はUnoCSSから始まりました。ある CSS utility がなぜ含まれるのか不明だったため、Inspector を作成しました。これにより各ファイルがどのようにスキャンされ、リストに貢献するかが分かります。この透明性はエンジン構築をより効率にしました。
 -->
 
 ---
@@ -314,7 +314,7 @@ Vite Ecosystem の初期に、僕は Vite 用の Plugin をかなり作ってい
 <img src="/devtools/vitest-ui.png" w-250 />
 
 <!--
-それからVitest用のUIを作って、ステータスと各テストファイルのモジュール関係を可視化しました。
+それからVitest用のUIを作って、Status と各 Test Files の Module 関係を可視化しました。
 -->
 
 ---
@@ -327,7 +327,7 @@ Vite Ecosystem の初期に、僕は Vite 用の Plugin をかなり作ってい
 <img src="/devtools/nuxt-imports.png" w-250 />
 
 <!--
-Nuxt DevToolsは重要なプロジェクトで、Nuxtの内部状態を様々な側面で表示し、Nuxt Module がDevToolsに貢献するためのAPIも提供しています。これが実際にVite DevToolsの主なインスピレーション源です。
+Nuxt DevToolsは重要なプロジェクトで、Nuxtの内部状態を様々な側面で表示し、Nuxt Module が DevToolsに貢献するためのAPIも提供しています。これが実際に Vite DevTools の主な Inspiration 源です。
 -->
 
 ---
