@@ -23,7 +23,7 @@ const isFaded = computed(() => PRESENT_START <= $clicks.value && $clicks.value <
     <div transition-all duration-500 :style="sliderStyle">
       <div flex="~ gap-2">
         <img src="/devtools-kit.svg" h-1em>
-        <sup op75 text-base translate-y-2 inline-block>Idea</sup>
+        <sup op75 text-base translate-y-2 inline-block>発想</sup>
       </div>
       <div font-700 flex="~ gap-2">
         <div i-logos-nuxt-icon /> <div text-green>
@@ -56,8 +56,8 @@ const isFaded = computed(() => PRESENT_START <= $clicks.value && $clicks.value <
         </div> DevTools?
       </div>
       <div font-700 flex="~ gap-2">
-        <div i-twemoji-winking-face /> <div text-yellow>
-          Your
+        <div i-twemoji-winking-face /> <div text-yellow font-jp>
+          あなたの
         </div> DevTools?
       </div>
     </div>
@@ -138,7 +138,7 @@ const isFaded = computed(() => PRESENT_START <= $clicks.value && $clicks.value <
       :glow="isReact"
     />
     <DevToolsModule
-      v-after icon="i-carbon-data-set" name="State Management" theme="blue" logo="i-logos-react"
+      v-after icon="i-carbon-data-set" name="State" theme="blue" logo="i-logos-react"
       :class="{ op30: isFaded && !isReact }"
       :glow="isReact"
     />
@@ -190,7 +190,7 @@ const isFaded = computed(() => PRESENT_START <= $clicks.value && $clicks.value <
       <img src="/node-modules-inspector.svg" h-1.7em>
     </DevToolsModule>
     <DevToolsModule
-      v-after icon="i-ri-more-line" name="More..." border-dashed
+      v-after icon="i-ri-more-line" name="もっと..." border-dashed
     />
   </div>
 </template>

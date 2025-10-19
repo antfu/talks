@@ -13,6 +13,7 @@ export default mergeConfigs([
         fonts: {
           sans: 'DM Sans',
           serif: 'Bodoni Moda',
+          jp: 'Noto Serif JP',
         },
         timeouts: {
           warning: 10_000,
