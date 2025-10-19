@@ -54,7 +54,7 @@ Working at {NuxtLabs} / {Vercel}<br>
 まずは自己紹介をさせてください。僕はAnthonyと申します。
 
 Vite、Vue、Nuxtのコアメンバーとして活動していて、Vitest、Slidev、UnoCSS、VueUseなどのオープンソースプロジェクトを作りました。
-また、ESLint Stylistic、Shiki、Twoslashのメンテナーもしています。NuxtLabsで働いていした、買収されて最近 Vercel になりました。
+また、ESLint Stylistic、Shiki、Twoslash のメンテナーもしています。NuxtLabsで働いていした、買収されて最近 Vercel になりました。
 
 僕のウェブサイト（antfu.me）やGitHubで見つけられますし、日本語用のTwitterアカウント（@antfujp）もあります。
 
@@ -116,13 +116,13 @@ zoom: 1.6
 <!--
 もっと具体的な例で言うと、
 
-開発サーバー用の`vite dev`と[click]Productionをビルドする`vite build`があるのはご存知ですね。
+開発サーバー用の `vite dev` と [click] Productionをビルドする `vite build` があるのはご存知ですね。
 
-[click] `vite test`も追加予定で、Vitestが動いてテストスイートを実行します。
+[click] `vite test` も追加予定で、Vitestが動いてテストスイートを実行します。
 
-[click] それからOxcが動く`vite lint`と[click]`vite fmt`もあって、ViteとRolldownと同じパーサーを使います。
+[click] それからOxcが動く `vite lint` と [click] `vite fmt` もあって、ViteとRolldownと同じパーサーを使います。
 
-[click] そして`tsdown`とRolldownの上に構築された`vite lib`でライブラリをビルドできるようになる予定です。
+[click] そして `tsdown` と Rolldown の上に構築された`vite lib`でライブラリをビルドできるようになる予定です。
 
 このような感じで続きます。お話しした通り、目標は JavaScript Ecosystem 向けにすごいパフォーマンスを持つ単一の統一ツールチェーンを提供することです。
 
@@ -191,12 +191,12 @@ class: h-full
 <!--
 その前に、まず DevTools が **何なのか** をお話ししましょう。
 
-DevToolsについて話すとき、[click] 広義 Developer Toolsか、[click] 狭義 DevToolsのどちらかを指すことがあります。
+DevTools について話すとき、[click] 広義 Developer Toolsか、[click] 狭義 DevToolsのどちらかを指すことがあります。
 
-僕は広義 Developer Toolsを[click] 開発者向けのツールとして定義します。その意味で、日常的に使っている[click] Vite、Vitest、Vue、Nuxt などは全て Developer Tools です。
+僕は広義 Developer Tools を [click] 開発者向けのツールとして定義します。その意味で、日常的に使っている[click] Vite、Vitest、Vue、Nuxt などは全て Developer Tools です。
 
 一方で、狭義 DevToolsについては、通常[click] ツールをより良く使うためのツールを意味します。
-例えば、[click] Chromeには内蔵のDevToolsがありますし、Nuxt DevTools、Vue DevToolsなどもあります。
+例えば、[click] Chrome には内蔵の DevTools がありますし、Nuxt DevTools、Vue DevToolsなどもあります。
 
 今日お話しするDevToolsは狭義を指しています。
 -->
@@ -314,7 +314,7 @@ Vite Ecosystem の初期に、僕は Vite 用の Plugin をかなり作ってい
 <img src="/devtools/vitest-ui.png" w-250 />
 
 <!--
-それからVitest用のUIを作って、Status と各 Test Files の Module 関係を可視化しました。
+それから Vitest 用の UI を作って、Status と各 Test Files の Module 関係を可視化しました。
 -->
 
 ---
@@ -353,7 +353,7 @@ Nuxt DevToolsは重要なプロジェクトで、Nuxtの内部状態を様々な
 <img src="/devtools/node-inspector-graph.png" w-250 />
 
 <!--
-みんな node_modules の blackhole のジョークを聞いたことがありますか？その中に実際に何があるのか気になったことはありませんか？僕は気になったので、Node Modules Inspectorを作って、node_modules内のすべての package の関係の完全なグラフを表示して、いじれるようにしました。
+みんな node_modules の blackhole のジョークを聞いたことがありますか？その中に実際に何があるのか気になったことはありませんか？僕は気になったので、Node Modules Inspector を作って、node_modules 内のすべての package の関係の完全なグラフを表示して、いじれるようにしました。
 -->
 
 ---
@@ -365,7 +365,7 @@ class: text-center
 <img src="/vite-devtools.png" w-120 />
 
 <!--
-これらすべてを通して、僕が示したいのはDevToolsが多くの異なる側面で面白いということと、DevTools構築への僕自身の旅を共有することです。
+これらすべてを通して、僕が示したいのは DevTools が多くの異なる側面で面白いということと、DevTools 構築への僕自身の旅を共有することです。
 
 それでは、ついにVite DevToolsに何があるかを見てみましょう。
 -->
@@ -384,7 +384,7 @@ class: text-center
 </div>
 
 <!--
-Vite DevToolsについては、現在Rolldownの出力データを消費してRolldown Viteのビルドモードに集中しています。
+Vite DevTools については、現在 Rolldown の出力データを消費して Rolldown Vite のビルドモードに集中しています。
 -->
 
 ---
@@ -652,20 +652,20 @@ clicks: 19
 <DevToolsKit />
 
 <!--
-このスライドは2年前の Vue Fes を発表した時に作ったスライドで、[click] DevTools Kitと呼ばれるDevTools構築のための共有インターフェースのアイデアを描いています。
+このスライドは2年前の Vue Fes を発表した時に作ったスライドで、[click] DevTools Kit と呼ばれる DevTools 構築のための共有インターフェースのアイデアを描いています。
 
 [click] アイデアは、モジュール化された、組み合わせ可能な、協調的なDevToolsエコシステムを作ることです。
 
-[click] 例えば、一般的で他のフレームワークに結合されていない機能があることは知っています。[click] それからVite Plusエコシステムからの機能があって、Vitestや[click] リンティングやフォーマッティングなどのOxc関連ツールがあります。
-[click] フロントエンドに行くと、SEO、アクセシビリティ、PWAなどの一般的なWeb関連情報もあるかもしれません。
+[click] 例えば、一般的で他のフレームワークに結合されていない機能があることは知っています。[click] それから Vite Plus エコシステムからの機能があって、Vitest や[click] リンティングやフォーマッティングなどの Oxc 関連ツールがあります。
+[click] フロントエンドに行くと、SEO、アクセシビリティ、PWA などの一般的な Web 関連情報もあるかもしれません。
 
-[click] フレームワーク固有に行くと、Vueを例にすると、コンポーネント、リアクティビティ、ルーターなどを可視化するUIがあるかもしれません。[click] さらに進むと、Nuxt固有の可視化も提供するNuxtのようなメタフレームワークもあります。
+[click] フレームワーク固有に行くと、Vue を例にすると、コンポーネント、リアクティビティ、ルーターなどを可視化する UI があるかもしれません。[click] さらに進むと、Nuxt 固有の可視化も提供する Nuxt のようなメタフレームワークもあります。
 
-[click] その意味で、React用、[click] Svelte用、[click] Solid用、[click] Qwik用などのツールもあるかもしれません。
+[click] その意味で、React 用、[click] Svelte 用、[click] Solid 用、[click] Qwik 用などのツールもあるかもしれません。
 
 [click] それからツール統合もあるかもしれません。
 
-これらすべてのブロックがプラグ可能な拡張だと考えれば、ニーズに基づいて簡単に組み合わせることができます。例えば、[click] VueとNuxtの機能をすべて取れば、Nuxt DevToolsができます。[click] Nuxt固有の部分を除けば、Vite DevToolsができます。[click] 同様に、同じインフラの下で他のフレームワーク用のDevToolsも簡単に[click] [click] [click] 作ることができます。そして最終的に、プロジェクトの特定のニーズに基づいてカスタマイズして、[click] 自分のDevToolsを持つことができるかもしれません。
+これらすべてのブロックがプラグ可能な拡張だと考えれば、ニーズに基づいて簡単に組み合わせることができます。例えば、[click] Vue と Nuxt の機能をすべて取れば、Nuxt DevTools ができます。[click] Nuxt 固有の部分を除けば、Vite DevTools ができます。[click] 同様に、同じインフラの下で他のフレームワーク用の DevTools も簡単に[click] [click] [click] 作ることができます。そして最終的に、プロジェクトの特定のニーズに基づいてカスタマイズして、[click] 自分の DevTools を持つことができるかもしれません。
 -->
 
 ---
@@ -679,11 +679,11 @@ clicks: 1
 </div>
 
 <!--
-DevTools Kitの元のアイデアは様々な理由で中止になりました。主に、どれだけの人が採用するか確信がなかったからです。
+DevTools Kit の元のアイデアは様々な理由で中止になりました。主に、どれだけの人が採用するか確信がなかったからです。
 
-でも今回は違います。Vite用のDevToolsを構築しているから、準備ができたら、Viteの上に構築されたすべてのフレームワークが摩擦なく自然に恩恵を受けることになります。
+でも今回は違います。Vite 用の DevTools を構築しているから、準備ができたら、Vite の上に構築されたすべてのフレームワークが摩擦なく自然に恩恵を受けることになります。
 
-[click] だからDevTools KitのビジョンをVite DevToolsに持ってきています。DevTools作者に共通パターンに移行するよう求める代わりに、今はVite用のPlugin を構築するだけです。
+[click] だから DevTools Kit のビジョンを Vite DevTools に持ってきています。DevTools 作者に共通パターンに移行するよう求める代わりに、今は Vite 用の Plugin を構築するだけです。
 -->
 
 ---
@@ -700,14 +700,14 @@ DevTools Kitの元のアイデアは様々な理由で中止になりました�
 
 - 追加の`devtools`フック経由
 
-- 内蔵RPCレイヤー
+- 内蔵 RPC レイヤー
 
 - 内蔵同型ビューホスティング
   - 埋め込みフローティングパネル
   
   - ブラウザ拡張
   - スタンドアロンWebページ
-  - デプロイ可能SPA
+  - デプロイ可能 SPA
 
 </v-clicks>
 
@@ -757,7 +757,7 @@ Vite DevTools Plugin がどう見えるかを簡単に見てみましょう。
 
 [click] Vite DevTools は Plugin 作者が server と client 間でより簡単に拡張と通信できるように、内蔵 RPC レイヤーを提供します。
 
-[click] ユーザーが devtools を消費する方法を決められるようにもしたいと思います。Vite DevToolsでは、Nuxt DevToolsのような埋め込みフローティングパネル、ブラウザDevToolsで表示されるブラウザ拡張、スタンドアロンWebページ、現在のデータのスナップショットとしてのデプロイ可能SPAなどをサポートする予定です。Vite DevToolsはこれらのシナリオを同型的にサポートするための抽象化レイヤーを提供します。
+[click] ユーザーが devtools を消費する方法を決められるようにもしたいと思います。Vite DevTools では、Nuxt DevTools のような埋め込みフローティングパネル、ブラウザ DevTools で表示されるブラウザ拡張、スタンドアロン Web ページ、現在のデータのスナップショットとしてのデプロイ可能 SPA などをサポートする予定です。Vite DevTools はこれらのシナリオを同型的にサポートするための抽象化レイヤーを提供します。
 
 （次はデモビデオ）
 -->
@@ -773,7 +773,7 @@ class: 'flex h-full'
 
 <!--
 
-それでは、こんな感じに見えます。一般的に、すべての統合のエントリーポイントとなるドックライクなUIを提供します。各統合について、各DevTools UIをレンダリングするフレームを提供するか、カスタムレンダラーやスクリプト実行もできます。ここはVitest、Nuxt DevTools、UnoCSSを統合したクイックPoCです。将来的には、Plugin APIの能力を検証しながら、より多くのDevTool作者と協力してVite DevToolsに持ってくる予定です。
+それでは、こんな感じに見えます。一般的に、すべての統合のエントリーポイントとなるドックライクな UI を提供します。各統合について、各 DevTools UI をレンダリングするフレームを提供するか、カスタムレンダラーやスクリプト実行もできます。ここは Vitest、Nuxt DevTools、UnoCSS を統合したクイック PoC です。将来的には、Plugin API の能力を検証しながら、より多くの DevTool 作者と協力して Vite DevTools に持ってくる予定です。
 
 -->
 
@@ -809,22 +809,22 @@ class: 'flex h-full'
   <div v-click flex="~ col gap-1" p4 rounded bg-purple:15 text-purple1>
     <div text-3xl i-ph:stack-plus-duotone text-purple mb2 />
     <div>Vite Plus</div>
-    <div text-xs op50>Vitest UI、Oxlint可視化などを統合</div>
+    <div text-xs op50>Vitest UI、Oxlint 可視化などを統合</div>
   </div>
 
   <div v-click flex="~ col gap-1" p4 rounded bg-blue:15 text-blue1>
     <div text-3xl i-ph:circles-three-plus-duotone text-blue mb2 />
     <div>DevTools Kit</div>
-    <div text-xs op50>統一DevToolsアーキテクチャ、上位フレームワークが拡張を提供可能</div>
+    <div text-xs op50>統一 DevTools アーキテクチャ、上位フレームワークが拡張を提供可能</div>
   </div>
 </div>
 
 <!--
-より広い視点で、Vite DevToolsの目標とビジョンは、より良い透明性を提供し、エコシステムがさらに探索できるようにすることです。
+より広い視点で、Vite DevTools の目標とビジョンは、より良い透明性を提供し、エコシステムがさらに探索できるようにすることです。
 
-[click] 内蔵で、Viteの内部の可視化、[click] ビルドと Plugin Pipeline の分析と実行可能な提案、[click] アプリが時間とともにどう変化するかを見るための複数コミット間のビルド比較、[click] 再現として Build Metadata を共有するためのデプロイ可能SPAでの Build Snapshot などを提供します。
+[click] 内蔵で、Vite の内部の可視化、[click] ビルドと Plugin Pipeline の分析と実行可能な提案、[click] アプリが時間とともにどう変化するかを見るための複数コミット間のビルド比較、[click] 再現として Build Metadata を共有するためのデプロイ可能 SPA での Build Snapshot などを提供します。
 
-[click] それからVitest UIやOxlintなどの第一者Vite Plus統合、[click] 最終的にこのインフラの上に構築してさらに興味深いユースケースを作るための Plugin 作者向けDevTools Kitがあります。
+[click] それから Vitest UI や Oxlint などの第一者 Vite Plus 統合、[click] 最終的にこのインフラの上に構築してさらに興味深いユースケースを作るための Plugin 作者向け DevTools Kit があります。
 -->
 
 ---
@@ -872,7 +872,7 @@ glow: bottom
       <div flex="~ col gap-1">
         <div text-xl>DevTools Kit</div>
         <div op65 text-sm>
-          拡張可能DevToolsアーキテクチャ
+          拡張可能 DevTools アーキテクチャ
         </div>
       </div>
     </div>
@@ -890,7 +890,7 @@ glow: bottom
       <div flex="~ col gap-1">
         <div text-xl>統合</div>
         <div op65 text-sm>
-          フレームワークと協力してDevTools体験を統一
+          フレームワークと協力して DevTools 体験を統一
         </div>
       </div>
     </div>
