@@ -8,6 +8,45 @@ layout: center
 glowSeed: 4
 lang: ja
 title: Vite DevTools
+notesAutoRuby:
+  主な: おもな
+  表示し: ひょうじし
+  側面: そくめん
+  共通: きょうつう
+  内蔵: ないぞう
+  出力: しゅつりょく
+  初期: しょき
+  協調: きょうちょう
+  可視化: かしか
+  合致: がっち
+  基盤: きばん
+  実行: じっこう
+  広義: こうぎ
+  抽出: ちゅうしゅつ
+  抽象化: ちゅうしょうか
+  拡張性: かくちょうせい
+  探索: たんさく
+  最適化: さいてきか
+  柔軟性: じゅうなんせい
+  検出: けんしゅつ
+  構築: こうちく
+  比較: ひかく
+  洞察: どうさつ
+  消費: しょうひ
+  清聴: せいちょう
+  狭義: きょうぎ
+  異なる: ことなる
+  示し: しめし
+  積極的: せっきょくてき
+  統合: とうごう
+  視覚的: しかくてき
+  貢献: こうけん
+  重複: ちょうふく
+  集合: しゅうごう
+  非依存: ひいぞん
+  摩擦: まさつ
+  辛抱: しんぼう
+  恩恵: おんえい
 ---
 
 ![](/af-logo-animated.svg){.w-30.mt--10.mb-5}
@@ -260,7 +299,7 @@ glow: right
 
 それから[click] 組み合わせの可能性で、[click] 分離された Module があると、他のツールと組み合わせて拡張して、その力を最大限活用しやすくなります。
 
-最後は[click] 拡張性で、[click] Software を一回限りの Script と違うものにするのは、Software が異なるシナリオに適応して処理することを意図していることです。柔軟なプラグインシステムとカスタマイズ能力を持つ拡張性は、良い Software の非常に重要な側面の一つです。
+最後は[click] 拡張性で、[click] Software を一回限りの Script と違うものにするのは、Software が異なるシナリオに適応して処理することを意図していることです。柔軟な Plugin System と Customize 能力を持つ拡張性は、良い Software の非常に重要な側面の一つです。
 
 そういうわけで、DevToolsを作っている理由は、僕たちのツールに素晴らしい[click] 透明性を提供して、ユーザーがツールをより理解し、内部状態を見通せるようにするためです。
 -->
@@ -643,7 +682,7 @@ layout: center
 </div>
 
 <!--
-<ruby>拡張性<rt>かくちょうせい</rt></ruby> はViteをこんにちのViteにした最も重要な要因の一つだと思います。Vite DevToolsでも同じことをしない理由はありません。
+拡張性はViteをこんにちのViteにした最も重要な要因の一つだと思います。Vite DevToolsでも同じことをしない理由はありません。
 -->
 
 ---
@@ -655,9 +694,9 @@ clicks: 19
 <!--
 このスライドは2年前に Vue Fes を発表した時のもので、[click] DevTools Kit と呼ばれる DevTools 構築のための共有 interface の Idea を描いています。
 
-[click] 目的は、module 化された、組み合わせ可能な、<ruby>協調<rt>きょうちょう</rt></ruby>的な DevTools Ecosystem を作ることです。
+[click] 目的は、module 化された、組み合わせ可能な、協調的な DevTools Ecosystem を作ることです。
 
-[click] 例えば、一般的で他の Framework に結合されていない機能があります。[click] それから Vite Plus Ecosystem  からの機能があって、Vitest や[click] Linting やFormating などの Oxc 関連ツールがあります。
+[click] 例えば、一般的で他の Framework に結合されていない機能があります。[click] それから Vite Plus Ecosystem からの機能があって、Vitest や[click] Linting や Formatting などの Oxc 関連ツールがあります。
 [click] Frontend では、SEO、Accessibility、PWA などの一般的な Web 関連情報もあります。
 
 [click] Framework 固有だと、Vue を例にすると、Component、Reactivity、<ruby>Router<rt>ルーター</rt></ruby>などを可視化する UI があります。[click] さらに進むと、Nuxt 固有の可視化も提供する Nuxt のような meta-framework もあります。
