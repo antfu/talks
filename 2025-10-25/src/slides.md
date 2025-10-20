@@ -146,7 +146,7 @@ class: h-full
 
 <div p14>
 
-  <h2 text-4xl mb-2 v-click="1">広義 Developer Tools</h2>
+  <h2 text-4xl mb-2 v-click="1">広義の Developer Tools</h2>
 
   <div text-2xl text-amber v-click="3">"開発者向けツール"</div>
 
@@ -170,7 +170,7 @@ class: h-full
 
 <div p13 border="t main">
 
-  <h2 text-4xl mb-2 v-click="2">狭義 DevTools</h2>
+  <h2 text-4xl mb-2 v-click="2">狭義の DevTools</h2>
 
   <div text-2xl text-lime v-click="5">"ツールをより良く使うためのツール"</div>
 
@@ -211,7 +211,7 @@ glow: right
 <div grid="~ cols-[max-content_min-content_auto] items-center gap-x-10 gap-y-10" py10>
   <div flex="~ gap-2 items-center" text-blue relative v-click>
     <div i-ph-stairs-duotone text-2xl />
-    <span>簡単入門</span>
+    <span>入門しやすい</span>
   </div>
   <div i-ph-arrow-right-duotone op50 v-click />
   <div text-lg v-after>始めやすく、設定がシンプル、一言で説明できる</div>
@@ -245,7 +245,7 @@ glow: right
   <div text-lg v-after>柔軟なプラグインシステムとカスタマイズ</div>
 </div>
 
-<div absolute top-67 left-9 w-225 h-15 border="2 amber rounded-xl" bg-amber:10 z--1 v-click />
+<div absolute top-67 left-9 w-225 h-14 border="2 amber rounded-xl" bg-amber:10 z--1 v-click />
 
 <!--
 なぜツールを使うためのツールを作っているのでしょうか？
@@ -269,9 +269,9 @@ glow: right
 layout: center
 ---
 
-<div flex="~ col gap-2 items-center" relative text-6xl>
-  <span font-jp>透明性</span>
-  <span op50 font-serif text-4xl>Transparency</span>
+<div flex="~ col gap-2 items-center" relative text-5em>
+  <span font-jp tracking-widest>透明性</span>
+  <span op50 text-4xl mt--4>Transparency</span>
 </div>
 
 <!--
@@ -411,12 +411,12 @@ class: important-p0
 ---
 
 <div flex="~ gap-2 items-center" h-full>
-<img src="/vd/folders.png" w-160 />
+<img src="/vd/folders.png" w-155 mr--1 />
 <div flex="~ col gap-2 justify-center">
 
 # File Tree
 
-ツリービューでのバンドルファイルの表示
+ツリーでのバンドルファイルの表示
 
 </div>
 </div>
@@ -637,9 +637,9 @@ layout: center
 layout: center
 ---
 
-<div flex="~ col gap-2 items-center" relative text-6xl>
-  <span font-serif>拡張性</span>
-  <span op50 font-serif text-4xl>Extensibility</span>
+<div flex="~ col gap-2 items-center" relative text-5em>
+  <span font-jp tracking-widest>拡張性</span>
+  <span op50 text-4xl mt--4>Extensibility</span>
 </div>
 
 <!--
@@ -655,7 +655,7 @@ clicks: 19
 <!--
 このスライドは2年前に Vue Fes を発表した時のもので、[click] DevTools Kit と呼ばれる DevTools 構築のための共有 interface の Idea を描いています。
 
-[click] 目的は、module 化された、組み合わせ可能な、協調的な DevTools Ecosystem を作ることです。
+[click] 目的は、module 化された、組み合わせ可能な、<ruby>協調<rt>きょうちょう</rt></ruby>的な DevTools Ecosystem を作ることです。
 
 [click] 例えば、一般的で他の Framework に結合されていない機能があります。[click] それから Vite Plus Ecosystem  からの機能があって、Vitest や[click] Linting やFormating などの Oxc 関連ツールがあります。
 [click] Frontend では、SEO、Accessibility、PWA などの一般的な Web 関連情報もあります。
