@@ -64,6 +64,9 @@ notesAutoRuby:
   前進: ぜんしん
   考慮: こうりょ
   既に: すでに
+  見落: みおち
+  避け: さけ
+  同型的: どうけいてき
 ---
 
 ![](/af-logo-animated.svg){.w-30.mt--10.mb-5}
@@ -459,7 +462,7 @@ class: important-p0
 </div>
 
 <!--
-最初に知っていただきたいのは、Bundle にどれだけの Module が組み込まれているかです。自分のソースコード、npmパッケージ、インストールしたプラグインから生成された仮想モジュールなど、すべてこのビューでリストされます。
+最初に知っていただきたいのは、Bundle にどれだけの Module が組み込まれているかです。自分のソースコード、npmパッケージ、Install-した Plugin から生成された仮想Moduleなど、すべてこのViewでリストされます。
 -->
 
 ---
@@ -546,7 +549,7 @@ class: text-center
 <img src="/vd/chunk.png" w-210 mt--5 />
 
 <!--
-Chunking では、各 Chunk にどれだけの Module があるかを見ることができます。例えば、Entry Chunking が大きすぎない方が理想的です。
+Chunking では、各 Chunk にどれだけの Module があるかを見ることができます。例えば、Entry Chunk が大きすぎない方が理想的です。
 このページでは、Chunk が大きくなった理由を説明し、最適化の方法を紹介します。
 -->
 
@@ -621,7 +624,7 @@ class: text-center !pt10
 <img src="/vd/packages.png" w-300 mt--5 />
 
 <!--
-アプリの大部分は通常 3rd-Party の npm package から来ます。でも通常はアプリへの影響を見落としがちです。このタブは Bundle に入ったすべての Package とその Bundle Size をリストします。そして最も重要なのは、version を表示して、異なる version の重複 package があるときに教えてくれることです。これは避けたいことです。
+アプリの大部分は通常 3rd-Party の npm package から来ます。でも通常はアプリへの影響を見落としがちです。このページは Bundle に入ったすべての Package とその Bundle Size をリストします。そして最も重要なのは、version を表示して、異なる version の重複 package があるときに教えてくれることです。一般的にいうを、これは避けたいことです。
 -->
 
 ---
@@ -955,11 +958,11 @@ glow: bottom
 <!--
 Vite DevTools の Scope はかなり大きくなって、予想より少し時間がかかっています。
 
-現在は[click] かなり多くの[click] 可視化を実装しています。前に話した通りです。
+現在は[click] かなり多くの[click] 可視化を実装しています。
 
-それから[click] バンドル分析のより多くの洞察を得るために作業を続けています。Rolldownチームと密接に協力しています。[click] DevTools Kit のベースラインは動作していて、Nuxt DevTools を Vite DevToolsに移植する Prototype も既に動作していますが、やるべき磨き上げと書くべき Document がたくさんあります。
+それから[click] バンドル分析のより多くの洞察を得るために作業を続けています。Rolldownチームと密接に協力しています。[click] DevTools Kit の baseline は動作していて、Nuxt DevTools を Vite DevToolsに移植する Prototype も既に動作していますが、やるべき磨き上げと書くべき Document がたくさんあります。
 
-[click] 現在、Vite DevToolsのコアUIはビルドモードのみに集中していて、開発モードをサポートするために Vite Full Bundle Mode のロールアウトを待っています。
+[click] 現在、Vite DevToolsのコアUIは Building のみに集中していて、開発モードをサポートするために Vite Full Bundle Mode の Roll out を待っています。
 
 [click] 最終的に、長期的には、Ecosystem と協力して努力をまとめ、みんながこのシステムから恩恵を受けられるようにしたいと思います。
 
@@ -1025,8 +1028,6 @@ layout: center
 ソースコードは`vitejs/devtools`リポジトリにあります。
 
 Ecosystem 全体と協力して、さらに良いツールを探索・構築する方法を本当に楽しみにしています。
-
-ありがとうございます！
 -->
 
 ---
