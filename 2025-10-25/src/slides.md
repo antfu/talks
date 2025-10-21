@@ -10,8 +10,7 @@ lang: ja
 title: Vite DevTools
 notesAutoRuby:
   主な: おもな
-  表示し: ひょうじし
-  側面: そくめん
+  表示し: ひょうじ 
   共通: きょうつう
   内蔵: ないぞう
   出力: しゅつりょく
@@ -20,7 +19,6 @@ notesAutoRuby:
   可視化: かしか
   合致: がっち
   基盤: きばん
-  実行: じっこう
   広義: こうぎ
   抽出: ちゅうしゅつ
   抽象化: ちゅうしょうか
@@ -47,6 +45,23 @@ notesAutoRuby:
   摩擦: まさつ
   辛抱: しんぼう
   恩恵: おんえい
+  動い: うごい
+  野心: やせい
+  分析: ぶんせ
+  実行: じっこう
+  単一: たんいつ
+  統一: とういつ
+  操作: そうさ
+  指す: さす
+  定義: ていぎ
+  通常: つうじょう
+  見通せる: みとおせる
+  適応: てきおう
+  変換: へんかん
+  概要: がいよう
+  焦点: しょうてん
+  生成: せいせい
+  前進: ぜんしん
 ---
 
 ![](/af-logo-animated.svg){.w-30.mt--10.mb-5}
@@ -155,17 +170,15 @@ zoom: 1.6
 <!--
 もっと具体的な例で言うと、
 
-開発サーバー用の `vite dev` と [click] Productionをビルドする `vite build` があるのはご存知ですね。
+開発サーバー用の `vite dev` と [click] Productionをビルドする `vite build` があるのは ご存知ですね。
 
-[click] `vite test` も追加予定で、Vitestが動いてテストスイートを実行します。
+[click] `vite test` も追加予定で、Vitestが動いて test suite を実行します。
 
 [click] それからOxcが動く `vite lint` と [click] `vite fmt` もあって、ViteとRolldownと同じパーサーを使います。
 
-[click] そして `tsdown` と Rolldown の上に構築された`vite lib`でライブラリをビルドできるようになる予定です。
+[click] そして `tsdown` と Rolldown の上に構築された `vite lib` で library をビルドできるようになる予定です。
 
-このような感じで続きます。お話しした通り、目標は JavaScript Ecosystem 向けにすごい Performance を持つ単一の統一ツールチェーンを提供することです。
-
-[click] Vite DevToolsについては、すべての subcommand で `--ui` flag として提供されて、各操作のUIを表示して内部構造をより理解しやすくします。
+[click] Vite DevToolsについては、すべての subcommand で `--ui` flag として提供されて、各操作のUIを表示して内部構造を より理解しやすくします。
 -->
 
 ---
@@ -174,7 +187,9 @@ layout: center
 
 <h1 important-text-5xl font-jp>なぜ DevTools が必要なの？</h1>
 
-<!-- まず最初に、なぜDevToolsが必要なのでしょうか？ -->
+<!--
+最初に、なぜDevToolsが必要なのでしょうか？
+-->
 
 ---
 layout: none
@@ -234,7 +249,7 @@ DevTools について話すとき、[click] 広義の Developer Toolsか、[clic
 
 僕は広義の Developer Tools を [click] 開発者向けのツールとして定義します。その意味で、日常的に使っている[click] Vite、Vitest、Vue、Nuxt などは全て Developer Tools です。
 
-一方で、狭義の DevToolsについては、通常[click] ツールをより良く使うためのツールを意味します。
+一方で、狭義の DevToolsについては、[click] ツールをより良く使う ための ツールを意味します。
 例えば、[click] Chrome には内蔵の DevTools がありますし、Nuxt DevTools、Vue DevToolsなどもあります。
 
 今日お話しするDevToolsは狭義を指しています。
@@ -293,7 +308,7 @@ glow: right
 
 最初は[click] 入門しやすいことで、[click] 良いツールは始めやすく、設定が簡単で、通常は一言で説明できるべきです。
 
-次は[click] 直感的で、[click] ユーザーの期待と直感に合致して、良いデベロッパー体験を作り、新機能を発見しやすくするべきです。
+次は[click] 直感的で、[click] ユーザーの期待と直感に合致して、良い Developer 体験を作り、新機能を発見しやすくするべきです。
 
 3つ目は[click] 透明性で、[click] ツールを使うとき、ユーザーがその仕組みと状態を知っている方が良いです。何か問題が起きたら、なぜ起きたかを調べて修正しやすくなります。
 
@@ -327,7 +342,9 @@ layout: center
 <img src="/devtools/uno-inspector.png" w-250 />
 
 <!--
-僕の DevTools の旅はUnoCSSから始まりました。ある CSS utility がなぜ含まれるのか不明だったため、Inspector を作成しました。これにより各ファイルがどのようにスキャンされ、リストに貢献するかが分かります。この透明性はエンジン構築をより効率にしました。
+僕の DevTools の旅はUnoCSSから始まりました。ある CSS utility がなぜ含まれるのか不明だったため、Inspector を作りました。
+
+これにより各ファイルがどのようにスキャンされ、リストに貢献するかが分かります。この透明性はエンジン構築をより 効率にしました。
 -->
 
 ---
@@ -392,7 +409,7 @@ Nuxt DevTools は重要な Project で、Nuxtの内部状態を様々な側面�
 <img src="/devtools/node-inspector-graph.png" w-250 />
 
 <!--
-みんな node_modules の blackhole のジョークを聞いたことがありますか？その中に実際に何があるのか気になったことはありませんか？僕は気になったので、Node Modules Inspector を作って、node_modules 内のすべての package の関係の完全なグラフを表示して、いじれるようにしました。
+みんな node_modules の blackhole のジョークを聞いたことがありますか？その中に実際に 何があるのか 気になったことはありませんか？僕はすごく気になったので、Node Modules Inspector を作って、node_modules 内のすべての package の関係の完全なグラフを表示して、いじれるようにしました。もし興味があれば、ぜひ試すて見てくたさい。
 -->
 
 ---
@@ -423,7 +440,7 @@ class: text-center
 </div>
 
 <!--
-Vite DevTools については、現在 Rolldown の出力データを消費して Rolldown Vite のビルドモードに集中しています。
+各ビルドについて、Vite DevToolsはどのくらいの Module がどのくらいの Plugin と一緒に Bundle されているかの簡単な概要を表示します。現在はまず Build mode に焦点を当てています。
 -->
 
 ---
@@ -442,7 +459,7 @@ class: important-p0
 </div>
 
 <!--
-最初に知っていただきたいのは、Bundle にどれだけの Module が組み込まれているかです。自分のSource Code、npm package、Install-した Plugin から生成された仮想モジュールなど、どれでも。
+最初に知っていただきたいのは、Bundle にどれだけの Module が組み込まれているかです。自分のソースコード、npmパッケージ、インストールしたプラグインから生成された仮想モジュールなど、すべてこのビューでリストされます。
 -->
 
 ---
@@ -529,7 +546,7 @@ class: text-center
 <img src="/vd/chunk.png" w-210 mt--5 />
 
 <!--
-Chinking では、各 Chunk にどれだけの Module があるかを見ることができます。例えば、Entry Chunking が大きすぎない方が理想的です。
+Chunking では、各 Chunk にどれだけの Module があるかを見ることができます。例えば、Entry Chunking が大きすぎない方が理想的です。
 このページでは、Chunk が大きくなった理由を説明し、最適化の方法を紹介します。
 -->
 
@@ -540,7 +557,7 @@ Chinking では、各 Chunk にどれだけの Module があるかを見るこ�
 <img src="/vd/chart.png" w-200 />
 
 <!--
-Performance も気にしています。この View は、その Module を処理するときに、各 Hook と各 Plugin がどれだけ時間を消費しているかを教えて、遅い Plugin を見つけて最適化できます。
+僕たちは、Performance も気にしています。この View は、その Module を処理するときに、各 Hook と各 Plugin がどれだけ時間を消費しているかを教えて、遅い Plugin を見つけて最適化できます。
 -->
 
 ---
@@ -604,7 +621,7 @@ class: text-center !pt10
 <img src="/vd/packages.png" w-300 mt--5 />
 
 <!--
-アプリの大部分は通常 3-rd Party の npm package から来ます。でも通常はアプリへの影響を見落としがちです。このタブは Bundle に入ったすべての Package とその Bundle Size をリストします。そして最も重要なのは、version を表示して、異なる version の重複 pacakge があるときに教えてくれることです。これは避けたいことです。
+アプリの大部分は通常 3rd-Party の npm package から来ます。でも通常はアプリへの影響を見落としがちです。このタブは Bundle に入ったすべての Package とその Bundle Size をリストします。そして最も重要なのは、version を表示して、異なる version の重複 package があるときに教えてくれることです。これは避けたいことです。
 -->
 
 ---
