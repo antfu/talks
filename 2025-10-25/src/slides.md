@@ -10,6 +10,7 @@ lang: ja
 title: Vite DevTools
 notesAutoRuby:
   主な: おもな
+  主に: おもに
   表示し: ひょうじ 
   共通: きょうつう
   内蔵: ないぞう
@@ -67,6 +68,21 @@ notesAutoRuby:
   見落: みおち
   避け: さけ
   同型的: どうけいてき
+  基づ: もとづ
+  表し: あらわし
+  限定的: げんてーてき
+  大多数: だいたすう
+  常に: つねに
+  Framework: フレームワーク
+  発表し: ''
+  結合: けつごう
+  除け: のぞけ
+  動作: どうさ
+  疑似: ぎじ
+  埋め: うめ
+  検証: けんしょう
+  実装: じっそう
+  磨き上げ: みがきあげ
 ---
 
 ![](/af-logo-animated.svg){.w-30.mt--10.mb-5}
@@ -648,7 +664,7 @@ layout: center
 <div text-3.5em font-jp>可視化 <span font-800 text-rose>だけ</span> ではありません</div>
 
 <!--
-そういうわけで、Vite DevToolsは内部データの可視化だけではないことも申し上げたかったのです。
+そういうわけで、Vite DevToolsは内部データの可視化だけではないことも 申し上げたかったのです。
 -->
 
 ---
@@ -685,7 +701,7 @@ layout: center
 <!--
 今お話ししたUIについて考えてみると、それらが必要になることはあまりないかもしれませんし、日常的な開発には少し高度すぎるかもしれません。
 
-[click] これは実際に完全に理にかなっています。Viteは Framework に依存しないツールだからです。依存しないというのは、使っている Framework を知らないし、知るべきではないということです。これはViteに現代の Framework の Infra になるための大きな柔軟性と拡張性を与えますが、Viteが実際のViteユーザーに近い興味深い情報を提示するのを難しくします。例えば、作っているアプリや使っている Framework の状態など。
+[click] それは、Vite は Framework に依存しないツールだからです。依存しないというのは、使っている Framework を知らないし、知るべきではないということです。これはViteに現代の Framework の Infra になるための大きな柔軟性と拡張性を与えますが、Viteが実際のViteユーザーに近い興味深い情報を提示するのを難しくします。例えば、アプリの状態など。
 
 [click] 右の図を見てみると、各円が特定の Framework や統合を表していると想像してください。依存しないということは、Vite DevToolsは[click] すべての Framework の共通部分にしかなれないということです。これはかなり限定的で、大多数のユーザーにとって常に有用とは限りません。
 
@@ -712,20 +728,20 @@ clicks: 19
 <DevToolsKit />
 
 <!--
-このスライドは2年前に Vue Fes を発表した時のもので、[click] DevTools Kit と呼ばれる DevTools 構築のための共有 interface の Idea を描いています。
+このスライドは2年前に Vue Fes を発表した時のもので、DevTools Kit と呼ばれる DevTools 構築のための共有 interface の Idea を描いています。
 
-[click] 目的は、module 化された、組み合わせ可能な、協調的な DevTools Ecosystem を作ることです。
+目的は、module 化された、組み合わせ可能な、協調的な DevTools Ecosystem を作ることです。
 
 [click] 例えば、一般的で他の Framework に結合されていない機能があります。[click] それから Vite Plus Ecosystem からの機能があって、Vitest や[click] Linting や Formatting などの Oxc 関連ツールがあります。
 [click] Frontend では、SEO、Accessibility、PWA などの一般的な Web 関連情報もあります。
 
-[click] Framework 固有だと、Vue を例にすると、Component、Reactivity、<ruby>Router<rt>ルーター</rt></ruby>などを可視化する UI があります。[click] さらに進むと、Nuxt 固有の可視化も提供する Nuxt のような meta-framework もあります。
+[click] Framework 固有機能と言って、Vue を例にすると、Component、Reactivity、<ruby>Router<rt>ルーター</rt></ruby>などを可視化する UI があります。[click] さらに進むと、Nuxt DevTools みたいの、Nuxt 固有の可視化も提供します。
 
-[click] その意味で、React 用、[click] Svelte 用、[click] Solid 用、[click] Qwik 用などのツールもあるかもしれません。
+[click] その意味で、React 用、[click] Svelte 用、[click] Solid 用、[click] Qwik 用、[click] Astro 用などのツールもあるかもしれません。
 
-[click] それから 3-rd Party ツール統合もあります。
+[click] それから 3rd Party ツール統合もあります。
 
-これらすべての Block を、ニーズに基づいて簡単に組み合わせることができます。例えば、[click] Vue と Nuxt の機能をすべて取れば、Nuxt DevTools ができます。[click] Nuxt 固有の部分を除けば、Vite DevTools ができます。[click] 同様に、同じインフラの下で他の framework 用の DevTools も簡単に[click] [click] [click] 作ることができます。そして最終的に、Project の特定のニーズに基づいて Customize して、[click] 自分の DevTools を持つことができるかもしれません。
+これらすべての Block を、ニーズに基づいて簡単に組み合わせることができます。例えば、[click] Vue と Nuxt の機能をすべて取れば、Nuxt DevTools ができます。[click] Nuxt 固有の部分を除けば、Vue DevTools ができます。[click] 同様に、同じ Infra の下で他の framework 用の DevTools も簡単に[click] [click] [click] 作ることができます。[click] そして最終的に、Project の特定のニーズに基づいて Customize して、自分の DevTools を持つことができるかもしれません。
 -->
 
 ---
@@ -743,7 +759,7 @@ DevTools Kit の元の企画は様々な理由で中止になりました。主�
 
 でも今回は違います。Vite 用の DevTools を構築しているから、準備ができたら、Vite の上に構築されたすべての framework が摩擦なく自然に恩恵を受けることになります。
 
-[click] だから DevTools Kit のビジョンを Vite DevTools に持ってきています。DevTools 作者に共通 Pattern に移行するよう求める代わりに、今は Vite 用の Plugin を構築するだけです。
+[click] だから DevTools Kit の Vision を Vite DevTools に持ってきています。DevTools 作者達に共通 Pattern に移行するよう求める代わりに、今は Vite 用の Plugin を構築するだけです。
 -->
 
 ---
@@ -813,7 +829,7 @@ export default function MyPlugin(): Plugin {
 <!--
 Vite DevTools Plugin がどう見えるかを簡単に見てみましょう。
 
-一般的に、Vite DevTools Plugin は [click] Vite Pluginの上位集合で、特別なことをする必要はなく、[click] Plugin に `devtools` を追加するだけで動作します。右のコードはそれをどうするかの疑似 Code Snippet です。まだ何も確定していなくて、interface を探索中で、大きく変わるかもしれないからです。
+一般的に、Vite DevTools Plugin は [click] Vite Pluginの上位集合で、特別なことをする必要はなく、[click] Plugin に `devtools` を追加するだけで動作します。右のは疑似コードです。まだ何も確定していなくて、大きく変わるかもしれません。
 
 [click] Vite DevTools は Plugin 作者が server と client 間でより簡単に拡張と通信できるように、内蔵 RPC レイヤーを提供します。
 
@@ -832,7 +848,7 @@ class: 'flex h-full'
 </SlidevVideo>
 
 <!--
-こんな感じに見えます。一般的に、すべての統合の Entrypoint となる Dock-like な UI を提供します。各統合について、各 DevTools UI を rendering する Frame を提供するか、Custom Rendering や Script 実行もできます。ここは Vitest、Nuxt DevTools、UnoCSS を統合した PoC です。将来的には、Plugin API の能力を検証しながら、より多くの DevTool 作者と協力して Vite DevTools に持ってくる予定です。
+こんな感じに見えます。一般的に、すべての統合の Entrypoint となる Dock-like な UI を提供します。各統合について、各 DevTools UI を rendering する Frame を提供するか、Custom Rendering や Script 実行もできます。ここは Vitest、Nuxt DevTools、UnoCSS を統合した PoC です。将来的には、Plugin API の能力を検証しながら、より多くの DevTool 作者達と協力して Vite DevTools に持ってくる予定です。
 -->
 
 ---
@@ -880,7 +896,7 @@ class: 'flex h-full'
 <!--
 より広い視点で、Vite DevTools の目標は、より良い透明性を提供し、ecosystem がさらに探索できるようにすることです。
 
-[click] 内蔵で、Vite の内部の可視化、[click] ビルドと Plugin Pipeline の分析と実行可能な提案、[click] アプリが時間とともにどう変化するかを見るための複数 commit 間の build 比較、[click] 再現として Build Metadata を共有するための Deploy 可能 SPA での Build Snapshot などを提供します。
+[click] 内蔵で、Vite の内部の可視化、[click] ビルドと Plugin Pipeline の分析と実行可能な提案、[click] アプリが時間とともにどう変化するかを見るための複数 commit 間の build 比較、[click] 再現として Build Metadata を共有するための Build Snapshot などを提供します。
 
 [click] それから Vitest UI や Oxlint などの公式 Vite Plus 統合、[click] 最終的にこの infra の上に構築してさらに興味深い use-case を作るための Plugin 作者向け DevTools Kit があります。
 -->
@@ -966,7 +982,7 @@ Vite DevTools の Scope はかなり大きくなって、予想より少し時�
 
 [click] 最終的に、長期的には、Ecosystem と協力して努力をまとめ、みんながこのシステムから恩恵を受けられるようにしたいと思います。
 
-要するに、残念ながらVite DevToolsはまだこの時点では使えませんが、積極的に作業しています。辛抱強くお待ちください。準備ができたら試せるようにお知らせします！
+要するに、残念ながらVite DevToolsはまだこの時点では使えませんが、積極的に作業しています。もう少しお待ちください。
 -->
 
 ---
@@ -1040,3 +1056,9 @@ glowY: 120
 <h1 font-jp important-text-3em>ご清聴ありがとうございました</h1>
 
 スライドは [antfu.me](https://antfu.me) で見つけられます
+
+<!--
+以上です。
+
+ご清聴ありがとうございました
+-->
