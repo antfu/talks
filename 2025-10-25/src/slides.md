@@ -8,6 +8,7 @@ layout: center
 glowSeed: 4
 lang: ja
 title: Vite DevTools
+timer: countdown
 notesAutoRuby:
   主な: おもな
   主に: おもに
