@@ -11,7 +11,7 @@ title: Vite DevTools
 notesAutoRuby:
   主な: おもな
   主に: おもに
-  表示し: ひょうじ 
+  表示し: ひょうじ
   共通: きょうつう
   内蔵: ないぞう
   出力: しゅつりょく
@@ -130,6 +130,8 @@ Working at {NuxtLabs} / {Vercel}<br>
 
 Vite、Vue、Nuxtのコアメンバーとして活動していて、Vitest、Slidev、UnoCSS、VueUseなどのオープンソースプロジェクトを作りました。
 また、ESLint Stylistic、Shiki、Twoslash のメンテナーもしています。NuxtLabsで働いていましたが、買収されて最近 Vercel になりました。
+
+ちなみに、私は最近髪を切りまして、アイコンを更新しました。
 
 僕のウェブサイト（antfu.me）やGitHubで見つけられますし、日本語用のTwitterアカウント（@antfujp）もあります。
 
