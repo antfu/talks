@@ -82,6 +82,9 @@ notesAutoRuby:
   埋め: うめ
   検証: けんしょう
   実装: じっそう
+  非常に: ''
+  Module: モジュール
+  Performance: パフォーマンス
   磨き上げ: みがきあげ
 ---
 
@@ -131,7 +134,7 @@ Working at {NuxtLabs} / {Vercel}<br>
 Vite、Vue、Nuxtのコアメンバーとして活動していて、Vitest、Slidev、UnoCSS、VueUseなどのオープンソースプロジェクトを作りました。
 また、ESLint Stylistic、Shiki、Twoslash のメンテナーもしています。NuxtLabsで働いていましたが、買収されて最近 Vercel になりました。
 
-ちなみに、私は最近髪を切りまして、アイコンを更新しました。
+ちなみに、私は最近髪を切りまして、アイコンも更新しました。
 
 僕のウェブサイト（antfu.me）やGitHubで見つけられますし、日本語用のTwitterアカウント（@antfujp）もあります。
 
@@ -333,7 +336,7 @@ glow: right
 
 3つ目は[click] 透明性です。[click] ツールを使うとき、ユーザーがその仕組みと状態を知っている方が良いでしょう。何か問題が起きたとき、なぜ起きたかを調べて修正しやすくなります。
 
-それから[click] 組み合わせの可能性にも考慮します。[click] 分離されたモジュールがあると、他のツールと組み合わせて拡張して、その力を最大限活用しやすくなります。
+それから[click] 組み合わせの可能性にも考慮します。[click] 分離された Module があると、他のツールと組み合わせて拡張して、その力を最大限活用しやすくなります。
 
 最後は[click] 拡張性です。[click] 一回限りの Script と違って、Software は異なるシナリオへ適応して処理できることを前提に設計します。柔軟な Plugin System と Customize 能力を持つ拡張性は、良い Software の非常に重要な側面の一つです。
 
@@ -378,7 +381,7 @@ layout: center
 <img src="/devtools/vite-inspect.png" w-250 />
 
 <!--
-Vite Ecosystem の初期に、僕は Vite 用の Plugin をかなり作っていましたが、変換されたコードの内部状態を見るためにあちこちで console.log する必要があって、Debug がいつも面倒でした。そこで最終的にVite Plugin inspectというUIを作って、変換の内部構造を表示するようにしました。
+Vite Ecosystem の初期に、僕は Vite 用の Plugin をかなり作っていましたが、変換されたコードの内部状態を見るために あちこち で console.log する必要があって、Debug がいつも面倒でした。そこで最終的にVite Plugin inspectというUIを作って、変換の内部構造を表示するようにしました。
 -->
 
 ---
@@ -499,7 +502,7 @@ class: important-p0
 </div>
 
 <!--
-ツリーなどの異なるビューも提供しています。種類と Folder で group化できます。
+ツリーなどの異なる View も提供しています。種類と Folder で group化できます。
 -->
 
 ---
@@ -567,18 +570,8 @@ class: text-center
 <img src="/vd/chunk.png" w-210 mt--5 />
 
 <!--
-Chunking では、各 Chunk にどれだけの Module があるかを見ることができます。例えば、Entry Chunk が大きすぎない方が理想的です。
-このページでは、Chunk が大きくなった理由を説明し、最適化の方法を紹介します。
--->
-
----
-
-# Performance 消費 Chart <span text-lime font-mono bg-lime:10 px2 py1 rounded text-xs translate-y--6 inline-block>WIP</span>
-
-<img src="/vd/chart.png" w-200 />
-
-<!--
-僕たちは、Performance も気にしています。この View は、その Module を処理するときに、各 Hook と各 Plugin がどれだけ時間を消費しているかを教えて、遅い Plugin を見つけて最適化できます。
+Chunking では、各 Chunk にどれだけの Module があるかを見ることができます。例えば、Entry Chunk が大き過ぎない方が理想的です。
+この View では、Chunk が大きくなった理由を説明し、最適化の方法を紹介します。
 -->
 
 ---
@@ -609,7 +602,7 @@ class: text-center !pt10
 <img src="/vd/plugins-details.png" w-300 mt--5 />
 
 <!--
-その中で、この Plugin が Hook をどう使って、Build Pipeline 全体にどう貢献しているかを見ることができます。どの Plugin がどの File で最も遅くなっているかを見るのは面白いかもしれません。将来的には、upstream に報告したり、Plugin 作者に知らせたりするために使える実行可能な提案も提供する予定です。
+その中で、この Plugin が Hook をどう使って、Build Pipeline 全体にどう貢献しているかを見ることができます。どの Plugin がどの File で最も遅くなっているかを見るのは面白いかもしれません。将来的には、upstream に報告したり、Plugin 作者に知らせたり するために 使える実行可能な提案も提供する予定です。
 -->
 
 ---
@@ -628,7 +621,7 @@ class: important-p0
 </div>
 
 <!--
-Chunking について、どのファイルが含まれているかと、各 Chunk 間の関係も可視化しています。
+Chunking について、どのファイルが含まれているかと、各 Chunk の関係も可視化しています。
 -->
 
 ---
@@ -642,7 +635,7 @@ class: text-center !pt10
 <img src="/vd/packages.png" w-300 mt--5 />
 
 <!--
-アプリの大部分は通常 3rd-Party の npm package から来ます。でも通常はアプリへの影響を見落としがちです。このページは Bundle に入ったすべての Package とその Bundle Size をリストします。そして最も重要なのは、version を表示して、異なる version の重複 package があるときに教えてくれることです。一般的にいうを、これは避けたいことです。
+アプリの大部分は通常 3rd-Party の npm package から来ます。このページは Bundle に入ったすべての Package とその Bundle Size をリストします。そして最も重要なのは、version を表示して、異なる version の重複 package があるときに教えてくれることです。一般的にいうを、これは避けたいことです。
 -->
 
 ---
@@ -654,7 +647,7 @@ class: text-center !pt10
 <img src="/vd/packages-size.png" w-300 mt--5 />
 
 <!--
-Package Size について、Package 作者に Package がどれだけ小さいかを言わせてはいけません。Tree-shaking が起こると、Size は使用状況に基づいて変わるからです。Vite DevToolsでは、実際の使用に基づいた依存関係の Size の視覚的表現があります。
+Package Size について、Tree-shaking が起こると、Size は使用状況に基づいて変わるからです。Vite DevToolsでは、実際の使用に基づいた依存関係の Size の視覚的表現があります。
 -->
 
 ---
@@ -757,11 +750,11 @@ clicks: 1
 </div>
 
 <!--
-DevTools Kit の元の企画は様々な理由で中止になりました。主に、どれだけの人が採用するか確信がなかったからです。
+DevTools Kit の元の企画は様々な理由で中止になりましたけど、
 
-でも今回は違います。Vite 用の DevTools を構築しているから、準備ができたら、Vite の上に構築されたすべての framework が摩擦なく自然に恩恵を受けることになります。
+今回は Vite 用の DevTools を構築しているから、Vite の上に構築されたすべての framework が摩擦なく自然に恩恵を受けることになります。
 
-[click] だから DevTools Kit の Vision を Vite DevTools に持ってきています。DevTools 作者達に共通 Pattern に移行するよう求める代わりに、今は Vite 用の Plugin を構築するだけです。
+[click] だから DevTools Kit の Vision を Vite DevTools に持って来ています。DevTools 作者達に共通 Pattern に移行するよう 求める 代わりに、今は Vite 用の Plugin を構築するだけです。
 -->
 
 ---
