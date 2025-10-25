@@ -837,6 +837,31 @@ to = "/2025/viteconf/index.html"
 status = 200
 
 [[redirects]]
+from = "/2025/vuefes/pdf"
+to = "https://github.com/antfu/talks/blob/main/2025-10-25/2025-10-25-vuefes-ja.pdf?raw=true"
+status = 302
+
+[[redirects]]
+from = "/2025-10-25/pdf"
+to = "https://github.com/antfu/talks/blob/main/2025-10-25/2025-10-25-vuefes-ja.pdf?raw=true"
+status = 302
+
+[[redirects]]
+from = "/2025/vuefes/src"
+to = "https://github.com/antfu/talks/tree/main/2025-10-25"
+status = 302
+
+[[redirects]]
+from = "2025-10-25"
+to = "https://talks.antfu.me/2025/vuefes/"
+status = 301
+
+[[redirects]]
+from = "/2025/vuefes/*"
+to = "/2025/vuefes/index.html"
+status = 200
+
+[[redirects]]
 from = "/"
 to = "https://antfu.me/talks"
 status = 302
