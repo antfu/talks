@@ -19,13 +19,15 @@ function getPosition(index: number, login: string) {
     viewTransitionName: `contributor-${login.toLowerCase()}`,
   }
 }
+
+const base = import.meta.env.BASE_URL || ''
 </script>
 
 <template>
   <div flex="~ gap-4 wrap">
     <div v-for="contributor, index of contributors" :key="contributor">
       <img
-        :src="`/avatars/${contributor}.png`"
+        :src="`${base}/avatars/${contributor}.png`"
         absolute rounded-full
         :alt="contributor"
         :style="getPosition(index, contributor)"

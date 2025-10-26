@@ -636,7 +636,7 @@ class: text-center !pt10
 <img src="/vd/packages.png" w-300 mt--5 />
 
 <!--
-アプリの大部分は通常 3rd-Party の npm package から来ます。このページは Bundle に入ったすべての Package とその Bundle Size をリストします。そして最も重要なのは、version を表示して、異なる version の重複 package があるときに教えてくれることです。一般的にいうを、これは避けたいことです。
+アプリの大部分は通常 3rd-Party の npm package から来ます。この View は Bundle に入ったすべての Package とその Bundle Size をリストします。そして最も重要なのは、version を表示して、異なる version の重複 package があるときに教えてくれることです。一般的にいうを、これは避けたいことです。
 -->
 
 ---
@@ -697,7 +697,7 @@ layout: center
 <!--
 今お話ししたUIについて考えてみると、それらが必要になることはあまりないかもしれませんし、日常的な開発には少し高度すぎるかもしれません。
 
-[click] それは、Vite は Framework に依存しないツールだからです。依存しないというのは、使っている Framework を知らないし、知るべきではないということです。これはViteに現代の Framework の Infra になるための大きな柔軟性と拡張性を与えますが、Viteが実際のViteユーザーに近い興味深い情報を提示するのを難しくします。例えば、アプリの状態など。
+[click] それは、Vite は Framework に依存しないツールだからです。依存しないというのは、使っている Framework を知らないし、知るべきではないということです。これはViteに現代の Framework の Infra になるための大きな柔軟性と拡張性を与えますが、Viteが実際のViteユーザーに近い興味深い情報を提示するのを難しくします。
 
 [click] 右の図を見てみると、各円が特定の Framework や統合を表していると想像してください。依存しないということは、Vite DevToolsは[click] すべての Framework の共通部分にしかなれないということです。これはかなり限定的で、大多数のユーザーにとって常に有用とは限りません。
 

@@ -1,0 +1,1 @@
+import{f as o,o as r,j as t}from"../modules/vue-B2yoxyMU.js";import{_ as n}from"../index-I5O28F-E.js";const c={};function s(e,a){return r(),o("div",null,[t(e.$slots,"default")])}const _=n(c,[["render",s]]);export{_ as I};
