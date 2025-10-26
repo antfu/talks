@@ -144,18 +144,18 @@ Vite、Vue、Nuxtのコアメンバーとして活動していて、Vitest、Sli
 
 ---
 layout: center
-glow: bottom
+glow: top
 class: text-center
 ---
 
-<img src="/vite-devtools.png" w-140 />
+<img src="/vite-devtools.png" w-140 mt--10 />
 
-<div abs-br mx-10 my-11 flex="~ gap-2 items-center" text-left op75>
-  <img src="/viteconf.png" h-12 alt="ViteConf">
-  <div>
-    <div text-lg>ViteConf</div>
-    <div text-xs opacity-75>Oct. 9th, 2025</div>
-  </div>
+<div abs-bl m8 flex="~ col gap-2 items-end" text-left op75>
+  <img src="/vuefes.svg" h-10 alt="Vue Fes Japan">
+</div>
+
+<div abs-br m8 flex="~ col gap-2 items-end" text-left op75>
+  <div text-sm opacity-75>Oct. 25th, 2025</div>
 </div>
 
 <!--

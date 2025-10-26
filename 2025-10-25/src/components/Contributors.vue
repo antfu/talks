@@ -20,7 +20,10 @@ function getPosition(index: number, login: string) {
   }
 }
 
-const base = import.meta.env.BASE_URL || ''
+let base = import.meta.env.BASE_URL || ''
+if (base.endsWith('/')) {
+  base = base.slice(0, -1)
+}
 </script>
 
 <template>
