@@ -794,7 +794,7 @@ export default function MyPlugin(): Plugin {
     name: 'my-plugin',
     transform: { /* ... */ },
     devtools: {
-      /* pesudo-code for demo */
+      /* pseudo-code for demo */
       async setup({ rpc, views, docks }) {
         rpc.register({
           name: 'my-plugin:hello',

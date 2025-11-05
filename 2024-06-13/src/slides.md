@@ -486,7 +486,7 @@ export default [
   }
 ]
 
-// (pesudo code for demo)
+// (pseudo code for demo)
 ```
 
 </div>
