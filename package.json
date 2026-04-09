@@ -45,6 +45,7 @@
     "uqr": "catalog:",
     "vis-data": "catalog:",
     "vis-network": "catalog:",
+    "vis-timeline": "catalog:",
     "vite": "catalog:",
     "vue-router": "catalog:",
     "vue-tsc": "catalog:"
