@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "slidev",
-    "build": "tsx ../../scripts/build.ts /2022/vueuse-best-practice/",
+    "build": "slidev build --out ../../dist/2022/vueuse-best-practice --base /2022/vueuse-best-practice/",
     "export": "slidev export --output ../2022-12-10-vueconf-china.pdf --dark"
   }
 }
