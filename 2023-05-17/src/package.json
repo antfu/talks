@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "slidev",
-    "build": "slidev build --out ../../dist/2023/github-notifications --base /2023/github-notifications/",
+    "build": "[ -f ../../dist/2023/github-notifications/index.html ] && echo Cached || slidev build --out ../../dist/2023/github-notifications --base /2023/github-notifications/",
     "export": "slidev export --per-slide --output ../2023-05-17-github-notifications-en.pdf",
     "play": "slidev --remote --tunnel"
   }

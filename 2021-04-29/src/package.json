@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "slidev",
-    "build": "slidev build --out ../../dist/2021/composable-vue --base /2021/composable-vue/",
+    "build": "[ -f ../../dist/2021/composable-vue/index.html ] && echo Cached || slidev build --out ../../dist/2021/composable-vue --base /2021/composable-vue/",
     "export": "slidev export --output ../2021-04-29-vueday-en.pdf"
   }
 }

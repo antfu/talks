@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "slidev",
-    "build": "slidev build --out ../../dist/2024/react-summit --base /2024/react-summit/",
+    "build": "[ -f ../../dist/2024/react-summit/index.html ] && echo Cached || slidev build --out ../../dist/2024/react-summit --base /2024/react-summit/",
     "export": "slidev export --dark --per-slide --output ../2024-06-14-react-summit-en.pdf"
   }
 }

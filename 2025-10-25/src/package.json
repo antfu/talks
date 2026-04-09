@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "slidev",
-    "build": "slidev build --out ../../dist/2025/vuefes --base /2025/vuefes/",
+    "build": "[ -f ../../dist/2025/vuefes/index.html ] && echo Cached || slidev build --out ../../dist/2025/vuefes --base /2025/vuefes/",
     "export": "slidev export --per-slide --output ../2025-10-25-vuefes-ja.pdf"
   }
 }

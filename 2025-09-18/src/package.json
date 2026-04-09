@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "slidev",
-    "build": "slidev build --out ../../dist/2025/squiggleconf --base /2025/squiggleconf/",
+    "build": "[ -f ../../dist/2025/squiggleconf/index.html ] && echo Cached || slidev build --out ../../dist/2025/squiggleconf --base /2025/squiggleconf/",
     "export": "slidev export --per-slide --output ../2025-09-18-squiggleconf-en.pdf"
   }
 }
