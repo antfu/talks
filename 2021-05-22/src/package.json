@@ -1,9 +1,0 @@
-{
-  "type": "module",
-  "private": true,
-  "scripts": {
-    "dev": "slidev",
-    "build": "tsx ../../scripts/build.ts /2021/vueconf-china/",
-    "export": "slidev export --dark --output ../2021-05-22-vueconf-china.pdf"
-  }
-}

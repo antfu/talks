@@ -1,9 +1,0 @@
-{
-  "type": "module",
-  "private": true,
-  "scripts": {
-    "dev": "slidev",
-    "build": "tsx ../../scripts/build.ts /2021/laravel-vue-taiwan/",
-    "export": "slidev export --dark --output ../2021-10-17-laravel-vue-taiwan.pdf"
-  }
-}
