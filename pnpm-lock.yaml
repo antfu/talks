@@ -219,6 +219,9 @@ importers:
       vis-network:
         specifier: 'catalog:'
         version: 10.0.2(@egjs/hammerjs@2.0.17)(component-emitter@1.3.1)(keycharm@0.4.0)(uuid@11.1.0)(vis-data@8.0.3(uuid@11.1.0)(vis-util@6.0.0(@egjs/hammerjs@2.0.17)(component-emitter@1.3.1)))(vis-util@6.0.0(@egjs/hammerjs@2.0.17)(component-emitter@1.3.1))
+      vis-timeline:
+        specifier: 'catalog:'
+        version: 8.5.0(@egjs/hammerjs@2.0.17)(component-emitter@1.3.1)(keycharm@0.4.0)(moment@2.30.1)(propagating-hammerjs@2.0.1(@egjs/hammerjs@2.0.17))(uuid@11.1.0)(vis-data@8.0.3(uuid@11.1.0)(vis-util@6.0.0(@egjs/hammerjs@2.0.17)(component-emitter@1.3.1)))(vis-util@6.0.0(@egjs/hammerjs@2.0.17)(component-emitter@1.3.1))(xss@1.0.15)
       vite:
         specifier: 'catalog:'
         version: 7.3.1(@types/node@25.0.10)(jiti@2.6.1)(tsx@4.21.0)(yaml@2.8.2)
@@ -228,38 +231,6 @@ importers:
       vue-tsc:
         specifier: 'catalog:'
         version: 3.2.4(typescript@5.9.3)
-
-  2021-04-29/src: {}
-
-  2021-05-22/src: {}
-
-  2021-10-17/src: {}
-
-  2021-10-20/src: {}
-
-  2022-01-26/src: {}
-
-  2022-10-11/src: {}
-
-  2022-10-16/src: {}
-
-  2022-12-10/src: {}
-
-  2023-02-09/src: {}
-
-  2023-05-17/src: {}
-
-  2023-05-25/src: {}
-
-  2023-10-05/src: {}
-
-  2023-10-18/src: {}
-
-  2023-10-28/src: {}
-
-  2024-02-29/src: {}
-
-  2024-03-22/src: {}
 
   2024-06-08/src:
     devDependencies:
@@ -291,8 +262,6 @@ importers:
         specifier: 'catalog:'
         version: 8.5.0(@egjs/hammerjs@2.0.17)(component-emitter@1.3.1)(keycharm@0.4.0)(moment@2.30.1)(propagating-hammerjs@2.0.1(@egjs/hammerjs@2.0.17))(uuid@11.1.0)(vis-data@8.0.3(uuid@11.1.0)(vis-util@6.0.0(@egjs/hammerjs@2.0.17)(component-emitter@1.3.1)))(vis-util@6.0.0(@egjs/hammerjs@2.0.17)(component-emitter@1.3.1))(xss@1.0.15)
 
-  2024-06-14/src: {}
-
   2024-07-06/src:
     devDependencies:
       chroma-js:
@@ -304,14 +273,6 @@ importers:
       vis-network:
         specifier: 'catalog:'
         version: 10.0.2(@egjs/hammerjs@2.0.17)(component-emitter@1.3.1)(keycharm@0.4.0)(uuid@11.1.0)(vis-data@8.0.3(uuid@11.1.0)(vis-util@6.0.0(@egjs/hammerjs@2.0.17)(component-emitter@1.3.1)))(vis-util@6.0.0(@egjs/hammerjs@2.0.17)(component-emitter@1.3.1))
-
-  2024-07-10/src: {}
-
-  2024-10-03/src: {}
-
-  2024-10-19/src: {}
-
-  2024-11-12/src: {}
 
   2024-12-07/src:
     devDependencies:
@@ -385,8 +346,6 @@ importers:
         specifier: 'catalog:'
         version: 8.5.0(@egjs/hammerjs@2.0.17)(component-emitter@1.3.1)(keycharm@0.4.0)(moment@2.30.1)(propagating-hammerjs@2.0.1(@egjs/hammerjs@2.0.17))(uuid@11.1.0)(vis-data@8.0.3(uuid@11.1.0)(vis-util@6.0.0(@egjs/hammerjs@2.0.17)(component-emitter@1.3.1)))(vis-util@6.0.0(@egjs/hammerjs@2.0.17)(component-emitter@1.3.1))(xss@1.0.15)
 
-  2025-06-13/src: {}
-
   2025-07-12/src:
     devDependencies:
       '@antfu/eslint-config':
@@ -404,12 +363,6 @@ importers:
       vis-network:
         specifier: 'catalog:'
         version: 10.0.2(@egjs/hammerjs@2.0.17)(component-emitter@1.3.1)(keycharm@0.4.0)(uuid@11.1.0)(vis-data@8.0.3(uuid@11.1.0)(vis-util@6.0.0(@egjs/hammerjs@2.0.17)(component-emitter@1.3.1)))(vis-util@6.0.0(@egjs/hammerjs@2.0.17)(component-emitter@1.3.1))
-
-  2025-09-18/src: {}
-
-  2025-10-09/src: {}
-
-  2025-10-25/src: {}
 
 packages:
 
