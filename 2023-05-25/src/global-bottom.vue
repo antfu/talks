@@ -28,7 +28,7 @@ useEventListener('click', (e) => {
   if (formatter.value.glowFollow != null)
     return
   const path = e.composedPath() as HTMLElement[]
-  if (!path.find(el => el.id === 'slide-container'))
+  if (!path.some(el => el.id === 'slide-container'))
     return
   const el = path.find(el => ['A', 'BUTTON', 'IMG', 'VIDEO'].includes(el.tagName?.toUpperCase()))
   if (!el)

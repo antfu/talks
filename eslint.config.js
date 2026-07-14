@@ -18,8 +18,10 @@ export default antfu({
     '**/dist-stale/**',
   ],
 })
-  .override('antfu/markdown/disables', {
-    rules: {
-      'import/newline-after-import': 'off',
-    },
-  })
+  .removeRules(
+    'markdown/require-alt-text',
+    'markdown/no-multiple-h1',
+    'markdown/heading-increment',
+    'markdown/no-missing-link-fragments',
+    'import/newline-after-import',
+  )

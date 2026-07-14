@@ -4,7 +4,7 @@ const props = defineProps<{
 }>()
 
 const formatter = new Intl.RelativeTimeFormat('zh-CN')
-const time = formatter.format(Math.ceil((+new Date(props.date) - (+new Date())) / 1000 / 60 / 60 / 24), 'days')
+const time = formatter.format(Math.ceil((+new Date(props.date) - (Date.now())) / 1000 / 60 / 60 / 24), 'days')
 </script>
 
 <template>
